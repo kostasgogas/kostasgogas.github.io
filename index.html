@@ -3,8 +3,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<head>
 		<title> | Kostas Gogas</title>
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MH5CG99');</script>
+		<!-- End Google Tag Manager -->
+
 		<style type="text/css">
-			/* include reset.css aftwerwards */
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my additions to reset */
+
+a {
+	text-decoration: none;
+}
 			/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2343,362 +2405,106 @@
   clip: auto;
 }
 
-			/* include normalize temporarily */
-			/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+			/* In this Document
 
-/* Document
-   ========================================================================== */
+	1.0 Typography Size
+	2.0 Container Width
 
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+*/
 
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
+/* 1.0 Typography Size */
 
 body {
-  margin: 0;
+	font-size: 1.5vw;
+	font-family: 'Noto Serif', Serif;
+	line-height: 1.4; /* was 1.75 in case you are need to change it back */
 }
 
-/**
- * Render the `main` element consistently in IE.
- */
-
-main {
-  display: block;
+@media (max-device-width: 1200px), (max-width: 1200px) {
+	body  {
+		font-size: 2vw;
+	}
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+@media (max-device-width: 600px), (max-width: 600px) {
+	body  {
+		font-size: calc(8px + 1.4vw);
+	}
 }
 
-/* Grouping content
-   ========================================================================== */
 
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+.base-type h1, h2, h3, h4, h5, h6, p, ul, ol {
+	margin-bottom: 0.5em;
+    margin-top: 1em;
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+.base-type p, .base-type ul, .base-type ol { font-size: 1em;}
+.base-type h1 { font-size: 2em; }
+.base-type h2 { font-size: 1.5em; }
+.base-type h3 { font-size: 1.17em; }
+.base-type h4 { font-size: 1.12em; }
+.base-type h5 { font-size: .83em; margin-top: 2em;}
+.base-type h6 { font-size: .75em; margin-top: 2em;}
+.base-type h1, .base-type h2, .base-type h3, .base-type h4, .base-type h5, .base-type h6, .base-type strong {font-weight: bold;}
+.base-type em {font-style: italic;}
+
+/*.base-type h1, .base-type h2, .base-type h3, .base-type h4, .base-type h5, .base-type h6 {
+	text-align: center;
+}*/
+
+.base-type ul, .base-type ol {
+    /* display: block; */
+    /* list-style-type: disc; */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0.5em;
 }
 
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
-a {
-  background-color: transparent;
+.base-type ul li {
+    list-style: disc;
+	list-style-position: inside; 
 }
 
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+.base-type ol li {
+    list-style: decimal;
+	list-style-position: inside; 
 }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 
-b,
-strong {
-  font-weight: bolder;
+/* 2.0 Container Width */
+
+.base-block {
+	width: 50%;
+	margin: auto;
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+@media (max-device-width: 1200px), (max-width: 1200px) {
+	.base-block  {
+		width: 65%;
+	}
 }
 
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 80%;
+@media (max-device-width: 600px), (max-width: 600px) {
+	.base-block  {
+		width: 80%;
+	}
 }
 
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+section.base-block {
+	padding: 0 10% 10%;
 }
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-
-[hidden] {
-  display: none;
-}
-
 		</style>
 	</head>
 
 	<body>
 
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH5CG99"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 			<ul>
 	<li><a href="#">Major Projects</a></li>
