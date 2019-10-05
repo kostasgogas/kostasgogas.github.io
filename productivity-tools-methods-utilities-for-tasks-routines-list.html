@@ -2519,17 +2519,14 @@ section.base-block {
 	}
 
 
-/* Desktop */
-
-@media screen and (min-width: 670px) {
 	.productivity-tools > section > div.tool-cards {
 		width: 93vw;
 		margin: auto;
 		display: grid;
-		grid-template-columns: repeat(4, 22.5vw);
-		grid-column-gap: 1vw;
+		grid-template-columns: repeat(3, 30vw);
+		grid-column-gap: 1.5vw;
 		grid-row-gap: 0.8vw;
-		overflow: hidden;
+		overflow: visible;
 		font-size: 0.7em;
 	}
 
@@ -2537,13 +2534,20 @@ section.base-block {
 		color: #222;
 		border-radius: 0.5vw;
 		border: 1px solid #ddd;
+		overflow: hidden;
+	}
+
+	.productivity-tools > section > div.tool-cards > a:hover {
+		-webkit-box-shadow: 0px 0px 12px 0px rgba(143,143,143,0.35);
+		-moz-box-shadow: 0px 0px 12px 0px rgba(143,143,143,0.35);
+		box-shadow: 0px 0px 12px 0px rgba(143,143,143,0.35);
 	}
 
 	.productivity-tools > section > div.tool-cards > a > article {
 		width: 100%;
 		height: 100%;
-		display: inline-block;
-		position: relative;
+		display: grid;
+		grid-template-rows: max-content auto max-content;
 	}
 
 	.productivity-tools > section > div.tool-cards > a > article > * {
@@ -2552,24 +2556,56 @@ section.base-block {
 
 	.productivity-tools > section > div.tool-cards > a > article > header {
 		border-bottom: 1px solid #ddd;
+		color: #6176ec;
+	}
+
+	.productivity-tools > section > div.tool-cards > a:hover > article > header {
+		text-decoration: underline;
 	}
 
 	.productivity-tools > section > div.tool-cards > a > article > section {
 		background-color: #fafafa;
+		color: #6176ec;
+	}
+
+	.productivity-tools > section > div.tool-cards > a > article > section small {
+		font-size: 0.8em;
+		font-style: italic;
+		color: #777777;
+	}
+
+	.productivity-tools > section > div.tool-cards > a > article > section small p {;
+		margin-top: 0;
 	}
 
 	.productivity-tools > section > div.tool-cards > a > article > footer {
 		background-color: #ebebeb;
-		position: absolute;
-		bottom: 0;
+		font-size: 0.8em;
+		color: #444444;
 	}
 
+	.productivity-tools > section > div.tool-cards > a > article > footer li span {
+		font-weight: bold;
+	}
+
+	.productivity-tools > section > div.tool-cards > a > article > footer li {
+	    list-style-type: none;
+	    padding-left: 0;
+	    padding-top: 0.3em;
+	}
+
+@media screen and (max-width: 600px) {
+	.productivity-tools > section > div.tool-cards {
+		grid-template-columns: repeat(2, 45vw);
+		grid-column-gap: 3vw;
+		grid-row-gap: 3vw;
+	}
+
+	.productivity-tools > section > div.tool-cards > a {
+		border-radius: 2vw;
+	}
 }
 
-
-
-
-/* Mobile */
 	
 </style>
 
@@ -2599,7 +2635,7 @@ section.base-block {
 		<div class="tool-cards">
 			
 				
-					<a href="https://www.autohotkey.com/">
+					<a href="https://www.autohotkey.com/" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>AutoHotkey</h3>
@@ -2607,10 +2643,10 @@ section.base-block {
 							<section>
 								<p>Free keyboard macro program. Supports hotkeys for keyboard, mouse, and joystick. Can expand abbreviations as you type them (AutoText).</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>Open Source.</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
@@ -2624,7 +2660,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://www.bulkrenameutility.co.uk/">
+					<a href="https://www.bulkrenameutility.co.uk/" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>Bulk Rename Utility</h3>
@@ -2644,7 +2680,7 @@ section.base-block {
 				
 			
 				
-					<a href="">
+					<a href="" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>YYYY-MM-DD</h3>
@@ -2652,10 +2688,10 @@ section.base-block {
 							<section>
 								<p>This is my way of naming files, because it helps sorting them out better by date.</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>This is a method, an approach, you can use it everywhere. + if you partner it up with AutoHotkey it makes a powerful combination.</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
@@ -2669,7 +2705,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://www.jam-software.com/treesize_free/">
+					<a href="https://www.jam-software.com/treesize_free/" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>TreeSize</h3>
@@ -2677,10 +2713,10 @@ section.base-block {
 							<section>
 								<p>Analyze your disk space.</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>I use this software because Windows 10 (in all the PCs I use never show me accurate information of how big or small (MB) files and folders are.</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
@@ -2694,7 +2730,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://github.com/todotxt/todo.txt">
+					<a href="https://github.com/todotxt/todo.txt" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>todo.txt</h3>
@@ -2702,10 +2738,10 @@ section.base-block {
 							<section>
 								<p>Track your tasks and projects in a plain text file.</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>This is a method, but there will be many apps that offer 'syntax-highlighting' for todo.txt.</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
@@ -2719,7 +2755,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://support.microsoft.com/en-us/help/10762/windows-use-on-screen-keyboard">
+					<a href="https://support.microsoft.com/en-us/help/10762/windows-use-on-screen-keyboard" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>On Screen Keyboard</h3>
@@ -2727,16 +2763,16 @@ section.base-block {
 							<section>
 								<p>A virtual keyboard, appearing on screen, letting you press the virtual keys with your mouse or touchscreen.</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>I use this when I my labtop is plugged in on a TV, away from my reach, so I don't have to get up.</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
 								<ul>
 									<li><span>Availability: </span>Comes with Windows OS</li>
-									<li><span>Platforms: </span>Windows (but sure other solutions exist)</li>
+									<li><span>Platforms: </span>Windows (but surely other solutions exist)</li>
 								</ul>
 							</footer>
 						</article>
@@ -2744,7 +2780,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://getgreenshot.org/">
+					<a href="https://getgreenshot.org/" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>Greenshot</h3>
@@ -2752,10 +2788,10 @@ section.base-block {
 							<section>
 								<p>A free screenshot tool optimized for productivity.</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>Open Source</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
@@ -2769,7 +2805,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://www.veracrypt.fr/en/Home.html">
+					<a href="https://www.veracrypt.fr/en/Home.html" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>Veracrypt</h3>
@@ -2777,10 +2813,10 @@ section.base-block {
 							<section>
 								<p>Disk and file Encryption</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>Open Source.</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
@@ -2794,7 +2830,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://brave.com/">
+					<a href="https://brave.com/" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>Brave</h3>
@@ -2802,10 +2838,10 @@ section.base-block {
 							<section>
 								<p>Privacy focused browser for the the general public. Supports Tor.</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>Open Source.</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
@@ -2819,7 +2855,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://protonmail.com/">
+					<a href="https://protonmail.com/" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>Protonmail</h3>
@@ -2827,16 +2863,16 @@ section.base-block {
 							<section>
 								<p>ProtonMail is the world's largest secure email service, developed by CERN and MIT scientists. Open source and protected by Swiss privacy law.</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>Open Source.</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
 								<ul>
-									<li><span>Availability: </span>Free with  500MB storage ajd 150 messages per day, Donations Accepted, Paid Accounts from €4/Month</li>
-									<li><span>Platforms: </span>Browser Based + Adnroid & iOS App.</li>
+									<li><span>Availability: </span>Free with  500MB storage and 150 messages per day, Donations Accepted, Paid Accounts from €4/Month</li>
+									<li><span>Platforms: </span>Browser Based + Android & iOS App.</li>
 								</ul>
 							</footer>
 						</article>
@@ -2844,7 +2880,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://standardnotes.org/">
+					<a href="https://standardnotes.org/" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>Standard Notes</h3>
@@ -2852,10 +2888,10 @@ section.base-block {
 							<section>
 								<p>A private notes app: simplicity, end-to-end encryption, extensions, and open-source applications.</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>Open Source</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
@@ -2869,7 +2905,7 @@ section.base-block {
 				
 			
 				
-					<a href="https://benchdoos.github.io/">
+					<a href="https://benchdoos.github.io/" target="_blank" rel="noopener">
 						<article>
 							<header>
 								<h3>WeblocOpener</h3>
@@ -2877,10 +2913,10 @@ section.base-block {
 							<section>
 								<p>Open  MacOS Safari .webloc link-files on Windows and Debian GNU/Linux</p>
 								
-								<aside>
+								<small>
 									<h4>Notes</h4>
 									<p>I use this in Windows & Linux machines for opening internet shortcuts saved in Mac.</p>
-								</aside>
+								</small>
 								
 							</section>
 							<footer>
