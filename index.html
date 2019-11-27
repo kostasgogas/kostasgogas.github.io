@@ -2494,7 +2494,69 @@ section.base-block {
 
 
 
-			<ul>
+			<style type="text/css">
+nav {
+	height: 7vh;
+	overflow: hidden;
+	font-family: 'Inter', Sans-serif;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    border-bottom: 1px solid #ededed;
+}
+
+nav > * {
+    height: 100%;
+}
+
+nav > a.logo-image {
+    text-align: center;
+    padding: 0 2vh;
+    border-right: 1px solid #ededed;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav >  a.logo-image > img {
+    height: 100%;
+}
+
+nav > a.site-title {
+	font-size: 1.8vh;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.1vh;
+	color: #a6b9ca;
+}
+
+nav > a.site-title > h2 {
+	margin: 1.6vh;
+	line-height: 2vh;
+}
+
+nav > a.toggle-menu {
+	font-size: 7vh;
+	text-align: center;
+	line-height: 0;
+	color: #a6b9ca;
+}
+
+/*// The Darker tone is #758591*/
+
+</style>
+
+
+
+<header>
+	<nav itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+		<a href="/" class="logo-image"><img src="/assets/images/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Go to Homepage" title="Official Kostas Gogas Signature Logo"></a>
+		<a href="/" class="site-title"><h2>Kostas Gogas<br/>
+			Daredevil Artist</h2>
+		</a>
+		<a href="#" class="toggle-menu"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+	</nav>
+</header>
+
+<ul>
 	<li><a href="#">Major Projects</a></li>
 	<li><a href="#">Style Invention</a></li>
 	<li><a href="#">Processes</a></li>
