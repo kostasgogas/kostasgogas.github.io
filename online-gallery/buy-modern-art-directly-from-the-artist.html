@@ -2495,73 +2495,985 @@ section.base-block {
 
 
 			<style type="text/css">
-nav {
-	height: 7vh;
-	overflow: hidden;
-	font-family: 'Inter', Sans-serif;
-    display: grid;
-    grid-template-columns: 18vh 70vw 15vw;
-    border-bottom: 1px solid #ededed;
+
+
+
+	section#product-loop {
+
+	}
+
+	/* Article */
+
+	section#product-loop > article {
+		display:block;
+		color: #333;
+		text-align: center;
+		margin: 5vh 5vh 10vh 5vh;
+		font-family: 'Noto Serif', Serif;
+	}
+
+	/* Article Header */
+
+	section#product-loop a {
+		color: #333;
+	}
+
+	section#product-loop > article > a > header > img {
+		height: 50vh;
+		width: auto;
+		max-width: 85vw;
+		display: block;
+		background-color: #ddd;
+		margin: auto;
+	}
+
+	section#product-loop > article > a > header > h3 {
+		text-transform: uppercase;
+		font-weight: bold;
+		width: 80%;
+		margin: 2vh auto;
+	}
+
+	/* Article Section */
+
+	section#product-loop > article > a > section {
+	    font-size: 0.8em;
+	    line-height: 0.5;
+	    color: #ae9dff;
+	    font-style: italic;
+	}
+
+	section#product-loop > article > a > section > p:first-child {
+		color: #737373;
+	    font-style: normal;
+		font-weight: bold;
+	}
+
+	/* Footer */
+
+	section#product-loop > article > footer {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		margin-top: 5vh;
+	}
+
+	section#product-loop > article > footer > * {
+		margin: 1vh;
+		padding: 2vh;
+	}
+
+	section#product-loop > article > footer > p {
+		color: #4d4dff;
+		font-size: 1.2em;
+		font-weight: bold;
+		border: 2px solid #4d4dff;
+		border-radius: 2vh;
+		font-family: 'Bitter', Serif;
+	}
+
+	@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Regular.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: normal;
 }
 
-nav > * {
-    height: 100%;
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Bold.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: bold;
 }
 
-nav > a.logo-image {
-    text-align: center;
-    padding: 0 2vh;
-    border-right: 1px solid #ededed;
-    height: 100%;
-    overflow: hidden;
-
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Italic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: normal;
 }
 
-nav >  a.logo-image > img {
-    height: 100%;
-}
+	section#product-loop > article > footer > a {
+		background-color: #0000ff;
+		color: white;
+		border-radius: 10vh;
+	}
 
-nav > a.site-title {
-	font-size: 1.8vh;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0.1vh;
-	color: #a6b9ca;
-}
-
-nav > a.site-title > h2 {
-	margin: 1.6vh;
-	line-height: 2vh;
-}
-
-nav > a.toggle-menu {
-	font-size: 7vh;
-	text-align: center;
-	line-height: 0;
-	color: #a6b9ca;
-}
-
-/*// The Darker tone is #758591*/
+	
 
 </style>
 
 
 
-<header>
-	<nav itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-		<a href="/" class="logo-image"><img src="/assets/images/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Go to Homepage" title="Kostas Gogas Homepage"></a>
-		<a href="/" class="site-title"><h2>Kostas Gogas<br/>
-			Daredevil Artist</h2>
-		</a>
-		<a href="#" class="toggle-menu"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-	</nav>
-</header>
-
-<ul>
-	<li><a href="#">Major Projects</a></li>
-	<li><a href="#">Style Invention</a></li>
-	<li><a href="#">Processes</a></li>
-</ul>
+<section id="product-loop">
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Ο Μοντερνιστής στο Χωριό</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Ο Μοντερνιστής 007 έχει Μόνο Ένα Μάτι</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Γυναίκα Καταριέται για τον Άντρα της που Μικραίνει (τουλάχιστον όχι το πέος)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Η Ψιψίνα σου και η Μόνη Τρίχα της</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Η Αντιγραφή Έλβις (με μουσικό μαλλί)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Τέρας με Περιποιημένη κόμη (ξανθιά), κάθεται</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Τέρας με Τσάντα Ανακύκλωσης</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αφηρημένη Ύλη 1</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αφηρημένη Ύλη 2</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αφηρημένη Ύλη 3</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αφηρημένη Ύλη 4</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αφηρημένη Ύλη 5</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αφηρημένη Ύλη 6</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Πράσινο Τερατάκι σε Σύγχηση</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Φανταστικός Φίλος (Παιδί σε δύσκολη κατάσταση που όμως περνάει καλά)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αριστοκρατικό Μακρόστενο Πορτραίτο 1</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αριστοκρατικό Μακρόστενο Πορτραίτο 2</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αριστοκρατικό Μακρόστενο Πορτραίτο 3</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αριστοκρατικό Μακρόστενο Πορτραίτο 4</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Κτήνος (Σεξουαλική Πράξη), Σπουδή για Πίνακα</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Επαναστάτες σε Δύσκολο Δρόμο (με ράμφος)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Ούτε πολύ Ψηλός, Ούτε πολύ Κοντός, Ακριβώς εκεί που Πρέπει</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Δαίμονας Ποζαρει με Φλεγόμενη Γλώσσα (κακοζωγραφισμένη για λόγους στυλ)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Το Αστείο</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Άνθρωπος που Σχηματίζεται (Ο Θεός είναι Υαλοποιός)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Τα Πάνω Κάτω (ως αλλαγή τρόπου σκέψης), μα Λόγω Κούρασης τον Παίρνει και Λίγο ο Ύπνος</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Βλασφήμια Πρώτη</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Κοράκι Ζωγραφισμένο από Παιδί, Πολύ Ώριμο για την Ηλικία του</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αδιάφορη Γυναίκα στο Δρόμο προς το Μακιγιάζ (κάτι έχεις κάνει στα μαλλιά σου)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Δαίμονας (φωτογραφία στα μέσα κοινωνικής δικρύωσης)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αρχαίος Δαίμονας που Ξυπνάει από Λήθαργο στη Σύγχρονη Εποχή</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Άσχημο Τέρας με Βυζιά (Καραφλομαλλιάς) και Μάτι Κόκκινο</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Διαστρεβλωμένο Περιβάλλον Γεννάει Προσωρινές Αμβιφολίες </h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Αναποφάσιστος Πελάτης Ξέχασε τι Σκεφτοταν (αλλά συνεχίζει να το παριστάνει)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Πατέρας Ποζάρει για Πορτραίτο Σαλονιού (Η Στρατιωτική Στολή δεν του Κάνει)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Μασκαράς, Αρχές του 19ου Αιώνα, Γαλλία (φυλακίστηκε 3 ώρες μετά)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Μεγάλος σε Ηλικία Σφίχτερ Συνθλίβει ένα Κουτάκι Σόδα</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Σφίγγα Σκέφτεται τον Ίδιο της τον Γρίφο</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Το Μοντερνιστικό Ζευγάρι (Η Μεγάλη Ερωτική Απογοήτευση)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Πολύ Ώριμος Δαίμονας (που ξέρει πλέον τι ζητάει απ' τη ζωή)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Παδιά Ερευνούν, Παίζουν Ρόλους (θύμα, Ντεντέκτιβ, Αστυνόμος) - Ζωγραφισμένο απο Πραγματικό</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Για μια Βραδιά (Παίχτης Ριάλιτι Ολόκληρης Σεζόν)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Τρία Στοιχεία</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Ansia Γράμματα (Όλα για Μας)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Μίμος (Άγαλμα σε Διαμέρισμα)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Το Τηλεκοντρόλ</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Πορτραίτο Ταλαιπωρημένου Γυναικά (δεν είναι πια ωραίος)</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Σιαμαία Στολή για τις Απόκριες</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Απόθεφγμα Ουρακοτάνγκου που δεν Περιμένει να τον Καταλάβουν</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+		<article>
+			<a href="#">
+				<header>
+					<img src="plchldr">
+					<h3>Λείπει Τίτλος</h3>
+				</header>
+				<section>
+					<p>plchldr</p>
+					<p>plchldr | plchldr</p>
+				</section>
+			</a>
+			<footer>
+				<p>€ 199.97</p>
+				<a href="plchldr">Αγορά</a>
+			</footer>
+		</article>
+	
+</section>
 
 
 		<!-- Google Tag Manager -->
