@@ -368,7 +368,7 @@ nav > * {
     height: 100%;
 }
 
-nav > a.logo-image {
+nav > a#logo-placement {
     text-align: center;
     padding: 0 2vh;
     border-right: 1px solid #ededed;
@@ -377,7 +377,7 @@ nav > a.logo-image {
 
 }
 
-nav >  a.logo-image > img {
+nav >  a#logo-placement > img#main-header-image {
     height: 100%;
 }
 
@@ -401,7 +401,21 @@ nav > a.toggle-menu {
 	color: #a6b9ca;
 }
 
-/*// The Darker tone is #758591*/
+
+
+	/* The following styles the Text Logos (Shop, Work) when replaced with javascript */
+
+
+
+	header#main-header nav > a#logo-placement {
+		content: "Shop";
+		height: 100%;
+		font-size: 4vh;
+		line-height: 7vh;
+		font-family: 'Inter', sans-serif;
+		font-weight: 800;
+		color: #778693;
+	}
 
 </style>
 
@@ -409,7 +423,7 @@ nav > a.toggle-menu {
 
 <header id="main-header">
 	<nav itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-		<a href="/" class="logo-image"><img src="/assets/images/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Go to Homepage" title="Kostas Gogas Homepage"></a>
+		<a href="/" id="logo-placement"><img src="/assets/images/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" id="main-header-image" alt="Go to Homepage" title="Kostas Gogas Homepage"></a>
 		<a href="/" class="site-title"><h2>Kostas Gogas<br/>
 			Daredevil Artist</h2>
 		</a>
@@ -432,6 +446,8 @@ nav > a.toggle-menu {
 	<li><a href="#">Style Invention</a></li>
 	<li><a href="#">Processes</a></li>
 </ul>
+
+<a href="/online-gallery/agora-monternwn-sxediwn-skitswn-zwgrafikis-xarti-mikrwn-diastasewn-kateftheian-apo-kallitexni.html">Shop</a>
 			
 		</div>
 

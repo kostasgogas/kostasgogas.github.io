@@ -354,14 +354,14 @@ section.base-block {
 		display:block;
 		color: #333;
 		text-align: center;
-		margin: 5vh;
+		margin: 5vh 5vh 2vh;
 		font-family: 'Noto Serif', Serif;
 	}
 
 	/* Article Header */
 
 	section#product-container > article > header > img {
-		height: 40vh;
+		height: 50vh;
 		width: auto;
 		max-width: 85vw;
 		display: block;
@@ -369,11 +369,11 @@ section.base-block {
 		margin: auto;
 	}
 
-	section#product-container > article > header > h3 {
+	section#product-container > article > header > h1 {
 		text-transform: uppercase;
 		font-weight: bold;
-		width: 80%;
 		margin: 2vh auto;
+		text-align: left;
 	}
 
 	/* Article Section */
@@ -396,7 +396,7 @@ section.base-block {
 	section#product-container > article > footer {
 		display: grid;
 		grid-template-columns: 50% 50%;
-		margin-top: 5vh;
+		margin-top: 2vh;
 	}
 
 	section#product-container > article > footer > * {
@@ -499,7 +499,7 @@ section.base-block {
 
 
 
-	/* Media queries*/w
+	/* Media queries*/
 
 	@media only screen and (min-width: 600px) 
 	{
@@ -547,7 +547,7 @@ nav > * {
     height: 100%;
 }
 
-nav > a.logo-image {
+nav > a#logo-placement {
     text-align: center;
     padding: 0 2vh;
     border-right: 1px solid #ededed;
@@ -556,7 +556,7 @@ nav > a.logo-image {
 
 }
 
-nav >  a.logo-image > img {
+nav >  a#logo-placement > img#main-header-image {
     height: 100%;
 }
 
@@ -580,7 +580,21 @@ nav > a.toggle-menu {
 	color: #a6b9ca;
 }
 
-/*// The Darker tone is #758591*/
+
+
+	/* The following styles the Text Logos (Shop, Work) when replaced with javascript */
+
+
+
+	header#main-header nav > a#logo-placement {
+		content: "Shop";
+		height: 100%;
+		font-size: 4vh;
+		line-height: 7vh;
+		font-family: 'Inter', sans-serif;
+		font-weight: 800;
+		color: #778693;
+	}
 
 </style>
 
@@ -588,7 +602,7 @@ nav > a.toggle-menu {
 
 <header id="main-header">
 	<nav itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-		<a href="/" class="logo-image"><img src="/assets/images/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Go to Homepage" title="Kostas Gogas Homepage"></a>
+		<a href="/" id="logo-placement"><img src="/assets/images/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" id="main-header-image" alt="Go to Homepage" title="Kostas Gogas Homepage"></a>
 		<a href="/" class="site-title"><h2>Kostas Gogas<br/>
 			Daredevil Artist</h2>
 		</a>
@@ -606,16 +620,25 @@ nav > a.toggle-menu {
 </ul>
  -->
 
+<script type="text/javascript">
+	// Image Replacement in Navigation
+	// Hide Image
+	document.getElementById("main-header-image").style.display = "none";
+	// Create New Text/Word
+	var navShopLogo = document.createTextNode("Shop"); 
+	// Append New Text/Word
+	document.getElementById("logo-placement").appendChild(navShopLogo);
+	// Change Link
+	document.getElementById("logo-placement").setAttribute('href', '/online-gallery/agora-monternwn-sxediwn-skitswn-zwgrafikis-xarti-mikrwn-diastasewn-kateftheian-apo-kallitexni.html' );
+</script>
+
+
 <section id="product-container">
 	<article>
 		<header>
+			<h1>this-will-go-to-produce-the-title-in-config-for-pagegen-and-the-h1-and-the-title-of-the-html</h1>
 			<img src="plchldr">
-			<h3>Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h3>
 		</header>
-		<section>
-			<p>Μολύβι</p>
-			<p><span>Τυπογραφικό Χαρτί 80γρ.</span> | 21 x 29.7</p>
-		</section>
 		<footer>
 			<p>€ 199.97</p>
 			<a href="plchldr">Αγορά</a>
