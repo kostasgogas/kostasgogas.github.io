@@ -2,7 +2,7 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<head>
-		<title> | Kostas Gogas</title>
+		<title>this-will-go-to-produce-the-title-in-config-for-pagegen-and-the-h1-and-the-title-of-the-html | Kostas Gogas</title>
 		<style type="text/css">
 			/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -342,6 +342,185 @@ section.base-block {
 
 			<style type="text/css">
 
+
+
+	section#product-container {
+
+	}
+
+	/* Article */
+
+	section#product-container > article {
+		display:block;
+		color: #333;
+		text-align: center;
+		margin: 5vh;
+		font-family: 'Noto Serif', Serif;
+	}
+
+	/* Article Header */
+
+	section#product-container > article > header > img {
+		height: 40vh;
+		width: auto;
+		max-width: 85vw;
+		display: block;
+		background-color: #ddd;
+		margin: auto;
+	}
+
+	section#product-container > article > header > h3 {
+		text-transform: uppercase;
+		font-weight: bold;
+		width: 80%;
+		margin: 2vh auto;
+	}
+
+	/* Article Section */
+
+	section#product-container > article > section {
+		font-size: 0.8em;
+		line-height: 0.5;
+		color: #ae9dff;
+		font-style: italic;
+	}
+
+	section#product-container > article > section > p:first-child {
+		color: #737373;
+		font-style: normal;
+		font-weight: bold;
+	}
+
+	/* Footer */
+
+	section#product-container > article > footer {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		margin-top: 5vh;
+	}
+
+	section#product-container > article > footer > * {
+		margin: 1vh;
+		padding: 2vh;
+	}
+
+	section#product-container > article > footer > p {
+		color: #4d4dff;
+		font-size: 1.2em;
+		font-weight: bold;
+		border: 2px solid #4d4dff;
+		border-radius: 2vh;
+		font-family: 'Bitter', Serif;
+	}
+
+	@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Regular.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Bold.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Italic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: normal;
+}
+
+	section#product-container > article > footer > a {
+		background-color: #0000ff;
+		color: white;
+		border-radius: 10vh;
+	}
+
+	/* Scroll for More */
+
+	section#product-container > div#scroll-for-more {
+		height: 6vh;
+		width: 100%;
+		display: block;
+		text-align: center;
+		color: #ae9dff;
+		line-height: 1;
+		padding: 2vh 0;
+	}
+
+	section#product-container > div#scroll-for-more > p {
+		margin: 0;
+		font-size: 2.5vh;
+	}
+
+	section#product-container > div#scroll-for-more > i {
+		font-size: 4vh;
+		margin-top: 1vh;
+	}
+
+	/* Photo Gallery */
+
+	section#photo-gallery {
+		width: 80%;
+		margin: 12vh auto 6vh;
+		text-align: center;
+	}
+
+	section#photo-gallery > h2 {
+		text-transform: uppercase;
+		margin: 3vh auto;
+	}
+
+	section#photo-gallery > figure > div {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-row-gap: 1vh;
+		column-gap: 1vh;
+	}
+
+	section#photo-gallery > figure > div > picture {
+		width: 100%;
+		height: 20vh;
+		display: block;
+		background-color: #ddd;
+	}
+
+
+
+	section#photo-gallery > figure > figcaption {
+		font-size: 0.65em;
+		font-style: italic;
+		margin: 1vh auto;
+	}
+
+
+
+	/* Media queries*/w
+
+	@media only screen and (min-width: 600px) 
+	{
+		body {
+			background-color: red;
+		}
+
+		/* the product loop */
+	
+		div#body-wrapper {
+			width: calc(50vw + 100px);
+			margin: auto;
+		}
+	}
+	
+
+</style>
+
+
+<style type="text/css">
+
 body {
 	padding-top: 7vh;
 }
@@ -427,11 +606,103 @@ nav > a.toggle-menu {
 </ul>
  -->
 
-<ul>
-	<li><a href="#">Major Projects</a></li>
-	<li><a href="#">Style Invention</a></li>
-	<li><a href="#">Processes</a></li>
-</ul>
+<section id="product-container">
+	<article>
+		<header>
+			<img src="plchldr">
+			<h3>Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h3>
+		</header>
+		<section>
+			<p>Μολύβι</p>
+			<p><span>Τυπογραφικό Χαρτί 80γρ.</span> | 21 x 29.7</p>
+		</section>
+		<footer>
+			<p>€ 199.97</p>
+			<a href="plchldr">Αγορά</a>
+		</footer>
+	</article>
+
+	<div id="scroll-for-more">
+		<p>Περισσότερα</p>
+		<i class="fa fa-angle-down" aria-hidden="true"></i>
+	</div>
+</section>
+
+
+<section id="photo-gallery">
+	<h2>Φωτογραφίες</h2>
+	<figure>
+		<div>
+			<picture></picture>
+			<picture></picture>
+			<picture></picture>
+			<picture></picture>
+			<picture></picture>
+			<picture></picture>
+		</div>
+		<figcaption><small>Τα χρώματα μπoρεί να απέχουν από το πραγματικό.</small></figcaption>
+	</figure>
+<!--
+	Πίσω, 
+	Γωνία Πάνω Δεξιά, 
+	Γωνία Κάτω Δεξιά, 
+	Γωνία Κάτω Αριστερά, 
+	Γωνία Πάνω Αριστερά, 
+	Φωτογραφία Λεπτομέρειας -->
+</section>
+
+<style type="text/css">
+	section#art-details {
+		width: 50%;
+		margin: 12vh auto 6vh;
+	}
+
+	section#art-details > h2 {
+		text-transform: uppercase;
+		margin: 3vh auto;
+		text-align: center;
+	}
+
+	section#art-details > ul {
+
+	}
+
+	section#art-details > ul > li {
+		
+	}
+
+	section#art-details > ul > li > strong {
+		font-weight: bold;
+	}
+
+
+</style>
+
+<section id="art-details">
+	<h2>Λεπτομέρειες</h2>
+	<ul>
+		<li><strong>Όνομα:</strong> this-will-go-to-produce-the-title-in-config-for-pagegen-and-the-h1-and-the-title-of-the-html</li>
+		<li><strong>Καλλιτέχνης:</strong> Κώστας Γκόγκας</li>
+		<li><strong>Χρονολογία:</strong> 20X9</li>
+		<li><strong>Υπογεγραμένο:</strong> Ναι</li>
+		<li><strong>Ύλικό:</strong> Μολύβι</li>
+		<li><strong>Επιφάνεια:</strong> Τυπογραφικό Χαρτί 80γρ.</li>
+		<li><strong>Πλάτος:</strong> 21cm</li>
+		<li><strong>Ύψος:</strong> 29.7cm</li>
+		<li><strong>Πάχος:</strong> 0.01cm</li>
+	</ul>
+	<ul>
+		<li><strong>Βάρος:</strong> plchldr</li>
+		<li><strong>id:</strong> plchldr</li>
+	</ul>
+</section>
+
+
+<aside class="art-condition-message">
+	<strong>Κατάσταση</strong>
+	<p>Λίγο φθαρμένο στις άκρες.</p>
+</aside>
+
 			
 		</div>
 
