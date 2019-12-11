@@ -270,7 +270,7 @@ body {
 }
 
 
-.base-type h1, h2, h3, h4, h5, h6, p, ul, ol {
+.base-type h1, .base-type h2, .base-type h3, .base-type h4, .base-type h5, .base-type h6, .base-type p, .base-type ul, .base-type ol {
 	margin-bottom: 0.5em;
     margin-top: 1em;
 }
@@ -551,19 +551,82 @@ nav > a.toggle-menu {
 		<a href="/" class="site-title"><h2>Kostas Gogas<br/>
 			Daredevil Artist</h2>
 		</a>
-		<a href="#" class="toggle-menu"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+		<a  role="button" tabindex="0" class="toggle-menu" onclick="toggleTopDropdownMednu()"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
 	</nav>
 </header>
 
-<!-- 
 
-<ul>
-	<li><a href="#">Work</a></li>
-	<li><a href="#">About</a></li>
-	<li><a href="#">Shop</a></li>
-	<li><a href="#">Blog</a></li>
-</ul>
- -->
+<style type="text/css">
+
+
+div#topDropdownMenu {
+	display: none;
+	height: 100%;
+	background-color: white;
+	width: 80vw;
+	position: fixed;
+	color: #a6b9ca;
+	padding: 0 10vw 10vw;
+	font-family: 'Inter', sans-serif;
+	font-weight: 800;
+}
+
+div#topDropdownMenu > ul:first-child {
+	font-size: 8vw;
+	line-height: 18vh;
+	margin-bottom: 10vw;
+}
+
+
+div#topDropdownMenu > ul:first-child > li {
+	width: 65%;
+}
+
+div#topDropdownMenu > ul:first-child > li:first-child {
+	border-bottom: 3vw solid #a6b9ca;
+}
+
+div#topDropdownMenu > ul:first-child > li:nth-child(2) {
+	border-bottom: 3vw solid #778693;
+}
+
+div#topDropdownMenu > ul:first-child > li > a {
+    padding: 4vh 0;
+}
+
+div#topDropdownMenu > ul:first-child > li:first-child > a {
+	color: #a6b9ca;
+}
+
+div#topDropdownMenu > ul:first-child > li:nth-child(2) > a {
+	color: #778693;
+}
+</style>
+
+<div id="topDropdownMenu">
+	<ul>
+		<li><a href="/work/">Iconic Works</a></li>
+		<li><a href="/shop/gr/">Shop</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="/Blog/">Blog</a></li>
+		<li><a href="/about/">About</a></li>
+	</ul>
+</div>
+
+
+
+<script>
+function toggleTopDropdownMednu() {
+  var x = document.getElementById("topDropdownMenu");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 <script type="text/javascript">
 	// Image Replacement in Navigation
