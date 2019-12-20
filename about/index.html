@@ -600,16 +600,15 @@ header#main-header {
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-color: white;
+	background-color: black;
 }
 
 
 nav {
 	height: 7vh;
-	overflow: hidden;
 	font-family: 'Inter', Sans-serif;
     display: grid;
-    grid-template-columns: 18vh auto 15%;
+    grid-template-columns: 18vh auto 0 15%;
     border-bottom: 1px solid #ededed;
 }
 
@@ -635,7 +634,7 @@ nav > a.site-title {
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 0.1vh;
-	color: #a6b9ca;
+	color: white;
 }
 
 nav > a.site-title > h2 {
@@ -643,32 +642,76 @@ nav > a.site-title > h2 {
 	line-height: 2vh;
 }
 
-nav > a.toggle-menu {
+nav > label.topDropDownMenuButton {
 	font-size: 7vh;
 	text-align: center;
 	line-height: 0;
-	color: #a6b9ca;
 }
 
 
+/* Styling for the Dropdown Menu using Checkbox technique */
 
-	/* The following styles the Text Logos (Shop, Work) when replaced with javascript */
-
-
-
-	header#main-header nav > a#logo-placement {
-		content: "Shop";
-		height: 100%;
-		font-size: 4vh;
-		line-height: 7vh;
-		font-family: 'Inter', sans-serif;
-		font-weight: 800;
-		color: #778693;
+	.topDropDownMenuButton {
+		outline: none;
+		cursor: pointer;
+		color:#FFF;
+		display:block;
 	}
 
+	#topDropdownMenu {
+		display: none;
+		height: 93vh;
+		background-color: black;
+		padding: 0 10vw 10vw 0;
+		width: 80vw;
+		font-family: 'Inter', sans-serif;
+		font-weight: 800;
+	}
+
+	.topDropDownMenuButton:focus+#topDropdownMenu {
+		display: block;
+	}
+
+	.checkBoxForMenuHidden{
+		margin-left:-99999px;
+	}
+	input#topDropDownMenuButtonToggle:checked + label + div {
+		display:block;
+		position: absolute;
+		margin-top: 7vh;
+		width: 100%;
+		content: "yeah"
+		color: white;
+	}
+
+	/* change the angle-down to angle-up */
+	input#topDropDownMenuButtonToggle:checked + label i {
+		display: none;
+	}
+
+	input#topDropDownMenuButtonToggle:checked + label:after {
+		font-family: FontAwesome;
+		font-weight: 300;
+		content: "\f106";
+		line-height: 7vh;
+	}
+
+	/* Styling the dropdown Elements */
+	div#topDropdownMenu > ul:first-child {
+		margin-top: 3vh;
+		font-size: 6vh;
+		line-height: 12vh;
+	}
+
+	div#topDropdownMenu > ul:first-child > li > a {
+	    padding-top: 4vh;
+	    padding-bottom: 4vh;
+	    padding-left: 18vh;
+	    color: white;
+	    display: inline-block;
+	    width: calc(100vw - 18vh);
+	}
 </style>
-
-
 
 <header id="main-header">
 	<nav itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
@@ -676,82 +719,27 @@ nav > a.toggle-menu {
 		<a href="/" class="site-title"><h2>Kostas Gogas<br/>
 			Daredevil Artist</h2>
 		</a>
-		<a  role="button" tabindex="0" class="toggle-menu" onclick="toggleTopDropdownMednu()"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+
+		<!-- Button for Drop menu -->
+	<input id="topDropDownMenuButtonToggle" class="checkBoxForMenuHidden" type="checkbox">
+	<label for="topDropDownMenuButtonToggle" class="topDropDownMenuButton" tabindex="1"><i class="fa fa-angle-down" aria-hidden="true"></i></label>
+
+		<!-- The Drop Menu -->
+		<div id="topDropdownMenu">
+			<ul>
+				<li><a href="/work/">Iconic Works</a></li>
+				<li><a href="/shop/gr/">Shop</a></li>
+				<li><a href="/shop/gr/">Lab</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="/Blog/">Blog</a></li>
+				<li><a href="/about/">About</a></li>
+			</ul>
+		</div>
 	</nav>
 </header>
-
-
-<style type="text/css">
-
-
-div#topDropdownMenu {
-	display: none;
-	height: 100%;
-	background-color: white;
-	width: 80vw;
-	position: fixed;
-	color: #a6b9ca;
-	padding: 0 10vw 10vw;
-	font-family: 'Inter', sans-serif;
-	font-weight: 800;
-}
-
-div#topDropdownMenu > ul:first-child {
-	font-size: 8vw;
-	line-height: 18vh;
-	margin-bottom: 10vw;
-}
-
-
-div#topDropdownMenu > ul:first-child > li {
-	width: 65%;
-}
-
-div#topDropdownMenu > ul:first-child > li:first-child {
-	border-bottom: 3vw solid #a6b9ca;
-}
-
-div#topDropdownMenu > ul:first-child > li:nth-child(2) {
-	border-bottom: 3vw solid #778693;
-}
-
-div#topDropdownMenu > ul:first-child > li > a {
-    padding: 4vh 0;
-}
-
-div#topDropdownMenu > ul:first-child > li:first-child > a {
-	color: #a6b9ca;
-}
-
-div#topDropdownMenu > ul:first-child > li:nth-child(2) > a {
-	color: #778693;
-}
-</style>
-
-<div id="topDropdownMenu">
-	<ul>
-		<li><a href="/work/">Iconic Works</a></li>
-		<li><a href="/shop/gr/">Shop</a></li>
-	</ul>
-
-	<ul>
-		<li><a href="/Blog/">Blog</a></li>
-		<li><a href="/about/">About</a></li>
-	</ul>
-</div>
-
-
-
-<script>
-function toggleTopDropdownMednu() {
-  var x = document.getElementById("topDropdownMenu");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
 
 
 
