@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Continuous Editing</title>
 
 	<style type="text/css">
 		/* http://meyerweb.com/eric/tools/css/reset/ 
@@ -2893,9 +2893,235 @@ copy it here when finished */
 </header>
 
 
-	<a href="/page-test-singleProduct.html">product</a>
+	<style type="text/css">
 
-<a href="/page-test-allProducts.html">All products</a>
+	body {
+		margin-top: 14vh;
+	}
+
+	/* project header */
+
+	.projectPage__projectHeader {
+		position: fixed;
+		top: 7vh;
+		left: 0;
+		background-color: white;
+		border: 1px solid black;
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto 0 7vh;
+		height: 7vh;
+	}
+
+	.projectPage__projectHeader__headingPlaceholder {
+		border-right: 1px solid black;
+		padding: 1.25vh 3.5vh;
+	}
+
+	.projectPage__projectHeader__headingPlaceholder__heading {
+		font-family: 'Inter', Sans-serif;
+		font-weight: 900;
+		text-transform: uppercase;
+		font-size: 2vh;
+		display: block;
+		margin: 0.5vh 0;
+	}
+
+	.projectPage__projectHeader__headingPlaceholder__subtitle {
+		font-family: 'Inter', Sans-serif;
+		font-weight: 300;
+		font-size: 1.5vh;
+	}
+
+	#projectPage__projectHeader_buttonID {
+
+	}
+
+	.projectPage__projectHeader__dropdownDescription {
+		display: none;
+	}
+
+	.projectPage__projectHeader_input {
+		display: none;
+	}
+
+	.projectPage__projectHeader_label .fa {
+		font-size: 2.5vh;
+		line-height: 2.5vh;
+		height: 2.5vh;
+		display: block;
+		text-align: center;
+		margin-bottom: 0.4vh;
+	}
+
+	.projectPage__projectHeader_label {
+		font-family: 'Inter', Sans-serif;
+		padding: 1.35vh 0;
+		font-size: 1.25vh;
+		line-height: 1.5;
+		height: 4.3vh;
+		display: block;
+		text-align: center;
+	}
+
+	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label + .projectPage__projectHeader__dropdownDescription {
+		clear: both;
+		display: block;
+		background-color: white;
+		position: fixed;
+		top: 14vh;
+		padding: 3.5vh;
+		border-bottom: 0.1vh solid black;
+		border-top: 0.1vh solid black;
+		width: calc(100% - 7vh);
+	}
+
+	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label + .projectPage__projectHeader__dropdownDescription p {
+		font-family: 'Noto Serif', serif;
+		font-size: 3.5vw;
+		line-height: 1.25;
+
+	}
+
+	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label {
+		background-color: black;
+		color: white;
+	}
+
+	/* project image */
+
+	.projectPage__allImageHolder__pictureHolder {
+		height: 60vh;
+		width: 80vw;
+		margin: 5vh auto 2vh;
+		display: block;
+	}
+
+	.projectPage__allImageHolder__pictureHolder__img {
+		max-height: 100%;
+		max-width: 100%;
+		margin: auto;
+		display: block;
+	}
+
+	.projectPage__allImageHolder__caption {
+		margin: 2vh 0;
+		font-family: 'Noto Serif', Serif;
+		font-size: 1.3vw;
+		font-weight: 300;
+		font-style: italic;
+		text-align: center;
+	}
+
+	/* project image shop availability */
+
+	.projectPage__allImageHolder__shopAvailability {
+		padding-bottom: 5vh;
+		margin: 5vh 10%;
+		border-bottom: 0.1vh solid black;
+	}
+
+	.projectPage__allImageHolder__shopAvailability__text {
+		font-family: 'Inter', Sans-serif;
+		font-style: italic;
+		font-weight: 500;
+		font-size: 0.85vw;
+		color: #777;
+		text-align: center;
+		line-height: 3;
+	}
+
+	.projectPage__allImageHolder__shopAvailability__link {
+		font-family: 'Inter', Sans-serif;
+		font-size: 2vw;
+		color: white;
+		background-color: blue;
+		padding: 1vw 3vw;
+		line-height: 5vh;
+		border-radius: 1vw;
+		text-align: center;
+		margin: auto;
+		display: block;
+		width: max-content;
+		padding: 0 10vw;
+	}
+
+</style>
+
+<header class="projectPage__projectHeader">
+	<div class="projectPage__projectHeader__headingPlaceholder">
+		<h1 class="projectPage__projectHeader__headingPlaceholder__heading">Continuous Editing</h1>
+		<small class="projectPage__projectHeader__headingPlaceholder__subtitle">Style Invention</small>
+	</div>
+	<div></div>
+
+	<!-- Button for Project Description -->
+	<input id="projectPage__projectHeader_buttonID" class="projectPage__projectHeader_input" type="checkbox">
+	<label for="projectPage__projectHeader_buttonID" class="projectPage__projectHeader_label" tabindex="1"><i class="fa fa-info-circle" aria-hidden="true"></i>more info</label>
+
+	<!-- The Dropdown Description -->
+	<div class="projectPage__projectHeader__dropdownDescription">
+		<p>Something goes on and on and you are here and he is here and I am here. 
+Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.</p>
+
+	</div>
+</header>
+
+
+
+
+	<figure class="projectPage__allImageHolder">
+		<picture class="projectPage__allImageHolder__pictureHolder">
+			<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-kwstas" class="projectPage__allImageHolder__pictureHolder__img">
+		</picture>
+		<figcaption class="projectPage__allImageHolder__caption">
+			testing caption
+		</figcaption>
+		
+		<aside class="projectPage__allImageHolder__shopAvailability">
+			<p class="projectPage__allImageHolder__shopAvailability__text">This art piece is available at the shop.</p>
+			<a href="#" class="projectPage__allImageHolder__shopAvailability__link">Visit Shop  <i class="fa fa-long-arrow-right"></i></a>
+		</aside>
+		
+	</figure>
+
+
+	<figure class="projectPage__allImageHolder">
+		<picture class="projectPage__allImageHolder__pictureHolder">
+			<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-xrhstos" class="projectPage__allImageHolder__pictureHolder__img">
+		</picture>
+		<figcaption class="projectPage__allImageHolder__caption">
+			testing caption
+		</figcaption>
+		
+	</figure>
+
+
+	<figure class="projectPage__allImageHolder">
+		<picture class="projectPage__allImageHolder__pictureHolder">
+			<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-paulos" class="projectPage__allImageHolder__pictureHolder__img">
+		</picture>
+		<figcaption class="projectPage__allImageHolder__caption">
+			testing caption
+		</figcaption>
+		
+	</figure>
+
+
+
+
+
+organisms
+	header
+		title
+		short description
+		featured image
+	text-block
+		heading
+		text
+	image-gallery
+		image
+	video
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">

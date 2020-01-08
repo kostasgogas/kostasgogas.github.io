@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>this-will-go-to-produce-the-title-in-config-for-pagegen-and-the-h1-and-the-title-of-the-html</title>
 
 	<style type="text/css">
 		/* http://meyerweb.com/eric/tools/css/reset/ 
@@ -2860,8 +2860,457 @@ this here is just to copy the 'icons' css as needed */
  /*Afterwards: choose what to include*/
 
 		
-			/* the css is on the actual layout at the moment
-copy it here when finished */
+			/* Product Page */
+
+
+/* throw what fonts you don't use */
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Thin-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Thin-BETA.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ThinItalic-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ThinItalic-BETA.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraLight-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraLight-BETA.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraLightItalic-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraLightItalic-BETA.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Light-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Light-BETA.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-LightItalic-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-LightItalic-BETA.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Regular.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Regular.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Italic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Italic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Medium.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Medium.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-MediumItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-MediumItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-SemiBold.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-SemiBold.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-SemiBoldItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-SemiBoldItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Bold.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Bold.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-BoldItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-BoldItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraBold.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraBold.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraBoldItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraBoldItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Black.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Black.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-BlackItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-BlackItalic.woff?v=3.11") format("woff");
+}
+
+/* -------------------------------------------------------
+Variable font.
+Usage:
+
+  html { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+*/
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/assets/fonts/Inter/Inter-roman.var.woff2?v=3.11") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/assets/fonts/Inter/Inter-italic.var.woff2?v=3.11") format("woff2");
+}
+
+
+/* --------------------------------------------------------------------------
+[EXPERIMENTAL] Multi-axis, single variable font.
+
+Slant axis is not yet widely supported (as of February 2019) and thus this
+multi-axis single variable font is opt-in rather than the default.
+
+When using this, you will probably need to set font-variation-settings
+explicitly, e.g.
+
+  * { font-variation-settings: "slnt" 0deg }
+  .italic { font-variation-settings: "slnt" 10deg }
+
+*/
+@font-face {
+  font-family: 'Inter var experimental';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: oblique 0deg 10deg;
+  src: url("/assets/fonts/Inter/Inter.var.woff2?v=3.11") format("woff2");
+}
+
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Regular.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Bold.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Italic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Noto Serif'; /*a name to be used later*/
+	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Noto Serif'; /*a name to be used later*/
+	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Noto Serif'; /*a name to be used later*/
+	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Noto Serif'; /*a name to be used later*/
+	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+
+.productPage {
+
+}
+
+.productPage__product {
+	width: 80vw;
+	margin: auto;
+}
+
+.productPage__product__headerOfProduct {
+}
+
+.productPage__product__headerOfProduct__heading {
+	font-size: 3.5vw;
+	font-family: 'Inter', Sans-serif;
+	font-weight: bold;
+	color: #333;
+	margin: 1vh 0;
+}
+
+.productPage__product__headerOfProduct__shortDescription {
+	font-weight: 400;
+	font-style: italic;
+	font-size: 0.85vw;
+	font-family: 'Inter', Sans-serif;
+	color: #333;
+	margin: 2vh 0;
+}
+
+.productPage__product__featuredImageFigure {
+	margin: 2vh 0;
+}
+
+.productPage__product__featuredImageFigure_picture {
+	height: 50vh;
+	display: block;
+	background-color: #ededed;
+}
+
+.productPage__product__featuredImageFigure_picture img {
+	margin: auto;
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+}
+
+.productPage__product__featuredImageFigure__figcaption {
+	font-size: 0.8vw;
+	margin: 1vh 0;
+	text-align: center;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.productPage__product__imageGallery {
+	margin: auto;
+	display: block;
+	clear: both;
+	margin: 4vh 0;
+}
+
+.productPage__product__imageGallery__picture {
+	display: block;
+	position: relative;
+	width: 25%;
+	padding-bottom: 25%;
+	float: left;
+}
+
+.productPage__product__imageGallery__picture__image {
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.productPage__product__imageGallery__figcaption {
+	clear: both;
+	font-size: 0.8vw;
+	padding: 1vh 0;
+	text-align: center;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 2;
+}
+
+.productPage__product__details {
+	clear: both;
+	margin: 4vh 0;
+}
+
+.productPage__product__heading {
+	font-size: 1.25vw;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 800;
+	line-height: 2;
+}
+
+
+.productPage__product__heading i {
+	margin-right: 2vw;
+}
+
+.productPage__product__unorderedList {
+	margin: 2vh 0;
+}
+
+.productPage__product__unorderedList li {
+	font-size: 1.1vw;
+	font-family: 'Inter', Sans-serif;
+	line-height: 1.5;
+}
+
+.productPage__product__unorderedList li strong {
+	font-weight: 600;
+}
+
+.productPage__product__priceBox {
+	font-family: 'Bitter', Sans-serif;
+	font-weight: bold;
+	font-size: 1.5vw;
+	clear: both;
+	text-align: right;
+	margin: 1.5vh 0;
+	color: blue;
+}
+
+.productPage__product__buyingOptions {
+	position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 80%;
+    height: 10vh;
+    left: 0;
+    padding: 1vh 10%;
+    border-top: 1px solid #ddd;
+}
+
+.productPage__product__buyingOptions__contactToBuyLink {
+	display: block;
+	float: left;
+	font-family: 'Inter', Sans-serif;
+	line-height: 3;
+	text-align: center;
+	color: #777;
+	font-weight: 500;
+	font-size: 2.5vw;
+	border-radius: 1vw;
+	margin: 0 1vw 0 0;
+	padding: 0 1vw;
+	border: 0.1vw solid #ddd;
+}
+
+.productPage__product__buyingOptions__visitToBuyLink {
+	display: block;
+	float: left;
+	font-family: 'Inter', Sans-serif;
+	line-height: 3;
+	text-align: center;
+	color: #777;
+	font-weight: 500;
+	font-size: 2.5vw;
+	border-radius: 1vw;
+	margin: 0 1vw 0 0;
+	padding: 0 1vw;
+	border: 0.1vw solid #ddd;
+}
+
+.productPage__product__buyingOptions__addToCartButton {
+	display: block;
+	float: right;
+	font-family: 'Inter', Sans-serif;
+	line-height: 3;
+	text-align: center;
+	font-weight: 800;
+	font-size: 2.5vw;
+	border-radius: 1vw;
+	padding: 0 2vw;
+	background-color: blue;
+	color: white;
+	letter-spacing: 0.1vh;
+}
+
+.productPage__product__buyingOptions__addToCartButton__price {
+	font-family: 'Bitter', Serif;
+	font-weight: bold;
+	border-right: 1px solid white;
+	margin-right: 1vw;
+	padding-right: 1vw;
+	height: 100%;
+	line-height: 3;
+	display: inline-block;
+}
 		
 
 	</style>
@@ -2893,9 +3342,99 @@ copy it here when finished */
 </header>
 
 
-	<a href="/page-test-singleProduct.html">product</a>
+	<div class="productPage">
 
-<a href="/page-test-allProducts.html">All products</a>
+	<article class="productPage__product">
+	<header class="productPage__product__headerOfProduct">
+	<h1 class="productPage__product__headerOfProduct__heading">Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h1>
+	<p class="productPage__product__headerOfProduct__shortDescription">21cm x 29.7cm | Μολύβι on Τυπογραφικό Χαρτί 80γρ.</p>
+</header>
+	<figure class="productPage__product__featuredImageFigure">
+	<picture class="productPage__product__featuredImageFigure_picture">
+		<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975704/myth-wip-IMG_20170808_145538.jpg">
+	</picture>
+	<figcaption class="productPage__product__featuredImageFigure__figcaption">Colors may look different from screen to screen and in real life.</figcaption>
+</figure>
+	<div class="productPage__product__priceBox">
+	€ 199.97
+</div>
+	<div class="productPage__product__buyingOptions">
+	<a class="productPage__product__buyingOptions__contactToBuyLink" href="#">Contact</a>
+	<a  class="productPage__product__buyingOptions__visitToBuyLink" href="#">Visit to Buy</a>		
+	<a href="" class="productPage__product__buyingOptions__addToCartButton"><span class="productPage__product__buyingOptions__addToCartButton__price">€ 199.97</span> Buy</a>
+
+</div>
+
+	<figure class="productPage__product__imageGallery">
+	
+	<picture class="productPage__product__imageGallery__picture">
+		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v1576975704/myth-wip-IMG_20170808_145556-work-in-progress-art-drawing-kostas-gogas-epic-journey-giant-rocks-black-and-white.jpg">
+			<img class="productPage__product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975704/myth-wip-IMG_20170808_145556-work-in-progress-art-drawing-kostas-gogas-epic-journey-giant-rocks-black-and-white.jpg">
+		</a>
+	</picture>
+	
+	<picture class="productPage__product__imageGallery__picture">
+		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v1576975703/myth-wip-IMG_20170731_132501.jpg">
+			<img class="productPage__product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975703/myth-wip-IMG_20170731_132501.jpg">
+		</a>
+	</picture>
+	
+	<picture class="productPage__product__imageGallery__picture">
+		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v1576975703/myth-wip-IMG_20170808_145529.jpg">
+			<img class="productPage__product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975703/myth-wip-IMG_20170808_145529.jpg">
+		</a>
+	</picture>
+	
+	<picture class="productPage__product__imageGallery__picture">
+		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v1576975652/myth-wip-IMG_20170819_144048.jpg">
+			<img class="productPage__product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975652/myth-wip-IMG_20170819_144048.jpg">
+		</a>
+	</picture>
+	
+	<picture class="productPage__product__imageGallery__picture">
+		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v1576975703/myth-wip-IMG_20170731_132501.jpg">
+			<img class="productPage__product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975703/myth-wip-IMG_20170731_132501.jpg">
+		</a>
+	</picture>
+	
+	<picture class="productPage__product__imageGallery__picture">
+		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v1576975703/myth-wip-IMG_20170808_145529.jpg">
+			<img class="productPage__product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975703/myth-wip-IMG_20170808_145529.jpg">
+		</a>
+	</picture>
+	
+	<picture class="productPage__product__imageGallery__picture">
+		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v1576975652/myth-wip-IMG_20170819_144048.jpg">
+			<img class="productPage__product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975652/myth-wip-IMG_20170819_144048.jpg">
+		</a>
+	</picture>
+	
+	<figcaption class="productPage__product__imageGallery__figcaption">Click on an image for a closer look.</figcaption>
+</figure>
+	<aside class="productPage__product__details">
+	<h2 class="productPage__product__heading"><i class="fa fa-info-circle"></i> Artwork Details</h2>
+	<ul class="productPage__product__unorderedList">	
+		<li><strong>Τίτλος:</strong> Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</li>
+		<li><strong>Καλλιτέχνης:</strong> Κώστας Γκόγκας</li>
+		<li><strong>Χρονολογία:</strong> 20X9</li>
+		<li><strong>Υπογεγραμένο:</strong> Ναι</li>
+		<li><strong>Ύλικό:</strong> Μολύβι</li>
+		<li><strong>Επιφάνεια:</strong> Τυπογραφικό Χαρτί 80γρ.</li>
+		<li><strong>Πλάτος:</strong> 21cm</li>
+		<li><strong>Ύψος:</strong> 29.7cm</li>
+		<li><strong>Πάχος:</strong> 0.01cm</li>
+	</ul>
+	<ul class="productPage__product__unorderedList">
+		<li><strong>Βάρος:</strong> plchldr</li>
+		<li><strong>id:</strong> plchldr</li>
+	</ul>
+</aside>
+
+	
+</article>
+
+</div>
+
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">
