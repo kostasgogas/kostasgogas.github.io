@@ -3,6 +3,8 @@
 <head>
 	<title>Continuous Editing</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<style type="text/css">
 		/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -25,8 +27,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 0px; /*I changed it from 100%*/
-	font: none; /* I changed in it from inherit */
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -72,8 +74,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 0px; /*I changed it from 100%*/
-	font: none; /* I changed in it from inherit */
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -106,7 +108,7 @@ table {
 a {
 	text-decoration: none;
 }
-		/* siteWide CSS */
+			/* siteWide CSS */
 
 
 /* DELETE THIS AFTERWARDS 
@@ -352,7 +354,13 @@ explicitly, e.g.
 }
 
 body {
-	margin-top: 10vh;
+	margin-top: 7vh;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 
@@ -365,38 +373,37 @@ body {
 	background-color: black;
 	width: 100%;
 	z-index: 999;
-	border-bottom: 1px solid white;
+	display: grid;
+	grid-template-columns: 15vh auto 0 7vh;
 }
 
 
-#siteWideHeader__menuButton--toggle {
-}
 
 .siteWideHeader {
 }
 
 .siteWideHeader__logo {
-	height: 100%;
-	padding: 0 3vw;
-	display: inline-block;
 	border-right: 1px solid white;
 }
 
 .siteWideHeader__logo img {
-	height: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: auto;
 }
 
 .siteWideHeader__site-title {
-	display: inline-block;
 	color: white;
 	font-family: 'Inter', Sans-serif;
-	font-size: 1.5vh;
-	line-height: 1;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0.1vh;
-	margin: 2vh;
-	overflow: hidden;
+	padding: 1vh;
+	line-height: 2.5vh;
+	font-size: 2vh;
+}
+
+
+.siteWideHeader__site-title span {
+	font-weight: 700;
 }
 
 .siteWideHeader__menuButton {
@@ -404,13 +411,11 @@ body {
 }
 
 .siteWideHeader__menuButton__label {
-	display: inline-block;
-	float: right;
-	height: 100%;
-	color: white;
-	font-size: 7vh;
-	width: 10vw;
-	text-align: center;
+    font-size: 7vh;
+    width: 7vh;
+    color: white;
+    display: block;
+    text-align: center;
 }
 
 .siteWideHeader__linksContainer {
@@ -422,6 +427,10 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 	display: block;
 	height: 100vh;
 	background-color: black;
+	top: 7vh;
+	position: fixed;
+	width: 100%;
+	border-top: 0.1vh solid white;
 }
 
 .siteWideHeader__linksContainer__mainUnorderedList {
@@ -440,7 +449,7 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 .siteWideHeader__linksContainer__mainUnorderedList_listItem a {
 	color: white;
 	width: 100%;
-	padding-left: calc(12.5vh + 6vw);
+	padding-left: 15vh;
 	display: block;
 	letter-spacing: 0.1vh;
 }
@@ -461,7 +470,7 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 .siteWideHeader__linksContainer__secondaryUnorderedList__listItem a {
 	color: white;
 	width: 100%;
-	padding-left: calc(12.5vh + 6vw);
+	padding-left: 15vh;
 	display: block;
 	letter-spacing: 0.1vh;
 }
@@ -482,9 +491,12 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 /* Site Wide Footer */
 
 .siteWideFooter {
-	width: 80%;
 	padding: 5vh 10%;
 	background-color: black;
+	margin-top: 10vh;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	clear: both;
 }
 
 .siteWideFooter__section {
@@ -496,7 +508,7 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 	color: white;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1.75vw;
+	font-size: 1.75vmax;
 	margin-top: 6vh;
 	margin-bottom: 2vh;
 }
@@ -509,10 +521,10 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 
 .siteWideFooter__section__heading__unorderedList__listItem__link {
 	font-family: 'Inter', Sans-serif;
-	font-size: 3vw;
+	font-size: 1.85vmax;
 	color: white;
 	font-weight: 200;
-	line-height: 1.5;
+	line-height: 1.75;
 }
 		/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2860,8 +2872,9 @@ this here is just to copy the 'icons' css as needed */
  /*Afterwards: choose what to include*/
 
 		
-			/* the css is on the actual layout at the moment
-copy it here when finished */
+			
+
+
 		
 
 	</style>
@@ -2869,9 +2882,9 @@ copy it here when finished */
 <body>
 	<header class="siteWideHeader">
 	<a href="/" class="siteWideHeader__logo"><img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Kostas Gogas Logo" title="Go to Homepage"></a>
-	<a href="/" class="siteWideHeader__site-title"><h2>Κώστας Γκόγκας<br/>
+	<a href="/" class="siteWideHeader__site-title"><h2><span>Κώστας Γκόγκας</span><br/>
 	
-	Δημιουργός / Καλλιτέχνης
+	Καλλιτέχνης
 	</h2>
 </a>
 	<input id="siteWideHeader__menuButton--toggle" class="siteWideHeader__menuButton" type="checkbox">
@@ -2904,33 +2917,30 @@ copy it here when finished */
 	.projectPage__projectHeader {
 		position: fixed;
 		top: 7vh;
-		left: 0;
 		background-color: white;
-		border: 1px solid black;
+		border-bottom: 0.1vh solid black;
 		width: 100%;
 		display: grid;
 		grid-template-columns: auto 0 7vh;
-		height: 7vh;
 	}
 
 	.projectPage__projectHeader__headingPlaceholder {
-		border-right: 1px solid black;
-		padding: 1.25vh 3.5vh;
+		border-right: 0.1vh solid black;
+		font-family: 'Inter', Sans-serif;
+		text-transform: uppercase;
+		padding: 1.5vh;
+		line-height: 2vh;
+		letter-spacing: 0.1vh;
 	}
 
 	.projectPage__projectHeader__headingPlaceholder__heading {
-		font-family: 'Inter', Sans-serif;
 		font-weight: 900;
-		text-transform: uppercase;
 		font-size: 2vh;
-		display: block;
-		margin: 0.5vh 0;
 	}
 
 	.projectPage__projectHeader__headingPlaceholder__subtitle {
-		font-family: 'Inter', Sans-serif;
-		font-weight: 300;
-		font-size: 1.5vh;
+		font-weight: 600;
+		font-size: 1.75vh;
 	}
 
 	#projectPage__projectHeader_buttonID {
@@ -2959,7 +2969,7 @@ copy it here when finished */
 		padding: 1.35vh 0;
 		font-size: 1.25vh;
 		line-height: 1.5;
-		height: 4.3vh;
+		height: 7vh;
 		display: block;
 		text-align: center;
 	}
@@ -2973,7 +2983,7 @@ copy it here when finished */
 		padding: 3.5vh;
 		border-bottom: 0.1vh solid black;
 		border-top: 0.1vh solid black;
-		width: calc(100% - 7vh);
+		width: 100%;
 	}
 
 	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label + .projectPage__projectHeader__dropdownDescription p {
@@ -3007,7 +3017,7 @@ copy it here when finished */
 	.projectPage__allImageHolder__caption {
 		margin: 2vh 0;
 		font-family: 'Noto Serif', Serif;
-		font-size: 1.3vw;
+		font-size: 1.25vmax;
 		font-weight: 300;
 		font-style: italic;
 		text-align: center;
@@ -3016,34 +3026,32 @@ copy it here when finished */
 	/* project image shop availability */
 
 	.projectPage__allImageHolder__shopAvailability {
-		padding-bottom: 5vh;
-		margin: 5vh 10%;
+		padding-bottom: 3vmax;
+		margin: 3vmax auto;
 		border-bottom: 0.1vh solid black;
+		display: grid;
+		width: 80%;
+		text-align: right;
+		font-family: 'Noto Serif', Serif;
+		font-size: 1.25vmax;
+		line-height: 1.5;
 	}
 
 	.projectPage__allImageHolder__shopAvailability__text {
-		font-family: 'Inter', Sans-serif;
-		font-style: italic;
-		font-weight: 500;
-		font-size: 0.85vw;
-		color: #777;
-		text-align: center;
-		line-height: 3;
+	}
+
+	.projectPage__allImageHolder__shopAvailability__text span {
+		font-weight: bold;
 	}
 
 	.projectPage__allImageHolder__shopAvailability__link {
-		font-family: 'Inter', Sans-serif;
-		font-size: 2vw;
+		padding: 1vmax 1.5vmax;
+		font-weight: bold;
 		color: white;
 		background-color: blue;
-		padding: 1vw 3vw;
-		line-height: 5vh;
-		border-radius: 1vw;
-		text-align: center;
-		margin: auto;
-		display: block;
-		width: max-content;
-		padding: 0 10vw;
+		width: fit-content;
+		margin: 1vmax 0 0 auto;
+		border-radius: 0.25vmax;
 	}
 
 </style>
@@ -3057,7 +3065,7 @@ copy it here when finished */
 
 	<!-- Button for Project Description -->
 	<input id="projectPage__projectHeader_buttonID" class="projectPage__projectHeader_input" type="checkbox">
-	<label for="projectPage__projectHeader_buttonID" class="projectPage__projectHeader_label" tabindex="1"><i class="fa fa-info-circle" aria-hidden="true"></i>more info</label>
+	<label for="projectPage__projectHeader_buttonID" class="projectPage__projectHeader_label" tabindex="1"><i class="fa fa-info-circle" aria-hidden="true"></i>about</label>
 
 	<!-- The Dropdown Description -->
 	<div class="projectPage__projectHeader__dropdownDescription">
@@ -3079,7 +3087,7 @@ Something goes on and on and you are here and he is here and I am here.  Somethi
 		</figcaption>
 		
 		<aside class="projectPage__allImageHolder__shopAvailability">
-			<p class="projectPage__allImageHolder__shopAvailability__text">This art piece is available at the shop.</p>
+			<p class="projectPage__allImageHolder__shopAvailability__text"><span>Ansia Comic Kostas</span> is also available for purchase.</p>
 			<a href="#" class="projectPage__allImageHolder__shopAvailability__link">Visit Shop  <i class="fa fa-long-arrow-right"></i></a>
 		</aside>
 		
@@ -3144,6 +3152,7 @@ organisms
 	<section class="siteWideFooter__section">
 		<h3 class="siteWideFooter__section__heading">Information</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
+			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">Contact</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">Privacy Policy</a></li>
 		</ul>
@@ -3154,7 +3163,7 @@ organisms
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="http://eepurl.com/c5g1PH" class="siteWideFooter__section__heading__unorderedList__listItem__link">Mailing List</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://facebook.com/kostasgogasart" class="siteWideFooter__section__heading__unorderedList__listItem__link">Facebook</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://instagram.com/kostasgogasart" class="siteWideFooter__section__heading__unorderedList__listItem__link">Instagram</a></li>
-			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://youtube.com/c/user/akneyone" class="siteWideFooter__section__heading__unorderedList__listItem__link">YouTube</a></li>
+			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://youtube.com/user/akneyone" class="siteWideFooter__section__heading__unorderedList__listItem__link">YouTube</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://linkedin.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">LinkedIn</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://pinterest.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">Pinterest</a></li>
 		</ul>

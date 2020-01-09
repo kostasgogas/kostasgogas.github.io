@@ -3,6 +3,8 @@
 <head>
 	<title></title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<style type="text/css">
 		/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -25,8 +27,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 0px; /*I changed it from 100%*/
-	font: none; /* I changed in it from inherit */
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -72,8 +74,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 0px; /*I changed it from 100%*/
-	font: none; /* I changed in it from inherit */
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -106,7 +108,7 @@ table {
 a {
 	text-decoration: none;
 }
-		/* siteWide CSS */
+			/* siteWide CSS */
 
 
 /* DELETE THIS AFTERWARDS 
@@ -352,7 +354,13 @@ explicitly, e.g.
 }
 
 body {
-	margin-top: 10vh;
+	margin-top: 7vh;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 
@@ -365,38 +373,37 @@ body {
 	background-color: black;
 	width: 100%;
 	z-index: 999;
-	border-bottom: 1px solid white;
+	display: grid;
+	grid-template-columns: 15vh auto 0 7vh;
 }
 
 
-#siteWideHeader__menuButton--toggle {
-}
 
 .siteWideHeader {
 }
 
 .siteWideHeader__logo {
-	height: 100%;
-	padding: 0 3vw;
-	display: inline-block;
 	border-right: 1px solid white;
 }
 
 .siteWideHeader__logo img {
-	height: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: auto;
 }
 
 .siteWideHeader__site-title {
-	display: inline-block;
 	color: white;
 	font-family: 'Inter', Sans-serif;
-	font-size: 1.5vh;
-	line-height: 1;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0.1vh;
-	margin: 2vh;
-	overflow: hidden;
+	padding: 1vh;
+	line-height: 2.5vh;
+	font-size: 2vh;
+}
+
+
+.siteWideHeader__site-title span {
+	font-weight: 700;
 }
 
 .siteWideHeader__menuButton {
@@ -404,13 +411,11 @@ body {
 }
 
 .siteWideHeader__menuButton__label {
-	display: inline-block;
-	float: right;
-	height: 100%;
-	color: white;
-	font-size: 7vh;
-	width: 10vw;
-	text-align: center;
+    font-size: 7vh;
+    width: 7vh;
+    color: white;
+    display: block;
+    text-align: center;
 }
 
 .siteWideHeader__linksContainer {
@@ -422,6 +427,10 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 	display: block;
 	height: 100vh;
 	background-color: black;
+	top: 7vh;
+	position: fixed;
+	width: 100%;
+	border-top: 0.1vh solid white;
 }
 
 .siteWideHeader__linksContainer__mainUnorderedList {
@@ -440,7 +449,7 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 .siteWideHeader__linksContainer__mainUnorderedList_listItem a {
 	color: white;
 	width: 100%;
-	padding-left: calc(12.5vh + 6vw);
+	padding-left: 15vh;
 	display: block;
 	letter-spacing: 0.1vh;
 }
@@ -461,7 +470,7 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 .siteWideHeader__linksContainer__secondaryUnorderedList__listItem a {
 	color: white;
 	width: 100%;
-	padding-left: calc(12.5vh + 6vw);
+	padding-left: 15vh;
 	display: block;
 	letter-spacing: 0.1vh;
 }
@@ -482,9 +491,12 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 /* Site Wide Footer */
 
 .siteWideFooter {
-	width: 80%;
 	padding: 5vh 10%;
 	background-color: black;
+	margin-top: 10vh;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	clear: both;
 }
 
 .siteWideFooter__section {
@@ -496,7 +508,7 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 	color: white;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1.75vw;
+	font-size: 1.75vmax;
 	margin-top: 6vh;
 	margin-bottom: 2vh;
 }
@@ -509,10 +521,10 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 
 .siteWideFooter__section__heading__unorderedList__listItem__link {
 	font-family: 'Inter', Sans-serif;
-	font-size: 3vw;
+	font-size: 1.85vmax;
 	color: white;
 	font-weight: 200;
-	line-height: 1.5;
+	line-height: 1.75;
 }
 		/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2861,6 +2873,8 @@ this here is just to copy the 'icons' css as needed */
 
 		
 			
+
+
 		
 
 	</style>
@@ -2868,9 +2882,9 @@ this here is just to copy the 'icons' css as needed */
 <body>
 	<header class="siteWideHeader">
 	<a href="/" class="siteWideHeader__logo"><img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Kostas Gogas Logo" title="Go to Homepage"></a>
-	<a href="/" class="siteWideHeader__site-title"><h2>Κώστας Γκόγκας<br/>
+	<a href="/" class="siteWideHeader__site-title"><h2><span>Κώστας Γκόγκας</span><br/>
 	
-	Δημιουργός / Καλλιτέχνης
+	Καλλιτέχνης
 	</h2>
 </a>
 	<input id="siteWideHeader__menuButton--toggle" class="siteWideHeader__menuButton" type="checkbox">
@@ -2892,7 +2906,1198 @@ this here is just to copy the 'icons' css as needed */
 </header>
 
 
+	<style type="text/css">
+	/* All Products Page */
+
+	@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Thin-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Thin-BETA.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ThinItalic-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ThinItalic-BETA.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraLight-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraLight-BETA.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraLightItalic-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraLightItalic-BETA.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Light-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Light-BETA.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-LightItalic-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-LightItalic-BETA.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Regular.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Regular.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Italic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Italic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Medium.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Medium.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-MediumItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-MediumItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-SemiBold.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-SemiBold.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-SemiBoldItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-SemiBoldItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Bold.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Bold.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-BoldItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-BoldItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraBold.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraBold.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraBoldItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraBoldItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Black.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Black.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-BlackItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-BlackItalic.woff?v=3.11") format("woff");
+}
+
+/* -------------------------------------------------------
+Variable font.
+Usage:
+
+  html { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+*/
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/assets/fonts/Inter/Inter-roman.var.woff2?v=3.11") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/assets/fonts/Inter/Inter-italic.var.woff2?v=3.11") format("woff2");
+}
+
+
+/* --------------------------------------------------------------------------
+[EXPERIMENTAL] Multi-axis, single variable font.
+
+Slant axis is not yet widely supported (as of February 2019) and thus this
+multi-axis single variable font is opt-in rather than the default.
+
+When using this, you will probably need to set font-variation-settings
+explicitly, e.g.
+
+  * { font-variation-settings: "slnt" 0deg }
+  .italic { font-variation-settings: "slnt" 10deg }
+
+*/
+@font-face {
+  font-family: 'Inter var experimental';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: oblique 0deg 10deg;
+  src: url("/assets/fonts/Inter/Inter.var.woff2?v=3.11") format("woff2");
+}
+
+	@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Regular.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Bold.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Italic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: normal;
+}
+	@font-face {
+	font-family: 'Noto Serif'; /*a name to be used later*/
+	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Noto Serif'; /*a name to be used later*/
+	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Noto Serif'; /*a name to be used later*/
+	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Noto Serif'; /*a name to be used later*/
+	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: bold;
+}
+
+	body {
+		margin-top: 10vh;
+	}
+
+	.allProductsPage__allProducts {
+		margin: auto;
+		display: block;
+		width: 80vw;
+	}
+
+	.allProductsPage__allProducts__productExcerpt {
+		display: block;
+		float: left;
+		width: 38vw;
+		margin: 4vw 1vw;
+	}
+
+	.allProductsPage__allProducts__productExcerpt__linkWrapper {
+		width: 100%;
+	}
+
+	.allProductsPage__allProducts__productExcerpt__linkWrapper__header {
+
+	}
+
+	.allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture {
+		display: block;
+		position: relative;
+		width: 100%;
+		padding-bottom: 100%;
+	}
+
+	.allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img {
+		position: absolute;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+
+	.allProductsPage__allProducts__productExcerpt__linkWrapper__header__title {
+		font-family: 'Inter', Sans-serif;
+		font-weight: 800;
+		font-size: 2vmax;
+		color: black;
+		line-height: 1.25;
+		margin: 2vh 0;
+	}
+
+
+	.allProductsPage__allProducts__productExcerpt__linkWrapper__footer {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-column-gap: 5%;
+		margin: 2vmax 0 0;
+	}
+
+
+	.allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description {
+		color: #333;
+		font-family: 'Noto Serif', Serif;
+		font-size: 1.5vmax;
+		line-height: 1.15;
+		font-style: italic;
+	}
+
+	.allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description span {
+		font-weight: bold;
+		display: block;
+	}
+
+	.allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price {
+		text-align: right;
+		font-family: 'Bitter', Serif;
+		font-weight: bold;
+		font-size: 2vmax;
+		color: blue;
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+</style>
+
+<section class="allProductsPage__allProducts">
 	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/myth-wip-IMG_20170720_194111.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/myth-wip-IMG_20170720_194122_SHARP.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Σελίδα με Πρόχειρα Σχέδια Τριών Χαρακτήρων</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/myth-wip-IMG_20170719_155912.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής στο Χωριό</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/myth-wip-IMG_20170628_030534.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής 007 έχει Μόνο Ένα Μάτι</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/myth-wip-IMG_20170819_144138.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Γυναίκα Καταριέται για τον Άντρα της που Μικραίνει (τουλάχιστον όχι το πέος)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/myth-wip-IMG_20170819_144128.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Η Ψιψίνα σου και η Μόνη Τρίχα της</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Σελίδα με Πρόχειρα Σχέδια Τριών Χαρακτήρων</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής στο Χωριό</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής 007 έχει Μόνο Ένα Μάτι</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Γυναίκα Καταριέται για τον Άντρα της που Μικραίνει (τουλάχιστον όχι το πέος)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Η Ψιψίνα σου και η Μόνη Τρίχα της</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Η Αντιγραφή Έλβις (με μουσικό μαλλί)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Τέρας με Περιποιημένη κόμη (ξανθιά), κάθεται</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Τέρας με Τσάντα Ανακύκλωσης</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένη Ύλη 1</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένη Ύλη 2</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένη Ύλη 3</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένη Ύλη 4</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένη Ύλη 5</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένη Ύλη 6</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Πράσινο Τερατάκι σε Σύγχηση</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Φανταστικός Φίλος (Παιδί σε δύσκολη κατάσταση που όμως περνάει καλά)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 1</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 2</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 3</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 4</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Κτήνος (Σεξουαλική Πράξη), Σπουδή για Πίνακα</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Επαναστάτες σε Δύσκολο Δρόμο (με ράμφος)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Ούτε πολύ Ψηλός, Ούτε πολύ Κοντός, Ακριβώς εκεί που Πρέπει</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Δαίμονας Ποζαρει με Φλεγόμενη Γλώσσα (κακοζωγραφισμένη για λόγους στυλ)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Το Αστείο</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Άνθρωπος που Σχηματίζεται (Ο Θεός είναι Υαλοποιός)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Τα Πάνω Κάτω (ως αλλαγή τρόπου σκέψης), μα Λόγω Κούρασης τον Παίρνει και Λίγο ο Ύπνος</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Βλασφήμια</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Κοράκι Ζωγραφισμένο από Παιδί, Πολύ Ώριμο για την Ηλικία του</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αδιάφορη Γυναίκα στο Δρόμο προς το Μακιγιάζ (κάτι έχεις κάνει στα μαλλιά σου)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Δαίμονας (φωτογραφία ανεβασμένη από τον ίδιο στα μέσα κοινωνικής δικτύωσης)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αρχαίος Δαίμονας που Ξυπνάει από Λήθαργο στη Σύγχρονη Εποχή</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Άσχημο Τέρας με Βυζιά (Καραφλομαλλιάς) και Μάτι Κόκκινο</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Διαστρεβλωμένο Περιβάλλον Γεννάει Προσωρινές Αμβιφολίες </h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Αναποφάσιστος Πελάτης Ξέχασε τι Σκεφτοταν (αλλά συνεχίζει να το παριστάνει)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Πατέρας Ποζάρει για Πορτραίτο Σαλονιού (Η Στρατιωτική Στολή δεν του Κάνει)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Μασκαράς, Αρχές του 19ου Αιώνα, Γαλλία (φυλακίστηκε 3 ώρες μετά)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Μεγάλος σε Ηλικία Σφίχτερ Συνθλίβει ένα Κουτάκι Σόδα</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Σφίγγα Σκέφτεται τον Ίδιο της τον Γρίφο</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Το Μοντερνιστικό Ζευγάρι (Η Μεγάλη Ερωτική Απογοήτευση)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Ώριμος Δαίμονας (που ξέρει πλέον τι ζητάει απ' τη ζωή)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Παδιά Ερευνούν, Παίζουν Ρόλους (θύμα, Ντεντέκτιβ, Αστυνόμος) - Ζωγραφισμένο απο Πραγματικό</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Για μια Βραδιά (Παίχτης Ριάλιτι Ολόκληρης Σεζόν)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Τρία Στοιχεία</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Μίμος (Άγαλμα σε Διαμέρισμα)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Πορτραίτο Ταλαιπωρημένου Γυναικά (δεν είναι πια ωραίος)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Σιαμαία Στολή για τις Απόκριες</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Λείπει Τίτλος</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Ansia Γράμματα (Όλα για Μας)</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Το Τηλεκοντρόλ</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+		<article class="allProductsPage__allProducts__productExcerpt">
+			<a href="/plchldr.html" class="allProductsPage__allProducts__productExcerpt__linkWrapper">
+				<header class="allProductsPage__allProducts__productExcerpt__linkWrapper__header">
+					<picture class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture">
+						<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975675/plchldr.jpg" class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__picture__img">
+					</picture>
+					<h3 class="allProductsPage__allProducts__productExcerpt__linkWrapper__header__title">Απόθεφγμα Ουρακοτάνγκου που δεν Περιμένει να τον Καταλάβουν</h3>			
+				</header>
+				<footer class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer">
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span>Μολύβι σε Τυπογραφικό Χαρτί 80γρ.</p>
+					<p class="allProductsPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 199.97</p>
+				</footer>
+			</a>
+		</article>
+	
+</section>	
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">
@@ -2915,6 +4120,7 @@ this here is just to copy the 'icons' css as needed */
 	<section class="siteWideFooter__section">
 		<h3 class="siteWideFooter__section__heading">Information</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
+			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">Contact</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">Privacy Policy</a></li>
 		</ul>
@@ -2925,7 +4131,7 @@ this here is just to copy the 'icons' css as needed */
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="http://eepurl.com/c5g1PH" class="siteWideFooter__section__heading__unorderedList__listItem__link">Mailing List</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://facebook.com/kostasgogasart" class="siteWideFooter__section__heading__unorderedList__listItem__link">Facebook</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://instagram.com/kostasgogasart" class="siteWideFooter__section__heading__unorderedList__listItem__link">Instagram</a></li>
-			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://youtube.com/c/user/akneyone" class="siteWideFooter__section__heading__unorderedList__listItem__link">YouTube</a></li>
+			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://youtube.com/user/akneyone" class="siteWideFooter__section__heading__unorderedList__listItem__link">YouTube</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://linkedin.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">LinkedIn</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://pinterest.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">Pinterest</a></li>
 		</ul>

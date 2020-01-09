@@ -3,6 +3,8 @@
 <head>
 	<title>this-will-go-to-produce-the-title-in-config-for-pagegen-and-the-h1-and-the-title-of-the-html</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<style type="text/css">
 		/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -25,8 +27,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 0px; /*I changed it from 100%*/
-	font: none; /* I changed in it from inherit */
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -72,8 +74,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 0px; /*I changed it from 100%*/
-	font: none; /* I changed in it from inherit */
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -106,7 +108,7 @@ table {
 a {
 	text-decoration: none;
 }
-		/* siteWide CSS */
+			/* siteWide CSS */
 
 
 /* DELETE THIS AFTERWARDS 
@@ -352,7 +354,13 @@ explicitly, e.g.
 }
 
 body {
-	margin-top: 10vh;
+	margin-top: 7vh;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 
@@ -365,38 +373,37 @@ body {
 	background-color: black;
 	width: 100%;
 	z-index: 999;
-	border-bottom: 1px solid white;
+	display: grid;
+	grid-template-columns: 15vh auto 0 7vh;
 }
 
 
-#siteWideHeader__menuButton--toggle {
-}
 
 .siteWideHeader {
 }
 
 .siteWideHeader__logo {
-	height: 100%;
-	padding: 0 3vw;
-	display: inline-block;
 	border-right: 1px solid white;
 }
 
 .siteWideHeader__logo img {
-	height: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: auto;
 }
 
 .siteWideHeader__site-title {
-	display: inline-block;
 	color: white;
 	font-family: 'Inter', Sans-serif;
-	font-size: 1.5vh;
-	line-height: 1;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0.1vh;
-	margin: 2vh;
-	overflow: hidden;
+	padding: 1vh;
+	line-height: 2.5vh;
+	font-size: 2vh;
+}
+
+
+.siteWideHeader__site-title span {
+	font-weight: 700;
 }
 
 .siteWideHeader__menuButton {
@@ -404,13 +411,11 @@ body {
 }
 
 .siteWideHeader__menuButton__label {
-	display: inline-block;
-	float: right;
-	height: 100%;
-	color: white;
-	font-size: 7vh;
-	width: 10vw;
-	text-align: center;
+    font-size: 7vh;
+    width: 7vh;
+    color: white;
+    display: block;
+    text-align: center;
 }
 
 .siteWideHeader__linksContainer {
@@ -422,6 +427,10 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 	display: block;
 	height: 100vh;
 	background-color: black;
+	top: 7vh;
+	position: fixed;
+	width: 100%;
+	border-top: 0.1vh solid white;
 }
 
 .siteWideHeader__linksContainer__mainUnorderedList {
@@ -440,7 +449,7 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 .siteWideHeader__linksContainer__mainUnorderedList_listItem a {
 	color: white;
 	width: 100%;
-	padding-left: calc(12.5vh + 6vw);
+	padding-left: 15vh;
 	display: block;
 	letter-spacing: 0.1vh;
 }
@@ -461,7 +470,7 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 .siteWideHeader__linksContainer__secondaryUnorderedList__listItem a {
 	color: white;
 	width: 100%;
-	padding-left: calc(12.5vh + 6vw);
+	padding-left: 15vh;
 	display: block;
 	letter-spacing: 0.1vh;
 }
@@ -482,9 +491,12 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 /* Site Wide Footer */
 
 .siteWideFooter {
-	width: 80%;
 	padding: 5vh 10%;
 	background-color: black;
+	margin-top: 10vh;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	clear: both;
 }
 
 .siteWideFooter__section {
@@ -496,7 +508,7 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 	color: white;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1.75vw;
+	font-size: 1.75vmax;
 	margin-top: 6vh;
 	margin-bottom: 2vh;
 }
@@ -509,10 +521,10 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 
 .siteWideFooter__section__heading__unorderedList__listItem__link {
 	font-family: 'Inter', Sans-serif;
-	font-size: 3vw;
+	font-size: 1.85vmax;
 	color: white;
 	font-weight: 200;
-	line-height: 1.5;
+	line-height: 1.75;
 }
 		/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -3113,7 +3125,9 @@ explicitly, e.g.
 	font-weight: bold;
 }
 
-
+body {
+	margin-top: 10vh;
+}
 
 .productPage {
 
@@ -3125,11 +3139,12 @@ explicitly, e.g.
 }
 
 .productPage__product__headerOfProduct {
+	font-family: 'Noto Serif', Serif;
 }
 
 .productPage__product__headerOfProduct__heading {
-	font-size: 3.5vw;
-	font-family: 'Inter', Sans-serif;
+	font-size: 2vmax;
+	line-height: 1.25;
 	font-weight: bold;
 	color: #333;
 	margin: 1vh 0;
@@ -3138,10 +3153,8 @@ explicitly, e.g.
 .productPage__product__headerOfProduct__shortDescription {
 	font-weight: 400;
 	font-style: italic;
-	font-size: 0.85vw;
-	font-family: 'Inter', Sans-serif;
+	font-size: 1.2vmax;
 	color: #333;
-	margin: 2vh 0;
 }
 
 .productPage__product__featuredImageFigure {
@@ -3151,7 +3164,6 @@ explicitly, e.g.
 .productPage__product__featuredImageFigure_picture {
 	height: 50vh;
 	display: block;
-	background-color: #ededed;
 }
 
 .productPage__product__featuredImageFigure_picture img {
@@ -3162,11 +3174,11 @@ explicitly, e.g.
 }
 
 .productPage__product__featuredImageFigure__figcaption {
-	font-size: 0.8vw;
-	margin: 1vh 0;
+	font-size: 1.15vmax;
+	margin: 1.5vmax 0;
 	text-align: center;
 	font-family: 'Inter', Sans-serif;
-	font-weight: 500;
+	font-weight: 300;
 	font-style: italic;
 }
 
@@ -3183,6 +3195,8 @@ explicitly, e.g.
 	width: 25%;
 	padding-bottom: 25%;
 	float: left;
+	border: 0.25vmax solid white;
+	box-sizing: border-box;
 }
 
 .productPage__product__imageGallery__picture__image {
@@ -3208,108 +3222,125 @@ explicitly, e.g.
 	margin: 4vh 0;
 }
 
-.productPage__product__heading {
-	font-size: 1.25vw;
+.productPage__product__details__heading {
+	font-size: 1.75vmax;
 	font-family: 'Inter', Sans-serif;
 	font-weight: 800;
 	line-height: 2;
 }
 
 
-.productPage__product__heading i {
-	margin-right: 2vw;
+.productPage__product__details__heading i {
 }
 
-.productPage__product__unorderedList {
+.productPage__product__details__unorderedList {
 	margin: 2vh 0;
 }
 
-.productPage__product__unorderedList li {
-	font-size: 1.1vw;
+.productPage__product__details__unorderedList li {
+	font-size: 1.75vmax;
 	font-family: 'Inter', Sans-serif;
 	line-height: 1.5;
 }
 
-.productPage__product__unorderedList li strong {
+.productPage__product__details__unorderedList li strong {
 	font-weight: 600;
 }
 
-.productPage__product__priceBox {
-	font-family: 'Bitter', Sans-serif;
-	font-weight: bold;
-	font-size: 1.5vw;
-	clear: both;
-	text-align: right;
-	margin: 1.5vh 0;
-	color: blue;
-}
-
 .productPage__product__buyingOptions {
-	position: fixed;
-    bottom: 0;
-    z-index: 1000;
-    background-color: white;
-    width: 80%;
-    height: 10vh;
-    left: 0;
-    padding: 1vh 10%;
-    border-top: 1px solid #ddd;
-}
-
-.productPage__product__buyingOptions__contactToBuyLink {
-	display: block;
-	float: left;
-	font-family: 'Inter', Sans-serif;
-	line-height: 3;
-	text-align: center;
-	color: #777;
-	font-weight: 500;
-	font-size: 2.5vw;
-	border-radius: 1vw;
-	margin: 0 1vw 0 0;
-	padding: 0 1vw;
-	border: 0.1vw solid #ddd;
-}
-
-.productPage__product__buyingOptions__visitToBuyLink {
-	display: block;
-	float: left;
-	font-family: 'Inter', Sans-serif;
-	line-height: 3;
-	text-align: center;
-	color: #777;
-	font-weight: 500;
-	font-size: 2.5vw;
-	border-radius: 1vw;
-	margin: 0 1vw 0 0;
-	padding: 0 1vw;
-	border: 0.1vw solid #ddd;
+	display: grid;
+	width: 80vw;
 }
 
 .productPage__product__buyingOptions__addToCartButton {
-	display: block;
-	float: right;
-	font-family: 'Inter', Sans-serif;
-	line-height: 3;
-	text-align: center;
-	font-weight: 800;
-	font-size: 2.5vw;
-	border-radius: 1vw;
-	padding: 0 2vw;
-	background-color: blue;
+	font-family: 'Bitter', Serif;
+	font-weight: bold;
+	font-size: 2vh;
+	display: inline-block;
+	margin: 4vh auto;
 	color: white;
-	letter-spacing: 0.1vh;
+	background-color: blue;
+	text-align: center;
+	padding: 0 2vh;
+	border-radius: 1vh;
 }
 
 .productPage__product__buyingOptions__addToCartButton__price {
-	font-family: 'Bitter', Serif;
-	font-weight: bold;
-	border-right: 1px solid white;
-	margin-right: 1vw;
-	padding-right: 1vw;
-	height: 100%;
-	line-height: 3;
+	margin-right: 1.5vh;
+	padding: 2vh 2vh 2vh 0;
+	border-right: 0.1vh solid white;
 	display: inline-block;
+}
+
+.productPage__product__buyingOptions__otherOptions {
+	font-family: 'Inter', Sans-serif;
+	font-size: 2vh;
+	text-align: center;
+	color: #777;
+	font-weight: bold;
+}
+
+.productPage__product__buyingOptions__otherOptions__contactToBuyLink {
+	color: #777;
+	text-decoration: underline;
+	padding: 2vh;
+}
+
+.productPage__product__buyingOptions__otherOptions__visitToBuyLink {
+	color: #777;
+	text-decoration: underline;
+	padding: 2vh;
+}
+
+.productPage__product__shippingInfo {
+	font-family: 'Inter', Sans-serif;
+	font-size: 1.75vmax;
+	letter-spacing: 0.1vh;
+	background-color: black;
+	color: white;
+	padding: 5vmax;
+}
+
+.productPage__product__shippingInfo__heading {
+	font-weight: 800;
+	line-height: 2;
+}
+
+.productPage__product__shippingInfo__unorderedList {
+	line-height: 1.25;
+}
+
+.productPage__product__shippingInfo__unorderedList li {
+	margin: 1vmax 0 ;
+}
+
+.productPage__product__shippingInfo__unorderedList strong {
+	font-weight: bold;
+}
+
+.productPage__product__shippingInfo__unorderedList a {
+	color: #6565ff;
+	text-decoration: underline;
+}
+
+.productPage__product__certificateBox {
+	font-family: 'Inter', Sans-serif;
+	font-size: 1.75vmax;
+	letter-spacing: 0.1vh;
+	margin: 3vh 0;
+	padding-top: 3vh;
+	border-top: 0.1vh solid black;
+}
+
+.productPage__product__certificateBox__heading {
+	font-weight: 800;
+	line-height: 2;
+}
+
+.productPage__product__certificateBox__heading .fa.fa-file-text {
+}
+
+.productPage__product__certificateBox__paragraph {
 }
 		
 
@@ -3318,9 +3349,9 @@ explicitly, e.g.
 <body>
 	<header class="siteWideHeader">
 	<a href="/" class="siteWideHeader__logo"><img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Kostas Gogas Logo" title="Go to Homepage"></a>
-	<a href="/" class="siteWideHeader__site-title"><h2>Κώστας Γκόγκας<br/>
+	<a href="/" class="siteWideHeader__site-title"><h2><span>Κώστας Γκόγκας</span><br/>
 	
-	Δημιουργός / Καλλιτέχνης
+	Καλλιτέχνης
 	</h2>
 </a>
 	<input id="siteWideHeader__menuButton--toggle" class="siteWideHeader__menuButton" type="checkbox">
@@ -3355,13 +3386,12 @@ explicitly, e.g.
 	</picture>
 	<figcaption class="productPage__product__featuredImageFigure__figcaption">Colors may look different from screen to screen and in real life.</figcaption>
 </figure>
-	<div class="productPage__product__priceBox">
-	€ 199.97
-</div>
 	<div class="productPage__product__buyingOptions">
-	<a class="productPage__product__buyingOptions__contactToBuyLink" href="#">Contact</a>
-	<a  class="productPage__product__buyingOptions__visitToBuyLink" href="#">Visit to Buy</a>		
 	<a href="" class="productPage__product__buyingOptions__addToCartButton"><span class="productPage__product__buyingOptions__addToCartButton__price">€ 199.97</span> Buy</a>
+
+	<aside class="productPage__product__buyingOptions__otherOptions">
+	<a href="#" class="productPage__product__buyingOptions__otherOptions__contactToBuyLink">Contact</a> or <a href="#" class="productPage__product__buyingOptions__otherOptions__visitToBuyLink">Visit to Buy</a>
+</aside>
 
 </div>
 
@@ -3412,8 +3442,8 @@ explicitly, e.g.
 	<figcaption class="productPage__product__imageGallery__figcaption">Click on an image for a closer look.</figcaption>
 </figure>
 	<aside class="productPage__product__details">
-	<h2 class="productPage__product__heading"><i class="fa fa-info-circle"></i> Artwork Details</h2>
-	<ul class="productPage__product__unorderedList">	
+	<h2 class="productPage__product__details__heading"><i class="fa fa-info-circle"></i> Artwork Details</h2>
+	<ul class="productPage__product__details__unorderedList">	
 		<li><strong>Τίτλος:</strong> Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</li>
 		<li><strong>Καλλιτέχνης:</strong> Κώστας Γκόγκας</li>
 		<li><strong>Χρονολογία:</strong> 20X9</li>
@@ -3424,13 +3454,27 @@ explicitly, e.g.
 		<li><strong>Ύψος:</strong> 29.7cm</li>
 		<li><strong>Πάχος:</strong> 0.01cm</li>
 	</ul>
-	<ul class="productPage__product__unorderedList">
+	<ul class="productPage__product__details__unorderedList">
 		<li><strong>Βάρος:</strong> plchldr</li>
 		<li><strong>id:</strong> plchldr</li>
 	</ul>
 </aside>
 
-	
+	<aside class="productPage__product__shippingInfo">
+	<h2 class="productPage__product__shippingInfo__heading"><i class="fa fa-truck" aria-hidden="true"></i>
+ Shipping Information</h2>
+	<ul class="productPage__product__shippingInfo__unorderedList">
+	<li>We are currently shipping in Europe & UK only.</li>
+	<li>We provide standard shipping and dispatch your art from Greece, ussualy it takes 7-15 days.</li>
+	<li><strong>If 15 days have passsed and you haven't received your art, please feel free to <a href="">contact me here</a>.</strong></li>
+	</ul>
+</aside>
+	<aside class="productPage__product__certificateBox">
+	<h3 class="productPage__product__certificateBox__heading"><i class="fa fa-file-text" aria-hidden="true"></i> Certificate of Authenticity</h3>
+	<p class="productPage__product__certificateBox__paragraph">
+		All our artworks come with a <strong>Certificate of Authenticity</strong> signed by the artist.
+	</p>
+</aside>
 </article>
 
 </div>
@@ -3457,6 +3501,7 @@ explicitly, e.g.
 	<section class="siteWideFooter__section">
 		<h3 class="siteWideFooter__section__heading">Information</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
+			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">Contact</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">Privacy Policy</a></li>
 		</ul>
@@ -3467,7 +3512,7 @@ explicitly, e.g.
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="http://eepurl.com/c5g1PH" class="siteWideFooter__section__heading__unorderedList__listItem__link">Mailing List</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://facebook.com/kostasgogasart" class="siteWideFooter__section__heading__unorderedList__listItem__link">Facebook</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://instagram.com/kostasgogasart" class="siteWideFooter__section__heading__unorderedList__listItem__link">Instagram</a></li>
-			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://youtube.com/c/user/akneyone" class="siteWideFooter__section__heading__unorderedList__listItem__link">YouTube</a></li>
+			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://youtube.com/user/akneyone" class="siteWideFooter__section__heading__unorderedList__listItem__link">YouTube</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://linkedin.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">LinkedIn</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://pinterest.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">Pinterest</a></li>
 		</ul>
