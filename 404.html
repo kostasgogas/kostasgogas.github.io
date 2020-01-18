@@ -526,6 +526,65 @@ input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__
 	font-weight: 200;
 	line-height: 1.75;
 }
+
+
+
+/* Data Consent Privacy Policy */
+
+.siteWideCookieNotice {
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	background-color: black;
+	padding: 2vmax;
+
+	display: grid;
+	grid-template-columns: 74% 25%;
+	grid-column-gap: 1%;
+	grid-template-rows: 40% 50%;
+}
+
+.siteWideCookieNotice__heading {
+	color: white;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.1vmax;
+	font-size: 1.5vmax;
+	margin: 0.5vmax 0;
+
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+.siteWideCookieNotice__paragraph {
+	color: white;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.1vmax;
+	font-size: 1.5vmax;
+	margin: 0.5vmax 0;
+	/* layout */
+	grid-column-start: 1;
+	grid-row-start: 2;
+}
+
+.siteWideCookieNotice__closeButton {
+	background-color: black;
+	border: 0.2vmax solid white;
+	color: white;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 500;
+	width: 90%;
+	height: 100%;
+	display: block;
+	font-size: 2vh;
+	border-radius: 0.2vmax;
+	/* layout */
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
 		/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2955,5 +3014,50 @@ try looking at some art instead.
 		</ul>
 	</section>
 </footer>
+
+	<!-- Add javascript cookie for returning users  -->
+
+<!-- CSS Style
+make it one black line at the bottom
+ -->
+
+
+<aside class="siteWideCookieNotice" id="siteWideCookieNoticeJsAnchor">
+	<h3 class="siteWideCookieNotice__heading">Data Consent</h3>
+	<p class="siteWideCookieNotice__paragraph">By continue using this site you agree to our <a target="_blank"href="/privacy-policy.html">Privacy Policy</a>.</p>
+	<button class="siteWideCookieNotice__closeButton" onclick="functionSiteWideCookieNoticeClose()">Close</button>
+</aside>
+
+
+
+
+<!-- TODO: first check if cookie gdpr preference is set -->
+
+<!-- BUT I THINK IT ALREADY DOES -->
+
+<script type="text/javascript">
+	// Get the modal
+	var modalGDPR = document.getElementById("siteWideCookieNoticeJsAnchor");
+
+	// Get the <span> element that closes the modal
+	var closeModalGDPR = document.getElementsByClassName("siteWideCookieNotice__closeButton")[0];
+
+	// When the user clicks on <button> (x), close the modal
+	closeModalGDPR.onclick = function() {
+		modalGDPR.style.display = "none";
+		// set cookies and set expiration date
+		// the cookie in general looks like this: cookietext;max-age=3450000; (the maximum age is defined in seconds = so for 60 days we do it ike this: 60 seconds TIMES 60 minutes TIMES 24hours TIMES 60 days)
+		document.cookie = "Accepted by closing;max-age=" + (60 * 60 * 24 * 60) + ";";
+	}
+
+	// Read the cookie - if the user has already set it
+	window.onload = function() {
+		// if the cookie isn't zero - then it contains 'something' (it's already there)
+		if (document.cookie.length !=  0) {
+			modalGDPR.style.display = "none";
+			console.log("Cookie preference already set.");
+		}
+	}
+</script>
 </body>
 </html>
