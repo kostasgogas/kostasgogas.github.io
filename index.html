@@ -2962,6 +2962,17 @@ this here is just to copy the 'icons' css as needed */
 		<li class="siteWideHeader__linksContainer__secondaryUnorderedList__listItem"><a href="/">Change to English Site</a></li>
 	</ul>
 </nav>
+
+
+<!-- Ελληνικά
+
+Έργα
+
+Κατάστημα
+
+Σχετικά
+
+ -->
 </header>
 
 
@@ -2969,7 +2980,7 @@ this here is just to copy the 'icons' css as needed */
 	.homepageSectionOfficialShop {
 		background-color: black;
 		padding: 10vw;
-		height: 100vh;
+		text-align: center;
 	}
 
 	.homepageSectionOfficialShop__heading {
@@ -2978,21 +2989,17 @@ this here is just to copy the 'icons' css as needed */
 		font-size: 3vmax;
 		font-weight: 500;
 		text-align: center;
+		line-height: 1.2;
+		margin: 20vh auto;
 	}
 
 	.homepageSectionOfficialShop__button {
-		background-color: blue;
 		color: white;
-		font-family: 'Inter', Sans-serif;
-		font-size: 2.25vh;
-		font-weight: 500;
-		text-align: center;
-		display: block;
-		width: 60vw;
-		margin: 10vw;
-		padding: 5vw 0;
-		position: absolute;
-		bottom: 10vh;
+		background-color: blue;
+		padding: 4vw;
+		font-size: 3vw;
+		font-family: 'Inter', serif;
+		border-radius: 1vw;
 	}
 
 	.homepageSectionOfficialShop__button__angleRight {
@@ -3001,57 +3008,75 @@ this here is just to copy the 'icons' css as needed */
 
 	.homepageSectionFreshOriginalArt {
 		background-color: blue;
-		height: 100vh;
+		background-image: url("/assets/temp/green-creature-product.jpg");
 		padding: 10vw;
+		background-size: cover;
+		background-attachment: fixed;
 	}
 
 	.homepageSectionFreshOriginalArt__heading {
 		color: white;
-		font-size: 7vh;
+		font-size: 5vh;
 		font-family: 'Inter', Sans-serif;
 		font-weight: 700;
-		margin-bottom: 10vw;
 		line-height: 1.25;
+		background-color: blue;
+		display: inline-block;
+		padding: 5vmin;
+		text-transform: uppercase;
 	}
 
 	.homepageSectionFreshOriginalArt__paragraph {
 		color: white;
 		font-family: 'Inter', Sans-serif;
 		font-weight: 400;
-		letter-spacing: 0.1vh;
 		font-size: 3vh;
 		line-height: 1.2;
+		background-color: blue;
+		padding: 5vmin;
+		width: 70vw;
+		display: block;
+		margin: 10vh 0 5vh;
 	}
 
 	.homepageSectionFindOriginalArt {
-
+		padding: 10vw;
+		background-image: url("assets/temp/original-art-homepage.jpg");
+		background-color: beige;
+		object-fit: cover;
+		background-repeat: no-repeat;
 	}
 
 	.homepageSectionFindOriginalArt__heading {
-
+		color: black;
+		font-size: 5vh;
+		font-family: 'Inter', Sans-serif;
+		font-weight: 600;
+		margin: 5vh 0;
 	}
 
 	.homepageSectionFindOriginalArt__paragraph {
+		color: white;
+		font-family: 'Inter', Sans-serif;
+		font-size: 3vh;
 
 	}
 
 	.homepageSectionSmallScale {
 		background-color: white;
-		height: 100vh;
 		padding: 10vw;
 	}
 
 	.homepageSectionSmallScale__heading {
-		color: purple;
+		color: #8a8479;
 		font-family: 'Noto Serif', Serif;
 		font-size: 5vh;
 		text-align: center;
 		margin: 0 10vw 10vw;
 	}
 
-	.homepageSectionSmallScale__picture {
+	.homepageSectionSmallScale__img {
 		width: 20vw;
-		height: 29.7vw;
 		background-color: white;
 		-webkit-box-shadow: 5px 5px 40px 0px rgba(0,0,0,0.29);
 		-moz-box-shadow: 5px 5px 40px 0px rgba(0,0,0,0.29);
@@ -3064,6 +3089,26 @@ this here is just to copy the 'icons' css as needed */
 		font-family: 'Noto Serif', Serif;
 		font-size: 2.75vh;
 		line-height: 1.35;
+		color: #8a8479;
+	}
+
+	.homepageSectionSmallScale__paragraph__hr {
+		color: #8a8479;
+		width: 50vw;
+	}
+
+	.homepageSectionSmallScale__paragraph__strongEm {
+		font-weight: bold;
+	}
+
+	.homepageSectionSmallScale__paragraph__footnote {
+		font-family: 'Noto Serif', Serif;
+		font-size: 2.75vh;
+		line-height: 1.35;
+		color: #8a8479;
+		font-style: italic;
+		margin-top: 5vh;
+		display: block;
 	}
 
 	.homepageSectionTrulyIndependentArtist {
@@ -3087,7 +3132,6 @@ this here is just to copy the 'icons' css as needed */
 		color: black;
 		font-family: 'Inter', Sans-serif;
 		font-size: 3vh;
-		letter-spacing: 0.1vh;
 		line-height: 1.2;
 		margin-top: 5vh;
 	}
@@ -3115,15 +3159,58 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.homepageSectionArtistOwnedBusiness {
-
+		background-color: #222;
+		padding: 10vw;
 	}
 
 	.homepageSectionArtistOwnedBusiness__heading {
+		color: yellow;
+		font-family: 'Inter', Serif;
+		text-transform: uppercase;
+		font-size: 5vmax;
+		font-weight: 800;
+		line-height: 1.3;
+		margin: 5vh 0;
+	}
 
+	.homepageSectionArtistOwnedBusiness__subtitle {
+		color: white;
+		font-family: 'Inter', Serif;
+		font-size: 3vmax;
+		line-height: 1.5;
+		font-weight: 500;
+		margin: 5vh 0;
+		text-transform: uppercase;
+		border-left: 1px solid yellow;
+		padding-left: 5vw;
 	}
 
 	.homepageSectionArtistOwnedBusiness__paragraph {
+		color: white;
+		font-family: 'Inter', Serif;
+		font-size: 3vmax;
+		line-height: 1.2;
+		font-weight: 500;
+		margin: 5vh 0;
+	}
 
+	.homepageSectionArtistOwnedBusiness__paragraph__em {
+		display: block;
+		margin-top: 2vh;
+		font-weight: 400;
+		font-style: italic;
+		color: gray;
+		font-size: 2.5vmax;
+	}
+
+	.homepageSectionArtistOwnedBusiness__footer {
+		color: yellow;
+		font-family: 'Inter', Serif;
+		font-size: 3vmax;
+		line-height: 1.2;
+		font-weight: 500;
+		margin: 5vh 0;
+		text-transform: uppercase;
 	}
 
 	.homepageSectionFrom25Dollars {
@@ -3151,15 +3238,65 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.homepageSectionBasedInGreece {
-
+		background-color: #f1d1ab;
+		padding: 5vh 0;
 	}
 
 	.homepageSectionBasedInGreece__heading {
-
+		color: #754925;
+		font-family: 'Noto Serif', serif;
+		font-weight: bold;
+		margin: 5vh;
+		text-align: center;
+		font-size: 4vmax;
+		line-height: 1.3;
 	}
 
 	.homepageSectionBasedInGreece__paragraph {
+		color: #754925;
+		font-family: 'Noto Serif', serif;
+		margin: 5vh auto;
+		font-size: 3vmax;
+		line-height: 1.4;
+		width: 80vw;
+	}
 
+	.homepageSectionBasedInGreece__paragraph__emphasis {
+		font-style: italic;
+	}
+
+	.homepageSectionBasedInGreece__filadelfeiaFigure {
+		margin: 5vh auto;
+	}
+
+	.homepageSectionBasedInGreece__filadelfeiaFigure__picture {
+
+	}
+
+	.homepageSectionBasedInGreece__filadelfeiaFigure__picture__img {
+		width: 80vw;
+		margin: auto;
+		object-fit: contain;
+		display: block;
+	}
+
+	.homepageSectionBasedInGreece__filadelfeiaFigure__figcaption {
+		font-family: 'Inter', sans-serif;
+		font-weight: 300;
+		font-size: 1.75vmax;
+		line-height: 1.25;
+		width: 80vw;
+		margin: auto;
+		text-align: center;
+		color: #754925;
+		font-style: italic;
+		margin: 2vmax auto;
+	}
+
+	.homepageSectionBasedInGreece__filadelfeiaFigure__figcaption__link {
+		color: brown;
+		font-weight: 500;
+		text-decoration: underline;
 	}
 
 	.homepageSectionSecureByDesign {
@@ -3250,23 +3387,23 @@ this here is just to copy the 'icons' css as needed */
 	<p class="homepageSectionFindOriginalArt__paragraph">
 		Find art that is actually original.<br/>
 		Not prints (or even worse ‘posters’) advertised as ‘original’.
-</p>
+	</p>
 </section>
 
 <section class="homepageSectionSmallScale">
-	<h2 class="homepageSectionSmallScale__heading">Small Scale</h2>
-	<picture class="homepageSectionSmallScale__picture"></picture>
+	<h2 class="homepageSectionSmallScale__heading">Small Scale Art</h2>
+	<img class="homepageSectionSmallScale__img" src="assets/temp/headache-product.jpg">
 	<p class="homepageSectionSmallScale__paragraph">
-		Kostas Gogas has been creating works on paper with pencils and pens for the whole span of his career.<br/>
-		A cureated collection of exceptional black and white sketches can be find on the shop (more and more are coming).<br/><br/>
-
-		+ If you discover something on the site that is not listed in the shop, feel free to inquire about it.</p>
+		Drawing has always been the artist's favorite activity. There is an enormous number of small scale work on paper made with pencils or pens.<br/><br/>
+		<strong class="homepageSectionSmallScale__paragraph__strongEm">A curated collection of exceptional black and white sketches can be found on the shop (more and more are coming).</strong><br/><br/>
+		<hr class="homepageSectionSmallScale__paragraph__hr">
+		<em class="homepageSectionSmallScale__paragraph__footnote">+ If you discover something on the site that is not listed in the shop, feel free to inquire about it.</em></p>
 </section>
 
 <section class="homepageSectionTrulyIndependentArtist">
 	<h2 class="homepageSectionTrulyIndependentArtist__heading">Truly Independent Artist</h2>
 	<p class="homepageSectionTrulyIndependentArtist__paragraph">
-		Kostas Gogas has been leading an independent career and asserting his own vision from his early days of graffiti activity, or when producing hip-hop records with Ansia and later producing and directing his first feature film.
+		Kostas Gogas has been leading an independent career and asserting his own vision from his early days of graffiti activity, or when producing hip-hop records and later producing and directing his first feature film.
 	</p>
 
 	<p class="homepageSectionTrulyIndependentArtist__paragraph">
@@ -3280,11 +3417,19 @@ this here is just to copy the 'icons' css as needed */
 
 <section class="homepageSectionArtistOwnedBusiness">
 	<h2 class="homepageSectionArtistOwnedBusiness__heading">Artist Owned Business</h2>
-	<p  class="homepageSectionArtistOwnedBusiness__paragraph">
-		No platforms, no representatives, no gallerists or auction houses.<br/>
+	<p class="homepageSectionArtistOwnedBusiness__subtitle">
+		No platforms <br/>
+		No representatives <br/>
+		No gallerists <br/>
+		or auction houses.
+	</p>
+	<p class="homepageSectionArtistOwnedBusiness__paragraph">
 		Connect directly with a business that is actually owned and operated by the artist himself.<br/>
-		Our online gallery is designed itself by the artist himself.<br/>
-		Welcome inside the true world of the artist</p>
+		<em class="homepageSectionArtistOwnedBusiness__paragraph__em">Even this page your are browsing right now is designed by the artist himself.</em>
+	</p>
+	<footer class="homepageSectionArtistOwnedBusiness__footer">
+		Welcome inside the true world of the artist
+	</footer>
 </section>
 
 <section class="homepageSectionFrom25Dollars">
@@ -3312,10 +3457,21 @@ this here is just to copy the 'icons' css as needed */
 </section>
 
 <section class="homepageSectionBasedInGreece">
-	<h2 class="homepageSectionBasedInGreece__heading">We are based in Greece</h2>
+	<h2 class="homepageSectionBasedInGreece__heading">We are based in Nea Filadelfeia, Greece</h2>
 	<p class="homepageSectionBasedInGreece__paragraph">
-		The artist is based in Nea Filadelfeia, his hometown. The spirit of this suburb is one of open-heartedness to foreigners and people coming from different backgrounds as the city’s name itself comes from the Anatolian city Filadelfeia where Greek Refugees fled from after the Greco-Turkish war between 1912-1922.
+		..which is also the artist's hometown. Located near Athens, the spirit of our small suburb is one of open-heartedness to foreigners and people coming from different backgrounds as the city’s name itself comes from the Anatolian city <em class="homepageSectionBasedInGreece__paragraph__emphasis">'Filadelfeia'</em> where Greek refugees fled from after the Greco-Turkish war between 1912-1922.
 	</p>
+	<figure class="homepageSectionBasedInGreece__filadelfeiaFigure">
+		<picture class="homepageSectionBasedInGreece__filadelfeiaFigure__picture">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Nea_Filadelfia_lake.JPG/1200px-Nea_Filadelfia_lake.JPG" alt="Nea Filadelfia lake" class="homepageSectionBasedInGreece__filadelfeiaFigure__picture__img">
+		</picture>
+		<figcaption class="homepageSectionBasedInGreece__filadelfeiaFigure__figcaption">
+			Nea Filadelfeia Park by <a href="//commons.wikimedia.org/wiki/User:Dimkoa" title="User:Dimkoa" target="_blank" rel="noopener" class="homepageSectionBasedInGreece__filadelfeiaFigure__figcaption__link">
+				dimkoa
+			</a>, Own work, Public Domain,
+			<a href="https://en.wikipedia.org/wiki/Nea_Filadelfeia#/media/File:Nea_Filadelfia_lake.JPG" target="_blank" rel="noopener" class="homepageSectionBasedInGreece__filadelfeiaFigure__figcaption__link">Link to Original Image</a>
+		</figcaption>
+	</figure>
 </section>
 
 <section class="homepageSectionSecureByDesign">
@@ -3436,6 +3592,18 @@ this here is just to copy the 'icons' css as needed */
 		</ul>
 	</section>
 </footer>
+
+
+<!-- Include Site Credits Link
+
+Credits Page
+Jekyll
+Fontawesome
+CSS Reset
+Icon Credits
+BEM CSS Methodology
+Atomic Design CSS
+ -->
 
 	<!-- Add javascript cookie for returning users  -->
 
