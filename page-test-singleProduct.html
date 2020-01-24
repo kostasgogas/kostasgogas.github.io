@@ -3306,6 +3306,80 @@ body {
 	font-weight: 600;
 }
 
+
+.productPage__product__medium {
+	margin: 4vh 0;
+	padding-top: 5vw;
+	border-top: 0.1vh solid black;
+	display: grid;
+	grid-template-columns: 25vw auto;
+}
+
+.productPage__product__medium__image {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	width: 100%;
+}
+
+.productPage__product__medium__container {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	text-align: right;
+	padding: 5vw;
+}
+
+.productPage__product__medium__container__title {
+	font-size: 2.75vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 800;
+    margin-bottom: 1.5vmax;
+}
+
+.productPage__product__medium__container__content {
+	font-size: 2.5vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+
+.productPage__product__surface {
+	margin: 4vh 0;
+	padding-top: 5vw;
+	border-top: 0.1vh solid black;
+	display: grid;
+	grid-template-columns: 25vw auto;
+}
+
+.productPage__product__surface__image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.productPage__product__surface__container {
+	text-align: right;
+	padding: 5vw;
+}
+
+.productPage__product__surface__container__title {
+	font-size: 2.75vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 800;
+    margin-bottom: 1.5vmax;
+}
+
+.productPage__product__surface__container__content {
+	font-size: 2.5vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+
+
 .productPage__product__buyingOptions {
 	display: grid;
 	width: 80vw;
@@ -3511,6 +3585,59 @@ input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggl
 
 .productPage__product__certificateBox__paragraph {
 }
+
+
+
+
+.productPage__product__certificate {
+	margin: 4vh 0;
+	padding-top: 5vw;
+	border-top: 0.1vh solid black;
+	display: grid;
+	grid-template-columns: 25vw auto;
+}
+
+.productPage__product__certificate__image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.productPage__product__certificate__container {
+	text-align: right;
+	padding: 5vw;
+}
+
+.productPage__product__certificate__container__title {
+	font-size: 2.75vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 800;
+    margin-bottom: 1.5vmax;
+}
+
+.productPage__product__certificate__container__content {
+	font-size: 2.5vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+
+
+.productPage__product__certificate__container__learnMore {
+	font-size: 2.5vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 300;
+	text-align: right;
+	color: blue;
+	text-decoration: underline;
+	margin: 5vw 0 0;
+	display: block;
+}
+
+.productPage__product__certificate__container__learnMore_angleRight {
+	padding-right: 1vmax;
+}
 		
 
 	</style>
@@ -3653,6 +3780,25 @@ input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggl
 	</ul>
 </aside>
 
+
+	<!-- Include the new split things -->
+
+
+	<aside class="productPage__product__medium">
+	<img src="assets/temp/medium-image-color.png" class="productPage__product__medium__image">
+	<div class="productPage__product__medium__container">
+		<h3 class="productPage__product__medium__container__title">Medium</h3>
+		<p class="productPage__product__medium__container__content">Μολύβι</p>
+	</div>
+</aside>
+	<aside class="productPage__product__surface">
+	<img src="assets/temp/surface-image.png" class="productPage__product__surface__image">
+	<div class="productPage__product__surface__container">
+		<h3 class="productPage__product__surface__container__title">Surface</h3>
+		<p class="productPage__product__surface__container__content">Τυπογραφικό Χαρτί 80γρ.</p>
+	</div>
+</aside>
+
 	
 	
 	<aside class="productPage__product__shippingInfo">
@@ -3674,12 +3820,58 @@ input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggl
 	</ol>
 	<p class="productPage__product__packagingInfo__paragraph">If you are afraid of your</p>
 </aside>
-	<aside class="productPage__product__certificateBox">
+	<aside class="productPage__product__condition">
+
+<!-- Write an if loop for warnings
+	- excellence
+	- minor
+	- major
+ -->
+
+	<div class="productPage__product__condition--major">
+		<header class="productPage__product__condition--major__header">
+			<h3>Minor Warning</h3>
+			<p>This box intends to provide complete transparency about the condition of each art piece.</p>
+		</header>
+		<section class="productPage__product__condition--major__content">
+			<h4>Notes about <strong></strong></h4>
+			<p>
+				Some glue remains behind it from a temporary attachment on another paper for display purposes in the past.
+			</p>
+		</section>
+	</div>
+
+	<div class="productPage__product__condition--minor">
+		
+	</div>
+
+	<div class="productPage__product__condition--excellence">
+		
+	</div>
+
+
+	<footer class="productPage__product__condition__footer">
+		The warnings can be none (green), minor (red) or major (orange). No warnings means that the artwork is in excellent or close to excellence condition, we may still include notes there. Minor warnings can be things like folded or roughed up paper, or some glue behind it. Things that don't affect the artwork too much. While Major warnings are things that really affect the way the artwork looks or something that it's important to know.
+	</footer>
+
+</aside>
+	<aside class="productPage__product__certificate">
+	<img src="assets/temp/certificate-image.png" class="productPage__product__certificate__image">
+	<div class="productPage__product__certificate__container">
+		<h3 class="productPage__product__certificate__container__title">Certificate of Authenticity</h3>
+		<p class="productPage__product__certificate__container__content">All our artworks come with a <strong>Certificate of Authenticity</strong> signed by the artist.</p>
+		<a href="#" class="productPage__product__certificate__container__learnMore"><i class="fa fa-angle-right productPage__product__certificate__container__learnMore_angleRight" aria-hidden="true"></i>learn more</a>
+	</div>
+</aside>
+
+
+<!-- 
+<aside class="productPage__product__certificateBox">
 	<h3 class="productPage__product__certificateBox__heading"><i class="fa fa-file-text" aria-hidden="true"></i> Certificate of Authenticity</h3>
 	<p class="productPage__product__certificateBox__paragraph">
 		All our artworks come with a <strong>Certificate of Authenticity</strong> signed by the artist.
 	</p>
-</aside>
+</aside> -->
 </article>
 
 </div>
