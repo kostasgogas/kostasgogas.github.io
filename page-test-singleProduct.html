@@ -3380,34 +3380,62 @@ body {
 
 
 
-.productPage__product__buyingOptions {
-	display: grid;
-	width: 80vw;
-}
 
-.productPage__product__buyingOptions__addToCartButton {
-	font-family: 'Bitter', Serif;
-	font-weight: bold;
-	font-size: 2vh;
-	display: inline-block;
-	margin: 4vh auto;
-	color: white;
-	background-color: blue;
+
+.productPage__product__addToCartBox {
 	text-align: center;
-	padding: 0 2vh;
-	border-radius: 1vh;
+	margin: 10vw 0;
 }
 
-.productPage__product__buyingOptions__addToCartButton__price {
-	margin-right: 1.5vh;
-	padding: 2vh 2vh 2vh 0;
-	border-right: 0.1vh solid white;
+.productPage__product__addToCartBox__price {
+	color: black;
+
+	font-family: 'Bitter', Serif;
+
+	margin: 5vw 0;
+
+}
+
+
+.productPage__product__addToCartBox__price__euroIcon {
+	font-weight: normal;
+	font-size: 3vmax;
+}
+
+.productPage__product__addToCartBox__price__euro {
+	font-size: 4vmax;
+	font-weight: bold;
+}
+
+.productPage__product__addToCartBox__price__cents {
+	font-size: 2.45vmax;
+	font-weight: bold;
+	vertical-align: super;
+}
+
+
+.productPage__product__addToCartBox__buyButton {
+	background-color: blue;
+	color: white;
+
+	font-family: 'Inter', Sans-Serif;
+	font-size: 2.5vmax;
+	font-weight: 500;
+	letter-spacing: 0.1vmin;
+
+	padding: 4vw 12vw;
 	display: inline-block;
+
+	border-radius: 1vmax;
+
+	-webkit-box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
+	-moz-box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
+	box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
 }
 
-.productPage__product__buyingOptions__otherOptions {
+.productPage__product__contactToBuy {
 }
-.productPage__product__buyingOptions__otherOptions__heading {
+.productPage__product__contactToBuy__heading {
 	font-size: 2.25vmax;
 	font-family: 'Inter', Sans-serif;
 	text-align: center;
@@ -3416,7 +3444,7 @@ body {
 	line-height: 1.5;
 }
 
-.productPage__product__buyingOptions__otherOptions__paragraph {
+.productPage__product__contactToBuy__paragraph {
 	font-size: 2vmax;
 	font-family: 'Inter', Sans-serif;
 	text-align: center;
@@ -3425,15 +3453,15 @@ body {
 	line-height: 1.5;
 }
 
-#productPage__product__buyingOptions__otherOptions__revealFormButton--toggle {
+#productPage__product__contactToBuy__revealFormButton--toggle {
 
 }
 
-.productPage__product__buyingOptions__otherOptions__revealFormButton {
+.productPage__product__contactToBuy__revealFormButton {
 	display: none;
 }
 
-.productPage__product__buyingOptions__otherOptions__revealFormButton__label {
+.productPage__product__contactToBuy__revealFormButton__label {
     font-size: 3vmax;
     width: 40vw;
     padding: 1.5vmax 0;
@@ -3447,40 +3475,78 @@ body {
 	border: 0.2vmax solid #777;
 	background-color: white;
 	color: #777;
+
+	/* the rest to normal after change */
+	position: inherit;
+    top: unset;
+	z-index: initial;
 }
 
-.productPage__product__buyingOptions__otherOptions__revealFormButton__label:after {
+.productPage__product__contactToBuy__revealFormButton__label:after {
 	font-family: FontAwesome;
 	content: "\f105";
 	padding-left: 1vmax;
 }
 
 
-
-
-
-.productPage__product__buyingOptions__otherOptions__formContainer {
+.productPage__product__contactToBuy__formContainer {
     display: none;
 }
 
-input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggle:checked + .productPage__product__buyingOptions__otherOptions__revealFormButton__label + .productPage__product__buyingOptions__otherOptions__formContainer {
+input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__revealFormButton__label + .productPage__product__contactToBuy__formContainer {
  	display: block;
-	width: 80vw;
-	margin: 2vmax auto 3vmax;
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 /* Change the style of label when is pressed*/
-input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggle:checked + .productPage__product__buyingOptions__otherOptions__revealFormButton__label {
-    color: white;
-    background-color: #777;
+input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__revealFormButton__label {
+	position: fixed;
+	top: 0;
+	z-index: 99999;
 }
 
-/* change the angle icon to UP when pressed */
-input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggle:checked + .productPage__product__buyingOptions__otherOptions__revealFormButton__label:after {
-	content: "\f106";
+/* change the angle icon to BACK when pressed */
+input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__revealFormButton__label:before {
+	content: "Go Back";
 }
 
-.productPage__product__buyingOptions__otherOptions__formContainer__nameField {
+.productPage__product__contactToBuy__formContainer__header {
+	width: 80vw;
+	margin: 5vw auto;
+}
+
+.productPage__product__contactToBuy__formContainer__header__picture {
+	
+}
+
+.productPage__product__contactToBuy__formContainer__header__picture__image {
+	width: 100%;
+	height: 20vmax;
+	object-fit: contain;
+	margin: 5vmax auto;
+}
+
+.productPage__product__contactToBuy__formContainer__header__title {
+	font-family: 'Inter', Sans-serif;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1.25;
+	font-size: 4vw;
+
+	color: white;
+}
+
+.productPage__product__contactToBuy__formContainer__header__title__name {
+	font-weight: 700;
+}
+
+.productPage__product__contactToBuy__formContainer__nameField {
 	display: block;
 	width: 50vw;
 	height: 6vw;
@@ -3493,7 +3559,7 @@ input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggl
 	font-size: 2vmax;
 }
 
-.productPage__product__buyingOptions__otherOptions__formContainer__emailField {
+.productPage__product__contactToBuy__formContainer__emailField {
 	display: block;
 	width: 50vw;
 	height: 6vw;
@@ -3506,7 +3572,7 @@ input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggl
 	font-size: 2vmax;
 }
 
-.productPage__product__buyingOptions__otherOptions__formContainer__messageField {
+.productPage__product__contactToBuy__formContainer__messageField {
 	display: block;
 	width: 50vw;
 	height: 25vw;
@@ -3519,7 +3585,7 @@ input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggl
 	font-size: 2vmax;
 }
 
-.productPage__product__buyingOptions__otherOptions__formContainer__submitButton {
+.productPage__product__contactToBuy__formContainer__submitButton {
 	display: block;
 	width: 50vw;
 	height: 8vw;
@@ -3693,28 +3759,44 @@ input#productPage__product__buyingOptions__otherOptions__revealFormButton--toggl
 	</picture>
 	<figcaption class="productPage__product__featuredImageFigure__figcaption">Colors may look different from screen to screen and in real life.</figcaption>
 </figure>
-	
+	<div class="productPage__product__addToCartBox">
+	<p class="productPage__product__addToCartBox__price">
+		<span class="productPage__product__addToCartBox__price__euroIcon">€</span> 
 
-<div class="productPage__product__buyingOptions">
-	<script src="https://gumroad.com/js/gumroad.js"></script>
-
-<a href="https://gum.co/zIZken?wanted=true" target="_blank"  class="productPage__product__buyingOptions__addToCartButton"><span class="productPage__product__buyingOptions__addToCartButton__price">€ 199.97</span> Buy</a>
-	<aside class="productPage__product__buyingOptions__otherOptions">
-	<h2 class="productPage__product__buyingOptions__otherOptions__heading">Got Questions?</h2>
-	<p class="productPage__product__buyingOptions__otherOptions__paragraph">Ask me anything or come and meet and buy it up close.</p>
-	<input id="productPage__product__buyingOptions__otherOptions__revealFormButton--toggle" class="productPage__product__buyingOptions__otherOptions__revealFormButton" type="checkbox">
-	<label for="productPage__product__buyingOptions__otherOptions__revealFormButton--toggle" class="productPage__product__buyingOptions__otherOptions__revealFormButton__label" tabindex="1">I have a question</label>
-	<form class="productPage__product__buyingOptions__otherOptions__formContainer" method="post" action="https://forms.un-static.com/forms/f7edf75a640ca11b5f673095f73097bc45f54f30">
-		<input class="productPage__product__buyingOptions__otherOptions__formContainer__nameField" type="text" name="name" placeholder="Enter your name" required>
-		<input class="productPage__product__buyingOptions__otherOptions__formContainer__emailField" type="email" name="email" placeholder="Enter your e-mail address" required>
-		<input type="hidden" name="subject" value="Ερώτηση για 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες'" required>
-		<textarea class="productPage__product__buyingOptions__otherOptions__formContainer__messageField" name="message" placeholder="Your message.."></textarea>
-		<button class="productPage__product__buyingOptions__otherOptions__formContainer__submitButton" type="submit">Send</button>
-	</form>
-</aside>
+		
+		<span class="productPage__product__addToCartBox__price__euro">199</span><sup class="productPage__product__addToCartBox__price__cents">.97
+		</sup>
+	</p>
+	<a href="#" class="productPage__product__addToCartBox__buyButton">Buy</a>
 </div>
 
 
+	<aside class="productPage__product__contactToBuy">
+	<h2 class="productPage__product__contactToBuy__heading">Got Questions?</h2>
+	<p class="productPage__product__contactToBuy__paragraph">Ask me anything or come and meet and buy it up close.</p>
+	<input id="productPage__product__contactToBuy__revealFormButton--toggle" class="productPage__product__contactToBuy__revealFormButton" type="checkbox">
+	<label for="productPage__product__contactToBuy__revealFormButton--toggle" class="productPage__product__contactToBuy__revealFormButton__label" tabindex="1">I have a question</label>
+
+
+	<form class="productPage__product__contactToBuy__formContainer" method="post" action="https://forms.un-static.com/forms/f7edf75a640ca11b5f673095f73097bc45f54f30">
+		<header class="productPage__product__contactToBuy__formContainer__header">
+			<picture class="productPage__product__contactToBuy__formContainer__header__picture">
+				<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1576975704/myth-wip-IMG_20170808_145538.jpg" class="productPage__product__contactToBuy__formContainer__header__picture__image">
+			</picture>
+			
+			<h3 class="productPage__product__contactToBuy__formContainer__header__title">
+				Ask me anything about <span class="productPage__product__contactToBuy__formContainer__header__title__name">"Πρόχειρα Σχέδια με Τρεις Χαρακτήρες"</span>
+			</h3>
+		</header>
+
+
+		<input class="productPage__product__contactToBuy__formContainer__nameField" type="text" name="name" placeholder="Enter your name" required>
+		<input class="productPage__product__contactToBuy__formContainer__emailField" type="email" name="email" placeholder="Enter your e-mail address" required>
+		<input type="hidden" name="subject" value="Ερώτηση για 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες'" required>
+		<textarea class="productPage__product__contactToBuy__formContainer__messageField" name="message" placeholder="Your message.."></textarea>
+		<button class="productPage__product__contactToBuy__formContainer__submitButton" type="submit">Send</button>
+	</form>
+</aside>
 	<figure class="productPage__product__imageGallery">
 	
 	<picture class="productPage__product__imageGallery__picture">
