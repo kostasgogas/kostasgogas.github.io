@@ -3198,11 +3198,11 @@ body {
 }
 
 .productPage__product__headerOfProduct {
-	font-family: 'Noto Serif', Serif;
+	font-family: 'Inter', Sans-serif;
 }
 
 .productPage__product__headerOfProduct__heading {
-	font-size: 2vmax;
+	font-size: 4vmax;
 	line-height: 1.25;
 	font-weight: bold;
 	color: #333;
@@ -3278,11 +3278,13 @@ body {
 
 .productPage__product__details {
 	clear: both;
-	margin: 4vh 0;
+	padding: 5vw 0;
+	width: 80%;
+	margin: auto;
 }
 
 .productPage__product__details__heading {
-	font-size: 1.75vmax;
+	font-size: 3vmax;
 	font-family: 'Inter', Sans-serif;
 	font-weight: 800;
 	line-height: 2;
@@ -3297,9 +3299,10 @@ body {
 }
 
 .productPage__product__details__unorderedList li {
-	font-size: 1.75vmax;
+	font-size: 2.5vmax;
 	font-family: 'Inter', Sans-serif;
-	line-height: 1.5;
+	line-height: 1.25;
+	margin-bottom: 1.5vmax;
 }
 
 .productPage__product__details__unorderedList li strong {
@@ -3308,9 +3311,10 @@ body {
 
 
 .productPage__product__medium {
-	margin: 4vh 0;
-	padding-top: 5vw;
-	border-top: 0.1vh solid black;
+	width: 80%;
+	margin: auto;
+	padding: 5vw 0;
+	border-bottom: 0.1vh solid black;
 	display: grid;
 	grid-template-columns: 25vw auto;
 }
@@ -3331,14 +3335,14 @@ body {
 }
 
 .productPage__product__medium__container__title {
-	font-size: 2.75vmax;
+	font-size: 2.25vmax;
     font-family: 'Inter', Sans-serif;
     font-weight: 800;
-    margin-bottom: 1.5vmax;
+    margin-bottom: 1vmax;
 }
 
 .productPage__product__medium__container__content {
-	font-size: 2.5vmax;
+	font-size: 2vmax;
     font-family: 'Inter', Sans-serif;
     font-weight: 300;
     line-height: 1.25;
@@ -3346,9 +3350,10 @@ body {
 
 
 .productPage__product__surface {
-	margin: 4vh 0;
-	padding-top: 5vw;
-	border-top: 0.1vh solid black;
+	width: 80%;
+	margin: auto;
+	padding: 5vw 0;
+	border-bottom: 0.1vh solid black;
 	display: grid;
 	grid-template-columns: 25vw auto;
 }
@@ -3365,14 +3370,14 @@ body {
 }
 
 .productPage__product__surface__container__title {
-	font-size: 2.75vmax;
+	font-size: 2.25vmax;
     font-family: 'Inter', Sans-serif;
     font-weight: 800;
-    margin-bottom: 1.5vmax;
+    margin-bottom: 1vmax;
 }
 
 .productPage__product__surface__container__content {
-	font-size: 2.5vmax;
+	font-size: 2vmax;
     font-family: 'Inter', Sans-serif;
     font-weight: 300;
     line-height: 1.25;
@@ -3434,6 +3439,7 @@ body {
 }
 
 .productPage__product__contactToBuy {
+	text-align: center;
 }
 .productPage__product__contactToBuy__heading {
 	font-size: 2.25vmax;
@@ -3461,17 +3467,15 @@ body {
 	display: none;
 }
 
-.productPage__product__contactToBuy__revealFormButton__label {
-    font-size: 3vmax;
-    width: 40vw;
-    padding: 1.5vmax 0;
-    display: block;
+.productPage__product__contactToBuy__label {
+	display: inline-block;
+    padding: 2vmax 4vmax;
     text-align: center;
     border-radius: 1vmax;
     margin: 2vmax auto;
 	font-family: 'Inter', Sans-serif;
 	font-weight: 600;
-	font-size: 2vmax;
+	font-size: 2.5vmax;
 	border: 0.2vmax solid #777;
 	background-color: white;
 	color: #777;
@@ -3482,7 +3486,7 @@ body {
 	z-index: initial;
 }
 
-.productPage__product__contactToBuy__revealFormButton__label:after {
+.productPage__product__contactToBuy__label:after {
 	font-family: FontAwesome;
 	content: "\f105";
 	padding-left: 1vmax;
@@ -3493,7 +3497,7 @@ body {
     display: none;
 }
 
-input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__revealFormButton__label + .productPage__product__contactToBuy__formContainer {
+input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__label + .productPage__product__contactToBuy__formContainer {
  	display: block;
     width: 100vw;
     min-height: 100vh;
@@ -3505,14 +3509,14 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 }
 
 /* Change the style of label when is pressed*/
-input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__revealFormButton__label {
+input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__label {
 	position: fixed;
 	top: 0;
 	z-index: 99999;
 }
 
 /* change the angle icon to BACK when pressed */
-input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__revealFormButton__label:before {
+input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__label:before {
 	content: "Go Back";
 }
 
@@ -3775,7 +3779,7 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 	<h2 class="productPage__product__contactToBuy__heading">Got Questions?</h2>
 	<p class="productPage__product__contactToBuy__paragraph">Ask me anything or come and meet and buy it up close.</p>
 	<input id="productPage__product__contactToBuy__revealFormButton--toggle" class="productPage__product__contactToBuy__revealFormButton" type="checkbox">
-	<label for="productPage__product__contactToBuy__revealFormButton--toggle" class="productPage__product__contactToBuy__revealFormButton__label" tabindex="1">I have a question</label>
+	<label for="productPage__product__contactToBuy__revealFormButton--toggle" class="productPage__product__contactToBuy__label" tabindex="1">I have a question</label>
 
 
 	<form class="productPage__product__contactToBuy__formContainer" method="post" action="https://forms.un-static.com/forms/f7edf75a640ca11b5f673095f73097bc45f54f30">
@@ -3843,6 +3847,52 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 	
 	<figcaption class="productPage__product__imageGallery__figcaption">Click on an image for a closer look.</figcaption>
 </figure>
+	<style type="text/css">
+	.productPage__product__details__Box {
+		border: 0.15vmax solid black;
+		border-radius: 1vmin;
+	}
+</style>
+
+<div class="productPage__product__details__Box">	
+	<aside class="productPage__product__medium">
+	<img src="assets/temp/medium-image-color.png" class="productPage__product__medium__image">
+	<div class="productPage__product__medium__container">
+		<h3 class="productPage__product__medium__container__title">Medium</h3>
+		<p class="productPage__product__medium__container__content">Μολύβι</p>
+	</div>
+</aside>
+	<aside class="productPage__product__surface">
+	<img src="assets/temp/surface-image.png" class="productPage__product__surface__image">
+	<div class="productPage__product__surface__container">
+		<h3 class="productPage__product__surface__container__title">Surface</h3>
+		<p class="productPage__product__surface__container__content">Τυπογραφικό Χαρτί 80γρ.</p>
+	</div>
+</aside>
+	<aside class="productPage__product__details">
+	<h2 class="productPage__product__details__heading"><i class="fa fa-info-circle"></i> Artwork Details</h2>
+	<ul class="productPage__product__details__unorderedList">	
+		<li><strong>Τίτλος:</strong> </li>
+		<li><strong>Καλλιτέχνης:</strong> Κώστας Γκόγκας</li>
+		<li><strong>Χρονολογία:</strong> 20X9</li>
+		<li><strong>Υπογεγραμένο:</strong> Ναι</li>
+		<li><strong>Ύλικό:</strong> Μολύβι</li>
+		<li><strong>Επιφάνεια:</strong> Τυπογραφικό Χαρτί 80γρ.</li>
+		<li><strong>Πλάτος:</strong> 21cm</li>
+		<li><strong>Ύψος:</strong> 29.7cm</li>
+		<li><strong>Πάχος:</strong> 0.01cm</li>
+	</ul>
+	<ul class="productPage__product__details__unorderedList">
+		<li><strong>Βάρος:</strong> plchldr</li>
+		<li><strong>id:</strong> plchldr</li>
+	</ul>
+</aside>
+
+</div>
+
+
+
+
 	<aside class="productPage__product__details">
 	<h2 class="productPage__product__details__heading"><i class="fa fa-info-circle"></i> Artwork Details</h2>
 	<ul class="productPage__product__details__unorderedList">	
