@@ -384,27 +384,28 @@ body {
 
 .siteWideHeader__logo {
 	border-right: 1px solid white;
+	display: grid;
+	grid-template-rows: 5vh 1.5vh;
 }
 
-.siteWideHeader__logo img {
+.siteWideHeader__logo__image {
 	max-height: 100%;
 	max-width: 100%;
 	display: block;
 	margin: auto;
 }
 
-.siteWideHeader__site-title {
-	color: white;
+.siteWideHeader__logo__name {
+	font-size: 1vh;
 	font-family: 'Inter', Sans-serif;
-	padding: 1vh;
-	line-height: 2.5vh;
-	font-size: 2vh;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.1vh;
+	display: block;
+	text-align: center;
+	margin: 0.25vh 0;
 }
 
-
-.siteWideHeader__site-title span {
-	font-weight: 700;
-}
 
 .siteWideHeader__menuButton {
 	display: none;
@@ -3714,12 +3715,11 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 </head>
 <body>
 	<header class="siteWideHeader">
-	<a href="/" class="siteWideHeader__logo"><img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Kostas Gogas Logo" title="Go to Homepage"></a>
-	<a href="/" class="siteWideHeader__site-title"><h2><span>Κώστας Γκόγκας</span><br/>
-	
-	Καλλιτέχνης
-	</h2>
+	<a href="/" class="siteWideHeader__logo">
+	<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Kostas Gogas Logo" title="Go to Homepage" class="siteWideHeader__logo__image">
+	<h3 class="siteWideHeader__logo__name">Kostas Gogas</h3>
 </a>
+	<div><!-- placeholder< --></div>
 	<input id="siteWideHeader__menuButton--toggle" class="siteWideHeader__menuButton" type="checkbox">
 <label for="siteWideHeader__menuButton--toggle" class="siteWideHeader__menuButton__label" tabindex="1"><i class="fa fa-angle-down" aria-hidden="true"></i></label>
 	<nav class="siteWideHeader__linksContainer">
