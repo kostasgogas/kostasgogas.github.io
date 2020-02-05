@@ -3327,7 +3327,7 @@ explicitly, e.g.
 		line-height: 1.5;
 		display: inline-block;
 		width: fit-content;
-		margin: auto;
+		margin: 2vh auto 0;
 	}
 
 	.homeSmallScale__headerHero__wrapper__heading__KostasGogas {
@@ -3395,81 +3395,120 @@ explicitly, e.g.
 				Find Yours <i class="fa fa-angle-right homeSmallScale__headerHero__wrapper__button__angleRight" aria-hidden="true"></i>
 			</a>
 
-			<p class="homeSmallScale__headerHero__wrapper__subtitle">And Buy Directly from an Artist Owned Business</p>
+			<p class="homeSmallScale__headerHero__wrapper__subtitle">Buy Directly from an Artist Owned Business</p>
 		</div>
 	</header>
 	<style type="text/css">
 
+
 	.homeSmallScale__originalArt {
-		background-color: black;
+		background-color: yellow;
 		padding: 10vw;
 		margin: 0;
 	}
 
-	.homeSmallScale__originalArt__heading {
-		color: yellow;
-		font-size: 7vw;
+	.homeSmallScale__originalArt__fresh {
+
+	}
+
+	.homeSmallScale__originalArt__fresh__heading {
+		color: black;
+
+		font-size: 7vmin;
 		font-family: 'Inter', Sans-serif;
-		font-weight: 100;
+		font-weight: 800;
 		line-height: 1.25;
 	}
 
-	.homeSmallScale__originalArt__paragraph {
-		color: white;
+	.homeSmallScale__originalArt__fresh__subittle {
+		color: black;
+
+		font-size: 5vmin;
 		font-family: 'Inter', Sans-serif;
-		font-weight: 200;
-		font-size: 3.25vw;
+		font-weight: 400;
 		line-height: 1.25;
-		display: block;
-		margin-top: 7vh;
-	}
 
-	.homeSmallScale__originalArt__copycatNote {
-		color: yellow;
-		font-size: 3vh;
-		font-weight: 100;
-		font-family: 'Inter', Sans-serif;
-		margin-top: 5vh;
-		display: block;
-	}
-
-	.homeSmallScale__originalArt__heading {
-		font-size: 5vh;
-		font-family: 'Inter', Sans-serif;
-		font-weight: 600;
 		margin: 5vh 0;
 	}
 
-	.homeSmallScale__originalArt__paragraph {
-		color: white;
-		font-family: 'Inter', Sans-serif;
-		font-size: 3vh;
+	.homeSmallScale__originalArt__fresh__paragraph {
+		color: black;
 
+		font-family: 'Inter', Sans-serif;
+		font-weight: 800;
+		font-size: 4.5vmin;
+		line-height: 1.25;
+
+		display: block;
+		margin: 3vh 0;
+	}
+
+	.homeSmallScale__originalArt__fresh__copycatNote {
+		background-color: black;
+		color: #ff2266;
+
+		font-size: 4.25vmin;
+		font-weight: 600;
+		font-family: 'Inter', Sans-serif;
+		line-height: 1.25;
+		
+		margin: 5vh 0;
+		display: block;
+		width: fit-content;
+		padding: 1.25vw;
+		border-radius: 1vw;
+	}
+
+	.homeSmallScale__originalArt__original {
+
+	}
+
+	.homeSmallScale__originalArt__original__heading {
+		color: blue;
+
+		font-size: 7vmin;
+		font-family: 'Inter', Sans-serif;
+		font-weight: 800;
+		line-height: 1.25;
+	}
+
+	.homeSmallScale__originalArt__original__paragraph {
+		color: blue;
+
+		font-size: 4.5vmin;
+		font-family: 'Inter', Sans-serif;
+		font-weight: 800;
+		line-height: 1.25;
+
+		margin: 5vh 0;
 	}
 	
 </style>
 
 <section class="homeSmallScale__originalArt">
-	<h2 class="homeSmallScale__originalArt__heading">
-		Discover <br/>
-		Freshness
-	</h2>
-	<p class="homeSmallScale__originalArt__paragraph">
-		Full blown imagination. Characters. Abstracts. Species & Objects out of this world captured on paper.<br/>
-		Artist Kostas Gogas has been creating this worlds from 2001 .
+	<section class="homeSmallScale__originalArt__fresh">
+		<h2 class="homeSmallScale__originalArt__fresh__heading">
+			Discover Freshness
+		</h2>
+		<p class="homeSmallScale__originalArt__fresh__subittle">
+			Full blown imagination. <br/>
+			Contemporary Characters & Abstract Objects captured on paper.
+		</p>
+		<p class="homeSmallScale__originalArt__fresh__paragraph">
+			Artist Kostas Gogas has been spilling his brains out since 2001.
+		</p>
+		<p class="homeSmallScale__originalArt__fresh__copycatNote">
+			No fan art or copycats 🐱 here.
+		</p>
+	</section>
 
-
-	</p>
-	<p class="homeSmallScale__originalArt__copycatNote">
-		You won't find no fan art or copycats here.
-	</p>
-
-
-	<h2 class="homeSmallScale__originalArt__heading">Original Means Original</h2>
-	<p class="homeSmallScale__originalArt__paragraph">
-		Find art that is actually original.<br/>
-		No prints (or even worse ‘posters’) advertised as ‘original’ art.
-	</p>
+	<section class="homeSmallScale__originalArt__original">
+		<h2 class="homeSmallScale__originalArt__original__heading">Original Art (literaly)</h2>
+		<p class="homeSmallScale__originalArt__original__paragraph">
+			Find art that is actually original.<br/>
+			No prints (or even worse ‘posters’) advertised as ‘original’ art.
+		</p>
+	</section>
 </section>
 	<style type="text/css">
 
@@ -3527,14 +3566,38 @@ explicitly, e.g.
 	}
 
 	.homeSmallScale__aboutArt__from25Dollars {
+		color: white;
+		background-color: #8a8479;
 
+		width: 60vw;
+		margin: auto;
+		padding: 3vw;
 	}
 
 	.homeSmallScale__aboutArt__from25Dollars__heading {
+		font-size: 5vmin;
+		font-family: 'Inter', sans-serif;
+		font-weight: 600;
+		text-align: center;
 
+		margin: 5vw 0;
+	}
+
+	.homeSmallScale__aboutArt__from25Dollars__heading__number {
+		font-size: 20vmin;
+		font-family: 'Inter', sans-serif;
+		font-weight: 800;
+
+		display: block;
 	}
 
 	.homeSmallScale__aboutArt__from25Dollars__paragraph {
+		font-size: 4vmin;
+		font-family: 'Inter', sans-serif;
+		font-weight: 400;
+
+
+		margin: 5vw 0;
 
 	}
 
@@ -3553,7 +3616,12 @@ explicitly, e.g.
 	</section>
 
 	<section class="homeSmallScale__aboutArt__from25Dollars">
-		<h2 class="homeSmallScale__aboutArt__from25Dollars__heading">Original Art from $25</h2>
+		<h2 class="homeSmallScale__aboutArt__from25Dollars__heading">
+			Original Art from 
+			<span class="homeSmallScale__aboutArt__from25Dollars__heading__number">
+				€25
+			</span>
+		</h2>
 		<p class="homeSmallScale__aboutArt__from25Dollars__paragraph">
 			Cutting intermediaries and costs of operations as well as offering original works of small scale that have real value to the admirer of them, we have managed to offer low price points for people who really want to buy art but the art world has been neglecting them forever.
 		</p>
@@ -3566,44 +3634,303 @@ explicitly, e.g.
 </section>
 	<style type="text/css">
 
+	.homeSmallScale__aboutBusiness__history {
+		padding: 5vw 10vw;
+		background: black;
+		color: white;
+	}
 
+	.homeSmallScale__aboutBusiness__history__header {
+		margin: 5vh auto;
+		font-size: 5vh;
+		font-family: 'Noto Serif', Serif;
+		font-weight: bold;
+		line-height: 1.2;
+	}
+
+	.homeSmallScale__aboutBusiness__history__header__heading {
+	}
+
+	.homeSmallScale__aboutBusiness__history__header__heading__firstLine {
+		display: block;
+		font-size: 7.3vh;
+		text-transform: uppercase;
+		font-family: 'Inter';
+		font-weight: 100;
+		color: yellow;
+	}
+
+	.homeSmallScale__aboutBusiness__history__paragraphContainer {
+	}
+
+	.homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph {
+		margin: 2vh auto;
+		font-size: 3vh;
+		line-height: 1.25;
+		font-family: 'Inter', Sans-serif;
+		font-weight: 300;
+	}
+
+	.homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis {
+		font-weight: 400;
+		color: yellow;
+	}
+
+	.homeSmallScale__aboutBusiness__history__footer {
+		margin: 8vh auto 5vh;
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	.homeSmallScale__aboutBusiness__history__footer__text {
+		font-size: 3vh;
+		font-family: 'Noto Serif', Serif;
+		color: yellow;
+		font-weight: bold;
+		border-top: 0.2vh solid yellow;
+		border-bottom: 0.2vh solid yellow;
+		padding: 2vh;
+		display: block;
+		width: fit-content;
+	}
+
+	.homeSmallScale__aboutBusiness__history__footer__signature {
+		width: 100%;
+		height: 100%;
+		grid-template-columns: 100%;
+		justify-items: right;
+		display: grid;
+	}
+
+	.homeSmallScale__aboutBusiness__history__footer__signature__img {
+		width: 20vw;
+		height: 5vh;
+		object-fit: contain;
+		display: block;
+	}
+	
+	.homeSmallScale__aboutBusiness__artistOwnedBusiness {
+		background-color: #222;
+		padding: 10vw;
+	}
+
+	.homeSmallScale__aboutBusiness__artistOwnedBusiness__heading {
+		color: yellow;
+		font-family: 'Inter', Sans-serif;
+		text-transform: uppercase;
+		font-size: 8.5vmin;
+		font-weight: 800;
+		line-height: 1.3;
+		margin: 5vh 0;
+	}
+
+	.homeSmallScale__aboutBusiness__artistOwnedBusiness__subtitle {
+		color: white;
+		font-family: 'Inter', Sans-serif;
+		font-size: 4.5vmin;
+		line-height: 1.5;
+		font-weight: 500;
+		margin: 5vh 0;
+		text-transform: uppercase;
+		border-left: 1px solid yellow;
+		padding: 3vw 0 3vw 5vw;
+	}
+
+	.homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph {
+		color: #ccc;
+		font-family: 'Inter', Sans-serif;
+		font-size: 4.5vmin;
+		line-height: 1.2;
+		font-weight: 200;
+		margin: 5vh 0;
+	}
+</style>
+
+
+<section class="homeSmallScale__aboutBusiness__">	<section class="homeSmallScale__aboutBusiness__history">
+		<header class="homeSmallScale__aboutBusiness__history__header">
+			<h2 class="homeSmallScale__aboutBusiness__history__header__heading">
+				<span class="homeSmallScale__aboutBusiness__history__header__heading__firstLine">
+					20 Years 
+				</span>
+				in the Making
+		</h2>
+		</header>
+		<section class="homeSmallScale__aboutBusiness__history__paragraphContainer">
+			<p class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph">
+				The eshop emerged into existence in 2017, Kostas Gogas <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">has been working professionaly from the age of 14</span>, when his first Graffiti commisions started in <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">January 2001</span>.
+			</p>
+			<p class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph">
+				Before moving away from all comissioned work in 2012 he had <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">already created numerous artworks of various formats for music bands, schools, stores, individuals, non-profit organizations and big corporations.</span>
+			</p>			
+		</section>
+		<footer class="homeSmallScale__aboutBusiness__history__footer">
+			<p class="homeSmallScale__aboutBusiness__history__footer__text">
+				Est. 2001
+			</p>
+
+			<picture class="homeSmallScale__aboutBusiness__history__footer__signature">
+				<img src="assets/temp/kostas-gogas-logo-signature-white-01.png" class="homeSmallScale__aboutBusiness__history__footer__signature__img">
+			</picture>
+		</footer>
+	</section>
+
+	<section class="homeSmallScale__aboutBusiness__artistOwnedBusiness">
+		<h2 class="homeSmallScale__aboutBusiness__artistOwnedBusiness__heading">Artist Owned Business</h2>
+		<p class="homeSmallScale__aboutBusiness__artistOwnedBusiness__subtitle">
+			No platforms <br/>
+			No representatives <br/>
+			No gallerists <br/>
+			or auction houses.
+		</p>
+		<p class="homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph">
+			Connect directly with a business that is actually owned and operated by the artist himself.<br/>
+		</p>
+	</section>
+</section>
+	<style type="text/css">
+.homeSmallScale__security {
+	background-color: #0054ff;
+	padding: 10vw;
+}
+
+.homeSmallScale__security__heading {
+	font-size: 8.5vmin;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 700;
+	line-height: 1.25;
+
+	color: white;
+}
+
+.homeSmallScale__security__secureByDesign {
+}
+
+.homeSmallScale__security__secureByDesign__paragraph {
+	font-family: 'Inter', Sans-serif;
+	font-weight: 400;
+	font-size: 4.5vmin;
+	line-height: 1.25;
+
+	color: white;
+
+	margin: 5vmin 0;
+}
+
+.homeSmallScale__security__simpleProcess {
+}
+
+.homeSmallScale__security__simpleProcess__heading {
+	font-size: 4.25vmin;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.5;
+	margin: 8vmin 0 4vmin;
+
+	color: yellow;
+}
+
+.homeSmallScale__security__simpleProcess__list {
+	list-style-type: decimal;
+	list-style-position: inside;
+
+	font-size: 4.5vmin;
+	line-height: 2;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 800;
+
+	color: yellow;
+}
+
+.homeSmallScale__security__simpleProcess__list__item {
+}
+
+.homeSmallScale__security__simpleProcess__paragraph {
+	font-family: 'Inter', Sans-serif;
+	font-weight: 400;
+	font-size: 4.5vmin;
+	line-height: 1.25;
+
+	color: yellow;
+
+	margin: 5vmin 0;
+}
+
+.homeSmallScale__security__fastProcess {
+}
+
+.homeSmallScale__security__fastProcess__heading {
+	font-size: 4.25vmin;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.5;
+	margin: 8vmin 0 4vmin;
+
+	color: yellow;
+}
+
+.homeSmallScale__security__fastProcess__paragraph {
+	font-size: 4.5vmin;
+	line-height: 1.25;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 400;
+
+	color: white;
+
+	margin: 5vmin 0;
+}
+
+.homeSmallScale__security__fastProcess__footer {
+	font-size: 4.5vmin;
+	line-height: 1.25;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 600;
+
+	color: #000033;
+
+	margin: 3vmin 0;
+}
 
 	
 </style>
 
 <section class="homeSmallScale__security">
-	<section class="homeSmallScale__security__SecureByDesign">
-		<h2 class="homeSmallScale__security__SecureByDesign__heading">Secure by Design</h2>
-		<p class="homeSmallScale__security__SecureByDesign__paragraph">
-			The shop itself is designed to accept payments without us processing or storing any of your credit card data because we use the infrastructure of Stripe. <br/>
-			That way you can be rest assured that you don’t share any credit card information with us. <br/>
-			Everything is processed through Stripe and you can be rest assured that you are in good company.
+	<h2 class="homeSmallScale__security__heading">Secure by Design</h2>
+	<section class="homeSmallScale__security__secureByDesign">
+		<p class="homeSmallScale__security__secureByDesign__paragraph">
+			The shop itself is designed to accept payments without us processing or storing any of your credit card data by using the infrastructure of PayPal. <br/>
+			This way you can you don’t share any credit card information with us. <br/>
+			Everything is processed through PayPal and you can be rest assured that you are in good company.
 		</p>
-		<p class="homeSmallScale__security__SecureByDesign__paragraph">
-			You don’t have to have a Stripe account to buy from us, you can fill up your credit card info on checkout and go on your way of being an art collector.
-		</p>
-		<p class="homeSmallScale__security__SecureByDesign__paragraph">
-			You can learn more about Stripe through a simple google search.
+		<p class="homeSmallScale__security__secureByDesign__paragraph">
+			You don’t have to have a PayPal account to buy from us, you can fill up your credit card info on checkout and go on your way of being an art collector.
 		</p>
 	</section>
 
-	<section class="homeSmallScale__security__SimpleProcess">
-		<h2 class="homeSmallScale__security__SimpleProcess__heading">Simple Process</h2>
-		<p class="homeSmallScale__security__SimpleProcess__paragraph">
-			Hit Buy<br/>
-			Fill up your info<br/>
-			Receive Your Art in a few days
+	<section class="homeSmallScale__security__simpleProcess">
+		<h3 class="homeSmallScale__security__simpleProcess__heading">Simple Process</h3>
+		<ol class="homeSmallScale__security__simpleProcess__list">
+			<li class="homeSmallScale__security__simpleProcess__list__item">Hit Buy</li>
+			<li class="homeSmallScale__security__simpleProcess__list__item">Hit Guest Checkout</li>
+			<li class="homeSmallScale__security__simpleProcess__list__item">Fill Your Info</li>
+		</ol>
+
+		<p class="homeSmallScale__security__simpleProcess__paragraph">
+			That's it. Your art will be with you in a few days.
 		</p>
 	</section>
 
-	<section class="homeSmallScale__security__FastProcess">
-		<h2 class="homeSmallScale__security__FastProcess__heading">Fast</h2>
-		<p class="homeSmallScale__security__FastProcess__paragraph">
+	<section class="homeSmallScale__security__fastProcess">
+		<h3 class="homeSmallScale__security__fastProcess__heading">Fast</h3>
+		<p class="homeSmallScale__security__fastProcess__paragraph">
 			Forget the pain staking process and the dullness of setting up accounts, registering your names and emails, confirming and yada yada yada..<br/><br/>
-
+		</p>
+		<footer class="homeSmallScale__security__fastProcess__footer">
 			We’ve cut all that.<br/>
 			Go straight to checkout. Simple.
-		</p>
+		</footer>
 	</section>
 </section>
 	
@@ -3771,174 +4098,6 @@ explicitly, e.g.
 				<a href="https://en.wikipedia.org/wiki/Nea_Filadelfeia#/media/File:Nea_Filadelfia_lake.JPG" target="_blank" rel="noopener" class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link">Link to Original Image</a>
 			</figcaption>
 		</figure>
-	</section>
-</section>
-	<style type="text/css">
-	
-	.homeSmallScale__aboutBusiness__artistOwnedBusiness {
-		background-color: #222;
-		padding: 10vw;
-	}
-
-	.homeSmallScale__aboutBusiness__artistOwnedBusiness__heading {
-		color: yellow;
-		font-family: 'Inter', Serif;
-		text-transform: uppercase;
-		font-size: 5vmax;
-		font-weight: 800;
-		line-height: 1.3;
-		margin: 5vh 0;
-	}
-
-	.homeSmallScale__aboutBusiness__artistOwnedBusiness__subtitle {
-		color: white;
-		font-family: 'Inter', Serif;
-		font-size: 3vmax;
-		line-height: 1.5;
-		font-weight: 500;
-		margin: 5vh 0;
-		text-transform: uppercase;
-		border-left: 1px solid yellow;
-		padding-left: 5vw;
-	}
-
-	.homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph {
-		color: white;
-		font-family: 'Inter', Serif;
-		font-size: 3vmax;
-		line-height: 1.2;
-		font-weight: 500;
-		margin: 5vh 0;
-	}
-
-	.homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph__em {
-		display: block;
-		margin-top: 2vh;
-		font-weight: 400;
-		font-style: italic;
-		color: gray;
-		font-size: 2.5vmax;
-	}
-
-	.homeSmallScale__aboutBusiness__history {
-		padding: 5vw 10vw;
-		background: black;
-		color: white;
-	}
-
-	.homeSmallScale__aboutBusiness__history__header {
-		margin: 5vh auto;
-		font-size: 5vh;
-		font-family: 'Noto Serif', Serif;
-		font-weight: bold;
-		line-height: 1.2;
-	}
-
-	.homeSmallScale__aboutBusiness__history__header__heading {
-	}
-
-	.homeSmallScale__aboutBusiness__history__header__heading__firstLine {
-		display: block;
-		font-size: 7.3vh;
-		text-transform: uppercase;
-		font-family: 'Inter';
-		font-weight: 100;
-		color: yellow;
-	}
-
-	.homeSmallScale__aboutBusiness__history__paragraphContainer {
-	}
-
-	.homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph {
-		margin: 2vh auto;
-		font-size: 3vh;
-		line-height: 1.25;
-		font-family: 'Inter', Sans-serif;
-		font-weight: 300;
-	}
-
-	.homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis {
-		font-weight: 400;
-		color: yellow;
-	}
-
-	.homeSmallScale__aboutBusiness__history__footer {
-		margin: 8vh auto 5vh;
-		display: grid;
-		grid-template-columns: 50% 50%;
-	}
-
-	.homeSmallScale__aboutBusiness__history__footer__text {
-		font-size: 3vh;
-		font-family: 'Noto Serif', Serif;
-		color: yellow;
-		font-weight: bold;
-		border-top: 0.2vh solid yellow;
-		border-bottom: 0.2vh solid yellow;
-		padding: 2vh;
-		display: block;
-		width: fit-content;
-	}
-
-	.homeSmallScale__aboutBusiness__history__footer__signature {
-		width: 100%;
-		height: 100%;
-		grid-template-columns: 100%;
-		justify-items: right;
-		display: grid;
-	}
-
-	.homeSmallScale__aboutBusiness__history__footer__signature__img {
-		width: 20vw;
-		height: 5vh;
-		object-fit: contain;
-		display: block;
-	}
-</style>
-
-
-<section class="homeSmallScale__aboutBusiness__">
-
-	<section class="homeSmallScale__aboutBusiness__artistOwnedBusiness">
-		<h2 class="homeSmallScale__aboutBusiness__artistOwnedBusiness__heading">Artist Owned Business</h2>
-		<p class="homeSmallScale__aboutBusiness__artistOwnedBusiness__subtitle">
-			No platforms <br/>
-			No representatives <br/>
-			No gallerists <br/>
-			or auction houses.
-		</p>
-		<p class="homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph">
-			Connect directly with a business that is actually owned and operated by the artist himself.<br/>
-			<em class="homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph__em">Even this page your are browsing right now is designed by the artist himself.</em>
-		</p>
-	</section>
-
-	<section class="homeSmallScale__aboutBusiness__history">
-		<header class="homeSmallScale__aboutBusiness__history__header">
-			<h2 class="homeSmallScale__aboutBusiness__history__header__heading">
-				<span class="homeSmallScale__aboutBusiness__history__header__heading__firstLine">
-					20 Years 
-				</span>
-				in the Making
-		</h2>
-		</header>
-		<section class="homeSmallScale__aboutBusiness__history__paragraphContainer">
-			<p class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph">
-				The eshop emerged into existence in 2017, Kostas Gogas <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">has been working professionaly from the age of 14</span>, when his first Graffiti commisions started in <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">January 2001</span>.
-			</p>
-			<p class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph">
-				Before moving away from all comissioned work in 2012 he had <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">already created numerous artworks of various formats for music bands, schools, stores, individuals, non-profit organizations and big corporations.</span>
-			</p>			
-		</section>
-		<footer class="homeSmallScale__aboutBusiness__history__footer">
-			<p class="homeSmallScale__aboutBusiness__history__footer__text">
-				Est. 2001
-			</p>
-
-			<picture class="homeSmallScale__aboutBusiness__history__footer__signature">
-				<img src="assets/temp/kostas-gogas-logo-signature-white-01.png" class="homeSmallScale__aboutBusiness__history__footer__signature__img">
-			</picture>
-		</footer>
 	</section>
 </section>
 	<style type="text/css">
