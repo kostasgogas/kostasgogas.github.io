@@ -2990,98 +2990,499 @@ Homepage Goals
 
  -->
 
+
+
 <style type="text/css">
-	.homepageSectionOfficialShop {
-		background-color: black;
-		padding: 10vw;
-		text-align: center;
+	.homeSmallScale {
+		background-color: yellow;
 	}
 
-	.homepageSectionOfficialShop__heading {
-		color: white;
+	@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Thin-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Thin-BETA.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ThinItalic-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ThinItalic-BETA.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraLight-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraLight-BETA.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraLightItalic-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraLightItalic-BETA.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Light-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Light-BETA.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-LightItalic-BETA.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-LightItalic-BETA.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Regular.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Regular.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Italic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Italic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Medium.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Medium.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-MediumItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-MediumItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-SemiBold.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-SemiBold.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-SemiBoldItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-SemiBoldItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Bold.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Bold.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-BoldItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-BoldItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraBold.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraBold.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-ExtraBoldItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-ExtraBoldItalic.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-Black.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-Black.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/assets/fonts/Inter/Inter-BlackItalic.woff2?v=3.11") format("woff2"),
+       url("/assets/fonts/Inter/Inter-BlackItalic.woff?v=3.11") format("woff");
+}
+
+/* -------------------------------------------------------
+Variable font.
+Usage:
+
+  html { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+*/
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/assets/fonts/Inter/Inter-roman.var.woff2?v=3.11") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/assets/fonts/Inter/Inter-italic.var.woff2?v=3.11") format("woff2");
+}
+
+
+/* --------------------------------------------------------------------------
+[EXPERIMENTAL] Multi-axis, single variable font.
+
+Slant axis is not yet widely supported (as of February 2019) and thus this
+multi-axis single variable font is opt-in rather than the default.
+
+When using this, you will probably need to set font-variation-settings
+explicitly, e.g.
+
+  * { font-variation-settings: "slnt" 0deg }
+  .italic { font-variation-settings: "slnt" 10deg }
+
+*/
+@font-face {
+  font-family: 'Inter var experimental';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: oblique 0deg 10deg;
+  src: url("/assets/fonts/Inter/Inter.var.woff2?v=3.11") format("woff2");
+}
+
+	@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Regular.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Bold.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Bitter'; /*a name to be used later*/
+	src: url('/assets/fonts/Bitter/Bitter-Italic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: normal;
+}
+	@font-face {
+	font-family: 'Georgia'; /*a name to be used later*/
+	src: url('/assets/fonts/Georgia/Georgia-Regular.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Georgia'; /*a name to be used later*/
+	src: url('/assets/fonts/Georgia/Georgia-Italic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Georgia'; /*a name to be used later*/
+	src: url('/assets/fonts/Georgia/Georgia-Bold.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Georgia'; /*a name to be used later*/
+	src: url('/assets/fonts/Georgia/Georgia-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: bold;
+}
+	@font-face {
+	font-family: 'Georgia'; /*a name to be used later*/
+	src: url('/assets/fonts/Georgia/Georgia-Regular.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Georgia'; /*a name to be used later*/
+	src: url('/assets/fonts/Georgia/Georgia-Italic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Georgia'; /*a name to be used later*/
+	src: url('/assets/fonts/Georgia/Georgia-Bold.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Georgia'; /*a name to be used later*/
+	src: url('/assets/fonts/Georgia/Georgia-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
+	font-style: italic;
+	font-weight: bold;
+}
+
+</style>
+
+<div class="homeSmallScale">
+	<style type="text/css">
+
+	.homeSmallScale__headerHero {
+		background-image: url(https://res.cloudinary.com/kostasgogas/_temp/2020-01-29-small-scale-art-gallery-image3-small-temp.jpg);
+		background-position: center;
+		background-size: cover;
+		background-color: yellow;
+		height: 100vh;
+		width: 100%;
+		display: table;
+	}
+
+	.homeSmallScale__headerHero__wrapper {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.homeSmallScale__headerHero__wrapper__heading {
+		text-align: center;
+		color: black;
+	}
+
+	.homeSmallScale__headerHero__wrapper__heading__smallScale {
+		background-color: yellow;
+		display: block;
+		font-family: 'Noto Serif', Serif;
+		font-weight: bold;
+		font-size: 8.5vmin;
+		width: fit-content;
+		margin: auto;
+	}
+
+	.homeSmallScale__headerHero__wrapper__heading__artGallery {
+		background-color: yellow;
+		display: block;
+		font-family: 'Noto Serif', Serif;
+		font-weight: bold;
+		font-size: 10vmin;
+		text-transform: uppercase;
+		width: fit-content;
+		margin: auto;
+	}
+
+	.homeSmallScale__headerHero__wrapper__heading__by {
+		background-color: yellow;
 		font-family: 'Inter', Sans-serif;
-		font-size: 3vmax;
+		font-size: 3.5vmin;
+		font-weight: 800;
+		line-height: 1.5;
+		display: inline-block;
+		width: fit-content;
+		margin: auto;
+	}
+
+	.homeSmallScale__headerHero__wrapper__heading__KostasGogas {
+		background-color: yellow;
+		font-family: 'Inter', Sans-serif;
+		text-transform: uppercase;
+		font-size: 4vmin;
+		font-weight: 800;
+		line-height: 1.5;
+		display: inline-block;
+		width: fit-content;
+		margin: auto;
+	}
+
+	.homeSmallScale__headerHero__wrapper__button {
+		display: block;
+		width: fit-content;
+		margin: 4vmin auto 0;
+		padding: 2vmin 5vmin;
+		border-radius: 2vmin;
+
+		background-color: blue;
+		color: white;
+
+		font-family: 'Georgia', Serif;
+		font-size: 4vmin;
+		text-transform: lowercase;
+		letter-spacing: 0.25vmin;
+		font-weight: 300;
+		font-style: italic;
+		text-align: center;
+
+	}
+
+	.homeSmallScale__headerHero__wrapper__button__angleRight {
+
+	}
+
+	.homeSmallScale__headerHero__wrapper__subtitle {
+		color: #000099;
+		background-color: yellow;
+		font-family: 'Georgia', Serif;
+		font-style: italic;
+		font-size: 2.5vmin;
 		font-weight: 500;
 		text-align: center;
-		line-height: 1.2;
-		margin: 20vh auto;
-	}
-
-	.homepageSectionOfficialShop__button {
-		color: white;
-		background-color: blue;
-		padding: 4vw;
-		font-size: 3vw;
-		font-family: 'Inter', serif;
-		border-radius: 1vw;
-	}
-
-	.homepageSectionOfficialShop__button__angleRight {
-		padding-left: 1.5vh;
-	}
-
-	.homepageSectionFreshOriginalArt {
-		background-color: blue;
-		background-image: url("/assets/temp/green-creature-product.jpg");
-		padding: 10vw;
-		background-size: cover;
-		background-attachment: fixed;
-	}
-
-	.homepageSectionFreshOriginalArt__heading {
-		color: white;
-		font-size: 5vh;
-		font-family: 'Inter', Sans-serif;
-		font-weight: 700;
-		line-height: 1.25;
-		background-color: blue;
-		display: inline-block;
-		padding: 5vmin;
-		text-transform: uppercase;
-	}
-
-	.homepageSectionFreshOriginalArt__paragraph {
-		color: white;
-		font-family: 'Inter', Sans-serif;
-		font-weight: 400;
-		font-size: 3vh;
-		line-height: 1.2;
-		background-color: blue;
-		padding: 5vmin;
-		width: 70vw;
 		display: block;
-		margin: 10vh 0 5vh;
+		width: fit-content;
+		margin: auto;
+		line-height: 3;
 	}
+	
+</style>
 
-	.homepageSectionFindOriginalArt {
+	<header class="homeSmallScale__headerHero">
+		<div class="homeSmallScale__headerHero__wrapper">
+			<h1 class="homeSmallScale__headerHero__wrapper__heading">
+				<span class="homeSmallScale__headerHero__wrapper__heading__smallScale">Small Scale</span> 
+				<span class="homeSmallScale__headerHero__wrapper__heading__artGallery">Art Gallery</span>
+				<span class="homeSmallScale__headerHero__wrapper__heading__by">by</span>
+				<span class="homeSmallScale__headerHero__wrapper__heading__KostasGogas">Kostas Gogas</span>
+			</h1>
+
+			<a href="/page-test-allProducts.html" class="homeSmallScale__headerHero__wrapper__button">
+				Find Yours <i class="fa fa-angle-right homeSmallScale__headerHero__wrapper__button__angleRight" aria-hidden="true"></i>
+			</a>
+
+			<p class="homeSmallScale__headerHero__wrapper__subtitle">And Buy Directly from an Artist Owned Business</p>
+		</div>
+	</header>
+	<style type="text/css">
+
+	.homeSmallScale__originalArt {
+		background-color: black;
 		padding: 10vw;
-		background-image: url("assets/temp/original-art-homepage.jpg");
-		background-color: beige;
-		object-fit: cover;
-		background-repeat: no-repeat;
+		margin: 0;
 	}
 
-	.homepageSectionFindOriginalArt__heading {
-		color: black;
+	.homeSmallScale__originalArt__heading {
+		color: yellow;
+		font-size: 7vw;
+		font-family: 'Inter', Sans-serif;
+		font-weight: 100;
+		line-height: 1.25;
+	}
+
+	.homeSmallScale__originalArt__paragraph {
+		color: white;
+		font-family: 'Inter', Sans-serif;
+		font-weight: 200;
+		font-size: 3.25vw;
+		line-height: 1.25;
+		display: block;
+		margin-top: 7vh;
+	}
+
+	.homeSmallScale__originalArt__copycatNote {
+		color: yellow;
+		font-size: 3vh;
+		font-weight: 100;
+		font-family: 'Inter', Sans-serif;
+		margin-top: 5vh;
+		display: block;
+	}
+
+	.homeSmallScale__originalArt__heading {
 		font-size: 5vh;
 		font-family: 'Inter', Sans-serif;
 		font-weight: 600;
 		margin: 5vh 0;
 	}
 
-	.homepageSectionFindOriginalArt__paragraph {
+	.homeSmallScale__originalArt__paragraph {
 		color: white;
 		font-family: 'Inter', Sans-serif;
 		font-size: 3vh;
 
 	}
+	
+</style>
 
-	.homepageSectionSmallScale {
+<section class="homeSmallScale__originalArt">
+	<h2 class="homeSmallScale__originalArt__heading">
+		Discover <br/>
+		Freshness
+	</h2>
+	<p class="homeSmallScale__originalArt__paragraph">
+		Full blown imagination. Characters. Abstracts. Species & Objects out of this world captured on paper.<br/>
+		Artist Kostas Gogas has been creating this worlds from 2001 .
+
+
+	</p>
+	<p class="homeSmallScale__originalArt__copycatNote">
+		You won't find no fan art or copycats here.
+	</p>
+
+
+	<h2 class="homeSmallScale__originalArt__heading">Original Means Original</h2>
+	<p class="homeSmallScale__originalArt__paragraph">
+		Find art that is actually original.<br/>
+		No prints (or even worse ‘posters’) advertised as ‘original’ art.
+	</p>
+</section>
+	<style type="text/css">
+
+	.homeSmallScale__aboutArt {
 		background-color: white;
-		padding: 10vw;
+		padding: 10vw;	
 	}
 
-	.homepageSectionSmallScale__heading {
+	.homeSmallScale__aboutArt__SmallScale {
+
+	}
+
+	.homeSmallScale__aboutArt__SmallScale__heading {
 		color: #8a8479;
 		font-family: 'Noto Serif', Serif;
 		font-size: 5vh;
@@ -3089,7 +3490,7 @@ Homepage Goals
 		margin: 0 10vw 10vw;
 	}
 
-	.homepageSectionSmallScale__img {
+	.homeSmallScale__aboutArt__SmallScale__img {
 		width: 20vw;
 		background-color: white;
 		-webkit-box-shadow: 5px 5px 40px 0px rgba(0,0,0,0.29);
@@ -3099,23 +3500,23 @@ Homepage Goals
 		margin: 10vw auto;
 	}
 
-	.homepageSectionSmallScale__paragraph {
+	.homeSmallScale__aboutArt__SmallScale__paragraph {
 		font-family: 'Noto Serif', Serif;
 		font-size: 2.75vh;
 		line-height: 1.35;
 		color: #8a8479;
 	}
 
-	.homepageSectionSmallScale__paragraph__hr {
+	.homeSmallScale__aboutArt__SmallScale__paragraph__hr {
 		color: #8a8479;
 		width: 50vw;
 	}
 
-	.homepageSectionSmallScale__paragraph__strongEm {
+	.homeSmallScale__aboutArt__SmallScale__paragraph__strongEm {
 		font-weight: bold;
 	}
 
-	.homepageSectionSmallScale__paragraph__footnote {
+	.homeSmallScale__aboutArt__SmallScale__paragraph__footnote {
 		font-family: 'Noto Serif', Serif;
 		font-size: 2.75vh;
 		line-height: 1.35;
@@ -3125,155 +3526,149 @@ Homepage Goals
 		display: block;
 	}
 
-	.homepageSectionTrulyIndependentArtist {
-		background-color: red;
-		padding: 10vw;
-		height: 100vh;
-	}
-
-	.homepageSectionTrulyIndependentArtist__heading {
-		font-size: 4vh;
-		font-family: 'Inter', Sans-serif;
-		text-transform: uppercase;
-		color: black;
-		font-weight: 800;
-		margin: 5vh 0;
-		letter-spacing: 0.1vh;
-		line-height: 1.2;
-	}
-
-	.homepageSectionTrulyIndependentArtist__paragraph {
-		color: black;
-		font-family: 'Inter', Sans-serif;
-		font-size: 3vh;
-		line-height: 1.2;
-		margin-top: 5vh;
-	}
-
-	.homepageSectionTrulyIndependentArtist__button {
-		color: red;
-		background-color: black;
-		display: block;
-		width: 25vh;
-		text-align: center;
-		padding: 3vw 0;
-		margin-top: 5vh;
-		font-weight: 700;
-		font-family: 'Inter', Sans-serif;
-		text-transform: uppercase;
-		font-size: 2vh;
-		line-height: 3.2vh;
-	}
-
-	.homepageSectionTrulyIndependentArtist__button__angleRight {
-		padding-left: 2vh;
-		font-size: 3vh;
-		line-height: 2.5vh;
-		vertical-align: text-bottom;
-	}
-
-	.homepageSectionArtistOwnedBusiness {
-		background-color: #222;
-		padding: 10vw;
-	}
-
-	.homepageSectionArtistOwnedBusiness__heading {
-		color: yellow;
-		font-family: 'Inter', Serif;
-		text-transform: uppercase;
-		font-size: 5vmax;
-		font-weight: 800;
-		line-height: 1.3;
-		margin: 5vh 0;
-	}
-
-	.homepageSectionArtistOwnedBusiness__subtitle {
-		color: white;
-		font-family: 'Inter', Serif;
-		font-size: 3vmax;
-		line-height: 1.5;
-		font-weight: 500;
-		margin: 5vh 0;
-		text-transform: uppercase;
-		border-left: 1px solid yellow;
-		padding-left: 5vw;
-	}
-
-	.homepageSectionArtistOwnedBusiness__paragraph {
-		color: white;
-		font-family: 'Inter', Serif;
-		font-size: 3vmax;
-		line-height: 1.2;
-		font-weight: 500;
-		margin: 5vh 0;
-	}
-
-	.homepageSectionArtistOwnedBusiness__paragraph__em {
-		display: block;
-		margin-top: 2vh;
-		font-weight: 400;
-		font-style: italic;
-		color: gray;
-		font-size: 2.5vmax;
-	}
-
-	.homepageSectionArtistOwnedBusiness__footer {
-		color: yellow;
-		font-family: 'Inter', Serif;
-		font-size: 3vmax;
-		line-height: 1.2;
-		font-weight: 500;
-		margin: 5vh 0;
-		text-transform: uppercase;
-	}
-
-	.homepageSectionFrom25Dollars {
+	.homeSmallScale__aboutArt__from25Dollars {
 
 	}
 
-	.homepageSectionFrom25Dollars__heading {
+	.homeSmallScale__aboutArt__from25Dollars__heading {
 
 	}
 
-	.homepageSectionFrom25Dollars__paragraph {
+	.homeSmallScale__aboutArt__from25Dollars__paragraph {
 
 	}
 
-	.homepageSectionCertificatesOfAuthenticity {
+	
+</style>
 
-	}
+<section class="homeSmallScale__aboutArt">
+	<section class="homeSmallScale__aboutArt__SmallScale">
+		<h2 class="homeSmallScale__aboutArt__SmallScale__heading">Small Scale</h2>
+		<img class="homeSmallScale__aboutArt__SmallScale__img" src="assets/temp/headache-product.jpg">
+		<p class="homeSmallScale__aboutArt__SmallScale__paragraph">
+			Drawing has always been the artist's favorite activity. There is an enormous number of small scale work on paper made with pencils or pens.<br/><br/>
+			<strong class="homeSmallScale__aboutArt__SmallScale__paragraph__strongEm">A curated collection of those black and white sketches can be found on the shop (more and more are coming).</strong><br/><br/>
+			<hr class="homeSmallScale__aboutArt__SmallScale__paragraph__hr">
+			<em class="homeSmallScale__aboutArt__SmallScale__paragraph__footnote">+ If you discover something on the site that is not listed in the shop, feel free to inquire about it.</em></p>
+	</section>
 
-	.homepageSectionCertificatesOfAuthenticity__heading {
+	<section class="homeSmallScale__aboutArt__from25Dollars">
+		<h2 class="homeSmallScale__aboutArt__from25Dollars__heading">Original Art from $25</h2>
+		<p class="homeSmallScale__aboutArt__from25Dollars__paragraph">
+			Cutting intermediaries and costs of operations as well as offering original works of small scale that have real value to the admirer of them, we have managed to offer low price points for people who really want to buy art but the art world has been neglecting them forever.
+		</p>
+		<p class="homeSmallScale__aboutArt__from25Dollars__paragraph">
+			Our goal is to offer art to the masses, the general public, who wants to buy something that means something to them.
+		</p>
+		<p class="homeSmallScale__aboutArt__from25Dollars__paragraph">
+			We are not here for investors, gallerists, or art-trends that die in a decade after making a billion by offering bulllshit to the world.</p>
+	</section>
+</section>
+	<style type="text/css">
 
-	}
 
-	.homepageSectionCertificatesOfAuthenticity__paragraph {
 
-	}
+	
+</style>
 
-	.homepageSectionBasedInGreece {
+<section class="homeSmallScale__security">
+	<section class="homeSmallScale__security__SecureByDesign">
+		<h2 class="homeSmallScale__security__SecureByDesign__heading">Secure by Design</h2>
+		<p class="homeSmallScale__security__SecureByDesign__paragraph">
+			The shop itself is designed to accept payments without us processing or storing any of your credit card data because we use the infrastructure of Stripe. <br/>
+			That way you can be rest assured that you don’t share any credit card information with us. <br/>
+			Everything is processed through Stripe and you can be rest assured that you are in good company.
+		</p>
+		<p class="homeSmallScale__security__SecureByDesign__paragraph">
+			You don’t have to have a Stripe account to buy from us, you can fill up your credit card info on checkout and go on your way of being an art collector.
+		</p>
+		<p class="homeSmallScale__security__SecureByDesign__paragraph">
+			You can learn more about Stripe through a simple google search.
+		</p>
+	</section>
+
+	<section class="homeSmallScale__security__SimpleProcess">
+		<h2 class="homeSmallScale__security__SimpleProcess__heading">Simple Process</h2>
+		<p class="homeSmallScale__security__SimpleProcess__paragraph">
+			Hit Buy<br/>
+			Fill up your info<br/>
+			Receive Your Art in a few days
+		</p>
+	</section>
+
+	<section class="homeSmallScale__security__FastProcess">
+		<h2 class="homeSmallScale__security__FastProcess__heading">Fast</h2>
+		<p class="homeSmallScale__security__FastProcess__paragraph">
+			Forget the pain staking process and the dullness of setting up accounts, registering your names and emails, confirming and yada yada yada..<br/><br/>
+
+			We’ve cut all that.<br/>
+			Go straight to checkout. Simple.
+		</p>
+	</section>
+</section>
+	
+	<style type="text/css">
+	
+</style>
+
+<section class="homeSmallScale__packaging">
+	<section class="homeSmallScale__packaging__packaging">
+		<h2 class="homeSmallScale__packaging__packaging__heading">Packaging</h2>
+		<p class="homeSmallScale__packaging__packaging__paragraph">
+			We strive for excellence in securing the artwork.<br/>
+			We wrap you art in five layers of protection before sending it to you, ensuring that shipping it will cause no damage to the piece.</p>
+
+		<p class="homeSmallScale__packaging__packaging__paragraph">We wrap our art with:
+		<ol class="homeSmallScale__packaging__packaging__paragraph__orderedList">
+			<li>Protective Layer</li>
+			<li>Bubbles</li>
+			<li></li>
+			<li></li>
+			<li>Cardboard</li>
+		</ol>
+			and we may add more on a per case basis to ensure the safety of each art piece.
+		</p>
+	</section>
+
+
+	<section class="homeSmallScale__packaging__CertificatesOfAuthenticity">
+		<h2 class="homeSmallScale__packaging__CertificatesOfAuthenticity__heading">Certificates of Authenticity</h2>
+		<p class="homeSmallScale__packaging__CertificatesOfAuthenticity__paragraph">
+			We provide certificates of authenticity for all original art purchased through the shop.<br/>
+			That way you don’t have to worry about proving the orignality of your the work you purchased in the future.<br/><br/>
+
+			The certificate ships with your art.<br/><br/>
+
+			Learn more about our certificates of authenticity.
+		</p>
+	</section>
+</section>
+	<style type="text/css">
+	
+
+	.homeSmallScale__shipping__BasedInGreece {
 		background-color: #f1d1ab;
 		padding: 5vh 0;
 	}
 
-	.homepageSectionBasedInGreece__header {
+	.homeSmallScale__shipping__BasedInGreece__header {
 
 	}
 
-	.homepageSectionBasedInGreece__header__iconHolder {
+	.homeSmallScale__shipping__BasedInGreece__header__iconHolder {
 		width: 15vw;
 		height: 15vw;
 		display: block;
 		margin: auto;
 	}
 
-	.homepageSectionBasedInGreece__header__iconHolder__img {
+	.homeSmallScale__shipping__BasedInGreece__header__iconHolder__img {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
 	}
 
-	.homepageSectionBasedInGreece__header__heading {
+	.homeSmallScale__shipping__BasedInGreece__header__heading {
 		color: #0695ed;
 		font-family: 'Noto Serif', serif;
 		font-weight: bold;
@@ -3283,12 +3678,12 @@ Homepage Goals
 		line-height: 1.3;
 	}
 
-	.homepageSectionBasedInGreece__divider {
+	.homeSmallScale__shipping__BasedInGreece__divider {
 		width: 50vw;
 		border: 0.2vh solid #235576;
 	}
 
-	.homepageSectionBasedInGreece__paragraph {
+	.homeSmallScale__shipping__BasedInGreece__paragraph {
 		color: #0f253c;
 		font-family: 'Noto Serif', serif;
 		margin: 5vh auto;
@@ -3297,26 +3692,26 @@ Homepage Goals
 		width: 80vw;
 	}
 
-	.homepageSectionBasedInGreece__paragraph__emphasis {
+	.homeSmallScale__shipping__BasedInGreece__paragraph__emphasis {
 		font-style: italic;
 	}
 
-	.homepageSectionBasedInGreece__filadelfeiaFigure {
+	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure {
 		margin: 5vh auto;
 	}
 
-	.homepageSectionBasedInGreece__filadelfeiaFigure__picture {
+	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__picture {
 
 	}
 
-	.homepageSectionBasedInGreece__filadelfeiaFigure__picture__img {
+	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__picture__img {
 		width: 80vw;
 		margin: auto;
 		object-fit: contain;
 		display: block;
 	}
 
-	.homepageSectionBasedInGreece__filadelfeiaFigure__figcaption {
+	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption {
 		font-family: 'Inter', sans-serif;
 		font-weight: 300;
 		font-size: 1.75vmax;
@@ -3329,325 +3724,109 @@ Homepage Goals
 		margin: 2vmax auto;
 	}
 
-	.homepageSectionBasedInGreece__filadelfeiaFigure__figcaption__link {
+	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link {
 		color: brown;
 		font-weight: 500;
 		text-decoration: underline;
 	}
-
-	.homepageSectionSecureByDesign {
-
-	}
-
-	.homepageSectionSecureByDesign__heading {
-
-	}
-
-	.homepageSectionSecureByDesign__paragraph {
-
-	}
-
-	.homepageSectionSimpleProcess {
-
-	}
-
-	.homepageSectionSimpleProcess__heading {
-
-	}
-
-	.homepageSectionSimpleProcess__paragraph {
-
-	}
-
-	.homepageSectionFastProcess {
-
-	}
-
-	.homepageSectionFastProcess__heading {
-
-	}
-
-	.homepageSectionFastProcess__paragraph {
-
-	}
-
-	.homepageSectionPackaging {
-
-	}
-
-	.homepageSectionPackaging__heading {
-
-	}
-
-	.homepageSectionPackaging__paragraph {
-
-	}
-
-	.homepageSectionPackaging__paragraph__orderedList {
-
-	}
-
-	.homepageSectionShipping {
-
-	}
-
-	.homepageSectionShipping__heading {
-
-	}
-
-	.homepageSectionShipping__paragraph {
-
-	}
-
-
-	.homepageSectionReviews {
-		padding: 5vw;
-		background-color: white;
-	}
-
-	.homepageSectionReviews__header {
-
-	}
-
-	.homepageSectionReviews__header__picture {
-		display: block;
-		width: 10vw;
-		margin: 5vw auto 2vw;
-	}
-
-	.homepageSectionReviews__header__picture__img {
-		width: 100%;
-	}
-
-	.homepageSectionReviews__header__heading {
-		color: #3296d2;
-		font-size: 4vh;
-		text-align: center;
-		font-family: 'Inter', Serif;
-		font-weight: 300;
-	}
-
-	.homepageSectionReviews__stars {
-		color: #3296d2;
-		font-size: 12vw;
-		text-align: center;
-		margin: 10vw auto;
-	}
-
-	.homepageSectionReviews__paragraph {
-		color: #3296d2;
-		font-size: 4vh;
-		text-align: center;
-		font-family: 'Inter', Serif;
-		text-transform: uppercase;
-		font-weight: 600;
-	}
-
-	.homepageSectionReviews__footer {
-		text-align: center;
-		margin: 5vw;
-	}
-
-	.homepageSectionReviews__footer__linkToReviews {
-		font-size: 2.5vh;
-		color: #3296d2;
-		text-decoration: underline;
-		font-size: 3vh;
-		font-family: 'Inter', Serif;
-	}
 </style>
 
 
-<section class="homepageSectionOfficialShop">
-	<h1 class="homepageSectionOfficialShop__heading">Official Shop of Artist Kostas Gogas</h1>
-	<a href="/page-test-allProducts.html" class="homepageSectionOfficialShop__button">Buy Art directly from the Artist <i class="fa fa-angle-right homepageSectionOfficialShop__button__angleRight" aria-hidden="true"></i></a>
+<section class="homeSmallScale__shipping">
+
+	<section class="homeSmallScale__shipping__shipping">
+		<h2 class="homeSmallScale__shipping__shipping__heading">Shipping</h2>
+		<p class="homeSmallScale__shipping__shipping__paragraph">
+			We currently ship to European Union, United Kingdom and United States.
+		</p>
+		<p class="homeSmallScale__shipping__shipping__paragraph">
+			Your art is shipped from Greece, with Standard Shipping and ussually arrives within 7 to 14 days.
+		</p>
+		<p class="homeSmallScale__shipping__shipping__paragraph">
+			You can always hit us up to ask anything, and we will get back to you as soon as possible.
+		</p>
+	</section>
+
+
+	<section class="homeSmallScale__shipping__BasedInGreece">
+		<header class="homeSmallScale__shipping__BasedInGreece__header">
+			<picture class="homeSmallScale__shipping__BasedInGreece__header__iconHolder">
+				<img src="assets/temp/iconfinder__location_1249982.png" class="homeSmallScale__shipping__BasedInGreece__header__iconHolder__img">
+			</picture>
+			<h2 class="homeSmallScale__shipping__BasedInGreece__header__heading">We are based in Nea Filadelfeia, Greece</h2>
+		</header>
+
+		<hr class="homeSmallScale__shipping__BasedInGreece__divider">
+
+		<p class="homeSmallScale__shipping__BasedInGreece__paragraph">
+			..which is also the artist's hometown. Located near Athens, the spirit of our small suburb is one of open-heartedness to foreigners and people coming from different backgrounds as the city’s name itself comes from the Anatolian city <em class="homeSmallScale__shipping__BasedInGreece__paragraph__emphasis">'Filadelfeia'</em> where Greek refugees fled from after the Greco-Turkish war between 1912-1922.
+		</p>
+		<figure class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure">
+			<picture class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__picture">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Nea_Filadelfia_lake.JPG/1200px-Nea_Filadelfia_lake.JPG" alt="Nea Filadelfia lake" class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__picture__img">
+			</picture>
+			<figcaption class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption">
+				Nea Filadelfeia Park by <a href="//commons.wikimedia.org/wiki/User:Dimkoa" title="User:Dimkoa" target="_blank" rel="noopener" class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link">
+					dimkoa</a>, Own work, Public Domain,
+				<a href="https://en.wikipedia.org/wiki/Nea_Filadelfeia#/media/File:Nea_Filadelfia_lake.JPG" target="_blank" rel="noopener" class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link">Link to Original Image</a>
+			</figcaption>
+		</figure>
+	</section>
 </section>
+	<style type="text/css">
+	
+	.homeSmallScale__aboutBusiness__artistOwnedBusiness {
+		background-color: #222;
+		padding: 10vw;
+	}
 
-<section class="homepageSectionFreshOriginalArt">
-	<h2 class="homepageSectionFreshOriginalArt__heading">
-		Discover <br/>
-		Fresh <br/>
-		Original Art</h2>
-	<p class="homepageSectionFreshOriginalArt__paragraph">
-		Imagination in characters and abstract works in the multitude of pure original styles of Kostas Gogas.<br/>
-		No fan art or copycats.<br/>
-		Kostas Gogas has been creating art from 2001 and he has been disrupting his own self time and again ever since.
-	</p>
-</section>
+	.homeSmallScale__aboutBusiness__artistOwnedBusiness__heading {
+		color: yellow;
+		font-family: 'Inter', Serif;
+		text-transform: uppercase;
+		font-size: 5vmax;
+		font-weight: 800;
+		line-height: 1.3;
+		margin: 5vh 0;
+	}
 
-<section class="homepageSectionFindOriginalArt">
-	<h2 class="homepageSectionFindOriginalArt__heading">Find Original Art</h2>
-	<p class="homepageSectionFindOriginalArt__paragraph">
-		Find art that is actually original.<br/>
-		Not prints (or even worse ‘posters’) advertised as ‘original’.
-	</p>
-</section>
+	.homeSmallScale__aboutBusiness__artistOwnedBusiness__subtitle {
+		color: white;
+		font-family: 'Inter', Serif;
+		font-size: 3vmax;
+		line-height: 1.5;
+		font-weight: 500;
+		margin: 5vh 0;
+		text-transform: uppercase;
+		border-left: 1px solid yellow;
+		padding-left: 5vw;
+	}
 
-<section class="homepageSectionSmallScale">
-	<h2 class="homepageSectionSmallScale__heading">Small Scale Art</h2>
-	<img class="homepageSectionSmallScale__img" src="assets/temp/headache-product.jpg">
-	<p class="homepageSectionSmallScale__paragraph">
-		Drawing has always been the artist's favorite activity. There is an enormous number of small scale work on paper made with pencils or pens.<br/><br/>
-		<strong class="homepageSectionSmallScale__paragraph__strongEm">A curated collection of those black and white sketches can be found on the shop (more and more are coming).</strong><br/><br/>
-		<hr class="homepageSectionSmallScale__paragraph__hr">
-		<em class="homepageSectionSmallScale__paragraph__footnote">+ If you discover something on the site that is not listed in the shop, feel free to inquire about it.</em></p>
-</section>
+	.homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph {
+		color: white;
+		font-family: 'Inter', Serif;
+		font-size: 3vmax;
+		line-height: 1.2;
+		font-weight: 500;
+		margin: 5vh 0;
+	}
 
-<section class="homepageSectionTrulyIndependentArtist">
-	<h2 class="homepageSectionTrulyIndependentArtist__heading">Truly Independent Artist</h2>
-	<p class="homepageSectionTrulyIndependentArtist__paragraph">
-		Kostas Gogas has been leading an independent career and asserting his own vision from his early days of graffiti activity, or when producing hip-hop records and later producing and directing his first feature film.
-	</p>
+	.homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph__em {
+		display: block;
+		margin-top: 2vh;
+		font-weight: 400;
+		font-style: italic;
+		color: gray;
+		font-size: 2.5vmax;
+	}
 
-	<p class="homepageSectionTrulyIndependentArtist__paragraph">
-		All is said and explained at the about page.
-	</p>
-
-	<a href="about.html.html" class="homepageSectionTrulyIndependentArtist__button">
-		About<i class="fa fa-angle-right homepageSectionTrulyIndependentArtist__button__angleRight" aria-hidden="true"></i>
-	</a>
-</section>
-
-<section class="homepageSectionArtistOwnedBusiness">
-	<h2 class="homepageSectionArtistOwnedBusiness__heading">Artist Owned Business</h2>
-	<p class="homepageSectionArtistOwnedBusiness__subtitle">
-		No platforms <br/>
-		No representatives <br/>
-		No gallerists <br/>
-		or auction houses.
-	</p>
-	<p class="homepageSectionArtistOwnedBusiness__paragraph">
-		Connect directly with a business that is actually owned and operated by the artist himself.<br/>
-		<em class="homepageSectionArtistOwnedBusiness__paragraph__em">Even this page your are browsing right now is designed by the artist himself.</em>
-	</p>
-	<footer class="homepageSectionArtistOwnedBusiness__footer">
-		Welcome inside the true world of the artist
-	</footer>
-</section>
-
-<section class="homepageSectionFrom25Dollars">
-	<h2 class="homepageSectionFrom25Dollars__heading">Original Art from $25</h2>
-	<p class="homepageSectionFrom25Dollars__paragraph">
-		Cutting intermediaries and costs of operations as well as offering original works of small scale that have real value to the admirer of them, we have managed to offer low price points for people who really want to buy art but the art world has been neglecting them forever.
-	</p>
-	<p class="homepageSectionFrom25Dollars__paragraph">
-		Our goal is to offer art to the masses, the general public, who wants to buy something that means something for them.
-	</p>
-	<p class="homepageSectionFrom25Dollars__paragraph">
-		We are not here for investors, gallerists, or art-trends that die in a decade after making a billion by offering bulllshit to the world.</p>
-</section>
-
-<section class="homepageSectionCertificatesOfAuthenticity">
-	<h2 class="homepageSectionCertificatesOfAuthenticity__heading">Certificates of Authenticity</h2>
-	<p class="homepageSectionCertificatesOfAuthenticity__paragraph">
-		We provide certificates of authenticity for all original art purchased through the shop.<br/>
-		That way you don’t have to worry about proving the orignality of your the work you purchased in the future.<br/><br/>
-
-		The certificate ships with your art.<br/><br/>
-
-		Learn more about our certificates of authenticity.
-	</p>
-</section>
-
-<section class="homepageSectionBasedInGreece">
-	<header class="homepageSectionBasedInGreece__header">
-		<picture class="homepageSectionBasedInGreece__header__iconHolder">
-			<img src="assets/temp/iconfinder__location_1249982.png" class="homepageSectionBasedInGreece__header__iconHolder__img">
-		</picture>
-		<h2 class="homepageSectionBasedInGreece__header__heading">We are based in Nea Filadelfeia, Greece</h2>
-	</header>
-
-	<hr class="homepageSectionBasedInGreece__divider">
-
-	<p class="homepageSectionBasedInGreece__paragraph">
-		..which is also the artist's hometown. Located near Athens, the spirit of our small suburb is one of open-heartedness to foreigners and people coming from different backgrounds as the city’s name itself comes from the Anatolian city <em class="homepageSectionBasedInGreece__paragraph__emphasis">'Filadelfeia'</em> where Greek refugees fled from after the Greco-Turkish war between 1912-1922.
-	</p>
-	<figure class="homepageSectionBasedInGreece__filadelfeiaFigure">
-		<picture class="homepageSectionBasedInGreece__filadelfeiaFigure__picture">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Nea_Filadelfia_lake.JPG/1200px-Nea_Filadelfia_lake.JPG" alt="Nea Filadelfia lake" class="homepageSectionBasedInGreece__filadelfeiaFigure__picture__img">
-		</picture>
-		<figcaption class="homepageSectionBasedInGreece__filadelfeiaFigure__figcaption">
-			Nea Filadelfeia Park by <a href="//commons.wikimedia.org/wiki/User:Dimkoa" title="User:Dimkoa" target="_blank" rel="noopener" class="homepageSectionBasedInGreece__filadelfeiaFigure__figcaption__link">
-				dimkoa</a>, Own work, Public Domain,
-			<a href="https://en.wikipedia.org/wiki/Nea_Filadelfeia#/media/File:Nea_Filadelfia_lake.JPG" target="_blank" rel="noopener" class="homepageSectionBasedInGreece__filadelfeiaFigure__figcaption__link">Link to Original Image</a>
-		</figcaption>
-	</figure>
-</section>
-
-<section class="homepageSectionSecureByDesign">
-	<h2 class="homepageSectionSecureByDesign__heading">Secure by Design</h2>
-	<p class="homepageSectionSecureByDesign__paragraph">
-		The shop itself is designed to accept payments without us processing or storing any of your credit card data because we use the infrastructure of Stripe. <br/>
-		That way you can be rest assured that you don’t share any credit card information with us. <br/>
-		Everything is processed through Stripe and you can be rest assured that you are in good company.
-	</p>
-	<p class="homepageSectionSecureByDesign__paragraph">
-		You don’t have to have a Stripe account to buy from us, you can fill up your credit card info on checkout and go on your way of being an art collector.
-	</p>
-	<p class="homepageSectionSecureByDesign__paragraph">
-		You can learn more about Stripe through a simple google search.
-	</p>
-</section>
-
-<section class="homepageSectionSimpleProcess">
-	<h2 class="homepageSectionSimpleProcess__heading">Simple Process</h2>
-	<p class="homepageSectionSimpleProcess__paragraph">
-		Hit Buy<br/>
-		Fill up your info<br/>
-		Receive Your Art in a few days
-	</p>
-</section>
-
-<section class="homepageSectionFastProcess">
-	<h2 class="homepageSectionFastProcess__heading">Fast</h2>
-	<p class="homepageSectionFastProcess__paragraph">
-		Forget the pain staking process and the dullness of setting up accounts, registering your names and emails, confirming and yada yada yada..<br/><br/>
-
-		We’ve cut all that.<br/>
-		Go straight to checkout. Simple.
-	</p>
-</section>
-
-<section class="homepageSectionPackaging">
-	<h2 class="homepageSectionPackaging__heading">Packaging</h2>
-	<p class="homepageSectionPackaging__paragraph">
-		We strive for excellence in securing the artwork.<br/>
-		We wrap you art in five layers of protection before sending it to you, ensuring that shipping it will cause no damage to the piece.</p>
-
-	<p class="homepageSectionPackaging__paragraph">We wrap our art with:
-	<ol class="homepageSectionPackaging__paragraph__orderedList">
-		<li>Protective Layer</li>
-		<li>Bubbles</li>
-		<li></li>
-		<li></li>
-		<li>Cardboard</li>
-	</ol>
-		and we may add more on a per case basis to ensure the safety of each art piece.
-	</p>
-</section>
-
-<section class="homepageSectionShipping">
-	<h2 class="homepageSectionShipping__heading">Shipping</h2>
-	<p class="homepageSectionShipping__paragraph">
-		We currently ship to European Union, United Kingdom and United States.
-	</p>
-	<p class="homepageSectionShipping__paragraph">
-		Your art is shipped from Greece, with Standard Shipping and ussually arrives within 7 to 14 days.
-	</p>
-	<p class="homepageSectionShipping__paragraph">
-		You can always hit us up to ask anything, and we will get back to you as soon as possible.
-	</p>
-</section>
-
-
-<style type="text/css">
-	.homepageSectionHistory {
+	.homeSmallScale__aboutBusiness__history {
 		padding: 5vw 10vw;
 		background: black;
 		color: white;
 	}
 
-	.homepageSectionHistory__header {
+	.homeSmallScale__aboutBusiness__history__header {
 		margin: 5vh auto;
 		font-size: 5vh;
 		font-family: 'Noto Serif', Serif;
@@ -3655,10 +3834,10 @@ Homepage Goals
 		line-height: 1.2;
 	}
 
-	.homepageSectionHistory__header__heading {
+	.homeSmallScale__aboutBusiness__history__header__heading {
 	}
 
-	.homepageSectionHistory__header__heading__firstLine {
+	.homeSmallScale__aboutBusiness__history__header__heading__firstLine {
 		display: block;
 		font-size: 7.3vh;
 		text-transform: uppercase;
@@ -3667,10 +3846,10 @@ Homepage Goals
 		color: yellow;
 	}
 
-	.homepageSectionHistory__paragraphContainer {
+	.homeSmallScale__aboutBusiness__history__paragraphContainer {
 	}
 
-	.homepageSectionHistory__paragraphContainer__paragraph {
+	.homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph {
 		margin: 2vh auto;
 		font-size: 3vh;
 		line-height: 1.25;
@@ -3678,18 +3857,18 @@ Homepage Goals
 		font-weight: 300;
 	}
 
-	.homepageSectionHistory__paragraphContainer__paragraph__emphasis {
+	.homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis {
 		font-weight: 400;
 		color: yellow;
 	}
 
-	.homepageSectionHistory__footer {
+	.homeSmallScale__aboutBusiness__history__footer {
 		margin: 8vh auto 5vh;
 		display: grid;
 		grid-template-columns: 50% 50%;
 	}
 
-	.homepageSectionHistory__footer__text {
+	.homeSmallScale__aboutBusiness__history__footer__text {
 		font-size: 3vh;
 		font-family: 'Noto Serif', Serif;
 		color: yellow;
@@ -3701,7 +3880,7 @@ Homepage Goals
 		width: fit-content;
 	}
 
-	.homepageSectionHistory__footer__signature {
+	.homeSmallScale__aboutBusiness__history__footer__signature {
 		width: 100%;
 		height: 100%;
 		grid-template-columns: 100%;
@@ -3709,74 +3888,153 @@ Homepage Goals
 		display: grid;
 	}
 
-	.homepageSectionHistory__footer__signature__img {
+	.homeSmallScale__aboutBusiness__history__footer__signature__img {
 		width: 20vw;
 		height: 5vh;
 		object-fit: contain;
 		display: block;
 	}
+</style>
 
+
+<section class="homeSmallScale__aboutBusiness__">
+
+	<section class="homeSmallScale__aboutBusiness__artistOwnedBusiness">
+		<h2 class="homeSmallScale__aboutBusiness__artistOwnedBusiness__heading">Artist Owned Business</h2>
+		<p class="homeSmallScale__aboutBusiness__artistOwnedBusiness__subtitle">
+			No platforms <br/>
+			No representatives <br/>
+			No gallerists <br/>
+			or auction houses.
+		</p>
+		<p class="homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph">
+			Connect directly with a business that is actually owned and operated by the artist himself.<br/>
+			<em class="homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph__em">Even this page your are browsing right now is designed by the artist himself.</em>
+		</p>
+	</section>
+
+	<section class="homeSmallScale__aboutBusiness__history">
+		<header class="homeSmallScale__aboutBusiness__history__header">
+			<h2 class="homeSmallScale__aboutBusiness__history__header__heading">
+				<span class="homeSmallScale__aboutBusiness__history__header__heading__firstLine">
+					20 Years 
+				</span>
+				in the Making
+		</h2>
+		</header>
+		<section class="homeSmallScale__aboutBusiness__history__paragraphContainer">
+			<p class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph">
+				The eshop emerged into existence in 2017, Kostas Gogas <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">has been working professionaly from the age of 14</span>, when his first Graffiti commisions started in <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">January 2001</span>.
+			</p>
+			<p class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph">
+				Before moving away from all comissioned work in 2012 he had <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">already created numerous artworks of various formats for music bands, schools, stores, individuals, non-profit organizations and big corporations.</span>
+			</p>			
+		</section>
+		<footer class="homeSmallScale__aboutBusiness__history__footer">
+			<p class="homeSmallScale__aboutBusiness__history__footer__text">
+				Est. 2001
+			</p>
+
+			<picture class="homeSmallScale__aboutBusiness__history__footer__signature">
+				<img src="assets/temp/kostas-gogas-logo-signature-white-01.png" class="homeSmallScale__aboutBusiness__history__footer__signature__img">
+			</picture>
+		</footer>
+	</section>
+</section>
+	<style type="text/css">
+		.homeSmallScale__reviews {
+		padding: 5vw;
+		background-color: white;
+	}
+
+	.homeSmallScale__reviews__header {
+
+	}
+
+	.homeSmallScale__reviews__header__picture {
+		display: block;
+		width: 10vw;
+		margin: 5vw auto 2vw;
+	}
+
+	.homeSmallScale__reviews__header__picture__img {
+		width: 100%;
+	}
+
+	.homeSmallScale__reviews__header__heading {
+		color: #3296d2;
+		font-size: 4vh;
+		text-align: center;
+		font-family: 'Inter', Serif;
+		font-weight: 300;
+	}
+
+	.homeSmallScale__reviews__stars {
+		color: #3296d2;
+		font-size: 12vw;
+		text-align: center;
+		margin: 10vw auto;
+	}
+
+	.homeSmallScale__reviews__paragraph {
+		color: #3296d2;
+		font-size: 4vh;
+		text-align: center;
+		font-family: 'Inter', Serif;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	.homeSmallScale__reviews__footer {
+		text-align: center;
+		margin: 5vw;
+	}
+
+	.homeSmallScale__reviews__footer__linkToReviews {
+		color: black;
+		text-decoration: underline;
+		font-size: 3.8vw;
+		font-family: 'Inter', Serif;
+		font-weight: 500;
+	}
 
 </style>
 
-<section class="homepageSectionHistory">
-	<header class="homepageSectionHistory__header">
-		<h2 class="homepageSectionHistory__header__heading">
-			<span class="homepageSectionHistory__header__heading__firstLine">
-				20 Years 
-			</span>
-			in the Making
-	</h2>
-	</header>
-	<section class="homepageSectionHistory__paragraphContainer">
-		<p class="homepageSectionHistory__paragraphContainer__paragraph">
-			The eshop emerged into existence in 2017, Kostas Gogas <span class="homepageSectionHistory__paragraphContainer__paragraph__emphasis">has been working professionaly from the age of 14</span>, when his first Graffiti commisions started in <span class="homepageSectionHistory__paragraphContainer__paragraph__emphasis">January 2001</span>.
-		</p>
-		<p class="homepageSectionHistory__paragraphContainer__paragraph">
-			Before moving away from all comissioned work in 2012 he had <span class="homepageSectionHistory__paragraphContainer__paragraph__emphasis">already created numerous artworks of various formats for music bands, schools, stores, individuals, non-profit organizations and big corporations.</span>
-		</p>			
-	</section>
-	<footer class="homepageSectionHistory__footer">
-		<p class="homepageSectionHistory__footer__text">
-			Est. 2001
+
+<section class="homeSmallScale__reviews">
+		<header class="homeSmallScale__reviews__header">
+			<picture class="homeSmallScale__reviews__header__picture">
+				<img src="assets/temp/googlemybusiness.png" alt="Google My Business Logo" class="homeSmallScale__reviews__header__picture__img">
+			</picture>
+			<h2 class="homeSmallScale__reviews__header__heading">Five Star Rating on Google</h2>
+		</header>
+		<p class="homeSmallScale__reviews__stars">
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
 		</p>
 
-		<picture class="homepageSectionHistory__footer__signature">
-			<img src="assets/temp/kostas-gogas-logo-signature-white-01.png" class="homepageSectionHistory__footer__signature__img">
-		</picture>
-	</footer>
-</section>
-
-<section class="homepageSectionReviews">
-	<header class="homepageSectionReviews__header">
-		<picture class="homepageSectionReviews__header__picture">
-			<img src="assets/temp/googlemybusiness.png" alt="Google My Business Logo" class="homepageSectionReviews__header__picture__img">
-		</picture>
-		<h2 class="homepageSectionReviews__header__heading">Five Star Rating on Google</h2>
-	</header>
-	<p class="homepageSectionReviews__stars">
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-	</p>
-
-	<footer class="homepageSectionReviews__footer">
-		<a href="https://g.page/kostasgogas" class="homepageSectionReviews__footer__linkToReviews" target="_blank" rel="noopener">
-			Read Google Reviews <i class="fa fa-external-link" aria-hidden="true"></i>
-		</a>
-	</footer>
+		<footer class="homeSmallScale__reviews__footer">
+			<a href="https://g.page/kostasgogas" class="homeSmallScale__reviews__footer__linkToReviews" target="_blank" rel="noopener">
+				Read Google Reviews <i class="fa fa-external-link" aria-hidden="true"></i>
+			</a>
+		</footer>
 
 </section>
 
 
-<a href="/page-test-singleProduct.html">product</a>
 
-<a href="/page-test-allProducts.html">All products</a>
 
-<a href="/page-test-project.html">project</a>
 
+
+	<a href="/page-test-singleProduct.html">product</a>
+
+	<a href="/page-test-allProducts.html">All products</a>
+
+	<a href="/page-test-project.html">project</a>
+</div>
 
 
 	<footer class="siteWideFooter">
