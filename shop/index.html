@@ -354,7 +354,7 @@ explicitly, e.g.
 }
 
 body {
-	margin-top: 7vh;
+	margin-top: 10vmin;
 }
 
 *, *:before, *:after {
@@ -364,129 +364,11 @@ body {
 }
 
 
-/* Site Wide Header */
+/* Site Wide Header 
 
-.siteWideHeader {
-	height: 7vh;
-	top: 0;
-	position: fixed;
-	background-color: black;
-	width: 100%;
-	z-index: 999;
-	display: grid;
-	grid-template-columns: 15vh auto 0 7vh;
-}
+place it afterwards
 
-
-
-.siteWideHeader {
-}
-
-.siteWideHeader__logo {
-	border-right: 1px solid white;
-	display: grid;
-	grid-template-rows: 5vh 1.5vh;
-}
-
-.siteWideHeader__logo__image {
-	max-height: 100%;
-	max-width: 100%;
-	display: block;
-	margin: auto;
-}
-
-.siteWideHeader__logo__name {
-	font-size: 1vh;
-	font-family: 'Inter', Sans-serif;
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 0.1vh;
-	display: block;
-	text-align: center;
-	margin: 0.25vh 0;
-}
-
-
-.siteWideHeader__menuButton {
-	display: none;
-}
-
-.siteWideHeader__menuButton__label {
-    font-size: 7vh;
-    width: 7vh;
-    color: white;
-    display: block;
-    text-align: center;
-}
-
-.siteWideHeader__linksContainer {
-	display: none;
-}
-
-input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__label + .siteWideHeader__linksContainer {
-	clear: both;
-	display: block;
-	height: 100vh;
-	background-color: black;
-	top: 7vh;
-	position: fixed;
-	width: 100%;
-	border-top: 0.1vh solid white;
-}
-
-.siteWideHeader__linksContainer__mainUnorderedList {
-	font-size: 6vh;
-	font-family: 'Inter', Sans-serif;
-	color: white;
-	font-weight: 800;
-	color: white;
-	line-height: 3;
-}
-
-.siteWideHeader__linksContainer__mainUnorderedList_listItem {
-	display: block;
-}
-
-.siteWideHeader__linksContainer__mainUnorderedList_listItem a {
-	color: white;
-	width: 100%;
-	padding-left: 15vh;
-	display: block;
-	letter-spacing: 0.1vh;
-}
-
-.siteWideHeader__linksContainer__secondaryUnorderedList {
-	font-size: 3vh;
-	font-family: 'Inter', Sans-serif;
-	color: white;
-	font-weight: 400;
-	color: white;
-	line-height: 3;
-}
-
-.siteWideHeader__linksContainer__secondaryUnorderedList__listItem {
-
-}	
-
-.siteWideHeader__linksContainer__secondaryUnorderedList__listItem a {
-	color: white;
-	width: 100%;
-	padding-left: 15vh;
-	display: block;
-	letter-spacing: 0.1vh;
-}
-
-/* change the angle-down to angle-up */
-input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__label i {
-	display: none;
-}
-
-input#siteWideHeader__menuButton--toggle:checked + .siteWideHeader__menuButton__label:after {
-	font-family: FontAwesome;
-	font-weight: 300;
-	content: "\f106";
-	line-height: 7vh;
-}
+*/
 
 
 /* Site Wide Footer */
@@ -2940,39 +2822,131 @@ this here is just to copy the 'icons' css as needed */
 	</style>
 </head>
 <body>
-	<header class="siteWideHeader">
+	<style type="text/css">
+	.siteWideHeader {
+		height: 10vmin;
+		top: 0;
+		position: fixed;
+		background-color: black;
+		width: 100%;
+		z-index: 999;
+		display: grid;
+		grid-template-columns: 20vw 80vw;
+	}
+	.siteWideHeader__logo {
+		border-right: 1px solid white;
+		display: grid;
+		grid-template-rows: 7vmin 3vmin;
+	}
+
+	.siteWideHeader__logo__image {
+		max-height: 100%;
+		max-width: 100%;
+		display: block;
+		margin: auto;
+	}
+
+	.siteWideHeader__logo__name {
+		font-size: 1.7vmin;
+		font-family: 'Inter', Sans-serif;
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 0.1vh;
+		display: block;
+		text-align: center;
+		margin: 0.25vh 0;
+	}
+
+	.siteWideHeader__menuList {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.siteWideHeader__menuList__listItem {
+		display: table;
+		width: 100%;
+		height: 100%;
+	}
+
+	.siteWideHeader__menuList__listItem__link {
+		display: table-cell;
+		vertical-align: middle;
+
+		font-family: 'Inter', Sans-serif;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1vmin;
+		font-size: 2vmin;
+		text-align: center;
+
+		color: white;
+	}
+
+	.siteWideHeader__menuList__listItem__link:hover {
+		background-color: yellow;
+		color: black;
+	}
+
+	.siteWideHeader__menuList__listItem__link__icon {
+		font-size: 3vmin;
+		line-height: 5vmin;
+	}
+
+	.siteWideHeader__menuList__listItem__link--about {color: white;}
+	.siteWideHeader__menuList__listItem__link--about:hover {background-color: white;}
+
+	.siteWideHeader__menuList__listItem__link--work {color: #fb355a;}
+	.siteWideHeader__menuList__listItem__link--work:hover {background-color: #fb355a;}
+
+	.siteWideHeader__menuList__listItem__link--shop {color: yellow;}
+	.siteWideHeader__menuList__listItem__link--shop:hover {background-color: yellow;}
+
+	.siteWideHeader__menuList__listItem__link--contact {color: #ddd;}
+	.siteWideHeader__menuList__listItem__link--contact:hover {background-color: #ddd;}
+
+	.siteWideHeader__menuList__listItem__link--cart {color: #70d4f5;}
+	.siteWideHeader__menuList__listItem__link--cart:hover {background-color: #70d4f5;}
+
+
+
+</style>
+
+<header class="siteWideHeader">
+
 	<a href="/" class="siteWideHeader__logo">
-	<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Kostas Gogas Logo" title="Go to Homepage" class="siteWideHeader__logo__image">
-	<h3 class="siteWideHeader__logo__name">Kostas Gogas</h3>
-</a>
-	<div><!-- placeholder< --></div>
-	<input id="siteWideHeader__menuButton--toggle" class="siteWideHeader__menuButton" type="checkbox">
-<label for="siteWideHeader__menuButton--toggle" class="siteWideHeader__menuButton__label" tabindex="1"><i class="fa fa-angle-down" aria-hidden="true"></i></label>
-	<nav class="siteWideHeader__linksContainer">
-	<ul class="siteWideHeader__linksContainer__mainUnorderedList">
-		<li class="siteWideHeader__linksContainer__mainUnorderedList_listItem"><a href="/work/el/">Έργα</a></li>
-		<li class="siteWideHeader__linksContainer__mainUnorderedList_listItem"><a href="">Γκαλερί</a></li>
-		<li class="siteWideHeader__linksContainer__mainUnorderedList_listItem"><a href="">Στούντιο</a></li>
+		<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Kostas Gogas Logo" title="Go to Homepage" class="siteWideHeader__logo__image">
+		<h3 class="siteWideHeader__logo__name">Kostas Gogas</h3>
+	</a>
+
+	<ul class="siteWideHeader__menuList">
+		<li class="siteWideHeader__menuList__listItem">
+			<a href="/about.html" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--about">
+				About
+			</a>
+		</li>
+		<li class="siteWideHeader__menuList__listItem">
+			<a href="/work/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--work">
+				Work
+			</a>
+		</li>
+		<li class="siteWideHeader__menuList__listItem">
+			<a href="/shop/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
+				Shop
+			</a>
+		</li>
+		<li class="siteWideHeader__menuList__listItem">
+			<a href="" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--contact">
+				Contact
+			</a>
+		</li>
+		<li class="siteWideHeader__menuList__listItem">
+			<a href="" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--cart">
+				<i class="fa fa-shopping-bag siteWideHeader__menuList__listItem__link__icon" aria-hidden="true"></i>
+				<br/>
+				Cart
+			</a>
+		</li>
 	</ul>
-
-	<ul class="siteWideHeader__linksContainer__secondaryUnorderedList">
-		<li class="siteWideHeader__linksContainer__secondaryUnorderedList__listItem"><a href="/Blog/">Blog</a></li>
-		<li class="siteWideHeader__linksContainer__secondaryUnorderedList__listItem"><a href="">Σχετικά</a></li>
-		<li class="siteWideHeader__linksContainer__secondaryUnorderedList__listItem"><a href="">Sitemap</a></li>
-		<li class="siteWideHeader__linksContainer__secondaryUnorderedList__listItem"><a href="/">Change to English Site</a></li>
-	</ul>
-</nav>
-
-
-<!-- Ελληνικά
-
-Έργα
-
-Κατάστημα
-
-Σχετικά
-
- -->
 </header>
 
 
@@ -3391,6 +3365,7 @@ explicitly, e.g.
 	
 </style>
 
+<div id="shopPageSomeProductsAnchor"></div>
 <section class="homeSmallScale__someProducts">
 	<header class="homeSmallScale__someProducts__header">
 		
