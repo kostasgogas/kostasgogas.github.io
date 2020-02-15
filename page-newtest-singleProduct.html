@@ -391,7 +391,7 @@ place it afterwards
 	color: white;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1.75vmax;
+	font-size: 4vmin;
 	margin-top: 6vh;
 	margin-bottom: 2vh;
 }
@@ -403,11 +403,16 @@ place it afterwards
 }
 
 .siteWideFooter__section__heading__unorderedList__listItem__link {
+	margin: 1vmin 0;
+	padding: 1.5vmin 0;
+	display: block;
+	
 	font-family: 'Inter', Sans-serif;
-	font-size: 1.85vmax;
-	color: white;
+	font-size: 4vmin;
 	font-weight: 200;
-	line-height: 1.75;
+	line-height: 1.25;
+
+	color: white;
 }
 
 
@@ -2817,6 +2822,9 @@ this here is just to copy the 'icons' css as needed */
 			/* Product Page */
 
 
+
+
+
 /* throw what fonts you don't use */
 @font-face {
   font-family: 'Inter';
@@ -3068,7 +3076,7 @@ explicitly, e.g.
 }
 
 body {
-	margin-top: 10vh;
+	margin-top: 10vmin;
 }
 
 .productPage {
@@ -3076,27 +3084,36 @@ body {
 }
 
 .productPage__product {
-	width: 80vw;
-	margin: auto;
+
 }
 
 .productPage__product__headerOfProduct {
+	width: 100%;
+	padding: 2vmin 4vmin;
+
 	font-family: 'Inter', Sans-serif;
+
+	background-color: yellow;
 }
 
 .productPage__product__headerOfProduct__heading {
-	font-size: 4vmax;
+	margin: auto;
+
+	font-size: 3vmin;
+	text-transform: uppercase;
+	font-weight: 800;
 	line-height: 1.25;
-	font-weight: bold;
-	color: #333;
-	margin: 1vh 0;
+
+	color: black;
 }
 
 .productPage__product__headerOfProduct__shortDescription {
-	font-weight: 400;
-	font-style: italic;
-	font-size: 1.2vmax;
-	color: #333;
+	margin-top: 1vmin;
+
+	font-size: 2.5vmin;
+	line-height: 1.25;
+
+	color: #777;
 }
 
 .productPage__product__featuredImageFigure {
@@ -3124,202 +3141,79 @@ body {
 	font-style: italic;
 }
 
-.productPage__product__imageGallery {
-	margin: auto;
-	display: block;
-	clear: both;
-	margin: 4vh 0;
-}
 
-.productPage__product__imageGallery__picture {
-	display: block;
-	position: relative;
-	width: 25%;
-	padding-bottom: 25%;
-	float: left;
-	border: 0.25vmax solid white;
-	box-sizing: border-box;
-}
-
-.productPage__product__imageGallery__picture__image {
-	position: absolute;
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
-
-.productPage__product__imageGallery__figcaption {
-	clear: both;
-	font-size: 0.8vw;
-	padding: 1vh 0;
-	text-align: center;
-	font-family: 'Inter', Sans-serif;
-	font-weight: 500;
-	font-style: italic;
-	line-height: 2;
-}
-
-.productPage__product__details {
-	clear: both;
-	padding: 5vw 0;
-	width: 80%;
-	margin: auto;
-}
-
-.productPage__product__details__heading {
-	font-size: 3vmax;
-	font-family: 'Inter', Sans-serif;
-	font-weight: 800;
-	line-height: 2;
-}
-
-
-.productPage__product__details__heading i {
-}
-
-.productPage__product__details__unorderedList {
-	margin: 2vh 0;
-}
-
-.productPage__product__details__unorderedList li {
-	font-size: 2.5vmax;
-	font-family: 'Inter', Sans-serif;
-	line-height: 1.25;
-	margin-bottom: 1.5vmax;
-}
-
-.productPage__product__details__unorderedList li strong {
-	font-weight: 600;
-}
-
-
-.productPage__product__medium {
-	width: 80%;
-	margin: auto;
-	padding: 5vw 0;
-	border-bottom: 0.1vh solid black;
-	display: grid;
-	grid-template-columns: 25vw auto;
-}
-
-.productPage__product__medium__image {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	width: 100%;
-}
-
-.productPage__product__medium__container {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	text-align: right;
-	padding: 5vw;
-}
-
-.productPage__product__medium__container__title {
-	font-size: 2.25vmax;
-    font-family: 'Inter', Sans-serif;
-    font-weight: 800;
-    margin-bottom: 1vmax;
-}
-
-.productPage__product__medium__container__content {
-	font-size: 2vmax;
-    font-family: 'Inter', Sans-serif;
-    font-weight: 300;
-    line-height: 1.25;
-}
-
-
-.productPage__product__surface {
-	width: 80%;
-	margin: auto;
-	padding: 5vw 0;
-	border-bottom: 0.1vh solid black;
-	display: grid;
-	grid-template-columns: 25vw auto;
-}
-
-.productPage__product__surface__image {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-}
-
-.productPage__product__surface__container {
-	text-align: right;
-	padding: 5vw;
-}
-
-.productPage__product__surface__container__title {
-	font-size: 2.25vmax;
-    font-family: 'Inter', Sans-serif;
-    font-weight: 800;
-    margin-bottom: 1vmax;
-}
-
-.productPage__product__surface__container__content {
-	font-size: 2vmax;
-    font-family: 'Inter', Sans-serif;
-    font-weight: 300;
-    line-height: 1.25;
-}
-
-
-
-
+/* Add to Cart Box */
 
 .productPage__product__addToCartBox {
-	text-align: center;
-	margin: 10vw 0;
-}
-
-.productPage__product__addToCartBox__price {
-	color: black;
-
-	font-family: 'Bitter', Serif;
-
-	margin: 5vw 0;
-
-}
-
-
-.productPage__product__addToCartBox__price__euroIcon {
-	font-weight: normal;
-	font-size: 3vmax;
-}
-
-.productPage__product__addToCartBox__price__euro {
-	font-size: 4vmax;
-	font-weight: bold;
-}
-
-.productPage__product__addToCartBox__price__cents {
-	font-size: 2.45vmax;
-	font-weight: bold;
-	vertical-align: super;
-}
-
-
-.productPage__product__addToCartBox__buyButton {
-	background-color: blue;
-	color: white;
-
-	font-family: 'Inter', Sans-Serif;
-	font-size: 2.5vmax;
-	font-weight: 500;
-	letter-spacing: 0.1vmin;
-
-	padding: 4vw 12vw;
-	display: inline-block;
-
-	border-radius: 1vmax;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 1.5vmin;
+	margin: auto;
+	padding: 2.5vmin;
+	width: fit-content;
+	border-radius: 2vmin;
+	
+	background-color: yellow;
 
 	-webkit-box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
 	-moz-box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
 	box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
 }
+.productPage__product__addToCartBox__price {
+	display: block;
+	margin-bottom: 2vmin;
+
+	font-family: 'Bitter', Serif;
+	text-align: center;
+
+	color: black;
+}
+
+
+.productPage__product__addToCartBox__price__euroIcon {
+	font-weight: bold;
+	font-size: 5vmin;
+}
+
+.productPage__product__addToCartBox__price__euro {
+	font-size: 5vmin;
+	font-weight: bold;
+}
+
+.productPage__product__addToCartBox__price__cents {
+	font-size: 3vmin;
+	font-weight: bold;
+	vertical-align: super;
+}
+
+.productPage__product__addToCartBox__buyButton {
+	display: block;
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+	padding: 3vmin 6vmin;
+	border-radius: 2vmin;
+
+	font-size: 4vmin;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 600;
+	white-space: nowrap;
+
+	background-color: blue;
+	color: white;
+
+	-webkit-box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
+	-moz-box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
+	box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
+}
+
+
+
+/* Contact to Buy Box */
+
 
 .productPage__product__contactToBuy {
 	text-align: center;
@@ -3487,6 +3381,155 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 	font-weight: 600;
 	font-size: 2.25vmax;
 }
+
+
+
+.productPage__product__imageGallery {
+	margin: auto;
+	display: block;
+	clear: both;
+	margin: 4vh 0;
+}
+
+.productPage__product__imageGallery__picture {
+	display: block;
+	position: relative;
+	width: 25%;
+	padding-bottom: 25%;
+	float: left;
+	border: 0.25vmax solid white;
+	box-sizing: border-box;
+}
+
+.productPage__product__imageGallery__picture__image {
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.productPage__product__imageGallery__figcaption {
+	clear: both;
+	font-size: 0.8vw;
+	padding: 1vh 0;
+	text-align: center;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 2;
+}
+
+.productPage__product__details {
+	clear: both;
+	padding: 5vw 0;
+	width: 80%;
+	margin: auto;
+}
+
+.productPage__product__details__heading {
+	font-size: 3vmax;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 800;
+	line-height: 2;
+}
+
+
+.productPage__product__details__heading i {
+}
+
+.productPage__product__details__unorderedList {
+	margin: 2vh 0;
+}
+
+.productPage__product__details__unorderedList li {
+	font-size: 2.5vmax;
+	font-family: 'Inter', Sans-serif;
+	line-height: 1.25;
+	margin-bottom: 1.5vmax;
+}
+
+.productPage__product__details__unorderedList li strong {
+	font-weight: 600;
+}
+
+
+.productPage__product__medium {
+	width: 80%;
+	margin: auto;
+	padding: 5vw 0;
+	border-bottom: 0.1vh solid black;
+	display: grid;
+	grid-template-columns: 25vw auto;
+}
+
+.productPage__product__medium__image {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	width: 100%;
+}
+
+.productPage__product__medium__container {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	text-align: right;
+	padding: 5vw;
+}
+
+.productPage__product__medium__container__title {
+	font-size: 2.25vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 800;
+    margin-bottom: 1vmax;
+}
+
+.productPage__product__medium__container__content {
+	font-size: 2vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+
+.productPage__product__surface {
+	width: 80%;
+	margin: auto;
+	padding: 5vw 0;
+	border-bottom: 0.1vh solid black;
+	display: grid;
+	grid-template-columns: 25vw auto;
+}
+
+.productPage__product__surface__image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.productPage__product__surface__container {
+	text-align: right;
+	padding: 5vw;
+}
+
+.productPage__product__surface__container__title {
+	font-size: 2.25vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 800;
+    margin-bottom: 1vmax;
+}
+
+.productPage__product__surface__container__content {
+	font-size: 2vmax;
+    font-family: 'Inter', Sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+
+
+
+
 
 .productPage__product__shippingInfo {
 	font-family: 'Inter', Sans-serif;
@@ -3733,11 +3776,17 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 </header>
 	<figure class="productPage__product__featuredImageFigure">
 	<picture class="productPage__product__featuredImageFigure_picture">
-		<img src="https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445538.jpg">
+		<source media="(max-width: 40px)" srcset="https://res.cloudinary.com/kostasgogas/shop/featured/https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445538.jpg-320.jpg">
+		<source media="(max-width: 500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/featured/https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445538.jpg-460.jpg">
+		<source media="(max-width: 1000px)" srcset="https://res.cloudinary.com/kostasgogas/shop/featured/https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445538.jpg-800.jpg">
+		<img src="https://res.cloudinary.com/kostasgogas/shop/featured/https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445538.jpg.jpg" alt="''" title="featured-image-alt-en" class="productPage__product__featuredImageFigure_picture__img">
 	</picture>
 	<figcaption class="productPage__product__featuredImageFigure__figcaption">Colors may look different from screen to screen and in real life.</figcaption>
 </figure>
 	<div class="productPage__product__addToCartBox">
+	
+	<a href="#" class="productPage__product__addToCartBox__buyButton">Add to Cart</a>
+	
 	<p class="productPage__product__addToCartBox__price">
 		<span class="productPage__product__addToCartBox__price__euroIcon">€</span> 
 
@@ -3745,7 +3794,6 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 		<span class="productPage__product__addToCartBox__price__euro">499</span><sup class="productPage__product__addToCartBox__price__cents">.97
 		</sup>
 	</p>
-	<a href="#" class="productPage__product__addToCartBox__buyButton">Buy</a>
 </div>
 
 
@@ -3828,46 +3876,46 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 <figure>
 	<a href="#" class="productPage__product__imageGallery__imageLink">
 		<picture class="productPage__product__imageGallery__imageLink__picture">
-			<source media="(max-width: 320px)" srcset="shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-320.jpg">
-			<source media="(max-width: 460px)" srcset="shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-460.jpg">
-			<source media="(max-width: 800px)" srcset="shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-800.jpg">
-			<img src="shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
+			<source media="(max-width: 1000px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-800.jpg">
+			<img src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
 		</picture>
 	</a>
 
 	<a href="#" class="productPage__product__imageGallery__imageLink">
 		<picture class="productPage__product__imageGallery__imageLink__picture">
-			<source media="(max-width: 320px)" srcset="shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork-320.jpg">
-			<source media="(max-width: 460px)" srcset="shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork-460.jpg">
-			<source media="(max-width: 800px)" srcset="shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork-800.jpg">
-			<img src="shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
+			<source media="(max-width: 1000px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork-800.jpg">
+			<img src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
 		</picture>
 	</a>
 
 	<a href="#" class="productPage__product__imageGallery__imageLink">
 		<picture class="productPage__product__imageGallery__imageLink__picture">
-			<source media="(max-width: 320px)" srcset="shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork-320.jpg">
-			<source media="(max-width: 460px)" srcset="shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork-460.jpg">
-			<source media="(max-width: 800px)" srcset="shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork-800.jpg">
-			<img src="shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
+			<source media="(max-width: 1000px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork-800.jpg">
+			<img src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
 		</picture>
 	</a>
 
 	<a href="#" class="productPage__product__imageGallery__imageLink">
 		<picture class="productPage__product__imageGallery__imageLink__picture">
-			<source media="(max-width: 320px)" srcset="shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-320.jpg">
-			<source media="(max-width: 460px)" srcset="shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-460.jpg">
-			<source media="(max-width: 800px)" srcset="shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-800.jpg">
-			<img src="shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
+			<source media="(max-width: 1000px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-800.jpg">
+			<img src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
 		</picture>
 	</a>
 
 	<a href="#" class="productPage__product__imageGallery__imageLink">
 		<picture class="productPage__product__imageGallery__imageLink__picture">
-			<source media="(max-width: 320px)" srcset="shop/photos-back/plchldr-back-photo-of-artwork-320.jpg">
-			<source media="(max-width: 460px)" srcset="shop/photos-back/plchldr-back-photo-of-artwork-460.jpg">
-			<source media="(max-width: 800px)" srcset="shop/photos-back/plchldr-back-photo-of-artwork-800.jpg">
-			<img src="shop/photos-back/plchldr-back-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία Πίσω Μέρους / Λεπτομέρεια " title="Δεπτομέρεια / Πίσω Μέρος του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
+			<source media="(max-width: 1000px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/plchldr-back-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/plchldr-back-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/plchldr-back-photo-of-artwork-800.jpg">
+			<img src="https://res.cloudinary.com/kostasgogas/shop/photos-back/plchldr-back-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία Πίσω Μέρους / Λεπτομέρεια " title="Δεπτομέρεια / Πίσω Μέρος του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
 		</picture>
 	</a>
 </figure>
