@@ -1,0 +1,6 @@
+# Tips and Notes to remember
+
+
+## Prefixing Links with Slash
+prefix / means top level
+while links with no / are appended on the current page you are browsing

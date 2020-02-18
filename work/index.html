@@ -2935,7 +2935,7 @@ this here is just to copy the 'icons' css as needed */
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="/shop/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
+			<a href="/shop/#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
 				Shop
 			</a>
 		</li>
@@ -2956,9 +2956,141 @@ this here is just to copy the 'icons' css as needed */
 
 
 	<style type="text/css">
-	.workIndex {
-		background-color: gray;
+
+	/*this is for the header*/
+	.siteWideHeader__menuList__listItem__link--work {
+		text-decoration: underline;
 	}
+
+	
+	.workIndex {
+	}
+
+	.workIndex__period {
+		min-height: 100vh;
+		width: 100%;
+		background-color: black;
+	}
+
+	.workIndex__period__header {
+		padding: 2vmin;
+
+		background-color: #fb355a;
+	}
+
+	.workIndex__period__header__title {
+		width: fit-content;
+		height: fit-content;
+		margin: 2vmin;
+		padding: 2vmin;
+
+		font-family: 'Inter', Sans-serif;
+		font-size: 5vmin;
+		line-height: 1.25;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		color: #fb355a;
+		background-color: #111;
+	}
+
+	.workIndex__period__header__description {
+		width: 60vw;
+		padding: 2vmin;
+
+		font-family: 'Inter', Sans-serif;
+		font-size: 2.8vmin;
+		line-height: 1.25;
+		font-weight: 400;
+
+		color: black;
+	}
+
+	.workIndex__period__category {
+		display: grid;
+		grid-template-columns: 35% 65%;
+		padding: 5vmin;
+	}
+
+	.workIndex__period__category__header {
+		padding-right: 5vmin;
+
+	}
+
+	.workIndex__period__category__header__title {
+		margin-bottom: 5vmin;
+		padding-top: 2vmin;
+
+		font-family: 'Inter', Sans-serif;
+		font-size: 4vmin;
+		font-weight: 600;
+		line-height: 1.25;
+
+		color: white;
+
+		border-top: 0.5vmin solid #fb355a;
+	}
+
+	.workIndex__period__category__header__description {
+		margin-top: 5vmin;
+
+		font-family: 'Inter', Sans-serif;
+		font-size: 2.2vmin;
+		font-weight: 300;
+		line-height: 1.25;
+
+		color: #aaa;
+
+	}
+
+	.workIndex__period__category__projectsContainer {
+	    width: fit-content;
+	    margin: auto;
+	    display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(30vmin, 1fr));
+	    grid-gap: 5vmin;
+	}
+
+	.workIndex__period__category__projectsContainer__project {
+
+	}
+
+	.workIndex__period__category__projectsContainer__project__picture {
+		width: 100%;
+		height: 30vmin;
+		display: block;
+
+		background-color: #333;
+	}
+
+	.workIndex__period__category__projectsContainer__project__picture__img {
+
+	}
+
+	.workIndex__period__category__projectsContainer__project__title {
+		margin: 2vmin 0;
+
+		font-family: 'Inter', Sans-serif;
+		font-weight: 600;
+		line-height: 1.25;
+		font-size: 3vmin;
+
+		color: white;
+	}
+
+	.workIndex__period__category__projectsContainer__project__description {
+		margin: 1vmin 0;
+		
+		font-family: 'Inter', Sans-serif;
+		line-height: 1.25;
+		font-weight: 300;
+		font-size: 2vmin;
+
+		color: white;
+	}
+
+
+
 </style>
 
 <div class="workIndex">
@@ -2967,231 +3099,2693 @@ this here is just to copy the 'icons' css as needed */
 	>> check the current period as it unfolds
  -->
 
-	<section class="workIndex__2011-2014">
-		<h2 class="workIndex__2011-2014__title">New Media / Abstraction / Video / 2011-2014</h2>
-		<section class="workIndex__2011-2014__category">
-			<h3 class="workIndex__2011-2014__category__title">
-				New Media
-			</h3>
-			<article class="workIndex__2011-2014__category__project">
-				<h4 class="workIndex__2011-2014__category__project__title">
-					Universal Retina
-				</h4>
-			</article>
-			<article class="workIndex__2011-2014__newMedia__project">
-				<h4 class="workIndex__2011-2014__newMedia__project__title">
-					Digital October
-				</h4>
-				
-			</article>
-		</section>
 
-		<section class="workIndex__2011-2014__category">
-			<h3 class="workIndex__2011-2014__category__title">
-				Enter Abstraction
-			</h3>
-			<article class="workIndex__2011-2014__category__project">
-				<h4 class="workIndex__2011-2014__category__project__title">
-					Mixed Media
-				</h4>
-			</article>
-			<article class="workIndex__2011-2014__newMedia__project">
-				<h4 class="workIndex__2011-2014__newMedia__project__title">
-					Exploring Abstract Expressionism
-				</h4>
-				
-			</article>
-		</section>
 
-		<section class="workIndex__2011-2014__category">
-			<h3 class="workIndex__2011-2014__category__title">
-				Introducing Abstraction in Music Videos
-			</h3>
-			<article class="workIndex__2011-2014__category__project">
-				<h4 class="workIndex__2011-2014__category__project__title">
-					4:48
+
+<section class="workIndex__period">
+	<header class="workIndex__period__header">
+		<h2 class="workIndex__period__header__title">New Media / Abstraction / Video / 2011-2014</h2>
+		<p class="workIndex__period__header__description">Where I reinvent myself again, getting rid of my preconceptions around art. I start to work on abstract visuals, and this influences both my videos and my music, but I have another breakthrough towards new media, where the intangible becomes a major focus.</p>
+	</header>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">New Media</h3>
+			<p class="workIndex__period__category__header__description">
+				Finally found a way to use my digital knowledge to produce art, and with the help of a digital pen I started to work on action painting directly on the digital canvas. This was another breakthrough for me, as I wanted to get rid of value notions related to the material and explore the intellectual capital provided by the artist.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Universal Retina
 				</h4>
-			</article>
-			<article class="workIndex__2011-2014__newMedia__project">
-				<h4 class="workIndex__2011-2014__newMedia__project__title">
-					Headache (working title)
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Digital October
 				</h4>
-				
-			</article>
-		</section>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
 	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Introducing Abstraction in Music Videos</h3>
+			<p class="workIndex__period__category__header__description">
+				All my artistic background would finally found its way into the motion work. I figured that music videos, like music, were really an open field aestehtically, that no one had really explored.
+			</p>
+		</header>
+		
 
-	<section class="workIndex__2010-2013">
-		<h2 class="workIndex__2010-2013__title">Fails 2010-2013</h2>
-		<section class="workIndex__2010-2013__category">
-			<h3 class="workIndex__2010-2013__category__title">
-				Failed First Feature Film
-			</h3>
-			<article class="workIndex__2010-2013__category__project">
-				<h4 class="workIndex__2010-2013__category__project__title">
-					Same
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				4:48
 				</h4>
-			</article>
-		</section>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Headache
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
 
-		<section class="workIndex__2010-2013__category">
-			<h3 class="workIndex__2010-2013__category__title">
-				Failed First English Novel
-			</h3>
-			<article class="workIndex__2010-2013__category__project">
-				<h4 class="workIndex__2010-2013__category__project__title">
-					The Simultaneous Fields
-				</h4>
-			</article>
-		</section>
 	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Other Video Work</h3>
+			<p class="workIndex__period__category__header__description">
+				This video feels like the brigde between my early video work and my future work. I could see that it was awkard in terms of aesthetics even at the time I completed it. Later I would come to udnerstand that this was because of working to bridge these two worlds. The one I hadn't seen yet, with the one I was getting away from.
+			</p>
+		</header>
+		
 
-	<section class="workIndex__2007-2009">
-		<h2 class="workIndex__2007-2009__title">First Major Period 2007-2009</h2>
-		<section class="workIndex__2007-2009__category">
-			<h3 class="workIndex__2007-2009__category__title">
-				Visual Arts
-			</h3>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					One Lines
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Sapioi os to Kokkalo
 				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Black on Cardboard
-				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Elaborate Drawings
-				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					First Canvases Series
-				</h4>
-			</article>
-		</section>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
 
-		<section class="workIndex__2007-2009__category">
-			<h3 class="workIndex__2007-2009__category__title">
-				Music Albums
-			</h3>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Chameleon
-				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Cult 87
-				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Κρίσης
-				</h4>
-			</article>
-		</section>
-
-		<section class="workIndex__2007-2009__category">
-			<h3 class="workIndex__2007-2009__category__title">
-				Video Work
-			</h3>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Μέσα στο Μυαλό των Θαραλέων
-				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Bugs Bunny
-				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Harlequin
-				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Eternal Hiding
-				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Λευκό Προσωπείο
-				</h4>
-			</article>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Τρομοκρατικής Φύσης
-				</h4>
-			</article>
-		</section>
-
-		<section class="workIndex__2007-2009__category">
-			<h3 class="workIndex__2007-2009__category__title">
-				Literary Attempts
-			</h3>
-			<article class="workIndex__2007-2009__category__project">
-				<h4 class="workIndex__2007-2009__category__project__title">
-					Λεηλατώ
-				</h4>
-			</article>
-		</section>
 	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Abstract Music</h3>
+			<p class="workIndex__period__category__header__description">
+				Not wanting to continue to spend so much time working all the clogs of record producing, I felt that I could left this work to others. And as everything else in that period, I introduced abstraction in lyrics with a more spoken-word style that rang more true to me, because in that period I really wanted to show my work more flat, clear of emotions, and let the audience discover (or not) what's inside.
+			</p>
+		</header>
+		
 
-	<section class="workIndex__2003-2007">
-		<h2 class="workIndex__2003-2007__title">2003-2007</h2>
-		<section class="workIndex__2003-2007__category">
-			<h3 class="workIndex__2003-2007__category__title">
-				Graffiti
-			</h3>
-			<article class="workIndex__2003-2007__category__project">
-				<h4 class="workIndex__2003-2007__category__project__title">
-					Elaborate Graffiti
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Orphan Sounds
 				</h4>
-			</article>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
 
-			<article class="workIndex__2003-2007__category__project">
-				<h4 class="workIndex__2003-2007__category__project__title">
-					Blackbook Sketches 
-				</h4>
-			</article>
-		</section>
-
-		<section class="workIndex__2003-2007__category">
-			<h3 class="workIndex__2003-2007__category__title">
-				Digital Attempts
-			</h3>
-			<article class="workIndex__2003-2007__category__project">
-				<h4 class="workIndex__2003-2007__category__project__title">
-					Ansia Comic Characters
-				</h4>
-			</article>
-		</section>
 	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Enter Abstraction</h3>
+			<p class="workIndex__period__category__header__description">
+				A period where I found out that my working-class upbringing had really influenced my perception of what art is, I wanted to get rid of that, so with courage alone in the start I entered the abstract world.
+			</p>
+		</header>
+		
 
-	<section class="workIndex__2001-2003">
-		<h2 class="workIndex__2001-2003__title">First Period 2001-2003</h2>
-		<section class="workIndex__2001-2003__category">
-			<h3 class="workIndex__2001-2003__category__title">
-				Graffiti
-			</h3>
-			<article class="workIndex__2001-2003__category__project">
-				<h4 class="workIndex__2001-2003__category__project__title">
-					First Graffiti Sketches
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Abstract Material
 				</h4>
-			</article>
-			<article class="workIndex__2001-2003__category__project">
-				<h4 class="workIndex__2001-2003__category__project__title">
-					First Graffiti Attempts
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Exploring Abstract Expressionism
 				</h4>
-			</article>
-		</section>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
 	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</section>
+
+
+
+<section class="workIndex__period">
+	<header class="workIndex__period__header">
+		<h2 class="workIndex__period__header__title">Fails 2010-2013 | The Road to Independence</h2>
+		<p class="workIndex__period__header__description">Not being able to rest on my my successes at the moment, I wanted to push the envelope, first by working on a feature film, and then by getting acquainted with English speaking work. As a person I cannot stand doing the same mistake the second time, these period was to be a big failure, and exactly because of that it would prove to be the cornerstone of me styding and planning thoroughly my future film & prose work.</p>
+	</header>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Failed First Feature Film</h3>
+			<p class="workIndex__period__category__header__description">
+				Oh my, oh my. Until today I haven't get comfortable with the biggest failure of my career. So many people, so much money, all lead to nothing, not even the movie itself. Having learned to work on way smaller projects until then, I found myself on a nightmare of expectations from myself and from everyone else. Failing to complete the film in any resemblance to the original script's intention had cost me very much until today. Produced on a shoe-string budget (€4,700), directed and written by me.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Same: The AudioVisual Portrait of a Hypocrite, on Ochre Background
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Failed First English Novel</h3>
+			<p class="workIndex__period__category__header__description">
+				Wanted to write in English, the fail fast mentality get me going. I wrote the book in one week and it's almost unreadable for English natives.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				The Simultaneous Fields
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</section>
+
+
+
+<section class="workIndex__period">
+	<header class="workIndex__period__header">
+		<h2 class="workIndex__period__header__title">First Major Period 2007-2009</h2>
+		<p class="workIndex__period__header__description">A period of creativity blooming, nailing down work I have been trying to do for many years before. A personal period of education (reading on book after another) and studying Graphic Design where my love for art history & theory began and influences my work hereafter.</p>
+	</header>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Visual Arts Development</h3>
+			<p class="workIndex__period__category__header__description">
+				Where I start really developing personal style and creating art way more aware of herself. As well as focusing in producing work away of teams.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				One Lines as Standalone Artworks / First Period
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Drawings as Standalone Art
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Resourcesfulness
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				First Canvas Series
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Music Albums</h3>
+			<p class="workIndex__period__category__header__description">
+				Produced three hip-hop albums. I worked heavily on those, working across all aspects, porduction-wise and artistic wise: sound-mixing, lyrics writing, rap, music composition, art direction of releases.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Cult-87
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Chameleon
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Krisis
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">First Video Work</h3>
+			<p class="workIndex__period__category__header__description">
+				Music videos on a shoe-string budget, trying to make my hip-hop group to be the first undeground band in Greece to have music-videos. And one surreal short. Proud of my work there, though not personal style existed yet.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Mesa sto Myalo twn Tharalewn
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Harlequin
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Lefko Proswpeio
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Tromokratikis-fysis
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Bugs Bunny
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">First Failed Mid-Length Film Attempt</h3>
+			<p class="workIndex__period__category__header__description">
+				Created a 35' film in black and white with very few characters and sets, my first taste of narrative film. Did everything myself except the acting and the music.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Eternal Hiding
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">First Literary Attempt</h3>
+			<p class="workIndex__period__category__header__description">
+				Where I wrote my first novel in 3-4 weeks at the end of August of 2008, trying to boostrap my way in narrative prose.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Leilato (Plunder)
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</section>
+
+
+
+<section class="workIndex__period">
+	<header class="workIndex__period__header">
+		<h2 class="workIndex__period__header__title">2003-2007</h2>
+		<p class="workIndex__period__header__description">Meeting other 'professional' graffiti artists at the time helped me expand my horizons and leave behind any preconceptions around my working style, started to trust the process and embrace new views.</p>
+	</header>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Graffiti Advancement</h3>
+			<p class="workIndex__period__category__header__description">
+				Met other artists and started working together, a boost in creativity and technique, also turning away from styles ('letters') towards more character heavy work.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Advancing Graffiti
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Blackbook Sketches (mostly intended for graffiti)
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">First Digital Attempts</h3>
+			<p class="workIndex__period__category__header__description">
+				Having a PC for the first time in 2005, I started experimenting.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Ansia Comic Characters
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+		
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</section>
+
+
+
+<section class="workIndex__period">
+	<header class="workIndex__period__header">
+		<h2 class="workIndex__period__header__title">First Period 2001-2003</h2>
+		<p class="workIndex__period__header__description">Graffiti. Where for the first time in my life I find something that I know I will continue to do, or as it happened, something that will start what was to be my life path until today.</p>
+	</header>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section class="workIndex__period__category">
+		<header class="workIndex__period__category__header">
+			<h3 class="workIndex__period__category__header__title">Early Graffiti</h3>
+			<p class="workIndex__period__category__header__description">
+				Heavily influenced by other artists at the time, I started to sketch on paper, organized a graffiti team, and paint every sunday. I also did commission work.
+			</p>
+		</header>
+		
+
+		<div class="workIndex__period__category__projectsContainer">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Early Graffiti
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img src=""class="workIndex__period__category__projectsContainer__project__picture__img">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				First Graffiti Sketches
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+			</a>
+		
+		
+		</div>
+
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 
