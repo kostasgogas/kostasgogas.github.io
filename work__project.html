@@ -330,6 +330,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -337,6 +338,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -344,6 +346,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -351,6 +354,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 
 body {
@@ -426,7 +430,7 @@ place it afterwards
 	background-color: black;
 	padding: 2vmax;
 
-	display: grid;
+	display: none;
 	grid-template-columns: 74% 25%;
 	grid-column-gap: 1%;
 	grid-template-rows: 40% 50%;
@@ -2939,7 +2943,7 @@ this here is just to copy the 'icons' css as needed */
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="/shop/#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
+			<a href="/shop/all#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
 				Shop
 			</a>
 		</li>
@@ -2961,228 +2965,222 @@ this here is just to copy the 'icons' css as needed */
 
 	<style type="text/css">
 
+	/*this is for the header*/
+	.siteWideHeader__menuList__listItem__link--work {
+		text-decoration: underline;
+	}
+
+
 	body {
-		margin-top: 14vh;
+		margin-top: 10vmin;
 	}
 
-	/* project header */
-
-	.projectPage__projectHeader {
-		position: fixed;
-		top: 7vh;
-		background-color: white;
-		border-bottom: 0.1vh solid black;
-		width: 100%;
-		display: grid;
-		grid-template-columns: auto 0 7vh;
-	}
-
-	.projectPage__projectHeader__headingPlaceholder {
-		border-right: 0.1vh solid black;
-		font-family: 'Inter', Sans-serif;
-		text-transform: uppercase;
-		padding: 1.5vh;
-		line-height: 2vh;
-		letter-spacing: 0.1vh;
-	}
-
-	.projectPage__projectHeader__headingPlaceholder__heading {
-		font-weight: 900;
-		font-size: 2vh;
-	}
-
-	.projectPage__projectHeader__headingPlaceholder__subtitle {
-		font-weight: 600;
-		font-size: 1.75vh;
-	}
-
-	#projectPage__projectHeader_buttonID {
-
-	}
-
-	.projectPage__projectHeader__dropdownDescription {
-		display: none;
-	}
-
-	.projectPage__projectHeader_input {
-		display: none;
-	}
-
-	.projectPage__projectHeader_label .fa {
-		font-size: 2.5vh;
-		line-height: 2.5vh;
-		height: 2.5vh;
-		display: block;
-		text-align: center;
-		margin-bottom: 0.4vh;
-	}
-
-	.projectPage__projectHeader_label {
-		font-family: 'Inter', Sans-serif;
-		padding: 1.35vh 0;
-		font-size: 1.25vh;
-		line-height: 1.5;
-		height: 7vh;
-		display: block;
-		text-align: center;
-	}
-
-	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label + .projectPage__projectHeader__dropdownDescription {
-		clear: both;
-		display: block;
-		background-color: white;
-		position: fixed;
-		top: 14vh;
-		padding: 3.5vh;
-		border-bottom: 0.1vh solid black;
-		border-top: 0.1vh solid black;
-		width: 100%;
-	}
-
-	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label + .projectPage__projectHeader__dropdownDescription p {
-		font-family: 'Noto Serif', serif;
-		font-size: 3.5vw;
-		line-height: 1.25;
-
-	}
-
-	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label {
+	.work__project {
 		background-color: black;
 		color: white;
 	}
 
+
+
+
+
 	/* project image */
 
-	.projectPage__allImageHolder__pictureHolder {
-		height: 60vh;
-		width: 80vw;
-		margin: 5vh auto 2vh;
+
+	.work__project__allImageHolder__pictureHolder {
+		margin: auto;
+		height: calc(100vh - 20vmin);
+		max-width: 95vw;
 		display: block;
 	}
 
-	.projectPage__allImageHolder__pictureHolder__img {
-		max-height: 100%;
-		max-width: 100%;
+	.work__project__allImageHolder__pictureHolder__img {
+		width: 100%;
+		height: 100%;
 		margin: auto;
 		display: block;
+		object-fit: contain;
 	}
 
-	.projectPage__allImageHolder__caption {
-		margin: 2vh 0;
-		font-family: 'Noto Serif', Serif;
-		font-size: 1.25vmax;
-		font-weight: 300;
-		font-style: italic;
-		text-align: center;
+	.work__project__allImageHolder__caption {
+
 	}
 
 	/* project image shop availability */
 
-	.projectPage__allImageHolder__shopAvailability {
-		padding-bottom: 3vmax;
-		margin: 3vmax auto;
-		border-bottom: 0.1vh solid black;
-		display: grid;
-		width: 80%;
-		text-align: right;
-		font-family: 'Noto Serif', Serif;
-		font-size: 1.25vmax;
-		line-height: 1.5;
+	.work__project__allImageHolder__shopAvailability {
+		display: none;
 	}
 
-	.projectPage__allImageHolder__shopAvailability__text {
+	.work__project__allImageHolder__shopAvailability__text {
 	}
 
-	.projectPage__allImageHolder__shopAvailability__text span {
-		font-weight: bold;
+	.work__project__allImageHolder__shopAvailability__text span {
+
 	}
 
-	.projectPage__allImageHolder__shopAvailability__link {
-		padding: 1vmax 1.5vmax;
-		font-weight: bold;
-		color: white;
-		background-color: blue;
-		width: fit-content;
-		margin: 1vmax 0 0 auto;
-		border-radius: 0.25vmax;
+	.work__project__allImageHolder__shopAvailability__link {
+
 	}
 
 </style>
 
-<header class="projectPage__projectHeader">
-	<div class="projectPage__projectHeader__headingPlaceholder">
-		<h1 class="projectPage__projectHeader__headingPlaceholder__heading">Continuous Editing</h1>
-		<small class="projectPage__projectHeader__headingPlaceholder__subtitle">Style Invention</small>
+<div class="work__project">
+
+
+	<style type="text/css">
+	/* project header */
+
+	.work__project__projectHeader {
+		height: 10vmin;
+		width: 100vw;
+		position: fixed;
+		bottom: 0;
+		display: grid;
+		grid-template-columns: 10vmin 10vmin auto 10vmin 10vmin;
+		grid-column-gap: 0.25vmin;
+
+		background-color: black;
+		border-top: 0.25vmin solid black;
+	}
+
+	.work__project__projectHeader > * {
+		background-color: #fb355a;
+	}
+
+	.work__project__projectHeader__menuItem {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-rows: 7vmin 3vmin;
+		line-height: 3vmin;
+		text-align: center;
+
+		color: black;
+	}
+
+	.work__project__projectHeader__menuItem i {
+		font-size: 5vmin;
+		line-height: 7vmin;
+	}
+
+	.work__project__projectHeader__menuItem__span {
+		font-family: 'Inter', Sans-serif;
+		font-weight: bold;
+		font-size: 2vmin;
+	}
+
+	.work__project__projectHeader__titleWrapper {
+		height: 100%;
+		display: table;
+	}
+
+	.work__project__projectHeader__titleWrapper__title {
+		display: table-cell;
+		vertical-align: middle;
+		margin: 1vmin;
+
+		font-family: 'Inter', Sans-serif;
+		font-size: 3vmin;
+		text-align: center;
+		font-weight: 800;
+
+		color: black;
+	}
+
+	.work__project__projectHeader__titleWrapper__title__subtitle {
+		display: block;
+		margin: 1vmin;
+		
+		font-family: 'Inter', Sans-serif;
+		font-size: 2vmin;
+		text-align: center;
+		font-weight: 600;
+
+		color: black;
+	}
+
+</style>
+
+<header class="work__project__projectHeader">
+	<a href="#" class="work__project__projectHeader__menuItem">
+		<i class="fa fa-angle-left" aria-hidden="true"></i>
+		<span class="work__project__projectHeader__menuItem__span">previous</span>
+	</a>
+	<a href="#" class="work__project__projectHeader__menuItem">
+		<i class="fa fa-th" aria-hidden="true"></i>
+		<span class="work__project__projectHeader__menuItem__span">all</span>
+	</a>
+	<div class="work__project__projectHeader__titleWrapper">
+		<h1 class="work__project__projectHeader__titleWrapper__title">
+			Continuous Editing
+			<small class="work__project__projectHeader__titleWrapper__title__subtitle">Style Invention</small>
+		</h1>
 	</div>
-	<div></div>
-
-	<!-- Button for Project Description -->
-	<input id="projectPage__projectHeader_buttonID" class="projectPage__projectHeader_input" type="checkbox">
-	<label for="projectPage__projectHeader_buttonID" class="projectPage__projectHeader_label" tabindex="1"><i class="fa fa-info-circle" aria-hidden="true"></i>about</label>
-
-	<!-- The Dropdown Description -->
-	<div class="projectPage__projectHeader__dropdownDescription">
-		<p>Something goes on and on and you are here and he is here and I am here. 
-Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.</p>
-
-	</div>
+	<a href="#" class="work__project__projectHeader__menuItem">
+		<i class="fa fa-share" aria-hidden="true"></i>
+		<span class="work__project__projectHeader__menuItem__span">share</span>
+	</a>
+	<a href="#" class="work__project__projectHeader__menuItem">
+		<i class="fa fa-angle-right" aria-hidden="true"></i>
+		<span class="work__project__projectHeader__menuItem__span">next</span>
+	</a>
 </header>
 
+	
+		<figure class="work__project__allImageHolder">
+			<picture class="work__project__allImageHolder__pictureHolder">
+				<img data-src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-kwstas" class="work__project__allImageHolder__pictureHolder__img lazyload">
+			</picture>
+			<figcaption class="work__project__allImageHolder__caption">
+				testing caption
+			</figcaption>
+			
+			<aside class="work__project__allImageHolder__shopAvailability">
+				<p class="work__project__allImageHolder__shopAvailability__text"><span>Ansia Comic Kostas</span> is also available for purchase.</p>
+				<a href="#" class="work__project__allImageHolder__shopAvailability__link">Visit Shop  <i class="fa fa-long-arrow-right"></i></a>
+			</aside>
+			
+		</figure>
+
+	
+		<figure class="work__project__allImageHolder">
+			<picture class="work__project__allImageHolder__pictureHolder">
+				<img data-src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-xrhstos" class="work__project__allImageHolder__pictureHolder__img lazyload">
+			</picture>
+			<figcaption class="work__project__allImageHolder__caption">
+				testing caption
+			</figcaption>
+			
+		</figure>
+
+	
+		<figure class="work__project__allImageHolder">
+			<picture class="work__project__allImageHolder__pictureHolder">
+				<img data-src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-paulos" class="work__project__allImageHolder__pictureHolder__img lazyload">
+			</picture>
+			<figcaption class="work__project__allImageHolder__caption">
+				testing caption
+			</figcaption>
+			
+		</figure>
+
+	
 
 
 
-	<figure class="projectPage__allImageHolder">
-		<picture class="projectPage__allImageHolder__pictureHolder">
-			<img data-src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-kwstas" class="projectPage__allImageHolder__pictureHolder__img lazyload">
-		</picture>
-		<figcaption class="projectPage__allImageHolder__caption">
-			testing caption
-		</figcaption>
-		
-		<aside class="projectPage__allImageHolder__shopAvailability">
-			<p class="projectPage__allImageHolder__shopAvailability__text"><span>Ansia Comic Kostas</span> is also available for purchase.</p>
-			<a href="#" class="projectPage__allImageHolder__shopAvailability__link">Visit Shop  <i class="fa fa-long-arrow-right"></i></a>
-		</aside>
-		
-	</figure>
-
-
-	<figure class="projectPage__allImageHolder">
-		<picture class="projectPage__allImageHolder__pictureHolder">
-			<img data-src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-xrhstos" class="projectPage__allImageHolder__pictureHolder__img lazyload">
-		</picture>
-		<figcaption class="projectPage__allImageHolder__caption">
-			testing caption
-		</figcaption>
-		
-	</figure>
-
-
-	<figure class="projectPage__allImageHolder">
-		<picture class="projectPage__allImageHolder__pictureHolder">
-			<img data-src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-paulos" class="projectPage__allImageHolder__pictureHolder__img lazyload">
-		</picture>
-		<figcaption class="projectPage__allImageHolder__caption">
-			testing caption
-		</figcaption>
-		
-	</figure>
-
-
-
-
-
-organisms
-	header
-		title
-		short description
-		featured image
-	text-block
-		heading
-		text
-	image-gallery
-		image
-	video
+	organisms
+		header
+			title
+			short description
+			featured image
+		text-block
+			heading
+			text
+		image-gallery
+			image
+		video
+</div>
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">
@@ -3258,10 +3256,6 @@ make it one black line at the bottom
 
 
 
-<!-- TODO: first check if cookie gdpr preference is set -->
-
-<!-- BUT I THINK IT ALREADY DOES -->
-
 <script type="text/javascript">
 	// Get the modal
 	var modalGDPR = document.getElementById("siteWideCookieNoticeJsAnchor");
@@ -3283,6 +3277,9 @@ make it one black line at the bottom
 		if (document.cookie.length !=  0) {
 			modalGDPR.style.display = "none";
 			console.log("Cookie preference already set.");
+		} else {
+			modalGDPR.style.display = "grid";
+			console.log("Cookie preference not yet set.");
 		}
 	}
 </script>

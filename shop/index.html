@@ -330,6 +330,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -337,6 +338,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -344,6 +346,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -351,6 +354,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 
 body {
@@ -426,7 +430,7 @@ place it afterwards
 	background-color: black;
 	padding: 2vmax;
 
-	display: grid;
+	display: none;
 	grid-template-columns: 74% 25%;
 	grid-column-gap: 1%;
 	grid-template-rows: 40% 50%;
@@ -2939,7 +2943,7 @@ this here is just to copy the 'icons' css as needed */
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="/shop/#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
+			<a href="/shop/all#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
 				Shop
 			</a>
 		</li>
@@ -2960,7 +2964,7 @@ this here is just to copy the 'icons' css as needed */
 
 
 	<style type="text/css">
-	.homeSmallScale {
+	.shop {
 		background-color: yellow;
 	}
 
@@ -3170,6 +3174,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Bitter/Bitter-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3177,6 +3182,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Bitter/Bitter-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -3184,12 +3190,14 @@ explicitly, e.g.
 	src: url('/assets/fonts/Bitter/Bitter-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 	@font-face {
 	font-family: 'Georgia'; /*a name to be used later*/
 	src: url('/assets/fonts/Georgia/Georgia-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3197,6 +3205,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Georgia/Georgia-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3204,6 +3213,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Georgia/Georgia-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -3211,12 +3221,14 @@ explicitly, e.g.
 	src: url('/assets/fonts/Georgia/Georgia-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 	@font-face {
 	font-family: 'Georgia'; /*a name to be used later*/
 	src: url('/assets/fonts/Georgia/Georgia-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3224,6 +3236,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Georgia/Georgia-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3231,6 +3244,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Georgia/Georgia-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -3238,14 +3252,15 @@ explicitly, e.g.
 	src: url('/assets/fonts/Georgia/Georgia-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 
 </style>
 
-<div class="homeSmallScale">
+<div class="shop">
 	<style type="text/css">
 
-	.homeSmallScale__headerHero {
+	.shop__headerHero {
 		background-position: center;
 		background-size: cover;
 		background-color: yellow;
@@ -3263,42 +3278,42 @@ explicitly, e.g.
 /* Portrait */
 
 @media (max-height: 10000px) and (orientation: portrait) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured.jpg');
     }
 }
 @media (max-height: 2888px) and (orientation: portrait) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-3800.jpg');
     }
 }
 @media (max-height: 2052px) and (orientation: portrait) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-2700.jpg');
     }
 }
 @media (max-height: 1459px) and (orientation: portrait) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-1920.jpg');
     }
 }
 @media (max-height: 1140px) and (orientation: portrait) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-1500.jpg');
     }
 }
 @media (max-height: 608px) and (orientation: portrait) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-800.jpg');
     }
 }
 @media (max-height: 350px) and (orientation: portrait) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-460.jpg');
     }
 }
 @media (max-height: 243px) and (orientation: portrait) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-320.jpg');
     }
 }
@@ -3309,57 +3324,57 @@ explicitly, e.g.
 
 
 @media (max-width: 10000px) and (orientation: landscape) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured.jpg');
     }
 }
 @media (max-width: 3800px) and (orientation: landscape) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-3800.jpg');
     }
 }
 @media (max-width: 2700px) and (orientation: landscape) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-2700.jpg');
     }
 }
 @media (max-width: 1920px) and (orientation: landscape) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-1920.jpg');
     }
 }
 @media (max-width: 1500px) and (orientation: landscape) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-1500.jpg');
     }
 }
 @media (max-width: 800px) and (orientation: landscape) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-800.jpg');
     }
 }
 @media (max-width: 460px) and (orientation: landscape) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-460.jpg');
     }
 }
 @media (max-width: 320px) and (orientation: landscape) {
-    .homeSmallScale__headerHero {
+    .shop__headerHero {
         background-image: url('https://res.cloudinary.com/kostasgogas/operational/2020-01-29-small-scale-art-gallery-featured-320.jpg');
     }
 }
 
-	.homeSmallScale__headerHero__wrapper {
+	.shop__headerHero__wrapper {
 		display: table-cell;
 		vertical-align: middle;
 	}
 
-	.homeSmallScale__headerHero__wrapper__heading {
+	.shop__headerHero__wrapper__heading {
 		text-align: center;
 		color: black;
 	}
 
-	.homeSmallScale__headerHero__wrapper__heading__smallScale {
+	.shop__headerHero__wrapper__heading__smallScale {
 		background-color: yellow;
 		display: block;
 		font-family: 'Noto Serif', Serif;
@@ -3369,7 +3384,7 @@ explicitly, e.g.
 		margin: auto;
 	}
 
-	.homeSmallScale__headerHero__wrapper__heading__artGallery {
+	.shop__headerHero__wrapper__heading__artGallery {
 		background-color: yellow;
 		display: block;
 		font-family: 'Noto Serif', Serif;
@@ -3380,7 +3395,7 @@ explicitly, e.g.
 		margin: auto;
 	}
 
-	.homeSmallScale__headerHero__wrapper__heading__by {
+	.shop__headerHero__wrapper__heading__by {
 		background-color: yellow;
 		font-family: 'Inter', Sans-serif;
 		font-size: 3.5vmin;
@@ -3391,7 +3406,7 @@ explicitly, e.g.
 		margin: 2vh auto 0;
 	}
 
-	.homeSmallScale__headerHero__wrapper__heading__KostasGogas {
+	.shop__headerHero__wrapper__heading__KostasGogas {
 		background-color: yellow;
 		font-family: 'Inter', Sans-serif;
 		text-transform: uppercase;
@@ -3403,7 +3418,7 @@ explicitly, e.g.
 		margin: auto;
 	}
 
-	.homeSmallScale__headerHero__wrapper__button {
+	.shop__headerHero__wrapper__button {
 		display: block;
 		width: fit-content;
 		margin: 4vmin auto 0;
@@ -3423,11 +3438,11 @@ explicitly, e.g.
 
 	}
 
-	.homeSmallScale__headerHero__wrapper__button__angleRight {
+	.shop__headerHero__wrapper__button__angleRight {
 
 	}
 
-	.homeSmallScale__headerHero__wrapper__subtitle {
+	.shop__headerHero__wrapper__subtitle {
 		color: #000099;
 		background-color: yellow;
 		font-family: 'Georgia', Serif;
@@ -3443,25 +3458,25 @@ explicitly, e.g.
 	
 </style>
 
-	<header class="homeSmallScale__headerHero">
-		<div class="homeSmallScale__headerHero__wrapper">
-			<h1 class="homeSmallScale__headerHero__wrapper__heading">
-				<span class="homeSmallScale__headerHero__wrapper__heading__smallScale">Small Scale</span> 
-				<span class="homeSmallScale__headerHero__wrapper__heading__artGallery">Art Gallery</span>
-				<span class="homeSmallScale__headerHero__wrapper__heading__by">by</span>
-				<span class="homeSmallScale__headerHero__wrapper__heading__KostasGogas">Kostas Gogas</span>
+	<header class="shop__headerHero">
+		<div class="shop__headerHero__wrapper">
+			<h1 class="shop__headerHero__wrapper__heading">
+				<span class="shop__headerHero__wrapper__heading__smallScale">Small Scale</span> 
+				<span class="shop__headerHero__wrapper__heading__artGallery">Art Gallery</span>
+				<span class="shop__headerHero__wrapper__heading__by">by</span>
+				<span class="shop__headerHero__wrapper__heading__KostasGogas">Kostas Gogas</span>
 			</h1>
 
-			<a href="/shop/all" class="homeSmallScale__headerHero__wrapper__button">
-				Find Yours <i class="fa fa-angle-right homeSmallScale__headerHero__wrapper__button__angleRight" aria-hidden="true"></i>
+			<a href="/shop/all" class="shop__headerHero__wrapper__button">
+				Find Yours <i class="fa fa-angle-right shop__headerHero__wrapper__button__angleRight" aria-hidden="true"></i>
 			</a>
 
-			<p class="homeSmallScale__headerHero__wrapper__subtitle">Buy Directly from an Artist Owned Business</p>
+			<p class="shop__headerHero__wrapper__subtitle">Buy Directly from an Artist Owned Business</p>
 		</div>
 	</header>
 	<style type="text/css">
 
-	.homeSmallScale__someProducts {
+	.shop__someProducts {
 
 	}
 
@@ -3469,33 +3484,36 @@ explicitly, e.g.
 </style>
 
 <div id="shopPageSomeProductsAnchor"></div>
-<section class="homeSmallScale__someProducts">
-	<header class="homeSmallScale__someProducts__header">
+<section class="shop__someProducts">
+	<header class="shop__someProducts__header">
 		
 	</header>
 
-	<section class="homeSmallScale__someProducts__all">
+	<section class="shop__someProducts__all">
 		
 	</section>
 
-	<footer class="homeSmallScale__someProducts__footer">
+	<footer class="shop__someProducts__footer">
 		<a href="/shop/all">Browse All</a>
 	</footer>
 </section>
+
+	<div id="learnmore__anchor"></div>
+
 	<style type="text/css">
 
 
-	.homeSmallScale__originalArt {
+	.shop__originalArt {
 		background-color: yellow;
 		padding: 10vw;
 		margin: 0;
 	}
 
-	.homeSmallScale__originalArt__fresh {
+	.shop__originalArt__fresh {
 
 	}
 
-	.homeSmallScale__originalArt__fresh__heading {
+	.shop__originalArt__fresh__heading {
 		color: black;
 
 		font-size: 7vmin;
@@ -3504,7 +3522,7 @@ explicitly, e.g.
 		line-height: 1.25;
 	}
 
-	.homeSmallScale__originalArt__fresh__subittle {
+	.shop__originalArt__fresh__subittle {
 		color: black;
 
 		font-size: 5vmin;
@@ -3515,7 +3533,7 @@ explicitly, e.g.
 		margin: 5vh 0;
 	}
 
-	.homeSmallScale__originalArt__fresh__paragraph {
+	.shop__originalArt__fresh__paragraph {
 		color: black;
 
 		font-family: 'Inter', Sans-serif;
@@ -3527,7 +3545,7 @@ explicitly, e.g.
 		margin: 3vh 0;
 	}
 
-	.homeSmallScale__originalArt__fresh__copycatNote {
+	.shop__originalArt__fresh__copycatNote {
 		background-color: black;
 		color: #ff2266;
 
@@ -3543,11 +3561,11 @@ explicitly, e.g.
 		border-radius: 1vw;
 	}
 
-	.homeSmallScale__originalArt__original {
+	.shop__originalArt__original {
 
 	}
 
-	.homeSmallScale__originalArt__original__heading {
+	.shop__originalArt__original__heading {
 		color: blue;
 
 		font-size: 7vmin;
@@ -3556,7 +3574,7 @@ explicitly, e.g.
 		line-height: 1.25;
 	}
 
-	.homeSmallScale__originalArt__original__paragraph {
+	.shop__originalArt__original__paragraph {
 		color: blue;
 
 		font-size: 4.5vmin;
@@ -3569,26 +3587,26 @@ explicitly, e.g.
 	
 </style>
 
-<section class="homeSmallScale__originalArt">
-	<section class="homeSmallScale__originalArt__fresh">
-		<h2 class="homeSmallScale__originalArt__fresh__heading">
+<section class="shop__originalArt">
+	<section class="shop__originalArt__fresh">
+		<h2 class="shop__originalArt__fresh__heading">
 			Discover Freshness
 		</h2>
-		<p class="homeSmallScale__originalArt__fresh__subittle">
+		<p class="shop__originalArt__fresh__subittle">
 			Full blown imagination. <br/>
 			Contemporary Characters & Abstract Objects captured on paper.
 		</p>
-		<p class="homeSmallScale__originalArt__fresh__paragraph">
+		<p class="shop__originalArt__fresh__paragraph">
 			Artist Kostas Gogas has been spilling his brains out since 2001.
 		</p>
-		<p class="homeSmallScale__originalArt__fresh__copycatNote">
+		<p class="shop__originalArt__fresh__copycatNote">
 			No fan art or copycats 🐱 here.
 		</p>
 	</section>
 
-	<section class="homeSmallScale__originalArt__original">
-		<h2 class="homeSmallScale__originalArt__original__heading">Original Art (literaly)</h2>
-		<p class="homeSmallScale__originalArt__original__paragraph">
+	<section class="shop__originalArt__original">
+		<h2 class="shop__originalArt__original__heading">Original Art (literaly)</h2>
+		<p class="shop__originalArt__original__paragraph">
 			Find art that is actually original.<br/>
 			No prints (or even worse ‘posters’) advertised as ‘original’ art.
 		</p>
@@ -3596,16 +3614,16 @@ explicitly, e.g.
 </section>
 	<style type="text/css">
 
-	.homeSmallScale__aboutArt {
+	.shop__aboutArt {
 		background-color: white;
 		padding: 10vw;	
 	}
 
-	.homeSmallScale__aboutArt__SmallScale {
+	.shop__aboutArt__SmallScale {
 
 	}
 
-	.homeSmallScale__aboutArt__SmallScale__heading {
+	.shop__aboutArt__SmallScale__heading {
 		color: #8a8479;
 		font-family: 'Noto Serif', Serif;
 		font-size: 5vh;
@@ -3613,7 +3631,7 @@ explicitly, e.g.
 		margin: 0 10vw 10vw;
 	}
 
-	.homeSmallScale__aboutArt__SmallScale__img {
+	.shop__aboutArt__SmallScale__img {
 		width: 20vw;
 		background-color: white;
 		-webkit-box-shadow: 5px 5px 40px 0px rgba(0,0,0,0.29);
@@ -3623,23 +3641,23 @@ explicitly, e.g.
 		margin: 10vw auto;
 	}
 
-	.homeSmallScale__aboutArt__SmallScale__paragraph {
+	.shop__aboutArt__SmallScale__paragraph {
 		font-family: 'Noto Serif', Serif;
 		font-size: 2.75vh;
 		line-height: 1.35;
 		color: #8a8479;
 	}
 
-	.homeSmallScale__aboutArt__SmallScale__paragraph__hr {
+	.shop__aboutArt__SmallScale__paragraph__hr {
 		color: #8a8479;
 		width: 50vw;
 	}
 
-	.homeSmallScale__aboutArt__SmallScale__paragraph__strongEm {
+	.shop__aboutArt__SmallScale__paragraph__strongEm {
 		font-weight: bold;
 	}
 
-	.homeSmallScale__aboutArt__SmallScale__paragraph__footnote {
+	.shop__aboutArt__SmallScale__paragraph__footnote {
 		font-family: 'Noto Serif', Serif;
 		font-size: 2.75vh;
 		line-height: 1.35;
@@ -3649,7 +3667,7 @@ explicitly, e.g.
 		display: block;
 	}
 
-	.homeSmallScale__aboutArt__from25Dollars {
+	.shop__aboutArt__from25Dollars {
 		color: white;
 		background-color: #8a8479;
 
@@ -3658,7 +3676,7 @@ explicitly, e.g.
 		padding: 3vw;
 	}
 
-	.homeSmallScale__aboutArt__from25Dollars__heading {
+	.shop__aboutArt__from25Dollars__heading {
 		font-size: 5vmin;
 		font-family: 'Inter', sans-serif;
 		font-weight: 600;
@@ -3667,7 +3685,7 @@ explicitly, e.g.
 		margin: 5vw 0;
 	}
 
-	.homeSmallScale__aboutArt__from25Dollars__heading__number {
+	.shop__aboutArt__from25Dollars__heading__number {
 		font-size: 20vmin;
 		font-family: 'Inter', sans-serif;
 		font-weight: 800;
@@ -3675,7 +3693,7 @@ explicitly, e.g.
 		display: block;
 	}
 
-	.homeSmallScale__aboutArt__from25Dollars__paragraph {
+	.shop__aboutArt__from25Dollars__paragraph {
 		font-size: 4vmin;
 		font-family: 'Inter', sans-serif;
 		font-weight: 400;
@@ -3688,43 +3706,43 @@ explicitly, e.g.
 	
 </style>
 
-<section class="homeSmallScale__aboutArt">
-	<section class="homeSmallScale__aboutArt__SmallScale">
-		<h2 class="homeSmallScale__aboutArt__SmallScale__heading">Small Scale</h2>
-		<img class="homeSmallScale__aboutArt__SmallScale__img lazyload" data-src="/assets/temp/headache-product.jpg">
-		<p class="homeSmallScale__aboutArt__SmallScale__paragraph">
+<section class="shop__aboutArt">
+	<section class="shop__aboutArt__SmallScale">
+		<h2 class="shop__aboutArt__SmallScale__heading">Small Scale</h2>
+		<img class="shop__aboutArt__SmallScale__img lazyload" data-src="/assets/temp/headache-product.jpg">
+		<p class="shop__aboutArt__SmallScale__paragraph">
 			Drawing has always been the artist's favorite activity. There is an enormous number of small scale work on paper made with pencils or pens.<br/><br/>
-			<strong class="homeSmallScale__aboutArt__SmallScale__paragraph__strongEm">A curated collection of those black and white sketches can be found on the shop (more and more are coming).</strong><br/><br/>
-			<hr class="homeSmallScale__aboutArt__SmallScale__paragraph__hr">
-			<em class="homeSmallScale__aboutArt__SmallScale__paragraph__footnote">+ If you discover something on the site that is not listed in the shop, feel free to inquire about it.</em></p>
+			<strong class="shop__aboutArt__SmallScale__paragraph__strongEm">A curated collection of those black and white sketches can be found on the shop (more and more are coming).</strong><br/><br/>
+			<hr class="shop__aboutArt__SmallScale__paragraph__hr">
+			<em class="shop__aboutArt__SmallScale__paragraph__footnote">+ If you discover something on the site that is not listed in the shop, feel free to inquire about it.</em></p>
 	</section>
 
-	<section class="homeSmallScale__aboutArt__from25Dollars">
-		<h2 class="homeSmallScale__aboutArt__from25Dollars__heading">
+	<section class="shop__aboutArt__from25Dollars">
+		<h2 class="shop__aboutArt__from25Dollars__heading">
 			Original Art from 
-			<span class="homeSmallScale__aboutArt__from25Dollars__heading__number">
+			<span class="shop__aboutArt__from25Dollars__heading__number">
 				€25
 			</span>
 		</h2>
-		<p class="homeSmallScale__aboutArt__from25Dollars__paragraph">
+		<p class="shop__aboutArt__from25Dollars__paragraph">
 			Cutting intermediaries and costs of operations as well as offering original works of small scale that have real value to the admirer of them, we have managed to offer low price points for people who really want to buy art but the art world has been neglecting them forever.
 		</p>
-		<p class="homeSmallScale__aboutArt__from25Dollars__paragraph">
+		<p class="shop__aboutArt__from25Dollars__paragraph">
 			Our goal is to offer art to the masses, the general public, who wants to buy something that means something to them.
 		</p>
-		<p class="homeSmallScale__aboutArt__from25Dollars__paragraph">
+		<p class="shop__aboutArt__from25Dollars__paragraph">
 			We are not here for investors, gallerists, or art-trends that die in a decade after making a billion by offering bulllshit to the world.</p>
 	</section>
 </section>
 	<style type="text/css">
 
-	.homeSmallScale__aboutBusiness__history {
+	.shop__aboutBusiness__history {
 		padding: 5vw 10vw;
 		background: black;
 		color: white;
 	}
 
-	.homeSmallScale__aboutBusiness__history__header {
+	.shop__aboutBusiness__history__header {
 		margin: 5vh auto;
 		font-size: 5vh;
 		font-family: 'Noto Serif', Serif;
@@ -3732,10 +3750,10 @@ explicitly, e.g.
 		line-height: 1.2;
 	}
 
-	.homeSmallScale__aboutBusiness__history__header__heading {
+	.shop__aboutBusiness__history__header__heading {
 	}
 
-	.homeSmallScale__aboutBusiness__history__header__heading__firstLine {
+	.shop__aboutBusiness__history__header__heading__firstLine {
 		display: block;
 		font-size: 7.3vh;
 		text-transform: uppercase;
@@ -3744,10 +3762,10 @@ explicitly, e.g.
 		color: yellow;
 	}
 
-	.homeSmallScale__aboutBusiness__history__paragraphContainer {
+	.shop__aboutBusiness__history__paragraphContainer {
 	}
 
-	.homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph {
+	.shop__aboutBusiness__history__paragraphContainer__paragraph {
 		margin: 2vh auto;
 		font-size: 3vh;
 		line-height: 1.25;
@@ -3755,18 +3773,18 @@ explicitly, e.g.
 		font-weight: 300;
 	}
 
-	.homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis {
+	.shop__aboutBusiness__history__paragraphContainer__paragraph__emphasis {
 		font-weight: 400;
 		color: yellow;
 	}
 
-	.homeSmallScale__aboutBusiness__history__footer {
+	.shop__aboutBusiness__history__footer {
 		margin: 8vh auto 5vh;
 		display: grid;
 		grid-template-columns: 50% 50%;
 	}
 
-	.homeSmallScale__aboutBusiness__history__footer__text {
+	.shop__aboutBusiness__history__footer__text {
 		font-size: 3vh;
 		font-family: 'Noto Serif', Serif;
 		color: yellow;
@@ -3778,7 +3796,7 @@ explicitly, e.g.
 		width: fit-content;
 	}
 
-	.homeSmallScale__aboutBusiness__history__footer__signature {
+	.shop__aboutBusiness__history__footer__signature {
 		width: 100%;
 		height: 100%;
 		grid-template-columns: 100%;
@@ -3786,19 +3804,19 @@ explicitly, e.g.
 		display: grid;
 	}
 
-	.homeSmallScale__aboutBusiness__history__footer__signature__img {
+	.shop__aboutBusiness__history__footer__signature__img {
 		width: 20vw;
 		height: 5vh;
 		object-fit: contain;
 		display: block;
 	}
 	
-	.homeSmallScale__aboutBusiness__artistOwnedBusiness {
+	.shop__aboutBusiness__artistOwnedBusiness {
 		background-color: #222;
 		padding: 10vw;
 	}
 
-	.homeSmallScale__aboutBusiness__artistOwnedBusiness__heading {
+	.shop__aboutBusiness__artistOwnedBusiness__heading {
 		color: yellow;
 		font-family: 'Inter', Sans-serif;
 		text-transform: uppercase;
@@ -3808,7 +3826,7 @@ explicitly, e.g.
 		margin: 5vh 0;
 	}
 
-	.homeSmallScale__aboutBusiness__artistOwnedBusiness__subtitle {
+	.shop__aboutBusiness__artistOwnedBusiness__subtitle {
 		color: white;
 		font-family: 'Inter', Sans-serif;
 		font-size: 4.5vmin;
@@ -3820,7 +3838,7 @@ explicitly, e.g.
 		padding: 3vw 0 3vw 5vw;
 	}
 
-	.homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph {
+	.shop__aboutBusiness__artistOwnedBusiness__paragraph {
 		color: #ccc;
 		font-family: 'Inter', Sans-serif;
 		font-size: 4.5vmin;
@@ -3831,54 +3849,54 @@ explicitly, e.g.
 </style>
 
 
-<section class="homeSmallScale__aboutBusiness__">	<section class="homeSmallScale__aboutBusiness__history">
-		<header class="homeSmallScale__aboutBusiness__history__header">
-			<h2 class="homeSmallScale__aboutBusiness__history__header__heading">
-				<span class="homeSmallScale__aboutBusiness__history__header__heading__firstLine">
+<section class="shop__aboutBusiness__">	<section class="shop__aboutBusiness__history">
+		<header class="shop__aboutBusiness__history__header">
+			<h2 class="shop__aboutBusiness__history__header__heading">
+				<span class="shop__aboutBusiness__history__header__heading__firstLine">
 					20 Years 
 				</span>
 				in the Making
 		</h2>
 		</header>
-		<section class="homeSmallScale__aboutBusiness__history__paragraphContainer">
-			<p class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph">
-				The eshop emerged into existence in 2017, Kostas Gogas <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">has been working professionaly from the age of 14</span>, when his first Graffiti commisions started in <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">January 2001</span>.
+		<section class="shop__aboutBusiness__history__paragraphContainer">
+			<p class="shop__aboutBusiness__history__paragraphContainer__paragraph">
+				The eshop emerged into existence in 2017, Kostas Gogas <span class="shop__aboutBusiness__history__paragraphContainer__paragraph__emphasis">has been working professionaly from the age of 14</span>, when his first Graffiti commisions started in <span class="shop__aboutBusiness__history__paragraphContainer__paragraph__emphasis">January 2001</span>.
 			</p>
-			<p class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph">
-				Before moving away from all comissioned work in 2012 he had <span class="homeSmallScale__aboutBusiness__history__paragraphContainer__paragraph__emphasis">already created numerous artworks of various formats for music bands, schools, stores, individuals, non-profit organizations and big corporations.</span>
+			<p class="shop__aboutBusiness__history__paragraphContainer__paragraph">
+				Before moving away from all comissioned work in 2012 he had <span class="shop__aboutBusiness__history__paragraphContainer__paragraph__emphasis">already created numerous artworks of various formats for music bands, schools, stores, individuals, non-profit organizations and big corporations.</span>
 			</p>			
 		</section>
-		<footer class="homeSmallScale__aboutBusiness__history__footer">
-			<p class="homeSmallScale__aboutBusiness__history__footer__text">
+		<footer class="shop__aboutBusiness__history__footer">
+			<p class="shop__aboutBusiness__history__footer__text">
 				Est. 2001
 			</p>
 
-			<picture class="homeSmallScale__aboutBusiness__history__footer__signature">
-				<img data-src="/assets/temp/kostas-gogas-logo-signature-white-01.png" class="homeSmallScale__aboutBusiness__history__footer__signature__img lazyload">
+			<picture class="shop__aboutBusiness__history__footer__signature">
+				<img data-src="/assets/temp/kostas-gogas-logo-signature-white-01.png" class="shop__aboutBusiness__history__footer__signature__img lazyload">
 			</picture>
 		</footer>
 	</section>
 
-	<section class="homeSmallScale__aboutBusiness__artistOwnedBusiness">
-		<h2 class="homeSmallScale__aboutBusiness__artistOwnedBusiness__heading">Artist Owned Business</h2>
-		<p class="homeSmallScale__aboutBusiness__artistOwnedBusiness__subtitle">
+	<section class="shop__aboutBusiness__artistOwnedBusiness">
+		<h2 class="shop__aboutBusiness__artistOwnedBusiness__heading">Artist Owned Business</h2>
+		<p class="shop__aboutBusiness__artistOwnedBusiness__subtitle">
 			No platforms <br/>
 			No representatives <br/>
 			No gallerists <br/>
 			or auction houses.
 		</p>
-		<p class="homeSmallScale__aboutBusiness__artistOwnedBusiness__paragraph">
+		<p class="shop__aboutBusiness__artistOwnedBusiness__paragraph">
 			Connect directly with a business that is actually owned and operated by the artist himself.<br/>
 		</p>
 	</section>
 </section>
 	<style type="text/css">
-.homeSmallScale__security {
+.shop__security {
 	background-color: #0054ff;
 	padding: 10vw;
 }
 
-.homeSmallScale__security__heading {
+.shop__security__heading {
 	font-size: 8.5vmin;
 	font-family: 'Inter', Sans-serif;
 	font-weight: 700;
@@ -3887,10 +3905,10 @@ explicitly, e.g.
 	color: white;
 }
 
-.homeSmallScale__security__secureByDesign {
+.shop__security__secureByDesign {
 }
 
-.homeSmallScale__security__secureByDesign__paragraph {
+.shop__security__secureByDesign__paragraph {
 	font-family: 'Inter', Sans-serif;
 	font-weight: 400;
 	font-size: 4.5vmin;
@@ -3901,10 +3919,10 @@ explicitly, e.g.
 	margin: 5vmin 0;
 }
 
-.homeSmallScale__security__simpleProcess {
+.shop__security__simpleProcess {
 }
 
-.homeSmallScale__security__simpleProcess__heading {
+.shop__security__simpleProcess__heading {
 	font-size: 4.25vmin;
 	font-family: 'Inter', Sans-serif;
 	font-weight: 800;
@@ -3915,7 +3933,7 @@ explicitly, e.g.
 	color: yellow;
 }
 
-.homeSmallScale__security__simpleProcess__list {
+.shop__security__simpleProcess__list {
 	list-style-type: decimal;
 	list-style-position: inside;
 
@@ -3927,10 +3945,10 @@ explicitly, e.g.
 	color: yellow;
 }
 
-.homeSmallScale__security__simpleProcess__list__item {
+.shop__security__simpleProcess__list__item {
 }
 
-.homeSmallScale__security__simpleProcess__paragraph {
+.shop__security__simpleProcess__paragraph {
 	font-family: 'Inter', Sans-serif;
 	font-weight: 400;
 	font-size: 4.5vmin;
@@ -3941,10 +3959,10 @@ explicitly, e.g.
 	margin: 5vmin 0;
 }
 
-.homeSmallScale__security__fastProcess {
+.shop__security__fastProcess {
 }
 
-.homeSmallScale__security__fastProcess__heading {
+.shop__security__fastProcess__heading {
 	font-size: 4.25vmin;
 	font-family: 'Inter', Sans-serif;
 	font-weight: 800;
@@ -3955,7 +3973,7 @@ explicitly, e.g.
 	color: yellow;
 }
 
-.homeSmallScale__security__fastProcess__paragraph {
+.shop__security__fastProcess__paragraph {
 	font-size: 4.5vmin;
 	line-height: 1.25;
 	font-family: 'Inter', Sans-serif;
@@ -3966,7 +3984,7 @@ explicitly, e.g.
 	margin: 5vmin 0;
 }
 
-.homeSmallScale__security__fastProcess__footer {
+.shop__security__fastProcess__footer {
 	font-size: 4.5vmin;
 	line-height: 1.25;
 	font-family: 'Inter', Sans-serif;
@@ -3980,38 +3998,38 @@ explicitly, e.g.
 	
 </style>
 
-<section class="homeSmallScale__security">
-	<h2 class="homeSmallScale__security__heading">Secure by Design</h2>
-	<section class="homeSmallScale__security__secureByDesign">
-		<p class="homeSmallScale__security__secureByDesign__paragraph">
+<section class="shop__security">
+	<h2 class="shop__security__heading">Secure by Design</h2>
+	<section class="shop__security__secureByDesign">
+		<p class="shop__security__secureByDesign__paragraph">
 			The shop itself is designed to accept payments without us processing or storing any of your credit card data by using the infrastructure of PayPal. <br/>
 			This way you can you don’t share any credit card information with us. <br/>
 			Everything is processed through PayPal and you can be rest assured that you are in good company.
 		</p>
-		<p class="homeSmallScale__security__secureByDesign__paragraph">
+		<p class="shop__security__secureByDesign__paragraph">
 			You don’t have to have a PayPal account to buy from us, you can fill up your credit card info on checkout and go on your way of being an art collector.
 		</p>
 	</section>
 
-	<section class="homeSmallScale__security__simpleProcess">
-		<h3 class="homeSmallScale__security__simpleProcess__heading">Simple Process</h3>
-		<ol class="homeSmallScale__security__simpleProcess__list">
-			<li class="homeSmallScale__security__simpleProcess__list__item">Hit Buy</li>
-			<li class="homeSmallScale__security__simpleProcess__list__item">Hit Guest Checkout</li>
-			<li class="homeSmallScale__security__simpleProcess__list__item">Fill Your Info</li>
+	<section class="shop__security__simpleProcess">
+		<h3 class="shop__security__simpleProcess__heading">Simple Process</h3>
+		<ol class="shop__security__simpleProcess__list">
+			<li class="shop__security__simpleProcess__list__item">Hit Buy</li>
+			<li class="shop__security__simpleProcess__list__item">Hit Guest Checkout</li>
+			<li class="shop__security__simpleProcess__list__item">Fill Your Info</li>
 		</ol>
 
-		<p class="homeSmallScale__security__simpleProcess__paragraph">
+		<p class="shop__security__simpleProcess__paragraph">
 			That's it. Your art will be with you in a few days.
 		</p>
 	</section>
 
-	<section class="homeSmallScale__security__fastProcess">
-		<h3 class="homeSmallScale__security__fastProcess__heading">Fast</h3>
-		<p class="homeSmallScale__security__fastProcess__paragraph">
+	<section class="shop__security__fastProcess">
+		<h3 class="shop__security__fastProcess__heading">Fast</h3>
+		<p class="shop__security__fastProcess__paragraph">
 			Forget the pain staking process and the dullness of setting up accounts, registering your names and emails, confirming and yada yada yada..<br/><br/>
 		</p>
-		<footer class="homeSmallScale__security__fastProcess__footer">
+		<footer class="shop__security__fastProcess__footer">
 			We’ve cut all that.<br/>
 			Go straight to checkout. Simple.
 		</footer>
@@ -4022,15 +4040,15 @@ explicitly, e.g.
 	
 </style>
 
-<section class="homeSmallScale__packaging">
-	<section class="homeSmallScale__packaging__packaging">
-		<h2 class="homeSmallScale__packaging__packaging__heading">Packaging</h2>
-		<p class="homeSmallScale__packaging__packaging__paragraph">
+<section class="shop__packaging">
+	<section class="shop__packaging__packaging">
+		<h2 class="shop__packaging__packaging__heading">Packaging</h2>
+		<p class="shop__packaging__packaging__paragraph">
 			We strive for excellence in securing the artwork.<br/>
 			We wrap you art in five layers of protection before sending it to you, ensuring that shipping it will cause no damage to the piece.</p>
 
-		<p class="homeSmallScale__packaging__packaging__paragraph">We wrap our art with:
-		<ol class="homeSmallScale__packaging__packaging__paragraph__orderedList">
+		<p class="shop__packaging__packaging__paragraph">We wrap our art with:
+		<ol class="shop__packaging__packaging__paragraph__orderedList">
 			<li>Protective Layer</li>
 			<li>Bubbles</li>
 			<li></li>
@@ -4042,9 +4060,9 @@ explicitly, e.g.
 	</section>
 
 
-	<section class="homeSmallScale__packaging__CertificatesOfAuthenticity">
-		<h2 class="homeSmallScale__packaging__CertificatesOfAuthenticity__heading">Certificates of Authenticity</h2>
-		<p class="homeSmallScale__packaging__CertificatesOfAuthenticity__paragraph">
+	<section class="shop__packaging__CertificatesOfAuthenticity">
+		<h2 class="shop__packaging__CertificatesOfAuthenticity__heading">Certificates of Authenticity</h2>
+		<p class="shop__packaging__CertificatesOfAuthenticity__paragraph">
 			We provide certificates of authenticity for all original art purchased through the shop.<br/>
 			That way you don’t have to worry about proving the orignality of your the work you purchased in the future.<br/><br/>
 
@@ -4057,29 +4075,29 @@ explicitly, e.g.
 	<style type="text/css">
 	
 
-	.homeSmallScale__shipping__BasedInGreece {
+	.shop__shipping__BasedInGreece {
 		background-color: #f1d1ab;
 		padding: 5vh 0;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__header {
+	.shop__shipping__BasedInGreece__header {
 
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__header__iconHolder {
+	.shop__shipping__BasedInGreece__header__iconHolder {
 		width: 15vw;
 		height: 15vw;
 		display: block;
 		margin: auto;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__header__iconHolder__img {
+	.shop__shipping__BasedInGreece__header__iconHolder__img {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__header__heading {
+	.shop__shipping__BasedInGreece__header__heading {
 		color: #0695ed;
 		font-family: 'Noto Serif', serif;
 		font-weight: bold;
@@ -4089,12 +4107,12 @@ explicitly, e.g.
 		line-height: 1.3;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__divider {
+	.shop__shipping__BasedInGreece__divider {
 		width: 50vw;
 		border: 0.2vh solid #235576;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__paragraph {
+	.shop__shipping__BasedInGreece__paragraph {
 		color: #0f253c;
 		font-family: 'Noto Serif', serif;
 		margin: 5vh auto;
@@ -4103,26 +4121,26 @@ explicitly, e.g.
 		width: 80vw;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__paragraph__emphasis {
+	.shop__shipping__BasedInGreece__paragraph__emphasis {
 		font-style: italic;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure {
+	.shop__shipping__BasedInGreece__filadelfeiaFigure {
 		margin: 5vh auto;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__picture {
+	.shop__shipping__BasedInGreece__filadelfeiaFigure__picture {
 
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__picture__img {
+	.shop__shipping__BasedInGreece__filadelfeiaFigure__picture__img {
 		width: 80vw;
 		margin: auto;
 		object-fit: contain;
 		display: block;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption {
+	.shop__shipping__BasedInGreece__filadelfeiaFigure__figcaption {
 		font-family: 'Inter', sans-serif;
 		font-weight: 300;
 		font-size: 1.75vmax;
@@ -4135,7 +4153,7 @@ explicitly, e.g.
 		margin: 2vmax auto;
 	}
 
-	.homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link {
+	.shop__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link {
 		color: brown;
 		font-weight: 500;
 		text-decoration: underline;
@@ -4143,68 +4161,68 @@ explicitly, e.g.
 </style>
 
 
-<section class="homeSmallScale__shipping">
+<section class="shop__shipping">
 
-	<section class="homeSmallScale__shipping__shipping">
-		<h2 class="homeSmallScale__shipping__shipping__heading">Shipping</h2>
-		<p class="homeSmallScale__shipping__shipping__paragraph">
+	<section class="shop__shipping__shipping">
+		<h2 class="shop__shipping__shipping__heading">Shipping</h2>
+		<p class="shop__shipping__shipping__paragraph">
 			We currently ship to European Union, United Kingdom and United States.
 		</p>
-		<p class="homeSmallScale__shipping__shipping__paragraph">
+		<p class="shop__shipping__shipping__paragraph">
 			Your art is shipped from Greece, with Standard Shipping and ussually arrives within 7 to 14 days.
 		</p>
-		<p class="homeSmallScale__shipping__shipping__paragraph">
+		<p class="shop__shipping__shipping__paragraph">
 			You can always hit us up to ask anything, and we will get back to you as soon as possible.
 		</p>
 	</section>
 
 
-	<section class="homeSmallScale__shipping__BasedInGreece">
-		<header class="homeSmallScale__shipping__BasedInGreece__header">
-			<picture class="homeSmallScale__shipping__BasedInGreece__header__iconHolder">
-				<img data-src="/assets/temp/iconfinder__location_1249982.png" class="homeSmallScale__shipping__BasedInGreece__header__iconHolder__img lazyload">
+	<section class="shop__shipping__BasedInGreece">
+		<header class="shop__shipping__BasedInGreece__header">
+			<picture class="shop__shipping__BasedInGreece__header__iconHolder">
+				<img data-src="/assets/temp/iconfinder__location_1249982.png" class="shop__shipping__BasedInGreece__header__iconHolder__img lazyload">
 			</picture>
-			<h2 class="homeSmallScale__shipping__BasedInGreece__header__heading">We are based in Nea Filadelfeia, Greece</h2>
+			<h2 class="shop__shipping__BasedInGreece__header__heading">We are based in Nea Filadelfeia, Greece</h2>
 		</header>
 
-		<hr class="homeSmallScale__shipping__BasedInGreece__divider">
+		<hr class="shop__shipping__BasedInGreece__divider">
 
-		<p class="homeSmallScale__shipping__BasedInGreece__paragraph">
-			..which is also the artist's hometown. Located near Athens, the spirit of our small suburb is one of open-heartedness to foreigners and people coming from different backgrounds as the city’s name itself comes from the Anatolian city <em class="homeSmallScale__shipping__BasedInGreece__paragraph__emphasis">'Filadelfeia'</em> where Greek refugees fled from after the Greco-Turkish war between 1912-1922.
+		<p class="shop__shipping__BasedInGreece__paragraph">
+			..which is also the artist's hometown. Located near Athens, the spirit of our small suburb is one of open-heartedness to foreigners and people coming from different backgrounds as the city’s name itself comes from the Anatolian city <em class="shop__shipping__BasedInGreece__paragraph__emphasis">'Filadelfeia'</em> where Greek refugees fled from after the Greco-Turkish war between 1912-1922.
 		</p>
-		<figure class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure">
-			<picture class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__picture">
-				<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Nea_Filadelfia_lake.JPG/1200px-Nea_Filadelfia_lake.JPG" alt="Nea Filadelfia lake" class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__picture__img lazyload">
+		<figure class="shop__shipping__BasedInGreece__filadelfeiaFigure">
+			<picture class="shop__shipping__BasedInGreece__filadelfeiaFigure__picture">
+				<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Nea_Filadelfia_lake.JPG/1200px-Nea_Filadelfia_lake.JPG" alt="Nea Filadelfia lake" class="shop__shipping__BasedInGreece__filadelfeiaFigure__picture__img lazyload">
 			</picture>
-			<figcaption class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption">
-				Nea Filadelfeia Park by <a href="//commons.wikimedia.org/wiki/User:Dimkoa" title="User:Dimkoa" target="_blank" rel="noopener" class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link">
+			<figcaption class="shop__shipping__BasedInGreece__filadelfeiaFigure__figcaption">
+				Nea Filadelfeia Park by <a href="//commons.wikimedia.org/wiki/User:Dimkoa" title="User:Dimkoa" target="_blank" rel="noopener" class="shop__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link">
 					dimkoa</a>, Own work, Public Domain,
-				<a href="https://en.wikipedia.org/wiki/Nea_Filadelfeia#/media/File:Nea_Filadelfia_lake.JPG" target="_blank" rel="noopener" class="homeSmallScale__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link">Link to Original Image</a>
+				<a href="https://en.wikipedia.org/wiki/Nea_Filadelfeia#/media/File:Nea_Filadelfia_lake.JPG" target="_blank" rel="noopener" class="shop__shipping__BasedInGreece__filadelfeiaFigure__figcaption__link">Link to Original Image</a>
 			</figcaption>
 		</figure>
 	</section>
 </section>
 	<style type="text/css">
-		.homeSmallScale__reviews {
+		.shop__reviews {
 		padding: 5vw;
 		background-color: white;
 	}
 
-	.homeSmallScale__reviews__header {
+	.shop__reviews__header {
 
 	}
 
-	.homeSmallScale__reviews__header__picture {
+	.shop__reviews__header__picture {
 		display: block;
 		width: 10vw;
 		margin: 5vw auto 2vw;
 	}
 
-	.homeSmallScale__reviews__header__picture__img {
+	.shop__reviews__header__picture__img {
 		width: 100%;
 	}
 
-	.homeSmallScale__reviews__header__heading {
+	.shop__reviews__header__heading {
 		color: #3296d2;
 		font-size: 4vh;
 		text-align: center;
@@ -4212,14 +4230,14 @@ explicitly, e.g.
 		font-weight: 300;
 	}
 
-	.homeSmallScale__reviews__stars {
+	.shop__reviews__stars {
 		color: #3296d2;
 		font-size: 12vw;
 		text-align: center;
 		margin: 10vw auto;
 	}
 
-	.homeSmallScale__reviews__paragraph {
+	.shop__reviews__paragraph {
 		color: #3296d2;
 		font-size: 4vh;
 		text-align: center;
@@ -4228,12 +4246,12 @@ explicitly, e.g.
 		font-weight: 600;
 	}
 
-	.homeSmallScale__reviews__footer {
+	.shop__reviews__footer {
 		text-align: center;
 		margin: 5vw;
 	}
 
-	.homeSmallScale__reviews__footer__linkToReviews {
+	.shop__reviews__footer__linkToReviews {
 		color: black;
 		text-decoration: underline;
 		font-size: 3.8vw;
@@ -4244,14 +4262,14 @@ explicitly, e.g.
 </style>
 
 
-<section class="homeSmallScale__reviews">
-		<header class="homeSmallScale__reviews__header">
-			<picture class="homeSmallScale__reviews__header__picture">
-				<img data-src="/assets/temp/googlemybusiness.png" alt="Google My Business Logo" class="homeSmallScale__reviews__header__picture__img lazyload">
+<section class="shop__reviews">
+		<header class="shop__reviews__header">
+			<picture class="shop__reviews__header__picture">
+				<img data-src="/assets/temp/googlemybusiness.png" alt="Google My Business Logo" class="shop__reviews__header__picture__img lazyload">
 			</picture>
-			<h2 class="homeSmallScale__reviews__header__heading">Five Star Rating on Google</h2>
+			<h2 class="shop__reviews__header__heading">Five Star Rating on Google</h2>
 		</header>
-		<p class="homeSmallScale__reviews__stars">
+		<p class="shop__reviews__stars">
 			<i class="fa fa-star" aria-hidden="true"></i>
 			<i class="fa fa-star" aria-hidden="true"></i>
 			<i class="fa fa-star" aria-hidden="true"></i>
@@ -4259,8 +4277,8 @@ explicitly, e.g.
 			<i class="fa fa-star" aria-hidden="true"></i>
 		</p>
 
-		<footer class="homeSmallScale__reviews__footer">
-			<a href="https://g.page/kostasgogas" class="homeSmallScale__reviews__footer__linkToReviews" target="_blank" rel="noopener">
+		<footer class="shop__reviews__footer">
+			<a href="https://g.page/kostasgogas" class="shop__reviews__footer__linkToReviews" target="_blank" rel="noopener">
 				Read Google Reviews <i class="fa fa-external-link" aria-hidden="true"></i>
 			</a>
 		</footer>
@@ -4342,10 +4360,6 @@ make it one black line at the bottom
 
 
 
-<!-- TODO: first check if cookie gdpr preference is set -->
-
-<!-- BUT I THINK IT ALREADY DOES -->
-
 <script type="text/javascript">
 	// Get the modal
 	var modalGDPR = document.getElementById("siteWideCookieNoticeJsAnchor");
@@ -4367,6 +4381,9 @@ make it one black line at the bottom
 		if (document.cookie.length !=  0) {
 			modalGDPR.style.display = "none";
 			console.log("Cookie preference already set.");
+		} else {
+			modalGDPR.style.display = "grid";
+			console.log("Cookie preference not yet set.");
 		}
 	}
 </script>

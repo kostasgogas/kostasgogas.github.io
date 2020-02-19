@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>this-will-go-to-produce-the-title-in-config-for-pagegen-and-the-h4-and-the-title-of-the-html</title>
+	<title>this-will-go-to-produce-the-title-in-config-for-pagegen</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -330,6 +330,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -337,6 +338,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -344,6 +346,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -351,6 +354,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 
 body {
@@ -426,7 +430,7 @@ place it afterwards
 	background-color: black;
 	padding: 2vmax;
 
-	display: grid;
+	display: none;
 	grid-template-columns: 74% 25%;
 	grid-column-gap: 1%;
 	grid-template-rows: 40% 50%;
@@ -3032,6 +3036,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Bitter/Bitter-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3039,6 +3044,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Bitter/Bitter-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -3046,12 +3052,14 @@ explicitly, e.g.
 	src: url('/assets/fonts/Bitter/Bitter-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Noto Serif'; /*a name to be used later*/
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3059,6 +3067,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3066,6 +3075,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -3073,6 +3083,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 
 body {
@@ -3756,7 +3767,7 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="/shop/#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
+			<a href="/shop/all#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
 				Shop
 			</a>
 		</li>
@@ -3776,23 +3787,32 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 </header>
 
 
-	<div class="product">
+	<style type="text/css">
+
+	/*this is for the header*/
+	.siteWideHeader__menuList__listItem__link--shop {
+		text-decoration: underline;
+	}
+	
+</style>
+
+<div class="product">
 
 <header class="product__headerOfProduct">
-	<h1 class="product__headerOfProduct__heading">Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h1>
-	<p class="product__headerOfProduct__shortDescription">24cm x 29.7cm | Μολύβι on Τυπογραφικό Χαρτί 80γρ.</p>
+	<h1 class="product__headerOfProduct__heading">Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της</h1>
+	<p class="product__headerOfProduct__shortDescription">29.5cm x 20cm | Μολύβι on Χαρτί 80γρ.</p>
 </header>
 <figure class="product__featuredImageFigure">
 	<picture class="product__featuredImageFigure_picture">
-		<source media="(max-width: 40px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445538.jpg-320.jpg">
-		<source media="(max-width: 500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445538.jpg-460.jpg">
-		<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445538.jpg-800.jpg">
-		<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445538.jpg.jpg" alt="''" title="featured-image-alt-en" class="product__featuredImageFigure_picture__img lazyload">
+		<source media="(max-width: 40px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-320.jpg">
+		<source media="(max-width: 500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-460.jpg">
+		<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-800.jpg">
+		<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product.jpg" alt="''" title="featured-image-alt-en" class="product__featuredImageFigure_picture__img lazyload">
 	</picture>
 	<figcaption class="product__featuredImageFigure__figcaption">Colors may look different from screen to screen and in real life.</figcaption>
 </figure>
 <div class="product__addToCartBox">
-	<h2 class="product__addToCartBox__title">Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h2>
+	<h2 class="product__addToCartBox__title">Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της</h2>
 	
 	<a href="#" class="product__addToCartBox__buyButton">Add to Cart</a>
 	
@@ -3800,7 +3820,7 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 		<span class="product__addToCartBox__price__euroIcon">€</span> 
 
 		
-		<span class="product__addToCartBox__price__euro">499</span><sup class="product__addToCartBox__price__cents">.97
+		<span class="product__addToCartBox__price__euro">64</span><sup class="product__addToCartBox__price__cents">.99
 		</sup>
 	</p>
 </div>
@@ -3820,61 +3840,19 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 			</picture>
 			
 			<h3 class="product__contactToBuy__formContainer__header__title">
-				Inquire about <span class="product__contactToBuy__formContainer__header__title__name">"Πρόχειρα Σχέδια με Τρεις Χαρακτήρες"</span>
+				Inquire about <span class="product__contactToBuy__formContainer__header__title__name">"Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της"</span>
 			</h3>
 		</header>
 
 
 		<input class="product__contactToBuy__formContainer__nameField" type="text" name="name" placeholder="Enter your name" required>
 		<input class="product__contactToBuy__formContainer__emailField" type="email" name="email" placeholder="Enter your e-mail address" required>
-		<input type="hidden" name="subject" value="Ερώτηση για 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες'" required>
+		<input type="hidden" name="subject" value="Ερώτηση για 'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της'" required>
 		<textarea class="product__contactToBuy__formContainer__messageField" name="message" placeholder="Your message.."></textarea>
 		<button class="product__contactToBuy__formContainer__submitButton" type="submit">Send</button>
 	</form>
 </aside>
 <!-- <figure class="product__imageGallery">
-	
-	<picture class="product__imageGallery__picture">
-		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445556-work-in-progress-art-drawing-kostas-gogas-epic-journey-giant-rocks-black-and-white.jpg">
-			<img class="product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v4576975704/myth-wip-IMG_20470808_445556-work-in-progress-art-drawing-kostas-gogas-epic-journey-giant-rocks-black-and-white.jpg">
-		</a>
-	</picture>
-	
-	<picture class="product__imageGallery__picture">
-		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v4576975703/myth-wip-IMG_20470734_432504.jpg">
-			<img class="product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v4576975703/myth-wip-IMG_20470734_432504.jpg">
-		</a>
-	</picture>
-	
-	<picture class="product__imageGallery__picture">
-		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v4576975703/myth-wip-IMG_20470808_445529.jpg">
-			<img class="product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v4576975703/myth-wip-IMG_20470808_445529.jpg">
-		</a>
-	</picture>
-	
-	<picture class="product__imageGallery__picture">
-		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v4576975652/myth-wip-IMG_20470849_444048.jpg">
-			<img class="product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v4576975652/myth-wip-IMG_20470849_444048.jpg">
-		</a>
-	</picture>
-	
-	<picture class="product__imageGallery__picture">
-		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v4576975703/myth-wip-IMG_20470734_432504.jpg">
-			<img class="product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v4576975703/myth-wip-IMG_20470734_432504.jpg">
-		</a>
-	</picture>
-	
-	<picture class="product__imageGallery__picture">
-		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v4576975703/myth-wip-IMG_20470808_445529.jpg">
-			<img class="product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v4576975703/myth-wip-IMG_20470808_445529.jpg">
-		</a>
-	</picture>
-	
-	<picture class="product__imageGallery__picture">
-		<a href="https://res.cloudinary.com/kostasgogas/image/upload/v4576975652/myth-wip-IMG_20470849_444048.jpg">
-			<img class="product__imageGallery__picture__image" src="https://res.cloudinary.com/kostasgogas/image/upload/v4576975652/myth-wip-IMG_20470849_444048.jpg">
-		</a>
-	</picture>
 	
 </figure> -->
 
@@ -3884,46 +3862,46 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 <figure class="product__imageGallery">
 	<a href="#" class="product__imageGallery__imageLink">
 		<picture class="product__imageGallery__imageLink__picture">
-			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-320.jpg">
-			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-460.jpg">
-			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-800.jpg">
-			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/lovely-pussycat-corner-edge-4-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/lovely-pussycat-corner-edge-4-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/lovely-pussycat-corner-edge-4-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/lovely-pussycat-corner-edge-4-photo-of-artwork.jpg" alt="'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
 		</picture>
 	</a>
 
 	<a href="#" class="product__imageGallery__imageLink">
 		<picture class="product__imageGallery__imageLink__picture">
-			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork-320.jpg">
-			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork-460.jpg">
-			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork-800.jpg">
-			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/plchldr-corner-edge-2-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/lovely-pussycat-corner-edge-2-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/lovely-pussycat-corner-edge-2-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/lovely-pussycat-corner-edge-2-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/lovely-pussycat-corner-edge-2-photo-of-artwork.jpg" alt="'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
 		</picture>
 	</a>
 
 	<a href="#" class="product__imageGallery__imageLink">
 		<picture class="product__imageGallery__imageLink__picture">
-			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork-320.jpg">
-			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork-460.jpg">
-			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork-800.jpg">
-			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/plchldr-corner-edge-3-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/lovely-pussycat-corner-edge-3-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/lovely-pussycat-corner-edge-3-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/lovely-pussycat-corner-edge-3-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/lovely-pussycat-corner-edge-3-photo-of-artwork.jpg" alt="'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
 		</picture>
 	</a>
 
 	<a href="#" class="product__imageGallery__imageLink">
 		<picture class="product__imageGallery__imageLink__picture">
-			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-320.jpg">
-			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-460.jpg">
-			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork-800.jpg">
-			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/plchldr-corner-edge-4-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/lovely-pussycat-corner-edge-4-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/lovely-pussycat-corner-edge-4-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/lovely-pussycat-corner-edge-4-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/lovely-pussycat-corner-edge-4-photo-of-artwork.jpg" alt="'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της', Φωτογραφία άκρης / Λεπτομέρεια " title="Δεπτομέρεια / Άκρη του 'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
 		</picture>
 	</a>
 
 	<a href="#" class="product__imageGallery__imageLink">
 		<picture class="product__imageGallery__imageLink__picture">
-			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/plchldr-back-photo-of-artwork-320.jpg">
-			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/plchldr-back-photo-of-artwork-460.jpg">
-			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/plchldr-back-photo-of-artwork-800.jpg">
-			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-back/plchldr-back-photo-of-artwork.jpg" alt="'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες', Φωτογραφία Πίσω Μέρους / Λεπτομέρεια " title="Δεπτομέρεια / Πίσω Μέρος του 'Πρόχειρα Σχέδια με Τρεις Χαρακτήρες' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/lovely-pussycat-back-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/lovely-pussycat-back-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/lovely-pussycat-back-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-back/lovely-pussycat-back-photo-of-artwork.jpg" alt="'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της', Φωτογραφία Πίσω Μέρους / Λεπτομέρεια " title="Δεπτομέρεια / Πίσω Μέρος του 'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της' του Κώστα Γκόγκα" class="product__imageGallery__imageLink__picture__image lazyload">
 		</picture>
 	</a>
 	<figcaption class="product__imageGallery__figcaption">Click on an image for a closer look.</figcaption>
@@ -3940,14 +3918,14 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 	<img data-src="assets/temp/medium-image-color.png" class="product__medium__image lazyload">
 	<div class="product__medium__container">
 		<h3 class="product__medium__container__title">Medium</h3>
-		<p class="product__medium__container__content">Μολύβι</p>
+		<p class="product__medium__container__content"></p>
 	</div>
 </aside>
 	<aside class="product__surface">
 	<img data-src="assets/temp/surface-image.png" class="product__surface__image lazyload">
 	<div class="product__surface__container">
 		<h3 class="product__surface__container__title">Surface</h3>
-		<p class="product__surface__container__content">Τυπογραφικό Χαρτί 80γρ.</p>
+		<p class="product__surface__container__content"></p>
 	</div>
 </aside>
 	<aside class="product__details">
@@ -3955,17 +3933,17 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 	<ul class="product__details__unorderedList">	
 		<li><strong>Τίτλος:</strong> </li>
 		<li><strong>Καλλιτέχνης:</strong> Κώστας Γκόγκας</li>
-		<li><strong>Χρονολογία:</strong> 20X9</li>
-		<li><strong>Υπογεγραμένο:</strong> Ναι</li>
-		<li><strong>Ύλικό:</strong> Μολύβι</li>
-		<li><strong>Επιφάνεια:</strong> Τυπογραφικό Χαρτί 80γρ.</li>
-		<li><strong>Πλάτος:</strong> 24cm</li>
-		<li><strong>Ύψος:</strong> 29.7cm</li>
-		<li><strong>Πάχος:</strong> 0.04cm</li>
+		<li><strong>Χρονολογία:</strong> 2007</li>
+		<li><strong>Υπογεγραμένο:</strong> Yes</li>
+		<li><strong>Ύλικό:</strong> </li>
+		<li><strong>Επιφάνεια:</strong> </li>
+		<li><strong>Πλάτος:</strong> 29.5cm</li>
+		<li><strong>Ύψος:</strong> 20cm</li>
+		<li><strong>Πάχος:</strong> 0.01cm</li>
 	</ul>
 	<ul class="product__details__unorderedList">
 		<li><strong>Βάρος:</strong> plchldr</li>
-		<li><strong>id:</strong> plchldr</li>
+		<li><strong>id:</strong> lovely-pussycat</li>
 	</ul>
 </aside>
 
@@ -3979,17 +3957,17 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 	<ul class="product__details__unorderedList">	
 		<li><strong>Τίτλος:</strong> </li>
 		<li><strong>Καλλιτέχνης:</strong> Κώστας Γκόγκας</li>
-		<li><strong>Χρονολογία:</strong> 20X9</li>
-		<li><strong>Υπογεγραμένο:</strong> Ναι</li>
-		<li><strong>Ύλικό:</strong> Μολύβι</li>
-		<li><strong>Επιφάνεια:</strong> Τυπογραφικό Χαρτί 80γρ.</li>
-		<li><strong>Πλάτος:</strong> 24cm</li>
-		<li><strong>Ύψος:</strong> 29.7cm</li>
-		<li><strong>Πάχος:</strong> 0.04cm</li>
+		<li><strong>Χρονολογία:</strong> 2007</li>
+		<li><strong>Υπογεγραμένο:</strong> Yes</li>
+		<li><strong>Ύλικό:</strong> </li>
+		<li><strong>Επιφάνεια:</strong> </li>
+		<li><strong>Πλάτος:</strong> 29.5cm</li>
+		<li><strong>Ύψος:</strong> 20cm</li>
+		<li><strong>Πάχος:</strong> 0.01cm</li>
 	</ul>
 	<ul class="product__details__unorderedList">
 		<li><strong>Βάρος:</strong> plchldr</li>
-		<li><strong>id:</strong> plchldr</li>
+		<li><strong>id:</strong> lovely-pussycat</li>
 	</ul>
 </aside>
 
@@ -4001,14 +3979,14 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 	<img data-src="assets/temp/medium-image-color.png" class="product__medium__image lazyload">
 	<div class="product__medium__container">
 		<h3 class="product__medium__container__title">Medium</h3>
-		<p class="product__medium__container__content">Μολύβι</p>
+		<p class="product__medium__container__content"></p>
 	</div>
 </aside>
 <aside class="product__surface">
 	<img data-src="assets/temp/surface-image.png" class="product__surface__image lazyload">
 	<div class="product__surface__container">
 		<h3 class="product__surface__container__title">Surface</h3>
-		<p class="product__surface__container__content">Τυπογραφικό Χαρτί 80γρ.</p>
+		<p class="product__surface__container__content"></p>
 	</div>
 </aside>
 
@@ -4163,10 +4141,6 @@ make it one black line at the bottom
 
 
 
-<!-- TODO: first check if cookie gdpr preference is set -->
-
-<!-- BUT I THINK IT ALREADY DOES -->
-
 <script type="text/javascript">
 	// Get the modal
 	var modalGDPR = document.getElementById("siteWideCookieNoticeJsAnchor");
@@ -4188,6 +4162,9 @@ make it one black line at the bottom
 		if (document.cookie.length !=  0) {
 			modalGDPR.style.display = "none";
 			console.log("Cookie preference already set.");
+		} else {
+			modalGDPR.style.display = "grid";
+			console.log("Cookie preference not yet set.");
 		}
 	}
 </script>

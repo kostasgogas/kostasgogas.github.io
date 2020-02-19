@@ -330,6 +330,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -337,6 +338,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -344,6 +346,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -351,6 +354,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 
 body {
@@ -426,7 +430,7 @@ place it afterwards
 	background-color: black;
 	padding: 2vmax;
 
-	display: grid;
+	display: none;
 	grid-template-columns: 74% 25%;
 	grid-column-gap: 1%;
 	grid-template-rows: 40% 50%;
@@ -2939,7 +2943,7 @@ this here is just to copy the 'icons' css as needed */
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="/shop/#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
+			<a href="/shop/all#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
 				Shop
 			</a>
 		</li>
@@ -3035,10 +3039,6 @@ make it one black line at the bottom
 
 
 
-<!-- TODO: first check if cookie gdpr preference is set -->
-
-<!-- BUT I THINK IT ALREADY DOES -->
-
 <script type="text/javascript">
 	// Get the modal
 	var modalGDPR = document.getElementById("siteWideCookieNoticeJsAnchor");
@@ -3060,6 +3060,9 @@ make it one black line at the bottom
 		if (document.cookie.length !=  0) {
 			modalGDPR.style.display = "none";
 			console.log("Cookie preference already set.");
+		} else {
+			modalGDPR.style.display = "grid";
+			console.log("Cookie preference not yet set.");
 		}
 	}
 </script>

@@ -330,6 +330,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -337,6 +338,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -344,6 +346,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -351,6 +354,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 
 body {
@@ -426,7 +430,7 @@ place it afterwards
 	background-color: black;
 	padding: 2vmax;
 
-	display: grid;
+	display: none;
 	grid-template-columns: 74% 25%;
 	grid-column-gap: 1%;
 	grid-template-rows: 40% 50%;
@@ -2939,7 +2943,7 @@ this here is just to copy the 'icons' css as needed */
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="/shop/#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
+			<a href="/shop/all#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
 				Shop
 			</a>
 		</li>
@@ -3068,7 +3072,9 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.workIndex__period__category__projectsContainer__project__picture__img {
-
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
 	}
 
 	.workIndex__period__category__projectsContainer__project__title {
@@ -3178,7 +3184,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/universal-retina/universal-retina-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Universal Retina
@@ -3192,7 +3198,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/digital-october/digital-october-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Digital October
@@ -3321,7 +3327,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/448/448-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				4:48
@@ -3335,7 +3341,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/headache-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Headache
@@ -3464,7 +3470,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas//-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Sapioi os to Kokkalo
@@ -3593,7 +3599,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/orphan-sounds/orphan-sounds-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Orphan Sounds
@@ -3722,7 +3728,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/abstract-material-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Abstract Material
@@ -3736,7 +3742,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/exploring-abstract-expressionism/exploring-abstract-expressionism-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Exploring Abstract Expressionism
@@ -3975,7 +3981,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/same/same-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Same: The AudioVisual Portrait of a Hypocrite, on Ochre Background
@@ -4104,7 +4110,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/simultaneous-fields/simultaneous-fields-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				The Simultaneous Fields
@@ -4343,7 +4349,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/first-one-lines/first-one-lines-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				One Lines as Standalone Artworks / First Period
@@ -4357,7 +4363,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/drawings-as-standalone-art/drawings-as-standalone-art-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Drawings as Standalone Art
@@ -4371,7 +4377,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/recourcefulness/recourcefulness-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Resourcesfulness
@@ -4385,7 +4391,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/first-canvas-series-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				First Canvas Series
@@ -4514,7 +4520,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/cult-87/cult-87-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Cult-87
@@ -4528,7 +4534,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas//-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Chameleon
@@ -4542,7 +4548,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/krisis/krisis-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Krisis
@@ -4675,7 +4681,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/mesa-sto-myalo-twn-tharalewn/mesa-sto-myalo-twn-tharalewn-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Mesa sto Myalo twn Tharalewn
@@ -4689,7 +4695,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/harlequin/harlequin-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Harlequin
@@ -4703,7 +4709,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/lefko-proswpeio/lefko-proswpeio-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Lefko Proswpeio
@@ -4717,7 +4723,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/bugs-bunny/bugs-bunny-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Tromokratikis-fysis
@@ -4731,7 +4737,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/bugs-bunny/bugs-bunny-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Bugs Bunny
@@ -4848,7 +4854,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/eternal-hiding/eternal-hiding-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Eternal Hiding
@@ -4973,7 +4979,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/leilato/leilato-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Leilato (Plunder)
@@ -5224,7 +5230,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/advancing-graffiti/advancing-graffiti-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Advancing Graffiti
@@ -5238,7 +5244,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/blackbook-sketches-for-graffiti/blackbook-sketches-for-graffiti-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Blackbook Sketches (mostly intended for graffiti)
@@ -5367,7 +5373,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/ansia-comic/ansia-comic-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Ansia Comic Characters
@@ -5606,7 +5612,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/early-graffiti/early-graffiti-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Early Graffiti
@@ -5620,7 +5626,7 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src=""class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/first-graffiti-sketches/first-graffiti-sketches-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				First Graffiti Sketches
@@ -5869,10 +5875,6 @@ make it one black line at the bottom
 
 
 
-<!-- TODO: first check if cookie gdpr preference is set -->
-
-<!-- BUT I THINK IT ALREADY DOES -->
-
 <script type="text/javascript">
 	// Get the modal
 	var modalGDPR = document.getElementById("siteWideCookieNoticeJsAnchor");
@@ -5894,6 +5896,9 @@ make it one black line at the bottom
 		if (document.cookie.length !=  0) {
 			modalGDPR.style.display = "none";
 			console.log("Cookie preference already set.");
+		} else {
+			modalGDPR.style.display = "grid";
+			console.log("Cookie preference not yet set.");
 		}
 	}
 </script>

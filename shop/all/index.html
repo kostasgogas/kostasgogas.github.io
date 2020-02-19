@@ -330,6 +330,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -337,6 +338,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -344,6 +346,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -351,6 +354,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 
 body {
@@ -426,7 +430,7 @@ place it afterwards
 	background-color: black;
 	padding: 2vmax;
 
-	display: grid;
+	display: none;
 	grid-template-columns: 74% 25%;
 	grid-column-gap: 1%;
 	grid-template-rows: 40% 50%;
@@ -2939,7 +2943,7 @@ this here is just to copy the 'icons' css as needed */
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="/shop/#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
+			<a href="/shop/all#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
 				Shop
 			</a>
 		</li>
@@ -2964,11 +2968,9 @@ this here is just to copy the 'icons' css as needed */
 
 	/* The CSS Must Go Into a different file when finished*/
 
-	/* THIS CHANGES THE SHOP LINK MENU COLOR 
-	Try another way of doing it (in all menu items) */
+	/*this is for the header*/
 	.siteWideHeader__menuList__listItem__link--shop {
-		background-color: yellow;
-		color: black;
+		text-decoration: underline;
 	}
 
 
@@ -3178,6 +3180,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Bitter/Bitter-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3185,6 +3188,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Bitter/Bitter-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -3192,12 +3196,14 @@ explicitly, e.g.
 	src: url('/assets/fonts/Bitter/Bitter-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 	@font-face {
 	font-family: 'Noto Serif'; /*a name to be used later*/
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Regular.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3205,6 +3211,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Italic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -3212,6 +3219,7 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-Bold.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: normal;
 	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -3219,39 +3227,98 @@ explicitly, e.g.
 	src: url('/assets/fonts/Noto_Serif/NotoSerif-BoldItalic.ttf'); /*URL to font*/ /*URL to font*/
 	font-style: italic;
 	font-weight: bold;
+	font-display: swap;
 }
 
-	.shop__allPage {
+	.shop__all {
 
 	}
 
-	.shop__allPage__header {
-		width: 80vw;
-		margin: 15vmin auto 5vmin;
+	.shop__all__header {
+		width: 100vw;
+		padding: 10vmin;
+		margin-bottom: 15vmin;
+
+		background-color: yellow;
 	}
 
-	.shop__allPage__allProducts {
+	.shop__all__header__titleWrapper {
+	}
+
+	.shop__all__header__titleWrapper__smallScale {
+		display: block;
+
+		font-family: 'Noto Serif', Serif;
+		font-size: 4vmin;
+		font-weight: bold;
+	}
+
+	.shop__all__header__titleWrapper__artGallery {
+		display: block;
+
+		font-family: 'Noto Serif', Serif;
+		font-size: 4vmin;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.shop__all__header__titleWrapper__by {
+		font-family: 'Inter', Sans-serif;
+		font-size: 2.5vmin;
+		line-height: 3vmin;
+		font-weight: 700;
+	}
+
+	.shop__all__header__titleWrapper__KostasGogas {
+		font-family: 'Inter', Sans-serif;
+		font-size: 2.5vmin;
+		line-height: 3vmin;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.shop__all__header__description {
+		font-family: 'Georgia', Serif;
+		font-size: 2.2vmin;
+		font-style: italic;
+		line-height: 2;
+
+		color: #0000aa;
+	}
+
+	.shop__all__header__learnMoreLink {
+		display: block;
+		margin: 2vmin 0;
+		padding: 2vmin 0
+
+		font-family: 'Noto Serif', Serif;
+		font-size: 3vmin;
+
+		color: blue;
+	}
+
+	.shop__all__allProducts {
 		max-width: 80vw;
 		width: fit-content;
 		margin: auto;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(35vmin, 1fr));
-		grid-gap: 5vmin;
+		grid-gap: 10vmin 5vmin;
 	}
 
-	.shop__allPage__allProducts__productExcerpt {
+	.shop__all__allProducts__productExcerpt {
 		width: 35vmin;
 	}
 
-	.shop__allPage__allProducts__productExcerpt__linkWrapper {
+	.shop__all__allProducts__productExcerpt__linkWrapper {
 
 	}
 
-	.shop__allPage__allProducts__productExcerpt__linkWrapper__header {
+	.shop__all__allProducts__productExcerpt__linkWrapper__header {
 
 	}
 
-	.shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture {
+	.shop__all__allProducts__productExcerpt__linkWrapper__header__picture {
 		min-height: 20vmin;
 		width: 100%;
 		display: block;
@@ -3259,35 +3326,34 @@ explicitly, e.g.
 		background-color: #ddd;
 	}
 
-	.shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img {
+	.shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		display: block;
 	}
 
-	.shop__allPage__allProducts__productExcerpt__linkWrapper__header__title {
+	.shop__all__allProducts__productExcerpt__linkWrapper__header__title {
 		display: block;
 		margin: 2vmin 0;
 
 		font-size: 2.5vmin;
-		text-transform: uppercase;
-		font-family: 'Inter', Sans-serif;
-		font-weight: 700;
+		font-family: 'Noto Serif', Sans-serif;
+		font-weight: bold;
 		line-height: 1.25;
 		text-align: center;
 
 		color: black;
 	}
 
-	.shop__allPage__allProducts__productExcerpt__linkWrapper__footer {
+	.shop__all__allProducts__productExcerpt__linkWrapper__footer {
 		display: block;
 		width: 100%;
 
 		text-align: center;
 	}
 
-	.shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description {
+	.shop__all__allProducts__productExcerpt__linkWrapper__footer__description {
 		display: block;
 		width: 100%;
 		margin: 2vmin 0;
@@ -3301,10 +3367,10 @@ explicitly, e.g.
 		color: black;
 	}
 
-	.shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price {
+	.shop__all__allProducts__productExcerpt__linkWrapper__footer__price {
 		display: block;
 		width: 50%;
-		margin: 5vmin auto 0;
+		margin: 2.5vmin auto 0;
 		padding: 2vmin 0;
 
 		text-align: center;
@@ -3320,1091 +3386,1104 @@ explicitly, e.g.
 </style>
 
 
-<div class="shop__allPage">
-	<header class="shop__allPage__header">
+<div class="shop__all">
+	<header class="shop__all__header">
+		<h1 class="shop__all__header__titleWrapper">
+			<span class="shop__all__header__titleWrapper__smallScale">Small Scale</span> 
+			<span class="shop__all__header__titleWrapper__artGallery">Art Gallery</span>
+			<span class="shop__all__header__titleWrapper__by">by</span>
+			<span class="shop__all__header__titleWrapper__KostasGogas">Kostas Gogas</span>
+		</h1>
+		<p class="shop__all__header__description">
+			Buy Art Directly from an Artist Owned Business
+		</p>
+		<a href="/shop/#learnmore__anchor" class="shop__all__header__learnMoreLink">
+			Learn more about our shop
+			<i class="fa fa-angle-right" aria-hidden="true"></i>
+		</a>
 	</header>
 
-	<section class="shop__allPage__allProducts">
+	<section class="shop__all__allProducts">
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/draft-sketch-three-characters.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/draft-sketch-three-characters.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>22.5cm x 20.1cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 44.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>22.5cm x 20.1cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 44.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/modernist-village.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/modernist-village.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής στο Χωριό</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής στο Χωριό</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>25.8cm x 18.1cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>25.8cm x 18.1cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/modernist-007.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/modernist-007.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής 007 έχει Μόνο Ένα Μάτι</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής 007 έχει Μόνο Ένα Μάτι</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.1cm x 19.6cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.1cm x 19.6cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/woman-cursing.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/woman-cursing.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Γυναίκα Καταριέται για τον Άντρα της που Μικραίνει (τουλάχιστον όχι το πέος!)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Γυναίκα Καταριέται για τον Άντρα της που Μικραίνει (τουλάχιστον όχι το πέος!)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.8cm x 28.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 39.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.8cm x 28.7cm </span> 
+							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 39.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/lovely-pussycat.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/lovely-pussycat.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.5cm x 20cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.5cm x 20cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/elvis.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/elvis.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Η Αντιγραφή Έλβις (με μουσικό μαλλί)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Η Αντιγραφή Έλβις (με μουσικό μαλλί)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 28.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 28.7cm </span> 
+							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/monster-blond-hair.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/monster-blond-hair.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Τέρας με Περιποιημένη Κόμη (ξανθιά), Κάθεται</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τέρας με Περιποιημένη Κόμη (ξανθιά), Κάθεται</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 28.6cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 28.6cm </span> 
+							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/eco-friendly-monster.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/eco-friendly-monster.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Τέρας με Περιβαλλοντολογική Συνείδηση</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τέρας με Περιβαλλοντολογική Συνείδηση</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/imaginary-friend.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/imaginary-friend.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Φανταστικός Φίλος (Παιδί σε Δύσκολη Κατάσταση που Όμως Περνάει Καλά)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Φανταστικός Φίλος (Παιδί σε Δύσκολη Κατάσταση που Όμως Περνάει Καλά)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 26.4cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 26.4cm </span> 
+							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/aristocratic-portrait-1.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/aristocratic-portrait-1.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 1</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 1</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/aristocratic-portrait-2.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/aristocratic-portrait-2.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 2</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 2</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.6cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.6cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/aristocratic-portrait-3.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/aristocratic-portrait-3.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 3</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 3</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.5cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 44.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.5cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 44.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/aristocratic-portrait-4.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/aristocratic-portrait-4.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 4</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 4</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/rebels-path.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/rebels-path.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Επαναστάτες σε Δύσκολο Δρόμο (με ράμφος)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Επαναστάτες σε Δύσκολο Δρόμο (με ράμφος)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
+							<br/>Μολύβι σε Λείο Χαρτί Σχεδίου 130γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/glassblower.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/glassblower.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Άνθρωπος που Σχηματίζεται (Ο Θεός είναι Υαλουργός)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Άνθρωπος που Σχηματίζεται (Ο Θεός είναι Υαλουργός)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.2cm x 26.4cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.2cm x 26.4cm </span> 
+							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/upside-down.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/upside-down.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Τα Πάνω Κάτω (ως αλλαγή τρόπου σκέψης), μα Λόγω Κούρασης τον Παίρνει και Λίγο ο Ύπνος</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τα Πάνω Κάτω (ως αλλαγή τρόπου σκέψης), μα Λόγω Κούρασης τον Παίρνει και Λίγο ο Ύπνος</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/blasphemy.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/blasphemy.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Βλασφήμια</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Βλασφήμια</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 54.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 54.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/old-muscular-man.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/old-muscular-man.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Μεγάλος σε Ηλικία Σφίχτερ Συνθλίβει ένα Κουτάκι Σόδα</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Μεγάλος σε Ηλικία Σφίχτερ Συνθλίβει ένα Κουτάκι Σόδα</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.6cm x 21.1cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 27.49</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.6cm x 21.1cm </span> 
+							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 27.49</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/mime-statue.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/mime-statue.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Μίμος (Άγαλμα σε Διαμέρισμα)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Μίμος (Άγαλμα σε Διαμέρισμα)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/ladies-man.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/ladies-man.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Πορτραίτο Ταλαιπωρημένου Γυναικά (δεν είναι πια ωραίος)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πορτραίτο Ταλαιπωρημένου Γυναικά (δεν είναι πια ωραίος)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
+							<br/>Μολύβι σε Λείο Χαρτί Σχεδίου 130γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/siamese-costume.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/siamese-costume.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Σιαμαία Στολή για τις Απόκριες</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Σιαμαία Στολή για τις Απόκριες</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
+							<br/>Μολύβι σε Λείο Χαρτί Σχεδίου 130γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/one-night.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/one-night.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Για μια Βραδιά (Παίχτης Ταλεντ Σόου Ολόκληρης Σεζόν)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Για μια Βραδιά (Παίχτης Ταλεντ Σόου Ολόκληρης Σεζόν)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/monster-tits.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/monster-tits.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Άσχημο Τέρας με Βυζιά (Καραφλομαλλιάς) και Μάτι Κόκκινο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Άσχημο Τέρας με Βυζιά (Καραφλομαλλιάς) και Μάτι Κόκκινο</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 26.4cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 26.4cm </span> 
+							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/headache.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/headache.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Πονοκέφαλος (Σπουδή για Εισαγωγή του Κυβισμού στο Βίντεο)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πονοκέφαλος (Σπουδή για Εισαγωγή του Κυβισμού στο Βίντεο)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.8cm x 26.2cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 84.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.8cm x 26.2cm </span> 
+							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 84.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/sleepy-laugh.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/sleepy-laugh.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Νυσταγμένος Μεσήλικας Προσπαθεί να Γελάσει άπό Ευγένεια - Πάγωσε και Έχει Διατηρηθεί Έτσι</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Νυσταγμένος Μεσήλικας Προσπαθεί να Γελάσει άπό Ευγένεια - Πάγωσε και Έχει Διατηρηθεί Έτσι</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 79.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 79.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/punching.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/punching.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">To Γρονθοκόπημα (Μην ακουμπάς το έδαφος για να φαίνεσαι πιο αδύναμος)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">To Γρονθοκόπημα (Μην ακουμπάς το έδαφος για να φαίνεσαι πιο αδύναμος)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.5cm x 16.9cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.5cm x 16.9cm </span> 
+							<br/>Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/portrait-man.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/portrait-man.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Portrait Man 1</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Portrait Man 1</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/portrait-man-2.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/portrait-man-2.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Portrait Man 2</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Portrait Man 2</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/material-red.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/material-red.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 1: Κόκκινο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 1: Κόκκινο</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 89.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
+							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 89.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/material-brown.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/material-brown.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 2: Καφέ</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 2: Καφέ</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 89.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
+							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 89.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/material-light-blue.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/material-light-blue.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 3: Γαλάζιο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 3: Γαλάζιο</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 89.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
+							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 89.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/material-gray.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/material-gray.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 4: Γκρί</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 4: Γκρί</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 79.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
+							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 79.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/material-yellow.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/material-yellow.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 5: Κίτρινο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 5: Κίτρινο</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 44.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
+							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 44.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/material-green.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/material-green.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 6: Πράσινο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 6: Πράσινο</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 54.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
+							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 54.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/green-creature.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/green-creature.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Πράσινο Τερατάκι σε Αναστάτωση</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πράσινο Τερατάκι σε Αναστάτωση</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>25.5cm x 17.5cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 99.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>25.5cm x 17.5cm </span> 
+							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 99.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/crow-kid.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/crow-kid.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Κοράκι Ζωγραφισμένο από Παιδί (Πολύ Ώριμο για την Ηλικία του)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Κοράκι Ζωγραφισμένο από Παιδί (Πολύ Ώριμο για την Ηλικία του)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Πιθανόν Τέμπερα΄(υπογραφή με στυλό υγρής μελάνης) σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/demon-fiery-tongue.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/demon-fiery-tongue.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Δαίμονας Ποζαρει με Φλεγόμενη Γλώσσα (κακοζωγραφισμένη για λόγους στυλ)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Δαίμονας Ποζαρει με Φλεγόμενη Γλώσσα (κακοζωγραφισμένη για λόγους στυλ)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μαρκαδόρος Uni-Posca & Μελάνι (υπογραφή με στυλό υγρής μελάνης) σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/woman-makeup.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/woman-makeup.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αδιάφορη Γυναίκα στο Δρόμο προς το Μακιγιάζ (κάτι έχεις κάνει στα μαλλιά σου)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αδιάφορη Γυναίκα στο Δρόμο προς το Μακιγιάζ (κάτι έχεις κάνει στα μαλλιά σου)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μαρκαδοράκι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/quiet-kid.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/quiet-kid.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Φιλήσυχο Παιδί Ντυμένο Βασιλιάς από την Επιτυχημένη Μάνα του</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Φιλήσυχο Παιδί Ντυμένο Βασιλιάς από την Επιτυχημένη Μάνα του</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μαρκαδόρος σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/contemporary-demon.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/contemporary-demon.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Σύγχρονος Δαίμονας</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Σύγχρονος Δαίμονας</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 27.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 27.7cm </span> 
+							<br/>Μαρκαδοράκι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/dewlap-teen.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/dewlap-teen.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Έφηβος με Προγούλι Εξαναγκάζεται να Σταθεί για μια Φωτογραφία</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Έφηβος με Προγούλι Εξαναγκάζεται να Σταθεί για μια Φωτογραφία</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29,7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29,7cm </span> 
+							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/spent-lives.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/spent-lives.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Φάγαμε τα Νιάτα Μας στις Δεξιώσεις (Τώρα Δεν Έχω Καν Δυνάμεις)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Φάγαμε τα Νιάτα Μας στις Δεξιώσεις (Τώρα Δεν Έχω Καν Δυνάμεις)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.3cm x 27.6cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.3cm x 27.6cm </span> 
+							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/mature-demon.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/mature-demon.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Ώριμος Δαίμονας (που ξέρει πλέον τι ζητάει απ' τη ζωή)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ώριμος Δαίμονας (που ξέρει πλέον τι ζητάει απ' τη ζωή)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.4cm x 27.6cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.4cm x 27.6cm </span> 
+							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/demon-social.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/demon-social.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Δαίμονας (Φωτογραφία Ανεβασμένη από τον Ίδιο στα Μέσα Κοινωνικής Δικτύωσης όπως αυτά Υπήρξαν στην Αρχή του 21ου Αιώνα)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Δαίμονας (Φωτογραφία Ανεβασμένη από τον Ίδιο στα Μέσα Κοινωνικής Δικτύωσης όπως αυτά Υπήρξαν στην Αρχή του 21ου Αιώνα)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.8cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.8cm x 29.7cm </span> 
+							<br/>Μαρκαδοράκι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/ancient-demon.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/ancient-demon.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αρχαίος Δαίμονας που Ξυπνάει από Λήθαργο στη Σύγχρονη Εποχή</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αρχαίος Δαίμονας που Ξυπνάει από Λήθαργο στη Σύγχρονη Εποχή</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.1cm x 23.8cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.1cm x 23.8cm </span> 
+							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/distortion.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/distortion.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Διαστρεβλωμένο Περιβάλλον Γεννάει Προσωρινές Αμβιφολίες</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Διαστρεβλωμένο Περιβάλλον Γεννάει Προσωρινές Αμβιφολίες</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>cm x cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>cm x cm </span> 
+							<br/>Στυλό Υγρής Μελάνης σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/father-portrait.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/father-portrait.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Πατέρας Ποζάρει για Πορτραίτο Σαλονιού (Η Στρατιωτική Στολή δεν του Κάνει)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πατέρας Ποζάρει για Πορτραίτο Σαλονιού (Η Στρατιωτική Στολή δεν του Κάνει)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/masquerader-19th-century.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/masquerader-19th-century.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Μασκαράς, Αρχές του 19ου Αιώνα, Γαλλία (φυλακίστηκε 3 ώρες μετά)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Μασκαράς, Αρχές του 19ου Αιώνα, Γαλλία (φυλακίστηκε 3 ώρες μετά)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/kids-playing-roles.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/kids-playing-roles.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Παδιά Ερευνούν, Παίζουν Ρόλους (θύμα, Ντεντέκτιβ, Αστυνόμος) - Ζωγραφισμένο απο Πραγματικό</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Παδιά Ερευνούν, Παίζουν Ρόλους (θύμα, Ντεντέκτιβ, Αστυνόμος) - Ζωγραφισμένο απο Πραγματικό</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>24.5cm x 18.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 27.49</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>24.5cm x 18.7cm </span> 
+							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 27.49</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/exact-height.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/exact-height.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Ούτε πολύ Ψηλός, Ούτε πολύ Κοντός, Ακριβώς εκεί που Πρέπει</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ούτε πολύ Ψηλός, Ούτε πολύ Κοντός, Ακριβώς εκεί που Πρέπει</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μαρκαδόρος σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/indesicive-customer.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/indesicive-customer.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Αναποφάσιστος Πελάτης Ξέχασε τι Σκεφτοταν (αλλά συνεχίζει να το παριστάνει)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αναποφάσιστος Πελάτης Ξέχασε τι Σκεφτοταν (αλλά συνεχίζει να το παριστάνει)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Ανεξήτιλος Μαρκαδόρος σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/blind-speaker.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/blind-speaker.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Τυφλός Πολυλογάς (Η Εκστρατεία)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τυφλός Πολυλογάς (Η Εκστρατεία)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Μαρκαδόρος σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/beast-sex-act-ricepaper.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/beast-sex-act-ricepaper.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Κτήνος (Σεξουαλική Πράξη), Σπουδή για Πίνακα</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Κτήνος (Σεξουαλική Πράξη), Σπουδή για Πίνακα</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.4cm x 20.8cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.4cm x 20.8cm </span> 
+							<br/>Μαρκαδόρος & Μαρκαδοράκι σε Ριζόχαρτο</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/joke.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/joke.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Το Αστείο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Το Αστείο</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.4cm x 29.7cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.4cm x 29.7cm </span> 
+							<br/>Μαρκαδοράκι, Στυλό & Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/three-elements.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/three-elements.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Τρία Στοιχεία</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τρία Στοιχεία</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.9cm x 12.6cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.9cm x 12.6cm </span> 
+							<br/>Στυλό (Υπογεγραμένο στις 13 Δεκ. 2019 με στυλό υγρής μελάνης) σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/sphinx.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/sphinx.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Σφίγγα Σκέφτεται τον Ίδιο της τον Γρίφο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Σφίγγα Σκέφτεται τον Ίδιο της τον Γρίφο</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.7cm x 21cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.7cm x 21cm </span> 
+							<br/>Στυλό & Μολύβι σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
 					</footer>
 				</a>
 			</article>
 		
-			<article class="shop__allPage__allProducts__productExcerpt">
-				<a href="/grand-heartbreak.html" class="shop__allPage__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__allPage__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture">
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="/grand-heartbreak.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-800.jpg">
-								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product.jpg" alt="''" title="featured-image-alt-en" class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+								<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__allPage__allProducts__productExcerpt__linkWrapper__header__title">Το Μοντερνιστικό Ζευγάρι στο Χωριό (Η Μεγάλη Ερωτική Απογοήτευση)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Το Μοντερνιστικό Ζευγάρι στο Χωριό (Η Μεγάλη Ερωτική Απογοήτευση)</h3>			
 					</header>
-					<footer class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 14.4cm</span> 
-							<br/>σε  plchldr 300gsm</p>
-						<p class="shop__allPage__allProducts__productExcerpt__linkWrapper__footer__price">€ 27.49</p>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 14.4cm </span> 
+							<br/>Στυλό & Μαρκαδόρος σε Χαρτί 80γρ.</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 27.49</p>
 					</footer>
 				</a>
 			</article>
@@ -4488,10 +4567,6 @@ make it one black line at the bottom
 
 
 
-<!-- TODO: first check if cookie gdpr preference is set -->
-
-<!-- BUT I THINK IT ALREADY DOES -->
-
 <script type="text/javascript">
 	// Get the modal
 	var modalGDPR = document.getElementById("siteWideCookieNoticeJsAnchor");
@@ -4513,6 +4588,9 @@ make it one black line at the bottom
 		if (document.cookie.length !=  0) {
 			modalGDPR.style.display = "none";
 			console.log("Cookie preference already set.");
+		} else {
+			modalGDPR.style.display = "grid";
+			console.log("Cookie preference not yet set.");
 		}
 	}
 </script>
