@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Frequently Asked Questions</title>
+	<title>Continuous Editing</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -2960,139 +2960,229 @@ this here is just to copy the 'icons' css as needed */
 
 
 	<style type="text/css">
-	
+
+	body {
+		margin-top: 14vh;
+	}
+
+	/* project header */
+
+	.projectPage__projectHeader {
+		position: fixed;
+		top: 7vh;
+		background-color: white;
+		border-bottom: 0.1vh solid black;
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto 0 7vh;
+	}
+
+	.projectPage__projectHeader__headingPlaceholder {
+		border-right: 0.1vh solid black;
+		font-family: 'Inter', Sans-serif;
+		text-transform: uppercase;
+		padding: 1.5vh;
+		line-height: 2vh;
+		letter-spacing: 0.1vh;
+	}
+
+	.projectPage__projectHeader__headingPlaceholder__heading {
+		font-weight: 900;
+		font-size: 2vh;
+	}
+
+	.projectPage__projectHeader__headingPlaceholder__subtitle {
+		font-weight: 600;
+		font-size: 1.75vh;
+	}
+
+	#projectPage__projectHeader_buttonID {
+
+	}
+
+	.projectPage__projectHeader__dropdownDescription {
+		display: none;
+	}
+
+	.projectPage__projectHeader_input {
+		display: none;
+	}
+
+	.projectPage__projectHeader_label .fa {
+		font-size: 2.5vh;
+		line-height: 2.5vh;
+		height: 2.5vh;
+		display: block;
+		text-align: center;
+		margin-bottom: 0.4vh;
+	}
+
+	.projectPage__projectHeader_label {
+		font-family: 'Inter', Sans-serif;
+		padding: 1.35vh 0;
+		font-size: 1.25vh;
+		line-height: 1.5;
+		height: 7vh;
+		display: block;
+		text-align: center;
+	}
+
+	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label + .projectPage__projectHeader__dropdownDescription {
+		clear: both;
+		display: block;
+		background-color: white;
+		position: fixed;
+		top: 14vh;
+		padding: 3.5vh;
+		border-bottom: 0.1vh solid black;
+		border-top: 0.1vh solid black;
+		width: 100%;
+	}
+
+	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label + .projectPage__projectHeader__dropdownDescription p {
+		font-family: 'Noto Serif', serif;
+		font-size: 3.5vw;
+		line-height: 1.25;
+
+	}
+
+	input#projectPage__projectHeader_buttonID:checked + .projectPage__projectHeader_label {
+		background-color: black;
+		color: white;
+	}
+
+	/* project image */
+
+	.projectPage__allImageHolder__pictureHolder {
+		height: 60vh;
+		width: 80vw;
+		margin: 5vh auto 2vh;
+		display: block;
+	}
+
+	.projectPage__allImageHolder__pictureHolder__img {
+		max-height: 100%;
+		max-width: 100%;
+		margin: auto;
+		display: block;
+	}
+
+	.projectPage__allImageHolder__caption {
+		margin: 2vh 0;
+		font-family: 'Noto Serif', Serif;
+		font-size: 1.25vmax;
+		font-weight: 300;
+		font-style: italic;
+		text-align: center;
+	}
+
+	/* project image shop availability */
+
+	.projectPage__allImageHolder__shopAvailability {
+		padding-bottom: 3vmax;
+		margin: 3vmax auto;
+		border-bottom: 0.1vh solid black;
+		display: grid;
+		width: 80%;
+		text-align: right;
+		font-family: 'Noto Serif', Serif;
+		font-size: 1.25vmax;
+		line-height: 1.5;
+	}
+
+	.projectPage__allImageHolder__shopAvailability__text {
+	}
+
+	.projectPage__allImageHolder__shopAvailability__text span {
+		font-weight: bold;
+	}
+
+	.projectPage__allImageHolder__shopAvailability__link {
+		padding: 1vmax 1.5vmax;
+		font-weight: bold;
+		color: white;
+		background-color: blue;
+		width: fit-content;
+		margin: 1vmax 0 0 auto;
+		border-radius: 0.25vmax;
+	}
+
 </style>
 
-<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
-	<header>
-		<h1>Frequently Asked Questions</h1>
-		<p>Everything you need to know about buying art from our online shop.</p>
-	</header>
-	
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			How do you deliver the artwork?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>We use Elta, the standard shipping method in Greece.</p>
+<header class="projectPage__projectHeader">
+	<div class="projectPage__projectHeader__headingPlaceholder">
+		<h1 class="projectPage__projectHeader__headingPlaceholder__heading">Continuous Editing</h1>
+		<small class="projectPage__projectHeader__headingPlaceholder__subtitle">Style Invention</small>
+	</div>
+	<div></div>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			How many days till my artwork reaches me?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Usually, it takes between 6-15 days.</p>
+	<!-- Button for Project Description -->
+	<input id="projectPage__projectHeader_buttonID" class="projectPage__projectHeader_input" type="checkbox">
+	<label for="projectPage__projectHeader_buttonID" class="projectPage__projectHeader_label" tabindex="1"><i class="fa fa-info-circle" aria-hidden="true"></i>about</label>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			15 days have passed but I haven't received my art yet.
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>If you haven’t received you art 15 days after you received the order confirmation email, then don’t hesitate to <a href="/contact.html">contact us</a>.</p>
+	<!-- The Dropdown Description -->
+	<div class="projectPage__projectHeader__dropdownDescription">
+		<p>Something goes on and on and you are here and he is here and I am here. 
+Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.  Something goes on and on and you are here and he is here and I am here.</p>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			What is your Return Policy?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>If you really feel that your artwork wasn’t what you expected it to be, we can help. The artwork must be in the same condition and packaged the same way you received it. After receiving your artwork, you have 14 days to request a refund and ship the item back. Unfortunately the shipping costs should be covered by you.</p>
+	</div>
+</header>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			I don't have PayPal, can I still buy?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Of course, having a PayPal account is optional. You can add your credit or debit card info all within the PayPal interface without having or creating an account with them.</p>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			Can I checkout as a guest?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Yes.</p>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			Where is your shop located?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>We are based in Greece, in Nea Filadelfeia.</p>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			Is the shop really owned by the artist himself?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Yes, and your order will probably be fulfilled by artist Kostas Gogas when you buy an art piece.</p>
+	<figure class="projectPage__allImageHolder">
+		<picture class="projectPage__allImageHolder__pictureHolder">
+			<img data-src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-kwstas" class="projectPage__allImageHolder__pictureHolder__img lazyload">
+		</picture>
+		<figcaption class="projectPage__allImageHolder__caption">
+			testing caption
+		</figcaption>
+		
+		<aside class="projectPage__allImageHolder__shopAvailability">
+			<p class="projectPage__allImageHolder__shopAvailability__text"><span>Ansia Comic Kostas</span> is also available for purchase.</p>
+			<a href="#" class="projectPage__allImageHolder__shopAvailability__link">Visit Shop  <i class="fa fa-long-arrow-right"></i></a>
+		</aside>
+		
+	</figure>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			What difference does it make buying directly from the artist?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>First of all, you get originality of vision. Artist Kostas Gogas first creates the artwork, and then figures out a way to sell it. Most galleries do exactly the opposite: they see what sells and then they commision the artist for similar works. Kostas Gogas peculiar way of working, with the multitude of styles and reinventing his own self time and again is an artist that need freedom to create as he sees fit.
-Apart from that, getting rid of intermediaries and gallery representation allows us to offer the artworks in half the prices. And you get to communicate with someone that is happy you like his original work, and doesn’t care only for you wallet.</p>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			Can I visit a physical store?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Unfortunately no, but you can send us a message to arrange a meeting, if you want to see the artworks from upclose. <a href="/contact.html">Send us a message here</a>.</p>
+	<figure class="projectPage__allImageHolder">
+		<picture class="projectPage__allImageHolder__pictureHolder">
+			<img data-src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-xrhstos" class="projectPage__allImageHolder__pictureHolder__img lazyload">
+		</picture>
+		<figcaption class="projectPage__allImageHolder__caption">
+			testing caption
+		</figcaption>
+		
+	</figure>
 
-			</div>
-		</div>
-	</article>
-	
-</div>
 
+	<figure class="projectPage__allImageHolder">
+		<picture class="projectPage__allImageHolder__pictureHolder">
+			<img data-src="https://res.cloudinary.com/kostasgogas/image/upload/v1577541219/ansia-comic/2006-graphic-design-illustration-ansia-comic-character-paulos" class="projectPage__allImageHolder__pictureHolder__img lazyload">
+		</picture>
+		<figcaption class="projectPage__allImageHolder__caption">
+			testing caption
+		</figcaption>
+		
+	</figure>
+
+
+
+
+
+organisms
+	header
+		title
+		short description
+		featured image
+	text-block
+		heading
+		text
+	image-gallery
+		image
+	video
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">
