@@ -3133,8 +3133,8 @@ body {
 }
 
 .productPage__product__featuredImageFigure__figcaption {
-	font-size: 1.15vmax;
-	margin: 1.5vmax 0;
+    font-size: 2.5vmin;
+    margin: 1vh;
 	text-align: center;
 	font-family: 'Inter', Sans-serif;
 	font-weight: 300;
@@ -3146,14 +3146,16 @@ body {
 
 .productPage__product__addToCartBox {
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 24vmin auto;
 	position: fixed;
 	left: 0;
 	right: 0;
-	bottom: 1.5vmin;
+	bottom: 2vmin;
 	margin: auto;
-	padding: 2.5vmin;
-	width: fit-content;
+	padding: 1.5vmin;
+	width: 50vmin;
+	z-index: 1500;
+
 	border-radius: 2vmin;
 	
 	background-color: yellow;
@@ -3162,42 +3164,31 @@ body {
 	-moz-box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
 	box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
 }
-.productPage__product__addToCartBox__price {
-	display: block;
-	margin-bottom: 2vmin;
 
-	font-family: 'Bitter', Serif;
+.productPage__product__addToCartBox__title {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-column-end: 3;
+	margin-bottom: 1.25vmin;
+
+	font-size: 1.85vmin;
 	text-align: center;
-
-	color: black;
-}
-
-
-.productPage__product__addToCartBox__price__euroIcon {
-	font-weight: bold;
-	font-size: 5vmin;
-}
-
-.productPage__product__addToCartBox__price__euro {
-	font-size: 5vmin;
-	font-weight: bold;
-}
-
-.productPage__product__addToCartBox__price__cents {
-	font-size: 3vmin;
-	font-weight: bold;
-	vertical-align: super;
+	font-family: 'Inter', Sans-serif;
+	font-weight: 600;
+	line-height: 1.25;
 }
 
 .productPage__product__addToCartBox__buyButton {
+	grid-column-start: 1;
+	grid-row-start: 2;
 	display: block;
 	width: fit-content;
 	height: fit-content;
 	margin: auto;
-	padding: 3vmin 6vmin;
+	padding: 2vmin 4vmin;
 	border-radius: 2vmin;
 
-	font-size: 4vmin;
+	font-size: 3vmin;
 	font-family: 'Inter', Sans-serif;
 	font-weight: 600;
 	white-space: nowrap;
@@ -3210,6 +3201,22 @@ body {
 	box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
 }
 
+.productPage__product__addToCartBox__price {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	display: block;
+	padding: 2vmin 4vmin;
+
+	font-family: 'Bitter', Serif;
+	font-size: 3.25vmin;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.25;
+
+	color: black;
+}
+
+
 
 
 /* Contact to Buy Box */
@@ -3219,7 +3226,7 @@ body {
 	text-align: center;
 }
 .productPage__product__contactToBuy__heading {
-	font-size: 2.25vmax;
+	font-size: 4vmin;
 	font-family: 'Inter', Sans-serif;
 	text-align: center;
 	color: #777;
@@ -3228,12 +3235,12 @@ body {
 }
 
 .productPage__product__contactToBuy__paragraph {
-	font-size: 2vmax;
+	font-size: 3vmin;
 	font-family: 'Inter', Sans-serif;
 	text-align: center;
 	color: #777;
 	font-weight: 300;
-	line-height: 1.5;
+	line-height: 1.25;
 }
 
 #productPage__product__contactToBuy__revealFormButton--toggle {
@@ -3246,14 +3253,14 @@ body {
 
 .productPage__product__contactToBuy__label {
 	display: inline-block;
-    padding: 2vmax 4vmax;
+    padding: 3vmin 5vmin;
     text-align: center;
-    border-radius: 1vmax;
-    margin: 2vmax auto;
+    border-radius: 2vmin;
+    margin: 3vmin auto;
 	font-family: 'Inter', Sans-serif;
 	font-weight: 600;
-	font-size: 2.5vmax;
-	border: 0.2vmax solid #777;
+	font-size: 3.2vmin;
+	border: 0.25vmin solid #777;
 	background-color: white;
 	color: #777;
 
@@ -3279,119 +3286,114 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
     width: 100vw;
     min-height: 100vh;
     position: fixed;
-    background-color: black;
+    background-color: white;
     top: 0;
     left: 0;
     z-index: 9999;
 }
 
-/* Change the style of label when is pressed*/
-input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__label {
-	position: fixed;
-	top: 0;
-	z-index: 99999;
-}
-
-/* change the angle icon to BACK when pressed */
-input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .productPage__product__contactToBuy__label:before {
-	content: "Go Back";
-}
-
 .productPage__product__contactToBuy__formContainer__header {
-	width: 80vw;
-	margin: 5vw auto;
+	display: grid;
+	grid-template-rows: 50vmin auto;
+	grid-row-gap: 5vmin;
+	width: 80vmin;
+	margin: 5vmin auto;
 }
 
 .productPage__product__contactToBuy__formContainer__header__picture {
-	
+	width: 100%;
+	height: 100%;
+	display: block;
 }
 
 .productPage__product__contactToBuy__formContainer__header__picture__image {
-	width: 100%;
-	height: 20vmax;
-	object-fit: contain;
-	margin: 5vmax auto;
+    height: 50vmin;
+    width: auto;
+    object-fit: contain;
+    margin: auto;
 }
 
 .productPage__product__contactToBuy__formContainer__header__title {
 	font-family: 'Inter', Sans-serif;
-	font-weight: 500;
-	text-align: center;
+	font-weight: 600;
+	font-size: 4vmin;
 	line-height: 1.25;
-	font-size: 4vw;
 
-	color: white;
+	color: #777;
 }
 
 .productPage__product__contactToBuy__formContainer__header__title__name {
-	font-weight: 700;
+	display: block;
+
+	font-weight: 800;
 }
 
 .productPage__product__contactToBuy__formContainer__nameField {
+	width: 70vmin;
+	min-height: 6vmin;
 	display: block;
-	width: 50vw;
-	height: 6vw;
-	margin: 1vmax auto;
-	border-radius: 1vmax;
-	border: 0.2vmax solid gray;
-	padding-left: 1vw;
+	padding: 2vmin;
+	margin: 2vmin auto;
+	border-radius: 2vmin;
+
 	font-family: 'Inter', Sans-serif;
-	font-weight: 400;
-	font-size: 2vmax;
+	font-size: 3.5vmin;
+	font-weight: 500;
+	line-height: 1.25;
+
+	color: black;
+	border: 0.5vmin solid #777;
 }
 
 .productPage__product__contactToBuy__formContainer__emailField {
+	width: 70vmin;
+	min-height: 6vmin;
 	display: block;
-	width: 50vw;
-	height: 6vw;
-	margin: 1vmax auto;
-	border-radius: 1vmax;
-	border: 0.2vmax solid gray;
-	padding-left: 1vw;
+	padding: 2vmin;
+	margin: 2vmin auto;
+	border-radius: 2vmin;
+
 	font-family: 'Inter', Sans-serif;
-	font-weight: 400;
-	font-size: 2vmax;
+	font-size: 3.5vmin;
+	font-weight: 500;
+	line-height: 1.25;
+
+	color: black;
+	border: 0.5vmin solid #777;
 }
 
 .productPage__product__contactToBuy__formContainer__messageField {
+	width: 70vmin;
+	min-height: 25vmin;
 	display: block;
-	width: 50vw;
-	height: 25vw;
-	margin: 1vmax auto;
-	border-radius: 1vmax;
-	border: 0.2vmax solid gray;
-	padding-left: 1vw;
+	padding: 2vmin;
+	margin: 6vmin auto;
+	border-radius: 2vmin;
+
 	font-family: 'Inter', Sans-serif;
-	font-weight: 400;
-	font-size: 2vmax;
+	font-size: 3.5vmin;
+	font-weight: 500;
+	line-height: 1.25;
+
+	color: black;
+	border: 0.5vmin solid #777;
 }
 
 .productPage__product__contactToBuy__formContainer__submitButton {
-	display: block;
-	width: 50vw;
-	height: 8vw;
-	margin: 1vmax auto;
-	border-radius: 1vmax;
-	padding: 0 0.5vw;
-	background-color: blue;
-	color: white;
-	border: 0 solid transparent;
-	margin-top: 2vmax;
-	font-family: 'Inter', Sans-serif;
-	font-weight: 600;
-	font-size: 2.25vmax;
+
 }
 
 
 
 .productPage__product__imageGallery {
-	margin: auto;
+	width: 80vmin;
 	display: block;
 	clear: both;
-	margin: 4vh 0;
+	margin: 4vh auto;
+	z-index: 0;
 }
 
-.productPage__product__imageGallery__picture {
+.productPage__product__imageGallery__imageLink {
 	display: block;
 	position: relative;
 	width: 25%;
@@ -3401,12 +3403,19 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 	box-sizing: border-box;
 }
 
-.productPage__product__imageGallery__picture__image {
+.productPage__product__imageGallery__imageLink__picture {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.productPage__product__imageGallery__imageLink__picture__image {
 	position: absolute;
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
+
 
 .productPage__product__imageGallery__figcaption {
 	clear: both;
@@ -3784,6 +3793,7 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 	<figcaption class="productPage__product__featuredImageFigure__figcaption">Colors may look different from screen to screen and in real life.</figcaption>
 </figure>
 	<div class="productPage__product__addToCartBox">
+	<h2 class="productPage__product__addToCartBox__title">Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της</h2>
 	
 	<a href="#" class="productPage__product__addToCartBox__buyButton">Add to Cart</a>
 	
@@ -3807,11 +3817,11 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 	<form class="productPage__product__contactToBuy__formContainer" method="post" action="https://forms.un-static.com/forms/f7edf75a640ca11b5f673095f73097bc45f54f30">
 		<header class="productPage__product__contactToBuy__formContainer__header">
 			<picture class="productPage__product__contactToBuy__formContainer__header__picture">
-				<img src="lovely-pussycat-product" class="productPage__product__contactToBuy__formContainer__header__picture__image">
+				<img src="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product.jpg" class="productPage__product__contactToBuy__formContainer__header__picture__image">
 			</picture>
 			
 			<h3 class="productPage__product__contactToBuy__formContainer__header__title">
-				Ask me anything about <span class="productPage__product__contactToBuy__formContainer__header__title__name">"Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της"</span>
+				Inquire about <span class="productPage__product__contactToBuy__formContainer__header__title__name">"Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της"</span>
 			</h3>
 		</header>
 
@@ -3823,15 +3833,14 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 		<button class="productPage__product__contactToBuy__formContainer__submitButton" type="submit">Send</button>
 	</form>
 </aside>
-	<figure class="productPage__product__imageGallery">
+	<!-- <figure class="productPage__product__imageGallery">
 	
-	<figcaption class="productPage__product__imageGallery__figcaption">Click on an image for a closer look.</figcaption>
-</figure>
+</figure> -->
 
 
 
 
-<figure>
+<figure class="productPage__product__imageGallery">
 	<a href="#" class="productPage__product__imageGallery__imageLink">
 		<picture class="productPage__product__imageGallery__imageLink__picture">
 			<source media="(max-width: 1000px)" srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/lovely-pussycat-corner-edge-4-photo-of-artwork-320.jpg">
@@ -3876,6 +3885,7 @@ input#productPage__product__contactToBuy__revealFormButton--toggle:checked + .pr
 			<img src="https://res.cloudinary.com/kostasgogas/shop/photos-back/lovely-pussycat-back-photo-of-artwork.jpg" alt="'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της', Φωτογραφία Πίσω Μέρους / Λεπτομέρεια " title="Δεπτομέρεια / Πίσω Μέρος του 'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της' του Κώστα Γκόγκα" class="productPage__product__imageGallery__imageLink__picture__image">
 		</picture>
 	</a>
+	<figcaption class="productPage__product__imageGallery__figcaption">Click on an image for a closer look.</figcaption>
 </figure>
 	<style type="text/css">
 	.productPage__product__details__Box {
