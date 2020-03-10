@@ -3226,169 +3226,9 @@ body {
 
 
 
-/* Contact to Buy Box */
+/* Inquire to Buy Box */
 
 
-.product__contactToBuy {
-	text-align: center;
-}
-.product__contactToBuy__heading {
-	font-size: 4vmin;
-	font-family: 'Inter', Sans-serif;
-	text-align: center;
-	color: #777;
-	font-weight: 400;
-	line-height: 1.5;
-}
-
-.product__contactToBuy__paragraph {
-	font-size: 3vmin;
-	font-family: 'Inter', Sans-serif;
-	text-align: center;
-	color: #777;
-	font-weight: 300;
-	line-height: 1.25;
-}
-
-#product__contactToBuy__revealFormButton--toggle {
-
-}
-
-.product__contactToBuy__revealFormButton {
-	display: none;
-}
-
-.product__contactToBuy__label {
-	display: inline-block;
-    padding: 3vmin 5vmin;
-    text-align: center;
-    border-radius: 2vmin;
-    margin: 3vmin auto;
-	font-family: 'Inter', Sans-serif;
-	font-weight: 600;
-	font-size: 3.2vmin;
-	border: 0.25vmin solid #777;
-	background-color: white;
-	color: #777;
-
-	/* the rest to normal after change */
-	position: inherit;
-    top: unset;
-	z-index: initial;
-}
-
-.product__contactToBuy__label:after {
-	font-family: FontAwesome;
-	content: "\f105";
-	padding-left: 1vmax;
-}
-
-
-.product__contactToBuy__formContainer {
-    display: none;
-}
-
-input#product__contactToBuy__revealFormButton--toggle:checked + .product__contactToBuy__label + .product__contactToBuy__formContainer {
- 	display: block;
-    width: 100vw;
-    min-height: 100vh;
-    position: fixed;
-    background-color: white;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
-
-.product__contactToBuy__formContainer__header {
-	display: grid;
-	grid-template-rows: 50vmin auto;
-	grid-row-gap: 5vmin;
-	width: 80vmin;
-	margin: 5vmin auto;
-}
-
-.product__contactToBuy__formContainer__header__picture {
-	width: 100%;
-	height: 100%;
-	display: block;
-}
-
-.product__contactToBuy__formContainer__header__picture__image {
-    height: 50vmin;
-    width: auto;
-    object-fit: contain;
-    margin: auto;
-}
-
-.product__contactToBuy__formContainer__header__title {
-	font-family: 'Inter', Sans-serif;
-	font-weight: 600;
-	font-size: 4vmin;
-	line-height: 1.25;
-
-	color: #777;
-}
-
-.product__contactToBuy__formContainer__header__title__name {
-	display: block;
-
-	font-weight: 800;
-}
-
-.product__contactToBuy__formContainer__nameField {
-	width: 70vmin;
-	min-height: 6vmin;
-	display: block;
-	padding: 2vmin;
-	margin: 2vmin auto;
-	border-radius: 2vmin;
-
-	font-family: 'Inter', Sans-serif;
-	font-size: 3.5vmin;
-	font-weight: 500;
-	line-height: 1.25;
-
-	color: black;
-	border: 0.5vmin solid #777;
-}
-
-.product__contactToBuy__formContainer__emailField {
-	width: 70vmin;
-	min-height: 6vmin;
-	display: block;
-	padding: 2vmin;
-	margin: 2vmin auto;
-	border-radius: 2vmin;
-
-	font-family: 'Inter', Sans-serif;
-	font-size: 3.5vmin;
-	font-weight: 500;
-	line-height: 1.25;
-
-	color: black;
-	border: 0.5vmin solid #777;
-}
-
-.product__contactToBuy__formContainer__messageField {
-	width: 70vmin;
-	min-height: 25vmin;
-	display: block;
-	padding: 2vmin;
-	margin: 6vmin auto;
-	border-radius: 2vmin;
-
-	font-family: 'Inter', Sans-serif;
-	font-size: 3.5vmin;
-	font-weight: 500;
-	line-height: 1.25;
-
-	color: black;
-	border: 0.5vmin solid #777;
-}
-
-.product__contactToBuy__formContainer__submitButton {
-
-}
 
 
 
@@ -3757,7 +3597,7 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 
 	<ul class="siteWideHeader__menuList">
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="/about.html" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--about">
+			<a href="/about/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--about">
 				About
 			</a>
 		</li>
@@ -3811,46 +3651,105 @@ input#product__contactToBuy__revealFormButton--toggle:checked + .product__contac
 	</picture>
 	<figcaption class="product__featuredImageFigure__figcaption">Colors may look different from screen to screen and in real life.</figcaption>
 </figure>
-<div class="product__addToCartBox">
-	<h2 class="product__addToCartBox__title">Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της</h2>
-	
-	<a href="#" class="product__addToCartBox__buyButton">Add to Cart</a>
-	
-	<p class="product__addToCartBox__price">
-		<span class="product__addToCartBox__price__euroIcon">€</span> 
+<style type="text/css">
+	/*@media (orientation: landscape) {*/
+		body {
+		}
 
-		
-		<span class="product__addToCartBox__price__euro">64</span><sup class="product__addToCartBox__price__cents">.99
-		</sup>
+		.product__inquireBox {
+			width: 100%;
+			position: fixed;
+			top: 80vh;
+			padding: 2.5vmin;
+			z-index: 999;
+
+			background-color: #ddd;
+		}
+
+		.product__inquireBox__title {
+			font-family: 'Noto Serif', Serif;
+			font-size: 5vmin;
+			font-weight: bold;
+			line-height: 1.25;
+		}
+
+		.product__inquireBox__description {
+			font-family: 'Noto Serif', Serif;
+			font-size: 2.5vmin;
+			line-height: 1.25;
+		}
+
+		.product__inquireBox__email {
+			display: inline-grid;
+			grid-template-columns: auto auto;
+			padding: 0 2vmin;
+			height: 5vmin;
+			width: auto;
+
+			font-family: 'Noto Serif', Serif;
+			font-weight: bold;
+			font-size: 2.5vmin;
+			line-height: 5vmin;
+			text-align: center;
+
+			border-radius: 1.25vmin;
+			border: 0.1vmin solid #aaa;
+
+			background-color: white;
+			color: #555;
+		}
+
+		.product__inquireBox__email__img {
+			width: auto;
+			height: 2.5vmin;
+			object-fit: contain;
+			margin: 1.25vmin 1.25vmin 1.25vmin 0;
+		}
+
+		.product__inquireBox__fb {
+			display: inline-grid;
+			grid-template-columns: auto auto;
+			padding: 0 2vmin;
+			height: 5vmin;
+			width: auto;
+
+			font-family: 'Noto Serif', Serif;
+			font-weight: bold;
+			font-size: 2.5vmin;
+			line-height: 5vmin;
+			text-align: center;
+
+			border-radius: 1.25vmin;
+			border: 0.1vmin solid #aaa;
+
+			background-color: white;
+			color: #555;
+		}
+
+		.product__inquireBox__fb__img {
+			width: auto;
+			height: 2.5vmin;
+			object-fit: contain;
+			margin: 1.25vmin 1.25vmin 1.25vmin 0;
+		}
+	/*}*/
+</style>
+
+<aside class="product__inquireBox">
+	<h2 class="product__inquireBox__title">
+		Θέλετε να το αποκτήσετε?
+	</h2>
+	<p class="product__inquireBox__description">
+		Επικοινωνήστε μαζί μας με όποιο τρόπο σας βολεύει, και ο ίδιος ο καλλιτέχνης ή κάποιος συνεργάτης του θα σας απαντήσει σύντομα.
 	</p>
-</div>
-
-
-<aside class="product__contactToBuy">
-	<h2 class="product__contactToBuy__heading">Got Questions?</h2>
-	<p class="product__contactToBuy__paragraph">Ask me anything or come and meet and buy it up close.</p>
-	<input id="product__contactToBuy__revealFormButton--toggle" class="product__contactToBuy__revealFormButton" type="checkbox">
-	<label for="product__contactToBuy__revealFormButton--toggle" class="product__contactToBuy__label" tabindex="1">I have a question</label>
-
-
-	<form class="product__contactToBuy__formContainer" method="post" action="https://forms.un-static.com/forms/f7edf75a640ca11b5f673095f73097bc45f54f30">
-		<header class="product__contactToBuy__formContainer__header">
-			<picture class="product__contactToBuy__formContainer__header__picture">
-				<img src="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product.jpg" class="product__contactToBuy__formContainer__header__picture__image">
-			</picture>
-			
-			<h3 class="product__contactToBuy__formContainer__header__title">
-				Inquire about <span class="product__contactToBuy__formContainer__header__title__name">"Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της"</span>
-			</h3>
-		</header>
-
-
-		<input class="product__contactToBuy__formContainer__nameField" type="text" name="name" placeholder="Enter your name" required>
-		<input class="product__contactToBuy__formContainer__emailField" type="email" name="email" placeholder="Enter your e-mail address" required>
-		<input type="hidden" name="subject" value="Ερώτηση για 'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της'" required>
-		<textarea class="product__contactToBuy__formContainer__messageField" name="message" placeholder="Your message.."></textarea>
-		<button class="product__contactToBuy__formContainer__submitButton" type="submit">Send</button>
-	</form>
+	<a href="/el//inquire/" title="Στείλε μας Email" class="product__inquireBox__email">
+		<img src="/assets/temp/logo-gmail-png-gmail-icon-download-png-and-vector-1.png" class="product__inquireBox__email__img">
+		<span>Ηλεκτρονικό Ταχυδρομείο</span>
+	</a>
+	<a href="https://m.me/kostasgogasart" title="Στείλε μας στο Facebook Messenger" class="product__inquireBox__fb">
+		<img src="/assets/temp/Facebook_Messenger-512.png" class="product__inquireBox__fb__img">
+		<span>Facebook Messenger</span>
+	</a>
 </aside>
 <!-- <figure class="product__imageGallery">
 	
