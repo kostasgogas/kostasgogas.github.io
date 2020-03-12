@@ -380,7 +380,6 @@ place it afterwards
 .siteWideFooter {
 	padding: 5vh 10%;
 	background-color: black;
-	margin-top: 10vh;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	clear: both;
@@ -3087,7 +3086,7 @@ explicitly, e.g.
 }
 
 body {
-	margin-top: 10vmin;
+	margin-top: 0vmin;
 }
 
 .product {
@@ -3098,20 +3097,20 @@ body {
 	width: 100%;
 	padding: 2vmin 4vmin;
 
-	font-family: 'Inter', Sans-serif;
+	font-family: 'Literata', Serif;
+	text-align: left;
 
-	background-color: yellow;
+	background-color: #ededed;
 }
 
 .product__headerOfProduct__heading {
-	margin: auto;
+
 
 	font-size: 3vmin;
-	text-transform: uppercase;
 	font-weight: 800;
 	line-height: 1.25;
 
-	color: black;
+	color: #333;
 }
 
 .product__headerOfProduct__shortDescription {
@@ -3121,6 +3120,31 @@ body {
 	line-height: 1.25;
 
 	color: #777;
+}
+
+.product__headerOfProduct__buy {
+	margin: 2vmin 0;
+	padding: 0vmin 3vmin 0.5vmin;
+	height: fit-content;
+	display: inline-block;
+
+	font-size: 2.65vmin;
+	line-height: 5.5vmin;
+	text-align: center;
+	white-space: nowrap;
+	font-weight: 100;
+	letter-spacing: 0.1vmin;
+
+	border-radius: 1vmin;
+	background-color: white;
+	border: 0.25vmin solid #8c6d63;
+	color: #8c6d63;
+
+	background: rgb(255,255,255);
+background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f3f3f3",GradientType=1);;
 }
 
 .product__featuredImageFigure {
@@ -3143,7 +3167,7 @@ body {
     font-size: 2.5vmin;
     margin: 1vh;
 	text-align: center;
-	font-family: 'Inter', Sans-serif;
+	font-family: 'Literata', Serif;
 	font-weight: 300;
 	font-style: italic;
 }
@@ -3165,7 +3189,7 @@ body {
 
 	border-radius: 2vmin;
 	
-	background-color: yellow;
+	background-color: #ededed;
 
 	-webkit-box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
 	-moz-box-shadow: 0.75vmax 0.75vmax 2vmax 0 rgba(0,0,0,0.35);
@@ -3180,7 +3204,7 @@ body {
 
 	font-size: 1.85vmin;
 	text-align: center;
-	font-family: 'Inter', Sans-serif;
+	font-family: 'Literata', Serif;
 	font-weight: 600;
 	line-height: 1.25;
 }
@@ -3196,7 +3220,7 @@ body {
 	border-radius: 2vmin;
 
 	font-size: 3vmin;
-	font-family: 'Inter', Sans-serif;
+	font-family: 'Literata', Serif;
 	font-weight: 600;
 	white-space: nowrap;
 
@@ -3269,7 +3293,7 @@ body {
 	font-size: 0.8vw;
 	padding: 1vh 0;
 	text-align: center;
-	font-family: 'Inter', Sans-serif;
+	font-family: 'Literata', Serif;
 	font-weight: 500;
 	font-style: italic;
 	line-height: 2;
@@ -3284,7 +3308,7 @@ body {
 
 .product__details__heading {
 	font-size: 3vmax;
-	font-family: 'Inter', Sans-serif;
+	font-family: 'Literata', Serif;
 	font-weight: 800;
 	line-height: 2;
 }
@@ -3299,7 +3323,7 @@ body {
 
 .product__details__unorderedList li {
 	font-size: 2.5vmax;
-	font-family: 'Inter', Sans-serif;
+	font-family: 'Literata', Serif;
 	line-height: 1.25;
 	margin-bottom: 1.5vmax;
 }
@@ -3335,14 +3359,14 @@ body {
 
 .product__medium__container__title {
 	font-size: 2.25vmax;
-    font-family: 'Inter', Sans-serif;
+    font-family: 'Literata', Serif;
     font-weight: 800;
     margin-bottom: 1vmax;
 }
 
 .product__medium__container__content {
 	font-size: 2vmax;
-    font-family: 'Inter', Sans-serif;
+    font-family: 'Literata', Serif;
     font-weight: 300;
     line-height: 1.25;
 }
@@ -3370,14 +3394,14 @@ body {
 
 .product__surface__container__title {
 	font-size: 2.25vmax;
-    font-family: 'Inter', Sans-serif;
+    font-family: 'Literata', Serif;
     font-weight: 800;
     margin-bottom: 1vmax;
 }
 
 .product__surface__container__content {
 	font-size: 2vmax;
-    font-family: 'Inter', Sans-serif;
+    font-family: 'Literata', Serif;
     font-weight: 300;
     line-height: 1.25;
 }
@@ -3388,7 +3412,7 @@ body {
 
 
 .product__shippingInfo {
-	font-family: 'Inter', Sans-serif;
+	font-family: 'Literata', Serif;
 	font-size: 1.75vmax;
 	letter-spacing: 0.1vh;
 	background-color: black;
@@ -3419,7 +3443,7 @@ body {
 }
 
 .product__certificateBox {
-	font-family: 'Inter', Sans-serif;
+	font-family: 'Literata', Serif;
 	font-size: 1.75vmax;
 	letter-spacing: 0.1vh;
 	margin: 3vh 0;
@@ -3462,14 +3486,14 @@ body {
 
 .product__certificate__container__title {
 	font-size: 2.75vmax;
-    font-family: 'Inter', Sans-serif;
+    font-family: 'Literata', Serif;
     font-weight: 800;
     margin-bottom: 1.5vmax;
 }
 
 .product__certificate__container__content {
 	font-size: 2.5vmax;
-    font-family: 'Inter', Sans-serif;
+    font-family: 'Literata', Serif;
     font-weight: 300;
     line-height: 1.25;
 }
@@ -3478,7 +3502,7 @@ body {
 
 .product__certificate__container__learnMore {
 	font-size: 2.5vmax;
-    font-family: 'Inter', Sans-serif;
+    font-family: 'Literata', Serif;
     font-weight: 300;
 	text-align: right;
 	color: blue;
@@ -3691,7 +3715,11 @@ body {
 
 		color: red;
 	}
-	.siteWideHeader__menuList__listItem__link--work:hover {background-color: red;}
+	.siteWideHeader__menuList__listItem__link--work:hover {
+		background-color: red;
+		color: white;
+		border-bottom: 0.5vmin solid #2170f3;
+	}
 
 	.siteWideHeader__menuList__listItem__link--shop {
 		font-family: 'Literata';
@@ -3708,12 +3736,21 @@ body {
 		text-transform: none;
 		letter-spacing: 0.2vmin;
 
-		color: #00ffba;
+		background: rgb(0,255,141);
+		background: -moz-linear-gradient(180deg, rgba(0,255,141,1) 22%, rgba(136,0,255,1) 49%, rgba(255,19,190,1) 72%);
+		background: -webkit-linear-gradient(180deg, rgba(0,255,141,1) 22%, rgba(136,0,255,1) 49%, rgba(255,19,190,1) 72%);
+		background: linear-gradient(180deg, rgba(0,255,141,1) 22%, rgba(136,0,255,1) 49%, rgba(255,19,190,1) 72%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ff8d",endColorstr="#ff13be",GradientType=1);
+
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	.siteWideHeader__menuList__listItem__link--studio:hover {
-		background-color: #0aeab7;
+		background: #0aeab7;
 		
 		color: white;
+		-webkit-background-clip: unset;
+		-webkit-text-fill-color: white;
 	}
 
 	.siteWideHeader__menuList__listItem__link--contact {
@@ -3751,7 +3788,7 @@ body {
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="/work/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--work">
-				Achievements
+				Milestones
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
@@ -3786,14 +3823,46 @@ body {
 	.siteWideHeader__menuList__listItem__link--shop {
 		text-decoration: underline;
 	}
+
+	.siteWideHeader {
+		display: none;
+	}
 	
 </style>
 
 <div class="product">
+<style type="text/css">
+	.product__globalHeader {
+		background-color: #ededed;
+		position: fixed;
+		width: 100%;
+		height: 4vmin;
+
+
+		background-color: #ededed;
+
+		text-align: right;
+	}
+
+	.product__globalHeader__backToSite {
+
+	}
+
+	.product__globalHeader__backToShop {
+
+	}
+</style>
+
+<header class="product__globalHeader">
+<!-- 	<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" alt="Kostas Gogas Logo" title="Go to Homepage" class="siteWideHeader__logo__image"> -->
+	<a href="/" class="product__globalHeader__backToSite">Logo</a>
+	<a href="/shop/all/" class="product__globalHeader__backToShop">Back to Shop</a>
+</header>
 
 <header class="product__headerOfProduct">
 	<h1 class="product__headerOfProduct__heading">Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της</h1>
 	<p class="product__headerOfProduct__shortDescription">29.5cm x 20cm | Μολύβι on Χαρτί 80γρ.</p>
+	<a href="#" class="product__headerOfProduct__buy">Take it Home</a>
 </header>
 <figure class="product__featuredImageFigure">
 	<picture class="product__featuredImageFigure_picture">
@@ -3804,7 +3873,7 @@ body {
 	</picture>
 	<figcaption class="product__featuredImageFigure__figcaption">Colors may look different from screen to screen and in real life.</figcaption>
 </figure>
-<style type="text/css">
+<!-- <style type="text/css">
 	/*@media (orientation: landscape) {*/
 		body {
 		}
@@ -3903,7 +3972,7 @@ body {
 		<img src="/assets/temp/Facebook_Messenger-512.png" class="product__inquireBox__fb__img">
 		<span>Facebook Messenger</span>
 	</a>
-</aside>
+</aside> -->
 <!-- <figure class="product__imageGallery">
 	
 </figure> -->

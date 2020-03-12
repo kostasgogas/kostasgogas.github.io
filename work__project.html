@@ -380,7 +380,6 @@ place it afterwards
 .siteWideFooter {
 	padding: 5vh 10%;
 	background-color: black;
-	margin-top: 10vh;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	clear: both;
@@ -3027,7 +3026,11 @@ this here is just to copy the 'icons' css as needed */
 
 		color: red;
 	}
-	.siteWideHeader__menuList__listItem__link--work:hover {background-color: red;}
+	.siteWideHeader__menuList__listItem__link--work:hover {
+		background-color: red;
+		color: white;
+		border-bottom: 0.5vmin solid #2170f3;
+	}
 
 	.siteWideHeader__menuList__listItem__link--shop {
 		font-family: 'Literata';
@@ -3044,12 +3047,21 @@ this here is just to copy the 'icons' css as needed */
 		text-transform: none;
 		letter-spacing: 0.2vmin;
 
-		color: #00ffba;
+		background: rgb(0,255,141);
+		background: -moz-linear-gradient(180deg, rgba(0,255,141,1) 22%, rgba(136,0,255,1) 49%, rgba(255,19,190,1) 72%);
+		background: -webkit-linear-gradient(180deg, rgba(0,255,141,1) 22%, rgba(136,0,255,1) 49%, rgba(255,19,190,1) 72%);
+		background: linear-gradient(180deg, rgba(0,255,141,1) 22%, rgba(136,0,255,1) 49%, rgba(255,19,190,1) 72%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ff8d",endColorstr="#ff13be",GradientType=1);
+
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	.siteWideHeader__menuList__listItem__link--studio:hover {
-		background-color: #0aeab7;
+		background: #0aeab7;
 		
 		color: white;
+		-webkit-background-clip: unset;
+		-webkit-text-fill-color: white;
 	}
 
 	.siteWideHeader__menuList__listItem__link--contact {
@@ -3087,7 +3099,7 @@ this here is just to copy the 'icons' css as needed */
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="/work/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--work">
-				Achievements
+				Milestones
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">

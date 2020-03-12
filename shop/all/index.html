@@ -380,7 +380,6 @@ place it afterwards
 .siteWideFooter {
 	padding: 5vh 10%;
 	background-color: black;
-	margin-top: 10vh;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	clear: both;
@@ -3027,7 +3026,11 @@ this here is just to copy the 'icons' css as needed */
 
 		color: red;
 	}
-	.siteWideHeader__menuList__listItem__link--work:hover {background-color: red;}
+	.siteWideHeader__menuList__listItem__link--work:hover {
+		background-color: red;
+		color: white;
+		border-bottom: 0.5vmin solid #2170f3;
+	}
 
 	.siteWideHeader__menuList__listItem__link--shop {
 		font-family: 'Literata';
@@ -3044,12 +3047,21 @@ this here is just to copy the 'icons' css as needed */
 		text-transform: none;
 		letter-spacing: 0.2vmin;
 
-		color: #00ffba;
+		background: rgb(0,255,141);
+		background: -moz-linear-gradient(180deg, rgba(0,255,141,1) 22%, rgba(136,0,255,1) 49%, rgba(255,19,190,1) 72%);
+		background: -webkit-linear-gradient(180deg, rgba(0,255,141,1) 22%, rgba(136,0,255,1) 49%, rgba(255,19,190,1) 72%);
+		background: linear-gradient(180deg, rgba(0,255,141,1) 22%, rgba(136,0,255,1) 49%, rgba(255,19,190,1) 72%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ff8d",endColorstr="#ff13be",GradientType=1);
+
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	.siteWideHeader__menuList__listItem__link--studio:hover {
-		background-color: #0aeab7;
+		background: #0aeab7;
 		
 		color: white;
+		-webkit-background-clip: unset;
+		-webkit-text-fill-color: white;
 	}
 
 	.siteWideHeader__menuList__listItem__link--contact {
@@ -3087,7 +3099,7 @@ this here is just to copy the 'icons' css as needed */
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="/work/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--work">
-				Achievements
+				Milestones
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
@@ -3384,7 +3396,8 @@ explicitly, e.g.
 }
 
 	.shop__all {
-
+		background-color: #ededed;
+		padding-bottom: 10vh;
 	}
 
 	.shop__all__header {
@@ -3392,7 +3405,7 @@ explicitly, e.g.
 		padding: 10vmin;
 		margin-bottom: 15vmin;
 
-		background-color: #ededed;
+		background-color: white;
 	}
 
 	.shop__all__header__titleWrapper {
@@ -3441,15 +3454,16 @@ explicitly, e.g.
 		margin: auto;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(35vmin, 1fr));
-		grid-gap: 10vmin 5vmin;
+		grid-gap: 10vmin 10vmin;
 	}
 
 	.shop__all__allProducts__productExcerpt {
 		width: 35vmin;
+		display: flex;
+		align-items: center;
 	}
 
 	.shop__all__allProducts__productExcerpt__linkWrapper {
-
 	}
 
 	.shop__all__allProducts__productExcerpt__linkWrapper__header {
@@ -3461,7 +3475,42 @@ explicitly, e.g.
 		width: 100%;
 		display: block;
 
-		background-color: #ddd;
+		border-radius: 0.33vmin;
+
+		box-shadow: 0.5vmin 0.5vmin 1vmin 0 #aaa;
+	}
+
+
+	/*Different Frames based on Category & Surface*/
+
+	.shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite {
+		padding: 5vmin;
+
+		border: 1.75vmin solid #5a5859;
+		background-color: #cbc8d1;
+	}
+
+	.shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--beigeWhite {
+		padding: 5vmin;
+		
+		border: 1.75vmin solid #5d5341;
+		background-color: #dad4b5;
+	}
+
+	.shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite {
+		padding: 5vmin;
+		
+		border: 1.75vmin solid white;
+		background-color: #ededed;
+		
+
+	}
+
+	.shop__all__allProducts__productExcerpt__linkWrapper__header__picture--painting {
+		padding: 5vmin;
+		
+		border: 1.75vmin solid #333;
+		background-color: white;
 	}
 
 	.shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img {
@@ -3475,20 +3524,20 @@ explicitly, e.g.
 		display: block;
 		margin: 2vmin 0;
 
-		font-size: 2.5vmin;
-		font-family: 'Noto Serif', Sans-serif;
+		font-size: 2.25vmin;
+		font-family: 'Literata', Serif;
 		font-weight: bold;
 		line-height: 1.25;
-		text-align: center;
+		text-align: left;
 
-		color: black;
+		color: #333;
 	}
 
 	.shop__all__allProducts__productExcerpt__linkWrapper__footer {
 		display: block;
 		width: 100%;
 
-		text-align: center;
+		text-align: left;
 	}
 
 	.shop__all__allProducts__productExcerpt__linkWrapper__footer__description {
@@ -3496,30 +3545,31 @@ explicitly, e.g.
 		width: 100%;
 		margin: 2vmin 0;
 
-		text-align: center;
-		font-size: 2.5vmin;
-		font-family: 'Inter', Sans-serif;
+		text-align: left;
+		font-size: 2vmin;
+		font-family: 'Literata', Serif;
 		font-weight: 200;
 		line-height: 1.25;
 
-		color: black;
+		color: #6b624d;
 	}
 
 	.shop__all__allProducts__productExcerpt__linkWrapper__footer__price {
 		display: block;
-		width: 50%;
+		width: 100%;
 		margin: 2.5vmin auto 0;
-		padding: 2vmin 0;
 
-		text-align: center;
-		font-size: 3vmin;
-		font-family: 'Bitter', Serif;
+		text-align: right;
+		font-size: 2.25vmin;
+		font-family: 'Literata', Serif;
 		font-weight: bold;
 		line-height: 1.25;
+		letter-spacing: 0.1vmin;
 
-		color: black;
-		background-color: #ededed;
+		color: #333;
 	}
+
+	.red {background-color: red;}
 
 </style>
 
@@ -3544,7 +3594,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/draft-sketch-three-characters.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-800.jpg">
@@ -3563,7 +3623,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/modernist-village.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-800.jpg">
@@ -3582,7 +3652,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/modernist-007.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-800.jpg">
@@ -3601,7 +3681,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/woman-cursing.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-800.jpg">
@@ -3620,7 +3709,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/lovely-pussycat.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-800.jpg">
@@ -3639,7 +3738,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/elvis.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--beigeWhite">
+
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product-800.jpg">
@@ -3658,7 +3767,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/monster-blond-hair.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--beigeWhite">
+
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product-800.jpg">
@@ -3677,7 +3796,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/eco-friendly-monster.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-800.jpg">
@@ -3696,7 +3824,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/imaginary-friend.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-800.jpg">
@@ -3715,7 +3852,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/aristocratic-portrait-1.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product-800.jpg">
@@ -3734,7 +3881,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/aristocratic-portrait-2.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product-800.jpg">
@@ -3753,7 +3910,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/aristocratic-portrait-3.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product-800.jpg">
@@ -3772,7 +3939,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/aristocratic-portrait-4.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product-800.jpg">
@@ -3791,7 +3968,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/rebels-path.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-800.jpg">
@@ -3810,7 +3997,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/glassblower.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product-800.jpg">
@@ -3829,7 +4025,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/upside-down.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product-800.jpg">
@@ -3848,7 +4053,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/blasphemy.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-800.jpg">
@@ -3867,7 +4081,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/old-muscular-man.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--beigeWhite">
+
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-800.jpg">
@@ -3886,7 +4110,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/mime-statue.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product-800.jpg">
@@ -3905,7 +4139,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/ladies-man.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-800.jpg">
@@ -3924,7 +4168,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/siamese-costume.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-800.jpg">
@@ -3943,7 +4197,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/one-night.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--beigeWhite">
+
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product-800.jpg">
@@ -3962,7 +4226,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/monster-tits.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--beigeWhite">
+
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-800.jpg">
@@ -3981,7 +4255,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/headache.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--beigeWhite">
+
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-800.jpg">
@@ -4000,7 +4284,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/sleepy-laugh.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--beigeWhite">
+
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-800.jpg">
@@ -4019,7 +4313,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/punching.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-800.jpg">
@@ -4038,7 +4342,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/portrait-man.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product-800.jpg">
@@ -4057,7 +4370,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/portrait-man-2.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product-800.jpg">
@@ -4076,7 +4398,13 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/material-red.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--painting">
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product-800.jpg">
@@ -4095,7 +4423,13 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/material-brown.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--painting">
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product-800.jpg">
@@ -4114,7 +4448,13 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/material-light-blue.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--painting">
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product-800.jpg">
@@ -4133,7 +4473,13 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/material-gray.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--painting">
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product-800.jpg">
@@ -4152,7 +4498,13 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/material-yellow.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--painting">
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product-800.jpg">
@@ -4171,7 +4523,13 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/material-green.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--painting">
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product-800.jpg">
@@ -4190,7 +4548,13 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/green-creature.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--painting">
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product-800.jpg">
@@ -4209,7 +4573,13 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/crow-kid.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--painting">
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product-800.jpg">
@@ -4228,7 +4598,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/demon-fiery-tongue.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-800.jpg">
@@ -4247,7 +4626,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/woman-makeup.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product-800.jpg">
@@ -4266,7 +4655,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/quiet-kid.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product-800.jpg">
@@ -4285,7 +4683,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/contemporary-demon.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product-800.jpg">
@@ -4304,7 +4712,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/dewlap-teen.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product-800.jpg">
@@ -4323,7 +4740,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/spent-lives.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product-800.jpg">
@@ -4342,7 +4768,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/mature-demon.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product-800.jpg">
@@ -4361,7 +4796,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/demon-social.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-800.jpg">
@@ -4380,7 +4825,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/ancient-demon.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product-800.jpg">
@@ -4399,7 +4853,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/distortion.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-800.jpg">
@@ -4418,7 +4882,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/father-portrait.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-800.jpg">
@@ -4437,7 +4910,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/masquerader-19th-century.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-800.jpg">
@@ -4456,7 +4938,16 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/kids-playing-roles.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-800.jpg">
@@ -4475,7 +4966,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/exact-height.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product-800.jpg">
@@ -4494,7 +4995,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/indesicive-customer.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-800.jpg">
@@ -4513,7 +5024,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/blind-speaker.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-800.jpg">
@@ -4532,7 +5053,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/beast-sex-act-ricepaper.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-800.jpg">
@@ -4551,7 +5082,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/joke.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product-800.jpg">
@@ -4570,7 +5111,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/three-elements.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-800.jpg">
@@ -4589,7 +5140,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/sphinx.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product-800.jpg">
@@ -4608,7 +5169,17 @@ explicitly, e.g.
 			<article class="shop__all__allProducts__productExcerpt">
 				<a href="/grand-heartbreak.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+
+						
+
+							
+	
+								<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--regularWhite">
+							
+						
+
+
+						
 								<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-320.jpg">
 								<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-460.jpg">
 								<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-800.jpg">
