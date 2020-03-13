@@ -3104,7 +3104,7 @@ this here is just to copy the 'icons' css as needed */
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="/shop/all#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
-				Homey
+				Gray Area
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
@@ -3403,7 +3403,6 @@ explicitly, e.g.
 	.shop__all__header {
 		width: 100vw;
 		padding: 10vmin;
-		margin-bottom: 15vmin;
 
 		background-color: white;
 	}
@@ -3448,6 +3447,27 @@ explicitly, e.g.
 		color: #7d6c46;
 	}
 
+	/* Note */
+
+	.shop__all__note {
+		width: 100vw;
+		padding: 3vmin 10vmin 6vmin;
+
+		line-height: 1.25;
+		font-family: 'Literata', Serif;
+		font-weight: 100;
+		font-style: italic;
+		font-size: 2vmin;
+		text-align: left;
+	}
+
+	.shop__all__note__paragraph {
+		max-width: 80vmin;
+		color: #888;
+	}
+
+	/* All Products */
+
 	.shop__all__allProducts {
 		max-width: 80vw;
 		width: fit-content;
@@ -3456,6 +3476,8 @@ explicitly, e.g.
 		grid-template-columns: repeat(auto-fit, minmax(35vmin, 1fr));
 		grid-gap: 10vmin 10vmin;
 	}
+
+	/* Individual Product */
 
 	.shop__all__allProducts__productExcerpt {
 		width: 35vmin;
@@ -3481,7 +3503,7 @@ explicitly, e.g.
 	}
 
 
-	/*Different Frames based on Category & Surface*/
+	/* Different Frames based on Category & Surface */
 
 	.shop__all__allProducts__productExcerpt__linkWrapper__header__picture--drawing--extremeWhite {
 		padding: 5vmin;
@@ -3577,17 +3599,23 @@ explicitly, e.g.
 <div class="shop__all">
 	<header class="shop__all__header">
 		<h1 class="shop__all__header__titleWrapper">
-			<span class="shop__all__header__titleWrapper__title">Homey</span>
+			<span class="shop__all__header__titleWrapper__title">Gray Area</span>
 			<span class="shop__all__header__titleWrapper__subtitle">A cozy place to buy something from me when & if you feel up to.</span>
 		</h1>
 		<p class="shop__all__header__description">
-			Served by myself, some close friends and family. <br/>From the warmth of my home.
+			We work from home, me, some close friends and close family.
 		</p>
 		<a href="/shop/#learnmore__anchor" class="shop__all__header__learnMoreLink">
-			We operate as a family, discover some of our values 
+			Learn more about our ethics, values & individual freedom
 			<i class="fa fa-angle-right" aria-hidden="true"></i>
 		</a>
 	</header>
+
+	<section class="shop__all__note">
+		<p class="shop__all__note__paragraph">
+			* We don't sell frames but art only. The following images use frames to communicate how they may look on your wall. Prices do not include frames.
+		</p>
+	</section>
 
 	<section class="shop__all__allProducts">
 		
@@ -3615,7 +3643,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>22.5cm x 20.1cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 44.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 50</p>
 					</footer>
 				</a>
 			</article>
@@ -3644,7 +3672,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>25.8cm x 18.1cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -3673,7 +3701,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.1cm x 19.6cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -3701,7 +3729,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.8cm x 28.7cm </span> 
 							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 39.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -3730,7 +3758,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.5cm x 20cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 70</p>
 					</footer>
 				</a>
 			</article>
@@ -3759,7 +3787,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 28.7cm </span> 
 							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -3788,7 +3816,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 28.6cm </span> 
 							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 70</p>
 					</footer>
 				</a>
 			</article>
@@ -3816,7 +3844,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -3844,7 +3872,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 26.4cm </span> 
 							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -3873,7 +3901,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 70</p>
 					</footer>
 				</a>
 			</article>
@@ -3902,7 +3930,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.6cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 70</p>
 					</footer>
 				</a>
 			</article>
@@ -3931,7 +3959,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.5cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 44.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 50</p>
 					</footer>
 				</a>
 			</article>
@@ -3960,7 +3988,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -3989,7 +4017,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
 							<br/>Μολύβι σε Λείο Χαρτί Σχεδίου 130γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4017,7 +4045,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.2cm x 26.4cm </span> 
 							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 64.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 70</p>
 					</footer>
 				</a>
 			</article>
@@ -4045,7 +4073,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 80</p>
 					</footer>
 				</a>
 			</article>
@@ -4073,7 +4101,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 54.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -4102,7 +4130,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.6cm x 21.1cm </span> 
 							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 27.49</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 30</p>
 					</footer>
 				</a>
 			</article>
@@ -4131,7 +4159,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4160,7 +4188,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
 							<br/>Μολύβι σε Λείο Χαρτί Σχεδίου 130γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4189,7 +4217,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
 							<br/>Μολύβι σε Λείο Χαρτί Σχεδίου 130γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4218,7 +4246,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4247,7 +4275,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 26.4cm </span> 
 							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4276,7 +4304,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.8cm x 26.2cm </span> 
 							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 84.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 90</p>
 					</footer>
 				</a>
 			</article>
@@ -4305,7 +4333,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 79.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 80</p>
 					</footer>
 				</a>
 			</article>
@@ -4334,7 +4362,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.5cm x 16.9cm </span> 
 							<br/>Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4362,7 +4390,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 80</p>
 					</footer>
 				</a>
 			</article>
@@ -4390,7 +4418,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 80</p>
 					</footer>
 				</a>
 			</article>
@@ -4415,7 +4443,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
 							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 89.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 90</p>
 					</footer>
 				</a>
 			</article>
@@ -4440,7 +4468,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
 							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 89.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 90</p>
 					</footer>
 				</a>
 			</article>
@@ -4465,7 +4493,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
 							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 89.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 90</p>
 					</footer>
 				</a>
 			</article>
@@ -4490,7 +4518,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
 							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 79.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 80</p>
 					</footer>
 				</a>
 			</article>
@@ -4515,7 +4543,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
 							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 44.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 50</p>
 					</footer>
 				</a>
 			</article>
@@ -4540,7 +4568,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
 							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 54.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -4565,7 +4593,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>25.5cm x 17.5cm </span> 
 							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 99.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 100</p>
 					</footer>
 				</a>
 			</article>
@@ -4590,7 +4618,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Πιθανόν Τέμπερα΄(υπογραφή με στυλό υγρής μελάνης) σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 74.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 80</p>
 					</footer>
 				</a>
 			</article>
@@ -4618,7 +4646,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μαρκαδόρος Uni-Posca & Μελάνι (υπογραφή με στυλό υγρής μελάνης) σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -4647,7 +4675,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μαρκαδοράκι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4675,7 +4703,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μαρκαδόρος σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4704,7 +4732,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 27.7cm </span> 
 							<br/>Μαρκαδοράκι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4732,7 +4760,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29,7cm </span> 
 							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4760,7 +4788,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.3cm x 27.6cm </span> 
 							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4788,7 +4816,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.4cm x 27.6cm </span> 
 							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4817,7 +4845,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.8cm x 29.7cm </span> 
 							<br/>Μαρκαδοράκι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4845,7 +4873,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.1cm x 23.8cm </span> 
 							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4874,7 +4902,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>cm x cm </span> 
 							<br/>Στυλό Υγρής Μελάνης σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4902,7 +4930,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4930,7 +4958,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -4958,7 +4986,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>24.5cm x 18.7cm </span> 
 							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 27.49</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 30</p>
 					</footer>
 				</a>
 			</article>
@@ -4987,7 +5015,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μαρκαδόρος σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -5016,7 +5044,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Ανεξήτιλος Μαρκαδόρος σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -5045,7 +5073,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
 							<br/>Μαρκαδόρος σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -5074,7 +5102,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.4cm x 20.8cm </span> 
 							<br/>Μαρκαδόρος & Μαρκαδοράκι σε Ριζόχαρτο</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 49.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -5103,7 +5131,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.4cm x 29.7cm </span> 
 							<br/>Μαρκαδοράκι, Στυλό & Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 59.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
 				</a>
 			</article>
@@ -5132,7 +5160,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.9cm x 12.6cm </span> 
 							<br/>Στυλό (Υπογεγραμένο στις 13 Δεκ. 2019 με στυλό υγρής μελάνης) σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -5161,7 +5189,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.7cm x 21cm </span> 
 							<br/>Στυλό & Μολύβι σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 34.99</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
 					</footer>
 				</a>
 			</article>
@@ -5190,7 +5218,7 @@ explicitly, e.g.
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 14.4cm </span> 
 							<br/>Στυλό & Μαρκαδόρος σε Χαρτί 80γρ.</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 27.49</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 30</p>
 					</footer>
 				</a>
 			</article>

@@ -3104,7 +3104,7 @@ this here is just to copy the 'icons' css as needed */
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="/shop/all#shopPageSomeProductsAnchor" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--shop">
-				Homey
+				Gray Area
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
@@ -3146,7 +3146,7 @@ Homepage Goals
 
 <style type="text/css">
 	.homeSmallScale {
-		background-color: yellow;
+		
 	}
 
 	@font-face {
@@ -3442,6 +3442,7 @@ explicitly, e.g.
 	<style type="text/css">
 
 	.index__shopHero {
+		filter: saturate(0);
 		background-image: url(.jpg);
 		background-position: center;
 		background-size: cover;
@@ -3782,7 +3783,107 @@ explicitly, e.g.
 		background: -webkit-linear-gradient(180deg, rgba(6,37,156,1) 0%, rgba(0,12,56,1) 100%);
 		background: linear-gradient(180deg, rgba(6,37,156,1) 0%, rgba(0,12,56,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#06259c",endColorstr="#000c38",GradientType=1);
+
+
+		background-image: url(.jpg);
+		background-position: center;
+		background-size: cover;
 	}
+
+	
+	
+	/* Default */
+
+
+
+/* Portrait */
+
+@media (max-height: 10000px) and (orientation: portrait) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake.jpg');
+    }
+}
+@media (max-height: 2888px) and (orientation: portrait) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-3800.jpg');
+    }
+}
+@media (max-height: 2052px) and (orientation: portrait) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-2700.jpg');
+    }
+}
+@media (max-height: 1459px) and (orientation: portrait) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-1920.jpg');
+    }
+}
+@media (max-height: 1140px) and (orientation: portrait) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-1500.jpg');
+    }
+}
+@media (max-height: 608px) and (orientation: portrait) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-800.jpg');
+    }
+}
+@media (max-height: 350px) and (orientation: portrait) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-460.jpg');
+    }
+}
+@media (max-height: 243px) and (orientation: portrait) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-320.jpg');
+    }
+}
+
+
+/* Landscape */
+
+
+
+@media (max-width: 10000px) and (orientation: landscape) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake.jpg');
+    }
+}
+@media (max-width: 3800px) and (orientation: landscape) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-3800.jpg');
+    }
+}
+@media (max-width: 2700px) and (orientation: landscape) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-2700.jpg');
+    }
+}
+@media (max-width: 1920px) and (orientation: landscape) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-1920.jpg');
+    }
+}
+@media (max-width: 1500px) and (orientation: landscape) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-1500.jpg');
+    }
+}
+@media (max-width: 800px) and (orientation: landscape) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-800.jpg');
+    }
+}
+@media (max-width: 460px) and (orientation: landscape) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-460.jpg');
+    }
+}
+@media (max-width: 320px) and (orientation: landscape) {
+    .index__studioHero {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-320.jpg');
+    }
+}
 
 	.index__studioHero__wrapper {
 		display: table-cell;
