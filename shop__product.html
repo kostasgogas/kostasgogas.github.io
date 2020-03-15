@@ -3693,7 +3693,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 
 	.siteWideHeader__menuList {
 		display: grid;
-		grid-template-columns: repeat(6, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 	}
 
 	.siteWideHeader__menuList__listItem {
@@ -3726,8 +3726,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 		line-height: 5vmin;
 	}
 
-	.siteWideHeader__menuList__listItem__link--about {color: white;}
-	.siteWideHeader__menuList__listItem__link--about:hover {background-color: white;}
+	.siteWideHeader__menuList__listItem__link--about {
+		text-transform: none;
+		letter-spacing: 0.2vmin;
+
+		color: #8a6d20;
+	}
+	.siteWideHeader__menuList__listItem__link--about:hover {
+		color: white;
+		background-color: #8a6034;
+	}
 
 	.siteWideHeader__menuList__listItem__link--work {
 		font-weight: 900;
@@ -3765,11 +3773,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 		-webkit-text-fill-color: transparent;
 	}
 	.siteWideHeader__menuList__listItem__link--studio:hover {
-		background: #0aeab7;
-		
 		color: white;
 		-webkit-background-clip: unset;
 		-webkit-text-fill-color: white;
+		background: rgb(0,134,255);
+		background: -moz-linear-gradient(180deg, rgba(0,134,255,1) 0%, rgba(14,16,128,1) 48%, rgba(111,0,154,1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(0,134,255,1) 0%, rgba(14,16,128,1) 48%, rgba(111,0,154,1) 100%);
+		background: linear-gradient(180deg, rgba(0,134,255,1) 0%, rgba(14,16,128,1) 48%, rgba(111,0,154,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0086ff",endColorstr="#6f009a",GradientType=1);
 	}
 
 	.siteWideHeader__menuList__listItem__link--contact {
@@ -3802,7 +3813,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 	<ul class="siteWideHeader__menuList">
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="/about/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--about">
-				About
+				Character
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
@@ -3823,13 +3834,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--contact">
 				Communicate
-			</a>
-		</li>
-		<li class="siteWideHeader__menuList__listItem">
-			<a href="" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--cart">
-				<i class="fa fa-shopping-bag siteWideHeader__menuList__listItem__link__icon" aria-hidden="true"></i>
-				<br/>
-				Cart
 			</a>
 		</li>
 	</ul>

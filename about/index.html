@@ -2985,7 +2985,7 @@ this here is just to copy the 'icons' css as needed */
 
 	.siteWideHeader__menuList {
 		display: grid;
-		grid-template-columns: repeat(6, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 	}
 
 	.siteWideHeader__menuList__listItem {
@@ -3018,8 +3018,16 @@ this here is just to copy the 'icons' css as needed */
 		line-height: 5vmin;
 	}
 
-	.siteWideHeader__menuList__listItem__link--about {color: white;}
-	.siteWideHeader__menuList__listItem__link--about:hover {background-color: white;}
+	.siteWideHeader__menuList__listItem__link--about {
+		text-transform: none;
+		letter-spacing: 0.2vmin;
+
+		color: #8a6d20;
+	}
+	.siteWideHeader__menuList__listItem__link--about:hover {
+		color: white;
+		background-color: #8a6034;
+	}
 
 	.siteWideHeader__menuList__listItem__link--work {
 		font-weight: 900;
@@ -3057,11 +3065,14 @@ this here is just to copy the 'icons' css as needed */
 		-webkit-text-fill-color: transparent;
 	}
 	.siteWideHeader__menuList__listItem__link--studio:hover {
-		background: #0aeab7;
-		
 		color: white;
 		-webkit-background-clip: unset;
 		-webkit-text-fill-color: white;
+		background: rgb(0,134,255);
+		background: -moz-linear-gradient(180deg, rgba(0,134,255,1) 0%, rgba(14,16,128,1) 48%, rgba(111,0,154,1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(0,134,255,1) 0%, rgba(14,16,128,1) 48%, rgba(111,0,154,1) 100%);
+		background: linear-gradient(180deg, rgba(0,134,255,1) 0%, rgba(14,16,128,1) 48%, rgba(111,0,154,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0086ff",endColorstr="#6f009a",GradientType=1);
 	}
 
 	.siteWideHeader__menuList__listItem__link--contact {
@@ -3094,7 +3105,7 @@ this here is just to copy the 'icons' css as needed */
 	<ul class="siteWideHeader__menuList">
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="/about/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--about">
-				About
+				Character
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
@@ -3115,13 +3126,6 @@ this here is just to copy the 'icons' css as needed */
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--contact">
 				Communicate
-			</a>
-		</li>
-		<li class="siteWideHeader__menuList__listItem">
-			<a href="" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--cart">
-				<i class="fa fa-shopping-bag siteWideHeader__menuList__listItem__link__icon" aria-hidden="true"></i>
-				<br/>
-				Cart
 			</a>
 		</li>
 	</ul>
@@ -3171,7 +3175,7 @@ this here is just to copy the 'icons' css as needed */
 		padding: 10vmin 0;
 
 		color: black;
-		background-color: yellow;
+		background-color: #8a6d20;
 	}
 
 	.about__mainContent p {
@@ -3189,7 +3193,7 @@ this here is just to copy the 'icons' css as needed */
 	<header class="about__header">
 		<img src="/assets/temp/kostas-gogas-logo-signature-yellow.png" class="about__header__img">
 		<h1 class="about__header__title">Kostas Gogas</h1>
-		<p class="about__header__subtitle">No Promise</p>
+		<p class="about__header__subtitle">Character & Self-criticism</p>
 	</header>
 	<section class="about__mainContent">
 		

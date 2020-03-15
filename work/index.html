@@ -2985,7 +2985,7 @@ this here is just to copy the 'icons' css as needed */
 
 	.siteWideHeader__menuList {
 		display: grid;
-		grid-template-columns: repeat(6, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 	}
 
 	.siteWideHeader__menuList__listItem {
@@ -3018,8 +3018,16 @@ this here is just to copy the 'icons' css as needed */
 		line-height: 5vmin;
 	}
 
-	.siteWideHeader__menuList__listItem__link--about {color: white;}
-	.siteWideHeader__menuList__listItem__link--about:hover {background-color: white;}
+	.siteWideHeader__menuList__listItem__link--about {
+		text-transform: none;
+		letter-spacing: 0.2vmin;
+
+		color: #8a6d20;
+	}
+	.siteWideHeader__menuList__listItem__link--about:hover {
+		color: white;
+		background-color: #8a6034;
+	}
 
 	.siteWideHeader__menuList__listItem__link--work {
 		font-weight: 900;
@@ -3057,11 +3065,14 @@ this here is just to copy the 'icons' css as needed */
 		-webkit-text-fill-color: transparent;
 	}
 	.siteWideHeader__menuList__listItem__link--studio:hover {
-		background: #0aeab7;
-		
 		color: white;
 		-webkit-background-clip: unset;
 		-webkit-text-fill-color: white;
+		background: rgb(0,134,255);
+		background: -moz-linear-gradient(180deg, rgba(0,134,255,1) 0%, rgba(14,16,128,1) 48%, rgba(111,0,154,1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(0,134,255,1) 0%, rgba(14,16,128,1) 48%, rgba(111,0,154,1) 100%);
+		background: linear-gradient(180deg, rgba(0,134,255,1) 0%, rgba(14,16,128,1) 48%, rgba(111,0,154,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0086ff",endColorstr="#6f009a",GradientType=1);
 	}
 
 	.siteWideHeader__menuList__listItem__link--contact {
@@ -3094,7 +3105,7 @@ this here is just to copy the 'icons' css as needed */
 	<ul class="siteWideHeader__menuList">
 		<li class="siteWideHeader__menuList__listItem">
 			<a href="/about/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--about">
-				About
+				Character
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
@@ -3117,13 +3128,6 @@ this here is just to copy the 'icons' css as needed */
 				Communicate
 			</a>
 		</li>
-		<li class="siteWideHeader__menuList__listItem">
-			<a href="" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--cart">
-				<i class="fa fa-shopping-bag siteWideHeader__menuList__listItem__link__icon" aria-hidden="true"></i>
-				<br/>
-				Cart
-			</a>
-		</li>
 	</ul>
 </header>
 
@@ -3131,7 +3135,7 @@ this here is just to copy the 'icons' css as needed */
 	<style type="text/css">
 
 	body {
-		margin-top: 7vmin;
+		margin-top: 10vmin;
 	}
 
 
@@ -3144,15 +3148,14 @@ this here is just to copy the 'icons' css as needed */
 	}*/
 
 	.workIndex {
-		padding-top: 5vmin; 
-		background-color: red;
 
 		font-family: 'Inter', Sans-serif;
 
+		/*background-color: red;*/
 	}
 
 	.workIndex__period {
-
+		padding: 0 0 10vmin;
 	}
 
 	.workIndex__period__header {
@@ -3171,18 +3174,18 @@ this here is just to copy the 'icons' css as needed */
 		line-height: 1.25;
 		text-transform: uppercase;
 
-		color: white;
+		/*color: white;*/
 	}
 
 	.workIndex__period__header__description {
 		width: 80vmin;
 		margin: 1.75vmin 0 0vmin 10vmin;
 
-		font-size: 3.5vmin;
+		font-size: 2.5vmin;
 		font-weight: 700;
 		line-height: 1.25;
 
-		color: white;
+		/*color: white;*/
 	}
 
 	.workIndex__period__category {
@@ -3194,7 +3197,7 @@ this here is just to copy the 'icons' css as needed */
 		margin: auto;
 		padding: 10vmin 0;
 
-		background-color: #2170f3;
+		/*background-color: #2170f3;*/
 
 	}
 
@@ -3202,12 +3205,12 @@ this here is just to copy the 'icons' css as needed */
 		width: 80vmin;
 		margin: 0 0 2.5vmin 10vmin;
 
-		font-size: 5vmin;
+		font-size: 4vmin;
 		font-weight: 900;
 		line-height: 1.25;
 		text-transform: uppercase;
 
-		color: #130025;
+		/*color: #130025;*/
 
 	}
 
@@ -3215,42 +3218,52 @@ this here is just to copy the 'icons' css as needed */
 		width: 80vmin;
 		margin: 1.75vmin 0 0 10vmin;
 
-		font-size: 3.5vmin;
+		font-size: 2.5vmin;
 		font-weight: 700;
 		line-height: 1.25;
 
-		color: #130025;
+		/*color: #130025;*/
 
 	}
 
 	.workIndex__period__category__projectsContainer {
-		padding: 10vmin;
+		margin-left: 10vmin;
+/*		padding: 10vmin;
 
 		margin: auto;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(35vmin, 1fr));
-		grid-gap: 10vmin 10vmin;
 
 
-		background-color: #130025;
+		/*background-color: #130025;*/
 	}
 
 	.workIndex__period__category__projectsContainer__project {
-		display: block;
-		padding-right: 20vmin;
+		display: inline-block;
+		margin-top: 5vmin;
+		margin-right: 5vmin;
+		padding: 2.5vmin;
+		width: 70vmin;
+
+		border-radius: 0.5vmin;
+
+		background-color: white;
+		border: 0.1vmin solid black;
+
+		-webkit-box-shadow: 0.75vmin 0.75vmin 2vmin 0px rgba(0,0,0,0.35);
+		-moz-box-shadow: 0.75vmin 0.75vmin 2vmin 0px rgba(0,0,0,0.35);
+		box-shadow: 0.75vmin 0.75vmin 2vmin 0px rgba(0,0,0,0.35);
 	}
 
 	.workIndex__period__category__projectsContainer__project__picture {
 		display: block;
 		height: 35vmin;
-		background-color: black;
+		/*background-color: black;*/
 	}
 
 	.workIndex__period__category__projectsContainer__project__picture__img {
 
 		max-width: 100%;
 
-		background-color: black;
+		/*background-color: black;*/
 	}
 
 	.workIndex__period__category__projectsContainer__project__picture__img.lazyload {
@@ -3258,45 +3271,124 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.workIndex__period__category__projectsContainer__project__title {
-		font-style: italic;
 		font-weight: 900;
 		line-height: 1.25;
-		font-size: 4vmin;
+		font-size: 3vmin;
+
+		/*color: #2170f3;*/
+	}
+
+	.workIndex__period__category__projectsContainer__project__description {
+		font-size: 2vmin;
+		font-weight: 300;
+		line-height: 1.25;
+
+		/*color: white;*/
+
+	}
+
+	.workIndex__period__category__projectsContainer__project__linkText {
+		font-size: 2vmin;
+		font-weight: 900;
+		line-height: 1.25;
+		text-align: right;
+		text-transform: uppercase;
+		padding: 4vmin 1.5vmin 1.5vmin;
 
 		color: #2170f3;
 	}
 
-	.workIndex__period__category__projectsContainer__project__description {
-		font-size: 3vmin;
-		font-weight: 500;
-		line-height: 1.25;
-
-		color: white;
-
+	.workIndex__period__category__projectsContainer__project__linkText__angleIcon {
+		font-size: 2.25vmin;
+		padding-left: 0.5vmin;
 	}
 	
 
+/* Different colors for different periods */
+
+	.workIndex__period:first-child {
+		background-color: red;
+		color: white;
+	}
+	.workIndex__period:first-child  .workIndex__period__category {
+		color: darkred;
+	}
+	.workIndex__period:first-child  .workIndex__period__category__projectsContainer__project {
+		color: black;
+	}
+
+	.workIndex__period:nth-child(2) {
+		background-color: #2170f3;
+		color: white;
+	}
+	.workIndex__period:nth-child(2)  .workIndex__period__category {
+		color: darkblue;
+	}
+	.workIndex__period:nth-child(2)  .workIndex__period__category__projectsContainer__project {
+		color: black;
+	}
 
 
+	.workIndex__period:nth-child(3) {
+		background-color: #5e0080;
+		color: white;
+	}
+	.workIndex__period:nth-child(3)  .workIndex__period__category {
+		color: #b700ff;
+	}
+	.workIndex__period:nth-child(3)  .workIndex__period__category__projectsContainer__project {
+		color: black;
+	}
+
+
+
+	.workIndex__period:nth-child(4) {
+		background-color: yellow;
+		color: black;
+	}
+	.workIndex__period:nth-child(4)  .workIndex__period__category {
+		color: #ca9e00;
+	}
+	.workIndex__period:nth-child(4)  .workIndex__period__category__projectsContainer__project {
+		color: black;
+	}
+
+
+
+
+	.workIndex__period:nth-child(5) {
+		background-color: pink;
+		color: white;
+	}
+	.workIndex__period:nth-child(5)  .workIndex__period__category {
+		color: magenta;
+	}
+	.workIndex__period:nth-child(5)  .workIndex__period__category__projectsContainer__project {
+		color: black;
+	}
 </style>
 
 <style type="text/css">
 	.work__header {
 		width: 100%;
-		height: 7vmin;
-		position: absolute;
+		height: 10vmin;
+		position: fixed;
 		top: 0;
-		display: grid;
-		grid-template-columns: 22.652vmin auto;
-		align-items: center;
 
-		background-color: #2170f3;
+		align-items: center;
+		display: grid;
+		grid-template-columns: 10vw 90vw;
+
+		background-color: red;
 	}
 
 	.work__header__homeLink {
-		height: 100%;
-		width: 100%;
+		padding: 0 2vmin;
+		border-right: 1px solid white;
 		display: grid;
+		grid-template-rows: 7vmin 3vmin;
+
+		background-color: #2170f3;
 	}
 
 	.work__header__homeLink__image {
@@ -3305,24 +3397,60 @@ this here is just to copy the 'icons' css as needed */
 		margin: auto;
 	}
 
-	.work__header__title {
+	.work__header__homeLink__text {
+		font-size: 1.7vmin;
+		font-family: 'Inter', Sans-serif;
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 0.1vh;
+		display: block;
+		text-align: center;
+		margin: 0.25vh 0;
+	}
+
+	.work__header__nav {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.work__header__nav__link {
 		font-family: 'Inter', Sans-serif;
 		font-weight: 900;
-		font-size: 5vmin;
+		font-size: 2vmin;
 		text-transform: uppercase;
+		text-align: center;
 
 		color: white;
 	}
+
 </style>
 
 <header class="work__header">
 	<a href="/" class="work__header__homeLink">
-		<img src="/assets/temp/kostas-gogas-logo-signature-white-01.png" class="work__header__homeLink__image">		
+		<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" class="work__header__homeLink__image">
+		<h3 class="work__header__homeLink__text">Milestones</h3>
 	</a>
+	<nav class="work__header__nav">
+		<a href="" class="work__header__nav__link">
+			2011-2014
+		</a>
 
-	<p class="work__header__title">
-		Milestones
-	</p>
+		<a href="" class="work__header__nav__link">
+			2010-2013
+		</a>
+
+		<a href="" class="work__header__nav__link">
+			2007-2009
+		</a>
+
+		<a href="" class="work__header__nav__link">
+			2003-2007
+		</a>
+
+		<a href="" class="work__header__nav__link">
+			2001-2003
+		</a>
+	</nav>
 </header>
 
 <div class="workIndex">
@@ -3414,6 +3542,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -3427,6 +3558,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -3495,7 +3629,7 @@ this here is just to copy the 'icons' css as needed */
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Introducing Abstraction in Music Videos</h3>
 			<p class="workIndex__period__category__header__description">
-				All my artistic background would finally found its way into the motion work. I figured that music videos, like music, were really an open field aestehtically, that no one had really explored.
+				All my artistic background would finally found its way into the motion work. I figured that music videos, like music, were really an open field aesthetically, that no one had really explored.
 			</p>
 		</header>
 		
@@ -3557,6 +3691,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -3570,6 +3707,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -3700,6 +3840,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -3828,6 +3971,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -3958,6 +4104,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -3971,6 +4120,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4211,6 +4363,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -4339,6 +4494,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4579,6 +4737,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -4592,6 +4753,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4607,6 +4771,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -4620,6 +4787,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4750,6 +4920,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -4764,6 +4937,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -4777,6 +4953,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4911,6 +5090,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -4924,6 +5106,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4939,6 +5124,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -4953,6 +5141,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -4966,6 +5157,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5083,6 +5277,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5208,6 +5405,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5460,6 +5660,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -5473,6 +5676,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5602,6 +5808,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5842,6 +6051,9 @@ this here is just to copy the 'icons' css as needed */
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
 			</a>
 		
 		
@@ -5855,6 +6067,9 @@ this here is just to copy the 'icons' css as needed */
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
