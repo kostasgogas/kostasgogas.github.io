@@ -3119,7 +3119,7 @@ this here is just to copy the 'icons' css as needed */
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="#" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--studio">
+			<a href="/studio/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--studio">
 				Imaginarium
 			</a>
 		</li>
@@ -3132,12 +3132,207 @@ this here is just to copy the 'icons' css as needed */
 </header>
 
 
-	<div class="studioIndex">
-	<header>
-		<h1>Multidisciplinary artist Kostas Gogas's Studio</h1>
-		<p>Featuring the work being produced as we live this moment.</p>
+	<style type="text/css">
 
-		<p>From draft notes and single pieces to major studies of future work or the work itself as it's worked upon and becoming the final product of the artist's imagination, this is where you find it all.</p>
+	body {
+		margin-top: 0;
+	}
+	.siteWideHeader {
+		display: none;
+	}
+
+
+
+	/* Header */
+
+	.studio__header {
+		width: 100%;
+		height: 10vmin;
+		position: fixed;
+
+		background-color: black;
+	}
+
+	.studio__header__nav {
+		display: grid;
+		grid-template-columns: 20vmin auto;
+		height: 100%;
+	}
+
+	.studio__header__nav__homelink {
+		width: 100%;
+		display: block;
+
+	}
+
+	.studio__header__nav__homelink__image {
+		width: 20vmin;
+		height: 10vmin;
+		object-fit: contain;
+	}
+
+
+	/* */
+
+	.studioIndex {
+		background-color: #053b6b;
+		background-image: url(.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+
+	
+	
+	/* Default */
+
+
+
+/* Portrait */
+
+@media (max-height: 10000px) and (orientation: portrait) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake.jpg');
+    }
+}
+@media (max-height: 2888px) and (orientation: portrait) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-3800.jpg');
+    }
+}
+@media (max-height: 2052px) and (orientation: portrait) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-2700.jpg');
+    }
+}
+@media (max-height: 1459px) and (orientation: portrait) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-1920.jpg');
+    }
+}
+@media (max-height: 1140px) and (orientation: portrait) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-1500.jpg');
+    }
+}
+@media (max-height: 608px) and (orientation: portrait) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-800.jpg');
+    }
+}
+@media (max-height: 350px) and (orientation: portrait) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-460.jpg');
+    }
+}
+@media (max-height: 243px) and (orientation: portrait) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-320.jpg');
+    }
+}
+
+
+/* Landscape */
+
+
+
+@media (max-width: 10000px) and (orientation: landscape) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake.jpg');
+    }
+}
+@media (max-width: 3800px) and (orientation: landscape) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-3800.jpg');
+    }
+}
+@media (max-width: 2700px) and (orientation: landscape) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-2700.jpg');
+    }
+}
+@media (max-width: 1920px) and (orientation: landscape) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-1920.jpg');
+    }
+}
+@media (max-width: 1500px) and (orientation: landscape) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-1500.jpg');
+    }
+}
+@media (max-width: 800px) and (orientation: landscape) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-800.jpg');
+    }
+}
+@media (max-width: 460px) and (orientation: landscape) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-460.jpg');
+    }
+}
+@media (max-width: 320px) and (orientation: landscape) {
+    .studioIndex {
+        background-image: url('https://res.cloudinary.com/kostasgogas/operational/imaginarium-bg-lake-320.jpg');
+    }
+}
+
+	.studioIndex__header {
+		width: 90vmin;
+		padding: 10vmin 0;
+		margin: auto;
+
+		font-family: 'Princess Sofia', Serif;
+		text-align: center;
+
+		color: white;
+	}
+
+
+
+
+	.studioIndex__header__title {	
+		font-size: 5vmin;
+		margin: 10vmin auto 2.5vmin;
+
+		letter-spacing: 1vmin;
+
+	}
+
+	.studioIndex__header__subtitle {
+		width: 90vmin;
+		margin: 2.5vmin auto;
+
+		line-height: 1.25;
+		font-size: 3vmin;
+	}
+
+	.studioIndex__header__description {
+		width: 90vmin;
+		margin: 5vmin auto;
+
+		font-size: 2.75vmin;
+		letter-spacing: 0.2vmin;
+		line-height: 1.7;
+
+		color: #76f5dd;
+	}
+</style>
+
+<header class="studio__header">
+	<nav class="studio__header__nav">
+		<a href="/" class="studio__header__nav__homelink">
+			<img  src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" class="studio__header__nav__homelink__image">
+		</a>
+		<div></div>
+	</nav>
+</header>
+
+<div class="studioIndex">
+	<header class="studioIndex__header">
+		<h1 class="studioIndex__header__title">Dive Deep</h1>
+		<p class="studioIndex__header__subtitle">My mind is abstract, my goals are vague and I'm easily influenced by anything refined or authentic.</p>
+
+		<p class="studioIndex__header__description">My imaginarium is full of hand notes, </br>colors, sketches, thoughts,  </br> </br>..some fine details of work  </br>I somehow did but later acknowledge. </br>  </br> from all these chaos something is supposed to come out.</p>
 	</header>
 
 	<section>

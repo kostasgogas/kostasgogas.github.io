@@ -3119,7 +3119,7 @@ this here is just to copy the 'icons' css as needed */
 			</a>
 		</li>
 		<li class="siteWideHeader__menuList__listItem">
-			<a href="#" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--studio">
+			<a href="/studio/" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--studio">
 				Imaginarium
 			</a>
 		</li>
@@ -3155,13 +3155,12 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.workIndex__period {
-		padding: 0 0 10vmin;
+		padding: 1vmin 0 10vmin;
 	}
 
 	.workIndex__period__header {
 		width: 100%;
-		margin: auto;
-		padding: 10vmin 0;
+		margin: 10vmin auto 5vmin;
 
 	}
 
@@ -3194,15 +3193,14 @@ this here is just to copy the 'icons' css as needed */
 
 	.workIndex__period__category__header {
 		width: 100%;
-		margin: auto;
-		padding: 10vmin 0;
+		margin: 10vmin auto 0;
 
 		/*background-color: #2170f3;*/
 
 	}
 
 	.workIndex__period__category__header__title {
-		width: 80vmin;
+		width: 75vmin;
 		margin: 0 0 2.5vmin 10vmin;
 
 		font-size: 4vmin;
@@ -3215,7 +3213,7 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.workIndex__period__category__header__description {
-		width: 80vmin;
+		width: 75vmin;
 		margin: 1.75vmin 0 0 10vmin;
 
 		font-size: 2.5vmin;
@@ -3251,17 +3249,24 @@ this here is just to copy the 'icons' css as needed */
 		-webkit-box-shadow: 0.75vmin 0.75vmin 2vmin 0px rgba(0,0,0,0.35);
 		-moz-box-shadow: 0.75vmin 0.75vmin 2vmin 0px rgba(0,0,0,0.35);
 		box-shadow: 0.75vmin 0.75vmin 2vmin 0px rgba(0,0,0,0.35);
+
+		transition: width 0.5s;
+	}
+
+	.workIndex__period__category__projectsContainer__project:hover {
+		width: 80vmin;
+
+		border: 0vmin solid black;
 	}
 
 	.workIndex__period__category__projectsContainer__project__picture {
-		display: block;
-		height: 35vmin;
 		/*background-color: black;*/
 	}
 
 	.workIndex__period__category__projectsContainer__project__picture__img {
-
-		max-width: 100%;
+		height: 35vmin;
+		width: 100%;
+		object-fit: cover;
 
 		/*background-color: black;*/
 	}
@@ -3271,6 +3276,8 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.workIndex__period__category__projectsContainer__project__title {
+		margin: 2vmin 0;
+
 		font-weight: 900;
 		line-height: 1.25;
 		font-size: 3vmin;
@@ -3293,9 +3300,18 @@ this here is just to copy the 'icons' css as needed */
 		line-height: 1.25;
 		text-align: right;
 		text-transform: uppercase;
-		padding: 4vmin 1.5vmin 1.5vmin;
+		padding: 1.5vmin;
+		margin-top: 2.5vmin;
+		width: fit-content;
+		border-radius: 0.6vmin;
+		float: right;
 
 		color: #2170f3;
+	}
+
+	.workIndex__period__category__projectsContainer__project:hover .workIndex__period__category__projectsContainer__project__linkText {
+		background-color: #2170f3;
+		color: white;
 	}
 
 	.workIndex__period__category__projectsContainer__project__linkText__angleIcon {
@@ -3379,7 +3395,7 @@ this here is just to copy the 'icons' css as needed */
 		display: grid;
 		grid-template-columns: 10vw 90vw;
 
-		background-color: red;
+		background-color: black;
 	}
 
 	.work__header__homeLink {
@@ -3387,8 +3403,6 @@ this here is just to copy the 'icons' css as needed */
 		border-right: 1px solid white;
 		display: grid;
 		grid-template-rows: 7vmin 3vmin;
-
-		background-color: #2170f3;
 	}
 
 	.work__header__homeLink__image {
@@ -3420,8 +3434,10 @@ this here is just to copy the 'icons' css as needed */
 		text-transform: uppercase;
 		text-align: center;
 
-		color: white;
+		color: red;
 	}
+
+
 
 </style>
 
@@ -3431,25 +3447,133 @@ this here is just to copy the 'icons' css as needed */
 		<h3 class="work__header__homeLink__text">Milestones</h3>
 	</a>
 	<nav class="work__header__nav">
-		<a href="" class="work__header__nav__link">
-			2011-2014
+		
+		
+		<a href="#2011-2014" class="work__header__nav__link">
+			Experiment
 		</a>
-
-		<a href="" class="work__header__nav__link">
-			2010-2013
+		
+		
+		
+		<a href="#2010-2013" class="work__header__nav__link">
+			Dare
 		</a>
-
-		<a href="" class="work__header__nav__link">
-			2007-2009
+		
+		
+		
+		<a href="#2007-2009" class="work__header__nav__link">
+			Produce
 		</a>
-
-		<a href="" class="work__header__nav__link">
-			2003-2007
+		
+		
+		
+		<a href="#2003-2007" class="work__header__nav__link">
+			Explore
 		</a>
-
-		<a href="" class="work__header__nav__link">
-			2001-2003
+		
+		
+		
+		<a href="#2001-2003" class="work__header__nav__link">
+			Start
 		</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	</nav>
 </header>
 
@@ -3462,10 +3586,10 @@ this here is just to copy the 'icons' css as needed */
 
 
 
-<section class="workIndex__period">
+<section class="workIndex__period" id="2011-2014">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">New Media / Abstraction / Video / 2011-2014</h2>
-		<p class="workIndex__period__header__description">Where I reinvent myself again, getting rid of my preconceptions around art. I start to work on abstract visuals, and this influences both my videos and my music, but I have another breakthrough towards new media, where the intangible becomes a major focus.</p>
+		<h2 class="workIndex__period__header__title">Experiment</h2>
+		<p class="workIndex__period__header__description">Where I reinvent myself again, getting rid of my preconceptions around art. I start to work on abstract visual work then move to on to influence my video and my music work. Then I have another breakthrough towards new media, where the intangible becomes a major focus.</p>
 	</header>
 
 	
@@ -3484,7 +3608,7 @@ this here is just to copy the 'icons' css as needed */
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">New Media</h3>
 			<p class="workIndex__period__category__header__description">
-				Finally found a way to use my digital knowledge to produce art, and with the help of a digital pen I started to work on action painting directly on the digital canvas. This was another breakthrough for me, as I wanted to get rid of value notions related to the material and explore the intellectual capital provided by the artist.
+				Finally found a way to use my digital skills to produce fine art, and with the help of a digital pen I started to action-paint directly on the digital canvas. This was another breakthrough for me, as I wanted to get rid of value notions related to the material and explore the intellectual capital provided by the artist.
 			</p>
 		</header>
 		
@@ -3542,10 +3666,12 @@ this here is just to copy the 'icons' css as needed */
 				Universal Retina
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Capturing the wild-life of the image in it's natural environment.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Explore the Project <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -3559,12 +3685,16 @@ this here is just to copy the 'icons' css as needed */
 				Digital October
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Another vector artwork series, following the Universal Retina's style.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Series <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -3635,7 +3765,7 @@ this here is just to copy the 'icons' css as needed */
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Introducing Abstraction in Music Videos</h3>
 			<p class="workIndex__period__category__header__description">
-				All my artistic background would finally found its way into the motion work. I figured that music videos, like music, were really an open field aesthetically, that no one had really explored.
+				All my artistic background would finally found its way into my video work. I figured that music videos were an open field for more aesthetic work, something no one had really explored (the same I believe for music).
 			</p>
 		</header>
 		
@@ -3697,10 +3827,12 @@ this here is just to copy the 'icons' css as needed */
 				4:48
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Following the 'Headache' mindset, this was a music video focused on minimalism, in terms of color, camera placement, acting and editing.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Watch Video <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -3714,12 +3846,16 @@ this here is just to copy the 'icons' css as needed */
 				Headache
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						A video work that was never released but was the first time were I really had managed to create something original, combining cubism influences with abstraction to create a minimal video work with the illusuion of no cuts in the montage.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View the Video Images <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -3786,7 +3922,7 @@ this here is just to copy the 'icons' css as needed */
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Other Video Work</h3>
 			<p class="workIndex__period__category__header__description">
-				This video feels like the brigde between my early video work and my future work. I could see that it was awkard in terms of aesthetics even at the time I completed it. Later I would come to udnerstand that this was because of working to bridge these two worlds. The one I hadn't seen yet, with the one I was getting away from.
+				Posthumously I can see that this video was the bridge between my early video work and the videos I produced from then on. It acted as the catalyst to experiment on and also helped me realize that I must have way more time to work on things if I wanted to create something that would be, not only new, but refined and completed too.
 			</p>
 		</header>
 		
@@ -3846,18 +3982,22 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src="https://res.cloudinary.com/kostasgogas//-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/sapioi-os-to-kokkalo/sapioi-os-to-kokkalo-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				Sapioi os to Kokkalo
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Shot in Arta, Epirus, a music video for my friend and collaborator Fee.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Watch Video <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -3922,7 +4062,7 @@ this here is just to copy the 'icons' css as needed */
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Abstract Music</h3>
 			<p class="workIndex__period__category__header__description">
-				Not wanting to continue to spend so much time working all the clogs of record producing, I felt that I could left this work to others. And as everything else in that period, I introduced abstraction in lyrics with a more spoken-word style that rang more true to me, because in that period I really wanted to show my work more flat, clear of emotions, and let the audience discover (or not) what's inside.
+				Trying to get rid of emotions in music, which is naturally emotional, I tried to raise my songwriting to a more intellectual and critical-listening level, I introduced the spoken-word style and abstract writing in these experimental songs.
 			</p>
 		</header>
 		
@@ -3990,12 +4130,16 @@ this here is just to copy the 'icons' css as needed */
 				Orphan Sounds
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Listen <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -4128,10 +4272,12 @@ this here is just to copy the 'icons' css as needed */
 				Abstract Material
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Series <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4145,12 +4291,16 @@ this here is just to copy the 'icons' css as needed */
 				Exploring Abstract Expressionism
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Series <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -4277,16 +4427,18 @@ this here is just to copy the 'icons' css as needed */
 		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
-					<img data-src="https://res.cloudinary.com/kostasgogas/#/#-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+					<img data-src="https://res.cloudinary.com/kostasgogas/2011-2014-one-lines/2011-2014-one-lines-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
 				</picture>
 				<h4 class="workIndex__period__category__projectsContainer__project__title">
 				One Lines
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4300,12 +4452,16 @@ this here is just to copy the 'icons' css as needed */
 				Sketches
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -4437,15 +4593,17 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	
+	
 
 </section>
 
 
 
-<section class="workIndex__period">
+<section class="workIndex__period" id="2010-2013">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">Fails 2010-2013 | The Road to Independence</h2>
-		<p class="workIndex__period__header__description">Not being able to rest on my my successes at the moment, I wanted to push the envelope, first by working on a feature film, and then by getting acquainted with English speaking work. As a person I cannot stand doing the same mistake the second time, these period was to be a big failure, and exactly because of that it would prove to be the cornerstone of me styding and planning thoroughly my future film & prose work.</p>
+		<h2 class="workIndex__period__header__title">Dare</h2>
+		<p class="workIndex__period__header__description">Not being able to rest on my my successes at the moment, I wanted to push the envelope, first by working on a feature film, and then by getting acquainted with English speaking work. This period's works were a big failure, but because I can't stand doing the same mistake ever again, it would prove to be the cornerstone from here then on. I am styding and planning thoroughly my future film & prose work ever since.</p>
 	</header>
 
 	
@@ -4554,12 +4712,16 @@ this here is just to copy the 'icons' css as needed */
 				Same: The AudioVisual Portrait of a Hypocrite, on Ochre Background
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Explore the Feature Film <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -4692,12 +4854,16 @@ this here is just to copy the 'icons' css as needed */
 				The Simultaneous Fields
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Explore the Book <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -4821,15 +4987,17 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	
+	
 
 </section>
 
 
 
-<section class="workIndex__period">
+<section class="workIndex__period" id="2007-2009">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">First Major Period 2007-2009</h2>
-		<p class="workIndex__period__header__description">A period of creativity blooming, nailing down work I have been trying to do for many years before. A personal period of education (reading on book after another) and studying Graphic Design where my love for art history & theory began and influences my work hereafter.</p>
+		<h2 class="workIndex__period__header__title">Produce</h2>
+		<p class="workIndex__period__header__description">A period of blooming creativity, nailing down work I have been trying to do for many years. A personal period of education (reading one book after another) and studying Graphic Design (where my love for art history & theory began and influences my work hereafter).</p>
 	</header>
 
 	
@@ -4946,10 +5114,12 @@ this here is just to copy the 'icons' css as needed */
 				One Lines as Standalone Artworks / First Period
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4963,10 +5133,12 @@ this here is just to copy the 'icons' css as needed */
 				Drawings as Standalone Art
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4980,10 +5152,12 @@ this here is just to copy the 'icons' css as needed */
 				Resourcesfulness
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Series <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -4997,12 +5171,16 @@ this here is just to copy the 'icons' css as needed */
 				First Canvas Series
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Series <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -5045,7 +5223,7 @@ this here is just to copy the 'icons' css as needed */
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Music Albums</h3>
 			<p class="workIndex__period__category__header__description">
-				Produced three hip-hop albums. I worked heavily on those, working across all aspects, porduction-wise and artistic wise: sound-mixing, lyrics writing, rap, music composition, art direction of releases.
+				Produced three hip-hop View Artworkss. I worked heavily on those, working across all aspects, porduction-wise and artistic wise: sound-mixing, lyrics writing, rap, music composition, art direction of releases.
 			</p>
 		</header>
 		
@@ -5135,10 +5313,12 @@ this here is just to copy the 'icons' css as needed */
 				Cult-87
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Explore & Listen <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5152,10 +5332,12 @@ this here is just to copy the 'icons' css as needed */
 				Chameleon
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Explore & Listen <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5169,12 +5351,16 @@ this here is just to copy the 'icons' css as needed */
 				Krisis
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Explore & Listen <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -5311,10 +5497,12 @@ this here is just to copy the 'icons' css as needed */
 				Mesa sto Myalo twn Tharalewn
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Watch Video <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5328,10 +5516,12 @@ this here is just to copy the 'icons' css as needed */
 				Harlequin
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Watch Video <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5345,10 +5535,12 @@ this here is just to copy the 'icons' css as needed */
 				Lefko Proswpeio
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Watch Video <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5362,10 +5554,12 @@ this here is just to copy the 'icons' css as needed */
 				Tromokratikis-fysis
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Watch Video <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5379,12 +5573,16 @@ this here is just to copy the 'icons' css as needed */
 				Bugs Bunny
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Video Images <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -5505,12 +5703,16 @@ this here is just to copy the 'icons' css as needed */
 				Eternal Hiding
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Explore the Movie <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -5639,12 +5841,16 @@ this here is just to copy the 'icons' css as needed */
 				Leilato (Plunder)
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					Explore the Book <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -5742,15 +5948,17 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	
+	
 
 </section>
 
 
 
-<section class="workIndex__period">
+<section class="workIndex__period" id="2003-2007">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">2003-2007</h2>
-		<p class="workIndex__period__header__description">Meeting other 'professional' graffiti artists at the time helped me expand my horizons and leave behind any preconceptions around my working style, started to trust the process and embrace new views.</p>
+		<h2 class="workIndex__period__header__title">Explore</h2>
+		<p class="workIndex__period__header__description">Meeting other 'professional' graffiti artists at the time helped me expand my horizons and leave behind any preconceptions around my working style, started to trust the collaborative process and embrace new point of views.</p>
 	</header>
 
 	
@@ -5905,10 +6113,12 @@ this here is just to copy the 'icons' css as needed */
 				Advancing Graffiti
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -5922,12 +6132,16 @@ this here is just to copy the 'icons' css as needed */
 				Blackbook Sketches (mostly intended for graffiti)
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
+		
+		
 		
 		
 		
@@ -6060,10 +6274,31 @@ this here is just to copy the 'icons' css as needed */
 				Ansia Comic Characters
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+				</p>
+			</a>
+		
+		
+		
+			<a href="#" class="workIndex__period__category__projectsContainer__project">
+				<picture class="workIndex__period__category__projectsContainer__project__picture">
+					<img data-src="https://res.cloudinary.com/kostasgogas/other-digital-work/other-digital-work-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
+				</picture>
+				<h4 class="workIndex__period__category__projectsContainer__project__title">
+				Other Digital Work
+				</h4>
+				<p class="workIndex__period__category__projectsContainer__project__description">
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+				</p>
+				<p class="workIndex__period__category__projectsContainer__project__linkText">
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -6141,15 +6376,17 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	
+	
 
 </section>
 
 
 
-<section class="workIndex__period">
+<section class="workIndex__period" id="2001-2003">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">First Period 2001-2003</h2>
-		<p class="workIndex__period__header__description">Graffiti. Where for the first time in my life I find something that I know I will continue to do, or as it happened, something that will start what was to be my life path until today.</p>
+		<h2 class="workIndex__period__header__title">Start</h2>
+		<p class="workIndex__period__header__description">Graffiti. Where for the first time in my life I find something that I know I will continue to do. In the light of what came afterwards, it was something that helped me navigate my life's path.</p>
 	</header>
 
 	
@@ -6306,6 +6543,8 @@ this here is just to copy the 'icons' css as needed */
 		
 		
 		
+		
+		
 			<a href="#" class="workIndex__period__category__projectsContainer__project">
 				<picture class="workIndex__period__category__projectsContainer__project__picture">
 					<img data-src="https://res.cloudinary.com/kostasgogas/early-graffiti/early-graffiti-featured.jpg"class="workIndex__period__category__projectsContainer__project__picture__img lazyload">
@@ -6314,10 +6553,12 @@ this here is just to copy the 'icons' css as needed */
 				Early Graffiti
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -6331,10 +6572,12 @@ this here is just to copy the 'icons' css as needed */
 				First Graffiti Sketches
 				</h4>
 				<p class="workIndex__period__category__projectsContainer__project__description">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					
 				</p>
 				<p class="workIndex__period__category__projectsContainer__project__linkText">
-					view <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
+					View Artworks <i class="fa fa-angle-right workIndex__period__category__projectsContainer__project__linkText__angleIcon" aria-hidden="true"></i>
 				</p>
 			</a>
 		
@@ -6406,8 +6649,12 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	
+	
 
 </section>
+
+
 
 
 
