@@ -3435,111 +3435,88 @@ explicitly, e.g.
 </style>
 
 	<style type="text/css">
-	body {
-		margin-top: 0;
-	}
 
 	.shop__header {
+		display: grid;
+		grid-template-columns: 30vmin auto 42vmin 10vmin;
+		height: 10vmin;
 		width: 100%;
-		overflow: hidden;
-		height: 6vmin;
 		position: fixed;
+		top: 0;
+		z-index: 1111;
 
 		font-family: 'Literata', Serif;
-		line-height: 6vmin;
-
-		background-color: white;
-
-		-webkit-box-shadow: 0px 0.25vmin 0.5vmin 0px rgba(0,0,0,0.3);
-		-moz-box-shadow: 0px 0.25vmin 0.5vmin 0px rgba(0,0,0,0.3);
-		box-shadow: 0px 0.25vmin 0.5vmin 0px rgba(0,0,0,0.3);
-	}
-
-	.shop__header__navContainer {
-		height: 6vmin;
-	}
-
-	.shop__header__navContainer__homeLink {
-		display: inline-block;
-		width: fit-content;
-		padding: 0 2vmin;
-
-		font-size: 2vmin;
 
 		background-color: #ededed;
+
+		border-bottom: 0.1vmin solid #ddd;
+	}
+
+	.shop__header__homeLink {
+		padding-left: 10vmin;
+
+		font-size: 3vmin;
+		line-height: 9.5vmin;
+
 		color: #616161;
-		
-		border-right: 0.2vmin solid #616161;
+		background-color: #ddd;
+
+		border-right: 0.1vmin solid #ddd;
 	}
 
-	.shop__header__navContainer__homeLink__title {
-		text-align: center;
-	}
-
-/*	.shop__header__navContainer__homeLink__description {
-		font-size: 1.5vmin;
-	}*/
-
-	.shop__header__navContainer__cartlink {
-		display: inline-block;
-		width: fit-content;
-		padding: 0 1vmin;
-		margin: 1vmin 2vmin;
-		height: 4vmin;
-		position: absolute;
-		right: 6vmin;
-
-		text-align: center;
-		font-size: 2.25vmin;
-		line-height: 4vmin;
-
+	.shop__header__homeLink:hover {
 		color: white;
-		background-color: #616161;
+		background-color: #bbb;
+	}
+
+	.shop__header__cartlink {
+		font-size: 2.65vmin;
+		margin: 1.75vmin;
+		line-height: 6vmin;
+		text-align: center;
+
 
 		border-radius: 1vmin;
+
+		background-color: white;
+		border: 0.25vmin solid #8c6d63;
+		color: #8c6d63;
+		background: rgb(255,255,255);
+		background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%);
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f3f3f3",GradientType=1);
 	}
 
-	.shop__header__navContainer__cartlink:hover {
-		text-decoration: underline;
-	}
-
-	.shop__header__navContainer__operationalLinks {
-		display: inline-block;
-		width: fit-content;
-		padding: 0 2vmin;
-		position: absolute;
-		right: 0;
-
+	.shop__header__operationalLinks {
+		font-size: 3.5vmin;
+		line-height: 9.5vmin;
 		text-align: center;
 
-		border-left: 0.1vmin solid #dddddd;
-	}
+		color: #8c6d63;
 
-	.shop__header__navContainer__operationalLinks__menuIcon {
-		font-size: 3vmin;
-
-		color: #616161;
+		border-left: 0.1vmin solid #ddd;
 	}
+/*
+	.shop__header__operationalLinks__menuIcon {
+	}*/
+
 </style>
 
-<header class="shop__header">
-	<nav class="shop__header__navContainer">
-		<a href="#" class="shop__header__navContainer__homeLink">
-			<h2 class="shop__header__navContainer__homeLink__title">Gray Area</h2>
-<!-- 			<p class="shop__header__navContainer__homeLink__description">Cozy Place to Buy Art from Artist Kostas Gogas.</p> -->
-		</a>
-		<a href="#" class="shop__header__navContainer__cartlink">View Cart & Checkout</a>
-		<div class="shop__header__navContainer__operationalLinks">
-			<i class="fa fa-bars shop__header__navContainer__operationalLinks__menuIcon" aria-hidden="true"></i>
-		</div>
+<nav class="shop__header">
+	<a href="/shop/" class="shop__header__homeLink">Gray Area</a>
+	<div></div>
+	<a href="/shop/cart/" class="shop__header__cartlink">View Cart & Checkout</a>
+	<div class="shop__header__operationalLinks">
+		<i class="fa fa-bars shop__header__operationalLinks__menuIcon" aria-hidden="true"></i>
+	</div>
 <!-- 		<ul>
-			<li><a href="shop__header__navContainer__operationalLinks__link">My Account</a></li>
-			<hr>
-			<li><a href="shop__header__navContainer__operationalLinks__link">faq</a></li>
-		</ul> -->
-		
-	</nav>
-</header>
+		<li><a href="shop__header__operationalLinks__link">My Account</a></li>
+		<hr>
+		<li><a href="shop__header__operationalLinks__link">faq</a></li>
+	</ul> -->
+</nav>
+
 
 <div class="shop">
 	<style type="text/css">
