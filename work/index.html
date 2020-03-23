@@ -5,6 +5,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- This is for supporting Greek Characters -->
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 	<style type="text/css">
 		/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -3181,6 +3184,13 @@ this here is just to copy the 'icons' css as needed */
 		/*color: white;*/
 	}
 
+	.workIndex__period__header__date {
+		display: block;
+
+		font-size: 4vmin;
+		font-weight: 100;
+	}
+
 	.workIndex__period__header__description {
 		width: 80vmin;
 		margin: 1.75vmin 0 0vmin 10vmin;
@@ -3398,33 +3408,40 @@ this here is just to copy the 'icons' css as needed */
 
 		align-items: center;
 		display: grid;
-		grid-template-columns: 10vw 90vw;
+		grid-template-columns: auto 90vw;
 
-		background-color: black;
+		background-color: red;
+		border-bottom: 0.5vmin solid #2170f3;
 	}
 
 	.work__header__homeLink {
 		padding: 0 2vmin;
-		border-right: 1px solid white;
 		display: grid;
-		grid-template-rows: 7vmin 3vmin;
+		grid-template-rows: 6vmin 4vmin;
+	}
+
+	.work__header__homeLink:hover {
+		background-color: #2170f3;
 	}
 
 	.work__header__homeLink__image {
-		max-width: 75%;
-		max-height: 75%;
+		max-width: 100%;
+		max-height: 100%;
 		margin: auto;
 	}
 
 	.work__header__homeLink__text {
+		display: block;
+		margin: 0.25vh 0;
+
 		font-size: 1.7vmin;
 		font-family: 'Inter', Sans-serif;
-		color: white;
 		text-transform: uppercase;
 		letter-spacing: 0.1vh;
-		display: block;
 		text-align: center;
-		margin: 0.25vh 0;
+		font-weight: 900;
+
+		color: white;
 	}
 
 	.work__header__nav {
@@ -3438,8 +3455,14 @@ this here is just to copy the 'icons' css as needed */
 		font-size: 2vmin;
 		text-transform: uppercase;
 		text-align: center;
+		line-height: 10vmin;
 
-		color: red;
+		color: white;
+	}
+
+	.work__header__nav__link:hover {
+		background-color: #2170f3;
+
 	}
 
 
@@ -3448,7 +3471,7 @@ this here is just to copy the 'icons' css as needed */
 
 <header class="work__header">
 	<a href="/" class="work__header__homeLink">
-		<img src="https://res.cloudinary.com/kostasgogas/image/upload/v1578411307/identity/multimedia-greek-artist-kostas-gogas-official-signature-logo.png" class="work__header__homeLink__image">
+		<img src="/assets/temp/kostas-gogas-logo-signature-white-transparent-W800px.png" class="work__header__homeLink__image">
 		<h3 class="work__header__homeLink__text">Milestones</h3>
 	</a>
 	<nav class="work__header__nav">
@@ -3593,7 +3616,10 @@ this here is just to copy the 'icons' css as needed */
 
 <section class="workIndex__period" id="2011-2014">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">Experiment</h2>
+		<h2 class="workIndex__period__header__title">
+			Experiment
+			<span class="workIndex__period__header__date">2011-2014</span>
+		</h2>
 		<p class="workIndex__period__header__description">Where I reinvent myself again, getting rid of my preconceptions around art. I start to work on abstract visual work then move to on to influence my video and my music work. Then I have another breakthrough towards new media, where the intangible becomes a major focus.</p>
 	</header>
 
@@ -4607,7 +4633,10 @@ this here is just to copy the 'icons' css as needed */
 
 <section class="workIndex__period" id="2010-2013">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">Dare</h2>
+		<h2 class="workIndex__period__header__title">
+			Dare
+			<span class="workIndex__period__header__date">2010-2013</span>
+		</h2>
 		<p class="workIndex__period__header__description">Not being able to rest on my my successes at the moment, I wanted to push the envelope, first by working on a feature film, and then by getting acquainted with English speaking work. This period's works were a big failure, but because I can't stand doing the same mistake ever again, it would prove to be the cornerstone from here then on. I am styding and planning thoroughly my future film & prose work ever since.</p>
 	</header>
 
@@ -5001,7 +5030,10 @@ this here is just to copy the 'icons' css as needed */
 
 <section class="workIndex__period" id="2007-2009">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">Produce</h2>
+		<h2 class="workIndex__period__header__title">
+			Produce
+			<span class="workIndex__period__header__date">2007-2009</span>
+		</h2>
 		<p class="workIndex__period__header__description">A period of blooming creativity, nailing down work I have been trying to do for many years. A personal period of education (reading one book after another) and studying Graphic Design (where my love for art history & theory began and influences my work hereafter).</p>
 	</header>
 
@@ -5962,7 +5994,10 @@ this here is just to copy the 'icons' css as needed */
 
 <section class="workIndex__period" id="2003-2007">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">Explore</h2>
+		<h2 class="workIndex__period__header__title">
+			Explore
+			<span class="workIndex__period__header__date">2003-2007</span>
+		</h2>
 		<p class="workIndex__period__header__description">Meeting other 'professional' graffiti artists at the time helped me expand my horizons and leave behind any preconceptions around my working style, started to trust the collaborative process and embrace new point of views.</p>
 	</header>
 
@@ -6390,7 +6425,10 @@ this here is just to copy the 'icons' css as needed */
 
 <section class="workIndex__period" id="2001-2003">
 	<header class="workIndex__period__header">
-		<h2 class="workIndex__period__header__title">Start</h2>
+		<h2 class="workIndex__period__header__title">
+			Start
+			<span class="workIndex__period__header__date">2001-2003</span>
+		</h2>
 		<p class="workIndex__period__header__description">Graffiti. Where for the first time in my life I find something that I know I will continue to do. In the light of what came afterwards, it was something that helped me navigate my life's path.</p>
 	</header>
 
