@@ -3670,9 +3670,62 @@ explicitly, e.g.
 
 		border-left: 0.1vmin solid #ddd;
 	}
-/*
+
+	.shop__header__operationalLinks__checkbox {
+		display: none;
+	}
+
+	.shop__header__operationalLinks__label {
+		width: 10vmin;
+		height: 10vmin;
+		display: block;
+	}
+
+	/*
 	.shop__header__operationalLinks__menuIcon {
 	}*/
+
+	.shop__header__operationalLinks__ul {
+		display: none;
+	}
+
+	.shop__header__operationalLinks__checkbox:checked ~.shop__header__operationalLinks__label {
+		background-color: #f3f3f3;
+	}
+
+	.shop__header__operationalLinks__checkbox:checked ~ .shop__header__operationalLinks__ul {
+		display: block;
+		position: fixed;
+		top: 10vmin;
+		right: 0;
+
+		text-align: left;
+		font-size: 2.5vmin;
+
+		background-color: #f3f3f3;
+
+		border-bottom-left-radius: 1vmin;
+		border-left: 0.1vmin solid #ddd;
+		border-bottom: 0.1vmin solid #ddd;
+	}
+
+	.shop__header__operationalLinks__ul__item {
+		padding: 0 4vmin;
+
+	}
+
+	.shop__header__operationalLinks__ul__item:hover {
+		background-color: #f9f9f9;
+	}
+
+	.shop__header__operationalLinks__ul__item__link {
+		text-decoration: underline;
+
+		color: #8c6d63;
+	}
+
+
+
 
 </style>
 
@@ -3681,7 +3734,22 @@ explicitly, e.g.
 	<div></div>
 	<a href="/shop/cart/" class="shop__header__cartlink">View Cart & Checkout</a>
 	<div class="shop__header__operationalLinks">
-		<i class="fa fa-bars shop__header__operationalLinks__menuIcon" aria-hidden="true"></i>
+  		<input type="checkbox" id="shop__header__operationalLinks__checkbox" class="shop__header__operationalLinks__checkbox">
+		<label for="shop__header__operationalLinks__checkbox" class="shop__header__operationalLinks__label">
+			<i class="fa fa-bars shop__header__operationalLinks__menuIcon" aria-hidden="true"></i>
+		</label>
+
+		<ul class="shop__header__operationalLinks__ul">
+			<li class="shop__header__operationalLinks__ul__item">
+				<a href="#" class="shop__header__operationalLinks__ul__item__link">My Account</a>
+			</li>
+			<li class="shop__header__operationalLinks__ul__item">
+				<a href="#" class="shop__header__operationalLinks__ul__item__link">Faq</a>
+			</li>
+			<li class="shop__header__operationalLinks__ul__item">
+				<a href="/" class="shop__header__operationalLinks__ul__item__link">Back to main site</a>
+			</li>
+		</ul>
 	</div>
 <!-- 		<ul>
 		<li><a href="shop__header__operationalLinks__link">My Account</a></li>
@@ -5386,7 +5454,7 @@ explicitly, e.g.
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.4cm x 29.7cm </span> 
 							<br/>Μαρκαδοράκι, Στυλό & Μολύβι σε Χαρτί 80γρ.
 							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008 or 2009</span>
+							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
 						</p>
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
 					</footer>
