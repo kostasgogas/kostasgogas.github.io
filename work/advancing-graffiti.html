@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kostas Gogas | Frequently Asked Questions</title>
+	<title>Kostas Gogas | advancing-graffiti</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -3137,139 +3137,332 @@ this here is just to copy the 'icons' css as needed */
 
 
 	<style type="text/css">
-	
+	.siteWideHeader {
+		display: none;
+	}
+
+	.work__project {
+		width: calc(100% - 20vmin);
+		margin: auto;
+
+		font-family: 'Inter', Sans-serif;
+
+		color: #333;
+		background-color: white;
+	}
+
+	/* Project header */
+
+	.work__project__header {
+
+	}
+
+	.work__project__header__h1 {
+		margin: 15vmin 0 5vmin;
+
+		font-size: 6vmin;
+		line-height: 1.25;
+		font-weight: 900;
+	}
+
+	.work__project__header__periodCategory {
+
+	}
+
+	/* Content */
+
+	.work__project__h2 {
+	}
+
+	.work__project__picture {
+		width: 100%;
+	}
+
+	.work__project__picture__img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.work__project__gallery {
+	}
+
+	.work__project__gallery__picture {
+	}
+
+	.lazyload.work__project__gallery__picture__img {
+	}
+
 </style>
 
-<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
-	<header>
-		<h1>Frequently Asked Questions</h1>
-		<p>Everything you need to know about buying art from our online shop.</p>
+<style type="text/css">
+	.work__header {
+		top: 0;
+		left: 0;
+		height: 10vmin;
+		width: 100%;
+		position: fixed;
+		display: grid;
+		grid-template-columns: 30vmin auto 10vmin;
+
+		font-family: 'Inter', Sans-serif;
+		line-height: 10vmin;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 900;
+
+		overflow: hidden;
+		background-color: red;
+		border-bottom: 0.5vmin solid #2170f3;
+	}
+
+	.work__header__homeLink {
+		font-size: 2vmin; 
+		letter-spacing: 0.25vmin;
+		color: white;
+	}
+
+
+	.work__header__menuContainer__checkbox {
+		display: none;
+	}
+
+	.work__header__menuContainer__label {
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		font-size: 3vmin;
+
+		color: white;
+	}
+
+	.work__header__menuContainer__label__menuIcon {
+		width: 100%;
+		height: 100%;
+		display: block;
+		line-height: 10vmin;
+	}
+
+	.work__header__menuContainer__nav {
+		display: none;
+	}
+
+	.work__header__menuContainer__nav {
+		grid-template-rows: 13vmin 13vmin 13vmin 13vmin 13vmin 0 auto;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 10vmin;
+		left: 0;
+
+		background-color: red;
+	}
+
+	.work__header__menuContainer__nav__link {
+		display: block;
+
+		letter-spacing: 0.2vmin;
+		line-height: 13vmin;
+		font-size: 2.5vmin;
+
+		color: white;
+	}
+
+	.work__header__menuContainer__nav__link:hover {
+		background-color: #2170f3;
+	}
+
+	.work__header__menuContainer__nav__backToSiteLink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		color: black;
+	}
+
+	.work__header__menuContainer__nav__backToSiteLink__icon {
+		padding-right: 1vmin;
+	}
+
+</style>
+
+<header class="work__header">
+	<a href="/work/" class="work__header__homeLink">
+		<!-- <img src="/assets/temp/kostas-gogas-logo-signature-white-transparent-W800px.png" class="work__header__homeLink__image"> -->
+		<h3 class="work__header__homeLink__text">Milestones</h3>
+	</a>
+	<div></div>
+	<div class="work__header__menuContainer">
+		<input type="checkbox" id="work__header__menuContainer__checkbox" class="work__header__menuContainer__checkbox">
+		<label for="work__header__menuContainer__checkbox" class="work__header__menuContainer__label">
+			<i class="fa fa-bars work__header__menuContainer__label__menuIcon" aria-hidden="true" onclick="hideDisplayWorkMenu()"></i>
+		</label>
+		<nav class="work__header__menuContainer__nav" id="work__header__menuContainer__nav">
+			
+			
+			<a href="#2011-2014" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+				Experiment
+			</a>
+			
+			
+			
+			<a href="#2010-2013" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+				Dare
+			</a>
+			
+			
+			
+			<a href="#2007-2009" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+				Produce
+			</a>
+			
+			
+			
+			<a href="#2003-2007" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+				Explore
+			</a>
+			
+			
+			
+			<a href="#2001-2003" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+				Start
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<hr style="margin: 0;" />
+			<a href="/" class="work__header__menuContainer__nav__backToSiteLink">
+				<i class="fa fa-chevron-circle-left work__header__menuContainer__nav__backToSiteLink__icon" aria-hidden="true"></i>
+				Back to main site
+			</a>
+		</nav>
+	</div>
+</header>
+
+
+<script type="text/javascript">
+	// This hides the menu (because of anchor links we need to hide them)
+
+	var workHeaderMenuContainerNav = document.getElementById("work__header__menuContainer__nav");
+
+	function hideDisplayWorkMenu() {
+		if (workHeaderMenuContainerNav.style.display === "grid") {
+			workHeaderMenuContainerNav.style.display = "none";
+		} else {
+			workHeaderMenuContainerNav.style.display = "grid";
+	  }
+	}
+</script>
+
+<div class="work__project">
+	
+	<header class="work__project__header">
+		<h1 class="work__project__header__h1">advancing-graffiti</h1>
+		<p class="work__project__header__periodCategory">2003-2007-graffiti-advancement-category</p>
 	</header>
-	
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			How do you deliver the artwork?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>We use Elta, the standard shipping method in Greece.</p>
 
-			</div>
-		</div>
-	</article>
+	<section>
+			
+	<!-- the following could also be a snippet we include -->
 	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			How many days till my artwork reaches me?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Usually, it takes between 6-15 days.</p>
+	</section>
 
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			15 days have passed but I haven't received my art yet.
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>If you haven’t received you art 15 days after you received the order confirmation email, then don’t hesitate to <a href="/contact.html">contact us</a>.</p>
-
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			What is your Return Policy?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>If you really feel that your artwork wasn’t what you expected it to be, we can help. The artwork must be in the same condition and packaged the same way you received it. After receiving your artwork, you have 14 days to request a refund and ship the item back. Unfortunately the shipping costs should be covered by you.</p>
-
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			I don't have PayPal, can I still buy?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Of course, having a PayPal account is optional. You can add your credit or debit card info all within the PayPal interface without having or creating an account with them.</p>
-
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			Can I checkout as a guest?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Yes.</p>
-
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			Where is your shop located?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>We are based in Greece, in Nea Filadelfeia.</p>
-
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			Is the shop really owned by the artist himself?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Yes, and your order will probably be fulfilled by artist Kostas Gogas when you buy an art piece.</p>
-
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			What difference does it make buying directly from the artist?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>First of all, you get originality of vision. Artist Kostas Gogas first creates the artwork, and then figures out a way to sell it. Most galleries do exactly the opposite: they see what sells and then they commision the artist for similar works. Kostas Gogas peculiar way of working, with the multitude of styles and reinventing his own self time and again is an artist that need freedom to create as he sees fit.
-Apart from that, getting rid of intermediaries and gallery representation allows us to offer the artworks in half the prices. And you get to communicate with someone that is happy you like his original work, and doesn’t care only for you wallet.</p>
-
-			</div>
-		</div>
-	</article>
-	
-	<article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-		<h3 itemprop="name">
-			Can I visit a physical store?
-		</h3>
-		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			<div itemprop="text">
-				<p>Unfortunately no, but you can send us a message to arrange a meeting, if you want to see the artworks from upclose. <a href="/contact.html">Send us a message here</a>.</p>
-
-			</div>
-		</div>
-	</article>
-	
 </div>
-
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">

@@ -3132,11 +3132,6 @@ this here is just to copy the 'icons' css as needed */
 				Communicate
 			</a>
 		</li>
-		<li class="siteWideHeader__menuList__listItem">
-			<a href="" class="siteWideHeader__menuList__listItem__link siteWideHeader__menuList__listItem__link--operations">
-				Operations
-			</a>
-		</li>
 	</ul>
 </header>
 
@@ -3146,8 +3141,57 @@ this here is just to copy the 'icons' css as needed */
 		display: none;
 	}
 
+	.work__project {
+		width: calc(100% - 20vmin);
+		margin: auto;
 
-	
+		font-family: 'Inter', Sans-serif;
+
+		color: #333;
+		background-color: white;
+	}
+
+	/* Project header */
+
+	.work__project__header {
+
+	}
+
+	.work__project__header__h1 {
+		margin: 15vmin 0 5vmin;
+
+		font-size: 6vmin;
+		line-height: 1.25;
+		font-weight: 900;
+	}
+
+	.work__project__header__periodCategory {
+
+	}
+
+	/* Content */
+
+	.work__project__h2 {
+	}
+
+	.work__project__picture {
+		width: 100%;
+	}
+
+	.work__project__picture__img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.work__project__gallery {
+	}
+
+	.work__project__gallery__picture {
+	}
+
+	.lazyload.work__project__gallery__picture__img {
+	}
+
 </style>
 
 <style type="text/css">
@@ -3204,6 +3248,7 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.work__header__menuContainer__nav {
+		grid-template-rows: 13vmin 13vmin 13vmin 13vmin 13vmin 0 auto;
 		width: 100%;
 		height: 100%;
 		position: fixed;
@@ -3214,16 +3259,29 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.work__header__menuContainer__nav__link {
-		padding: 0 10vmin;
 		display: block;
 
 		letter-spacing: 0.2vmin;
+		line-height: 13vmin;
+		font-size: 2.5vmin;
 
 		color: white;
 	}
 
 	.work__header__menuContainer__nav__link:hover {
 		background-color: #2170f3;
+	}
+
+	.work__header__menuContainer__nav__backToSiteLink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		color: black;
+	}
+
+	.work__header__menuContainer__nav__backToSiteLink__icon {
+		padding-right: 1vmin;
 	}
 
 </style>
@@ -3367,9 +3425,9 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<hr/>
-			<a href="/">
-				<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+			<hr style="margin: 0;" />
+			<a href="/" class="work__header__menuContainer__nav__backToSiteLink">
+				<i class="fa fa-chevron-circle-left work__header__menuContainer__nav__backToSiteLink__icon" aria-hidden="true"></i>
 				Back to main site
 			</a>
 		</nav>
@@ -3383,298 +3441,400 @@ this here is just to copy the 'icons' css as needed */
 	var workHeaderMenuContainerNav = document.getElementById("work__header__menuContainer__nav");
 
 	function hideDisplayWorkMenu() {
-		if (workHeaderMenuContainerNav.style.display === "none") {
-			workHeaderMenuContainerNav.style.display = "block";
-		} else {
+		if (workHeaderMenuContainerNav.style.display === "grid") {
 			workHeaderMenuContainerNav.style.display = "none";
+		} else {
+			workHeaderMenuContainerNav.style.display = "grid";
 	  }
 	}
 </script>
 
-<header>
-	<h1>Continuous Editing</h1>
-	<p></p>
-</header>
+<div class="work__project">
+	
+	<header class="work__project__header">
+		<h1 class="work__project__header__h1">Continuous Editing</h1>
+		<p class="work__project__header__periodCategory"></p>
+	</header>
 
-<section>
+	<section>
+			
+	<!-- the following could also be a snippet we include -->
+	
+
+		<h1 class="work__project__h1">Heading 1</h1>
 		
-<!-- the following could also be a snippet we include -->
+		
+		
+		
+		
 
+		
 
-	<h1>Heading 1</h1>
-	
-	
-	
-	
-	
-
-	
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
 
 
-
-	
 	
-	<h3>Heading 3</h3>
-	
-	
-	
 
-	
+		
+		
+		<h3 class="work__project__h3">Heading 3</h3>
+		
+		
+		
 
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
 
-	
-	
-	
-	<h4>Heading 4</h4>
-	
-	
 
 	
 
+		
+		
+		
+		<h4 class="work__project__h4">Heading 4</h4>
+		
+		
 
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	
-	
 
-	
-	<!-- image snippet -->
-	<picture>		
-		<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-xx-art-digital-kavalaris-highest-possible-based-on-320.jpg">
-		<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-xx-art-digital-kavalaris-highest-possible-based-on-460.jpg">
-		<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-xx-art-digital-kavalaris-highest-possible-based-on-800.jpg">
-		<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-xx-art-digital-kavalaris-highest-possible-based-on.jpg" alt="" title="" class="lazyload">
-	</picture>
+
 	
 
+		
+		
+		
+		
+		
+		
 
+		
+		<!-- image snippet -->
+		<picture class="work__project__picture">		
+			<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-xx-art-digital-kavalaris-highest-possible-based-on-320.jpg">
+			<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-xx-art-digital-kavalaris-highest-possible-based-on-460.jpg">
+			<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-xx-art-digital-kavalaris-highest-possible-based-on-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-xx-art-digital-kavalaris-highest-possible-based-on.jpg" alt="" title="" class="lazyload work__project__picture__img">
+		</picture>
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	<h2>Heading 2</h2>
-	
-	
-	
-	
+
 
 	
 
+		
+		<h2 class="work__project__h2">Heading 2</h2>
+		
+		
+		
+		
 
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	
-	
 
-	
-	<!-- image snippet -->
-	<picture>		
-		<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-14-art-digital-the-wings-based-on-320.jpg">
-		<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-14-art-digital-the-wings-based-on-460.jpg">
-		<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-14-art-digital-the-wings-based-on-800.jpg">
-		<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-14-art-digital-the-wings-based-on.jpg" alt="" title="" class="lazyload">
-	</picture>
+
 	
 
+		
+		
+		
+		
+		
+		
 
+		
+		<!-- image snippet -->
+		<picture class="work__project__picture">		
+			<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-14-art-digital-the-wings-based-on-320.jpg">
+			<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-14-art-digital-the-wings-based-on-460.jpg">
+			<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-14-art-digital-the-wings-based-on-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-10-14-art-digital-the-wings-based-on.jpg" alt="" title="" class="lazyload work__project__picture__img">
+		</picture>
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	
-	
 
-	
-	<!-- image snippet -->
-	<picture>		
-		<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-08-19-art-digital-mic-master-based-on-320.jpg">
-		<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-08-19-art-digital-mic-master-based-on-460.jpg">
-		<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-08-19-art-digital-mic-master-based-on-800.jpg">
-		<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-08-19-art-digital-mic-master-based-on.jpg" alt="" title="" class="lazyload">
-	</picture>
+
 	
 
+		
+		
+		
+		
+		
+		
 
+		
+		<!-- image snippet -->
+		<picture class="work__project__picture">		
+			<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-08-19-art-digital-mic-master-based-on-320.jpg">
+			<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-08-19-art-digital-mic-master-based-on-460.jpg">
+			<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-08-19-art-digital-mic-master-based-on-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-08-19-art-digital-mic-master-based-on.jpg" alt="" title="" class="lazyload work__project__picture__img">
+		</picture>
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	
-	
 
-	
-	<!-- image snippet -->
-	<picture>		
-		<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-21-art-digital-vector-h-maximh-based-on-320.jpg">
-		<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-21-art-digital-vector-h-maximh-based-on-460.jpg">
-		<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-21-art-digital-vector-h-maximh-based-on-800.jpg">
-		<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-21-art-digital-vector-h-maximh-based-on.jpg" alt="" title="" class="lazyload">
-	</picture>
+
 	
 
+		
+		
+		
+		
+		
+		
 
+		
+		<!-- image snippet -->
+		<picture class="work__project__picture">		
+			<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-21-art-digital-vector-h-maximh-based-on-320.jpg">
+			<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-21-art-digital-vector-h-maximh-based-on-460.jpg">
+			<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-21-art-digital-vector-h-maximh-based-on-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-21-art-digital-vector-h-maximh-based-on.jpg" alt="" title="" class="lazyload work__project__picture__img">
+		</picture>
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	
-	
 
-	
-	<!-- image snippet -->
-	<picture>		
-		<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-06-art-digital-vector-ice-cream-based-on-320.jpg">
-		<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-06-art-digital-vector-ice-cream-based-on-460.jpg">
-		<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-06-art-digital-vector-ice-cream-based-on-800.jpg">
-		<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-06-art-digital-vector-ice-cream-based-on.jpg" alt="" title="" class="lazyload">
-	</picture>
+
 	
 
+		
+		
+		
+		
+		
+		
 
+		
+		<!-- image snippet -->
+		<picture class="work__project__picture">		
+			<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-06-art-digital-vector-ice-cream-based-on-320.jpg">
+			<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-06-art-digital-vector-ice-cream-based-on-460.jpg">
+			<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-06-art-digital-vector-ice-cream-based-on-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2007-03-06-art-digital-vector-ice-cream-based-on.jpg" alt="" title="" class="lazyload work__project__picture__img">
+		</picture>
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	<h5>Heading 5</h5>
-	
 
+
 	
 
+		
+		
+		
+		
+		<h5 class="work__project__h5">Heading 5</h5>
+		
 
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	
-	<h6>Heading 6</h6>
+
 
 	
 
+		
+		
+		
+		
+		
+		<h6 class="work__project__h6">Heading 6</h6>
 
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	
-	
 
-	
-	<!-- image snippet -->
-	<picture>		
-		<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-14-art-digital-bird-robot-320.jpg">
-		<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-14-art-digital-bird-robot-460.jpg">
-		<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-14-art-digital-bird-robot-800.jpg">
-		<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-14-art-digital-bird-robot.jpg" alt="" title="" class="lazyload">
-	</picture>
+
 	
 
+		
+		
+		
+		
+		
+		
 
+		
+		<!-- image snippet -->
+		<picture class="work__project__picture">		
+			<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-14-art-digital-bird-robot-320.jpg">
+			<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-14-art-digital-bird-robot-460.jpg">
+			<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-14-art-digital-bird-robot-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-14-art-digital-bird-robot.jpg" alt="" title="" class="lazyload work__project__picture__img">
+		</picture>
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	
-	
 
-	
-	<!-- image snippet -->
-	<picture>		
-		<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-2-3art-digital-dnak-based-on-320.jpg">
-		<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-2-3art-digital-dnak-based-on-460.jpg">
-		<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-2-3art-digital-dnak-based-on-800.jpg">
-		<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-2-3art-digital-dnak-based-on.jpg" alt="" title="" class="lazyload">
-	</picture>
+
 	
 
+		
+		
+		
+		
+		
+		
 
+		
+		<!-- image snippet -->
+		<picture class="work__project__picture">		
+			<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-2-3art-digital-dnak-based-on-320.jpg">
+			<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-2-3art-digital-dnak-based-on-460.jpg">
+			<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-2-3art-digital-dnak-based-on-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2006-03-2-3art-digital-dnak-based-on.jpg" alt="" title="" class="lazyload work__project__picture__img">
+		</picture>
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
 
-	
-	
-	
-	
-	
-	
 
-	
-	<!-- image snippet -->
-	<picture>		
-		<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-02-20-art-digital-arthouros-photoshop-based-on-320.jpg">
-		<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-02-20-art-digital-arthouros-photoshop-based-on-460.jpg">
-		<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-02-20-art-digital-arthouros-photoshop-based-on-800.jpg">
-		<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2006-02-20-art-digital-arthouros-photoshop-based-on.jpg" alt="" title="" class="lazyload">
-	</picture>
+
 	
+
+		
+		
+		
+		
+		
+		
 
+		
+		<!-- image snippet -->
+		<picture class="work__project__picture">		
+			<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-02-20-art-digital-arthouros-photoshop-based-on-320.jpg">
+			<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-02-20-art-digital-arthouros-photoshop-based-on-460.jpg">
+			<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/other-digital/2006-02-20-art-digital-arthouros-photoshop-based-on-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/other-digital/2006-02-20-art-digital-arthouros-photoshop-based-on.jpg" alt="" title="" class="lazyload work__project__picture__img">
+		</picture>
+		
 
 
+		
 
 
+		<!-- snippet for gallery images-->
+		
+			
+		
+
+
+
+	
+	</section>
 
-</section>
+</div>
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">
