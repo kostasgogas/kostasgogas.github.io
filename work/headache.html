@@ -2840,11 +2840,20 @@ this here is just to copy the 'icons' css as needed */
 
 		
 
+
+		/*include lightbox css*/
+		.lb-loader,.lightbox{text-align:center;line-height:0;position:absolute;left:0}body.lb-disable-scrolling{overflow:hidden}.lightboxOverlay{position:absolute;top:0;left:0;z-index:9999;background-color:#000;filter:alpha(Opacity=80);opacity:.8;display:none}.lightbox{width:100%;z-index:10000;font-weight:400;outline:0}.lightbox .lb-image{display:block;height:auto;max-width:inherit;max-height:none;border-radius:3px;border:4px solid #fff}.lightbox a img{border:none}.lb-outerContainer{position:relative;width:250px;height:250px;margin:0 auto;border-radius:4px;background-color:#fff}.lb-outerContainer:after{content:"";display:table;clear:both}.lb-loader{top:43%;height:25%;width:100%}.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(../assets/images/loading.gif) no-repeat}.lb-nav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10}.lb-container>.nav{left:0}.lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.lb-next,.lb-prev{height:100%;cursor:pointer;display:block}.lb-nav a.lb-prev{width:34%;left:0;float:left;background:url(../assets/images/prev.png) left 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-prev:hover{filter:alpha(Opacity=100);opacity:1}.lb-nav a.lb-next{width:64%;right:0;float:right;background:url(../assets/images/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-next:hover{filter:alpha(Opacity=100);opacity:1}.lb-dataContainer{margin:0 auto;padding-top:5px;width:100%;border-bottom-left-radius:4px;border-bottom-right-radius:4px}.lb-dataContainer:after{content:"";display:table;clear:both}.lb-data{padding:0 4px;color:#ccc}.lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}.lb-data .lb-caption{font-size:13px;font-weight:700;line-height:1em}.lb-data .lb-caption a{color:#4ae}.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(../assets/images/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}.lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}
 	</style>
 
 
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+
 	<!-- Lazy Load Images -->
 	<script src="/assets/scripts/lazysizes.min.js" async=""></script>
+
+	<!-- load lightbox functionality -->
+	<script src="/assets/scripts/lightbox.js"></script>
 </head>
 <body>
 	<style type="text/css">
@@ -3242,18 +3251,35 @@ this here is just to copy the 'icons' css as needed */
 		height: 100%;
 	}
 
+	.work__project__galleryName {
+		font-size: 4vmin;
+		text-align: center;
+		font-weight: 900;
+		line-height: 1.25;
+		margin: 4vmin auto;
+	}
+
 	.work__project__gallery {
+		width: 90vmin;
+		margin: 4vmin auto;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(35vmin, 1fr));
-		grid-gap: 1vmin;
+		grid-template-columns: repeat(auto-fit, minmax(25vmin, 1fr));
+		grid-gap: 0.3vmin;
 	}
 
-	.work__project__gallery__picture {
+	.work__project__gallery__link {
 		width: 100%;
 	}
 
-	.work__project__gallery__picture__img  {
+	.work__project__gallery__link__picture {
 		width: 100%;
+		display: flex;
+	}
+
+	.work__project__gallery__link__picture__img  {
+		height: 25vmin;
+		width: 100%;
+		object-fit: cover;
 	}
 
 	.work__project__videoContainer {
@@ -3800,12 +3826,7 @@ this here is just to copy the 'icons' css as needed */
 
 		
 
-
-		<!-- snippet for gallery images-->
 		
-			
-		
-
 
 
 	
@@ -3822,821 +3843,381 @@ this here is just to copy the 'icons' css as needed */
 
 		
 
-
+		
 		<!-- snippet for gallery images-->
 		
-			<figure class="work__project__gallery">
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<figure class="work__project__gallery">
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-01-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-01-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-01-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-01.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-01.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-01-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-01-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-01-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-01.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-03-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-03-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-03-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-03.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-03.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-03-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-03-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-03-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-03.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-04-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-04-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-04-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-04.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-05-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-05-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-05-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-05.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-04.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-04-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-04-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-04-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-04.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-06-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-06-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-06-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-06.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-05.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-05-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-05-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-05-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-05.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-07-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-07-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-07-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-07.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-08-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-08-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-08-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-08.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-06.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-06-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-06-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-06-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-06.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-09-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-09-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-09-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-09.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-07.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-07-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-07-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-07-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-07.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-10-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-10-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-10-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-10.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-11-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-11-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-11-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-11.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-08.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-08-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-08-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-08-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-08.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-12-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-12-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-12-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-12.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-09.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-09-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-09-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-09-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-09.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-13-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-13-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-13-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-13.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-14-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-14-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-14-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-14.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-10.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-10-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-10-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-10-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-10.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-15-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-15-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-15-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-15.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-11.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-11-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-11-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-11-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-11.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-16-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-16-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-16-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-16.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-17-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-17-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-17-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-17.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-12.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-12-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-12-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-12-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-12.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-18-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-18-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-18-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-18.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-13.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-13-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-13-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-13-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-13.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-19-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-19-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-19-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-19.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-20-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-20-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-20-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-20.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-14.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-14-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-14-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-14-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-14.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-21-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-21-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-21-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-21.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-15.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-15-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-15-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-15-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-15.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-22-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-22-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-22-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-22.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-25-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-25-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-25-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-25.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-16.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-16-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-16-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-16-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-16.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-26-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-26-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-26-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-26.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-17.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-17-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-17-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-17-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-17.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-27-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-27-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-27-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-27.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-02-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-02-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-02-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-02.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-18.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-18-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-18-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-18-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-18.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-23-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-23-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-23-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-23.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-19.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-19-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-19-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-19-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-19.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
 			
-			<picture class="work__project__gallery__picture">		
-				<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-24-320.jpg">
-				<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-24-460.jpg">
-				<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-24-800.jpg">
-				<img data-src="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-24.jpg" alt="" title="" class="lazyload work__project__gallery__picture__img">
-			</picture>
 			
-		
-
-
-
-	
-
-		
-		
-		
-		
-		
-		
-
-		
-
-
-		
-
-
-		<!-- snippet for gallery images-->
-		
 			
-		
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-20.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-20-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-20-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-20-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-20.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
+			
+			
+			
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-21.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-21-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-21-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-21-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-21.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
+			
+			
+			
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-22.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-22-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-22-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-22-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-22.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
+			
+			
+			
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-25.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-25-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-25-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-25-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-25.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
+			
+			
+			
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-26.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-26-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-26-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-26-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-26.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
+			
+			
+			
+			<a href="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-27.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-27-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-27-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-27-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-27.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
+			
+			
+			
+			<a href="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-02.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-02-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-02-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-02-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-02.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
+			
+			
+			
+			<a href="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-23.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-23-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-23-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-23-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-23.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
+			
+			
+			
+			<a href="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-24.jpg" class="work__project__gallery__link" data-lightbox="Headache" data-title="">
+				<picture class="work__project__gallery__link__picture">	
+					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-24-320.jpg">
+					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-24-460.jpg">
+					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-24-800.jpg">
+					<img data-src="https://res.cloudinary.com/kostasgogas/headache/kostas-gogas-artist-director-filmmaker-2011-headache-concept-abstract-minimal-cubism-contemporary-visual-brown-greek-music-video-still-24.jpg" alt="" title="" class="lazyload work__project__gallery__link__picture__img">
+				</picture>
+			</a>
+			
+			
 		</figure>
 		
 
+
+	
+
+		
+		
+		
+		
+		
+		
+
+		
+
+
+		
+
+		
 
 
 	
