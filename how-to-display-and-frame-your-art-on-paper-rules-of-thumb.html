@@ -480,6 +480,15 @@ place it afterwards
 	grid-row-end: 3;
 }
 
+
+/* For anchor links to land while taking into consideration the fixed header */
+
+[id*='anchor'] {
+    display: block;
+    height: 10vmin;
+    margin-top: -10vmin;
+    visibility: hidden;
+}
 		/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

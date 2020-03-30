@@ -480,6 +480,15 @@ place it afterwards
 	grid-row-end: 3;
 }
 
+
+/* For anchor links to land while taking into consideration the fixed header */
+
+[id*='anchor'] {
+    display: block;
+    height: 10vmin;
+    margin-top: -10vmin;
+    visibility: hidden;
+}
 		/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3140,9 +3149,20 @@ this here is just to copy the 'icons' css as needed */
 	.siteWideHeader {
 		display: none;
 	}
+/*
+@media (orientation: landscape) {
+	.work__project {
+		width: 100vmin;
+	}
+}
+
+@media (orientation: portrait) {
+	.work__project {
+		width: 90vmin;
+	}
+}*/
 
 	.work__project {
-		width: calc(100% - 20vmin);
 		margin: auto;
 
 		font-family: 'Inter', Sans-serif;
@@ -3154,20 +3174,59 @@ this here is just to copy the 'icons' css as needed */
 	/* Project header */
 
 	.work__project__header {
-
+		margin: 15vmin 5vmin 5vmin;
 	}
 
 	.work__project__header__h1 {
-		margin: 15vmin 0 5vmin;
+		margin: 2.5vmin 0;
 
 		font-size: 6vmin;
 		line-height: 1.25;
 		font-weight: 900;
 	}
 
-	.work__project__header__periodCategory {
-
+	.work__project__header__description {
+		margin: 2.5vmin 0;
 	}
+
+	.period2011-2014 {background-color: red; color: white;}
+	.period2010-2013 {background-color: #2170f3; color: white;}
+	.period2007-2009 {background-color: #1c003e; color: white;}
+	.period2003-2007 {background-color: yellow; color: black;}
+	.period2001-2003 {background-color: pink; color: white;}
+
+	.work__project__header__description__period {
+		display: inline-block;
+		padding: 1vmin 2vmin;
+		margin: 2.5vmin 0;
+
+		font-size: 2vmin;
+		font-weight: 900;
+		letter-spacing: 0.2vmin;
+		text-transform: uppercase;
+
+		border-radius: 0.75vmin;
+	}
+
+	.work__project__header__description__periodCategory {
+		display: inline-block;
+		padding: 1vmin;
+		margin: 2.5vmin 0;
+
+		font-size: 2vmin;
+		font-weight: 900;
+		font-style: italic;
+		letter-spacing: 0.2vmin;
+		text-transform: uppercase;
+
+		border-radius: 0.75vmin;
+	}
+
+	.periodCategoryFrom2011-2014 {color: red; box-shadow: inset 0 0 0 0.25vmin red;}
+	.periodCategoryFrom2010-2013 {color: #2170f3; box-shadow: inset 0 0 0 0.25vmin #2170f3;}
+	.periodCategoryFrom2007-2009 {color: #1c003e; box-shadow: inset 0 0 0 0.25vmin #1c003e;}
+	.periodCategoryFrom2003-2007 {color: yellow; box-shadow: inset 0 0 0 0.25vmin yellow;}
+	.periodCategoryFrom2001-2003 {color: pink; box-shadow: inset 0 0 0 0.25vmin pink;}
 
 	/* Content */
 
@@ -3184,12 +3243,30 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.work__project__gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(35vmin, 1fr));
+		grid-gap: 1vmin;
 	}
 
 	.work__project__gallery__picture {
+		width: 100%;
 	}
 
-	.lazyload.work__project__gallery__picture__img {
+	.work__project__gallery__picture__img  {
+		width: 100%;
+	}
+
+	.work__project__videoContainer {
+		width: 100%;
+
+		background-color: #ededed;
+	}
+
+	.work__project__videoContainer__iframeYoutube {
+		margin: auto;
+		display: block;
+		width: 100vmin;
+		height: 60vmin;
 	}
 
 </style>
@@ -3300,33 +3377,58 @@ this here is just to copy the 'icons' css as needed */
 		<nav class="work__header__menuContainer__nav" id="work__header__menuContainer__nav">
 			
 			
-			<a href="#2011-2014" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Experiment
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="/work/#2011-2014-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Experiment
+				</a>	
+				
+
 			
 			
 			
-			<a href="#2010-2013" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Dare
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="/work/#2010-2013-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Dare
+				</a>	
+				
+
 			
 			
 			
-			<a href="#2007-2009" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Produce
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="/work/#2007-2009-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Produce
+				</a>	
+				
+
 			
 			
 			
-			<a href="#2003-2007" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Explore
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="/work/#2003-2007-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Explore
+				</a>	
+				
+
 			
 			
 			
-			<a href="#2001-2003" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Start
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="/work/#2001-2003-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Start
+				</a>	
+				
+
 			
 			
 			
@@ -3452,8 +3554,233 @@ this here is just to copy the 'icons' css as needed */
 <div class="work__project">
 	
 	<header class="work__project__header">
-		<h1 class="work__project__header__h1">sapioi-os-to-kokkalo</h1>
-		<p class="work__project__header__periodCategory">2011-2014-other-video-work-category</p>
+		<h1 class="work__project__header__h1">Sapioi os to Kokkalo</h1>
+		<div class="work__project__header__description">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+			
+			
+			<a href="/work/#2011-2014-anchor" class="work__project__header__description__period period2011-2014">
+				Experiment
+			</a>
+
+			<a href="/work/#2011-2014-other-video-work-category-anchor" class="work__project__header__description__periodCategory periodCategoryFrom2011-2014">
+				Other Video Work
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
 	</header>
 
 	<section>
@@ -3472,7 +3799,9 @@ this here is just to copy the 'icons' css as needed */
 
 
 		
-			<iframe src="https://www.youtube.com/embed/T3EnhdDxJwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="work__project__iframeYoutube"></iframe>
+			<div class="work__project__videoContainer">
+				<iframe src="https://www.youtube.com/embed/T3EnhdDxJwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="work__project__videoContainer__iframeYoutube"></iframe>
+			</div>
 		
 
 

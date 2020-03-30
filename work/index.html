@@ -480,6 +480,15 @@ place it afterwards
 	grid-row-end: 3;
 }
 
+
+/* For anchor links to land while taking into consideration the fixed header */
+
+[id*='anchor'] {
+    display: block;
+    height: 10vmin;
+    margin-top: -10vmin;
+    visibility: hidden;
+}
 		/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3333,64 +3342,64 @@ this here is just to copy the 'icons' css as needed */
 
 /* Different colors for different periods */
 
-	.workIndex__period:first-child {
+	.period2011-2014 {
 		background-color: red;
 		color: white;
 	}
-	.workIndex__period:first-child  .workIndex__period__category {
+	.period2011-2014 .workIndex__period__category {
 		color: darkred;
 	}
-	.workIndex__period:first-child  .workIndex__period__category__projectsContainer__project {
+	.period2011-2014 .workIndex__period__category__projectsContainer__project {
 		color: black;
 	}
 
-	.workIndex__period:nth-child(2) {
+	.period2010-2013 {
 		background-color: #2170f3;
 		color: white;
 	}
-	.workIndex__period:nth-child(2)  .workIndex__period__category {
+	.period2010-2013 .workIndex__period__category {
 		color: darkblue;
 	}
-	.workIndex__period:nth-child(2)  .workIndex__period__category__projectsContainer__project {
+	.period2010-2013 .workIndex__period__category__projectsContainer__project {
 		color: black;
 	}
 
 
-	.workIndex__period:nth-child(3) {
+	.period2007-2009 {
 		background-color: #1c003e;
 		color: white;
 	}
-	.workIndex__period:nth-child(3)  .workIndex__period__category {
+	.period2007-2009 .workIndex__period__category {
 		color: #b700ff;
 	}
-	.workIndex__period:nth-child(3)  .workIndex__period__category__projectsContainer__project {
+	.period2007-2009 .workIndex__period__category__projectsContainer__project {
 		color: black;
 	}
 
 
 
-	.workIndex__period:nth-child(4) {
+	.period2003-2007 {
 		background-color: yellow;
 		color: black;
 	}
-	.workIndex__period:nth-child(4)  .workIndex__period__category {
+	.period2003-2007 .workIndex__period__category {
 		color: #ca9e00;
 	}
-	.workIndex__period:nth-child(4)  .workIndex__period__category__projectsContainer__project {
+	.period2003-2007 .workIndex__period__category__projectsContainer__project {
 		color: black;
 	}
 
 
 
 
-	.workIndex__period:nth-child(5) {
+	.period2001-2003 {
 		background-color: pink;
 		color: white;
 	}
-	.workIndex__period:nth-child(5)  .workIndex__period__category {
+	.period2001-2003 .workIndex__period__category {
 		color: magenta;
 	}
-	.workIndex__period:nth-child(5)  .workIndex__period__category__projectsContainer__project {
+	.period2001-2003 .workIndex__period__category__projectsContainer__project {
 		color: black;
 	}
 </style>
@@ -3501,33 +3510,58 @@ this here is just to copy the 'icons' css as needed */
 		<nav class="work__header__menuContainer__nav" id="work__header__menuContainer__nav">
 			
 			
-			<a href="#2011-2014" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Experiment
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="#2011-2014-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Experiment
+				</a>
+				
+
 			
 			
 			
-			<a href="#2010-2013" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Dare
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="#2010-2013-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Dare
+				</a>
+				
+
 			
 			
 			
-			<a href="#2007-2009" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Produce
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="#2007-2009-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Produce
+				</a>
+				
+
 			
 			
 			
-			<a href="#2003-2007" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Explore
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="#2003-2007-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Explore
+				</a>
+				
+
 			
 			
 			
-			<a href="#2001-2003" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
-				Start
-			</a>
+
+				<!-- change from anchor to link_anchor -->
+				
+				<a href="#2001-2003-anchor" class="work__header__menuContainer__nav__link" onclick="hideDisplayWorkMenu()">
+					Start
+				</a>
+				
+
 			
 			
 			
@@ -3659,7 +3693,8 @@ this here is just to copy the 'icons' css as needed */
 
 
 
-<section class="workIndex__period" id="2011-2014">
+<div id="2011-2014-anchor"></div>
+<section class="workIndex__period period2011-2014">
 	<header class="workIndex__period__header">
 		<h2 class="workIndex__period__header__title">
 			Experiment
@@ -3680,6 +3715,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2011-2014-new-media-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">New Media</h3>
@@ -3837,6 +3873,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2011-2014-abstraction-music-videos-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Introducing Abstraction in Music Videos</h3>
@@ -3994,6 +4031,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2011-2014-other-video-work-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Other Video Work</h3>
@@ -4134,6 +4172,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2011-2014-abstract-music-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Abstract Music</h3>
@@ -4274,6 +4313,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2011-2014-enter-abstraction-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Enter Abstraction</h3>
@@ -4431,6 +4471,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2011-2014-other-art-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Other Art</h3>
@@ -4676,7 +4717,8 @@ this here is just to copy the 'icons' css as needed */
 
 
 
-<section class="workIndex__period" id="2010-2013">
+<div id="2010-2013-anchor"></div>
+<section class="workIndex__period period2010-2013">
 	<header class="workIndex__period__header">
 		<h2 class="workIndex__period__header__title">
 			Dare
@@ -4709,6 +4751,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2010-2013-failed-first-feature-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Failed First Feature Film</h3>
@@ -4849,6 +4892,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2010-2013-failed-first-english-novel-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Failed First English Novel</h3>
@@ -5073,7 +5117,8 @@ this here is just to copy the 'icons' css as needed */
 
 
 
-<section class="workIndex__period" id="2007-2009">
+<div id="2007-2009-anchor"></div>
+<section class="workIndex__period period2007-2009">
 	<header class="workIndex__period__header">
 		<h2 class="workIndex__period__header__title">
 			Produce
@@ -5110,6 +5155,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2007-2009-visual-art-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Visual Arts Development</h3>
@@ -5301,6 +5347,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2007-2009-music-albums-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Music Albums</h3>
@@ -5475,6 +5522,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2007-2009-first-video-work-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">First Video Work</h3>
@@ -5683,6 +5731,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2007-2009-first-mid-length-film-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">First Failed Mid-Length Film Attempt</h3>
@@ -5823,6 +5872,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2007-2009-first-literary-attempt-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">First Literary Attempt</h3>
@@ -6037,7 +6087,8 @@ this here is just to copy the 'icons' css as needed */
 
 
 
-<section class="workIndex__period" id="2003-2007">
+<div id="2003-2007-anchor"></div>
+<section class="workIndex__period period2003-2007">
 	<header class="workIndex__period__header">
 		<h2 class="workIndex__period__header__title">
 			Explore
@@ -6084,6 +6135,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2003-2007-graffiti-advancement-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Graffiti Advancement</h3>
@@ -6241,6 +6293,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2003-2007-first-digital-attempt-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">First Digital Attempts</h3>
@@ -6468,7 +6521,8 @@ this here is just to copy the 'icons' css as needed */
 
 
 
-<section class="workIndex__period" id="2001-2003">
+<div id="2001-2003-anchor"></div>
+<section class="workIndex__period period2001-2003">
 	<header class="workIndex__period__header">
 		<h2 class="workIndex__period__header__title">
 			Start
@@ -6519,6 +6573,7 @@ this here is just to copy the 'icons' css as needed */
 	
 	
 	
+	<div id="2001-2003-early-graffiti-category-anchor"></div>
 	<section class="workIndex__period__category">
 		<header class="workIndex__period__category__header">
 			<h3 class="workIndex__period__category__header__title">Early Graffiti</h3>
