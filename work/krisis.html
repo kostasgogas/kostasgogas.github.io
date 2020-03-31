@@ -3258,10 +3258,14 @@ this here is just to copy the 'icons' css as needed */
 		margin: auto;
 	}
 
+	.work__project__galleryTop::-webkit-scrollbar { height: 0 !important }
+	.work__project__galleryTop { overflow: -moz-scrollbars-none; }
+	.work__project__galleryTop { -ms-overflow-style: none; }
+
 	.work__project__galleryTop__figure {
 		display: inline-block;
 		width: 100%;
-		height: 70vh;
+		height: 75vh;
 	}
 
 	.work__project__galleryTop__figure__picture {
@@ -3279,6 +3283,13 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.work__project__galleryTop__figure__caption {
+		margin: 3vmin 0 0;
+
+		font-size: 2vmin;
+		font-family: 'Inter', Sans-serif;
+		line-height: 1.25;
+		text-align: center;
+		font-weight: 900;
 	}
 
 	.work__project__galleryNavName {
@@ -3290,15 +3301,19 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.work__project__galleryNav {
-		width: 90vmin;
+		width: 90vw;
 		margin: 4vmin auto;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(10vmin, 1fr));
-		grid-gap: 0.3vmin;
+		white-space: nowrap;
+		overflow-x: scroll;
 	}
 
+	.work__project__galleryNav::-webkit-scrollbar { height: 0 !important }
+	.work__project__galleryNav { overflow: -moz-scrollbars-none; }
+	.work__project__galleryNav { -ms-overflow-style: none; }
+
 	.work__project__galleryNav__link {
-		width: 100%;
+		width: 10vmin;
+		display: inline-block;
 	}
 
 	.work__project__galleryNav__link__picture {
@@ -3861,8 +3876,6 @@ this here is just to copy the 'icons' css as needed */
 		
 
 
-
-
 		
 
 	
@@ -3882,8 +3895,6 @@ this here is just to copy the 'icons' css as needed */
 
 
 		
-
-
 
 
 		
@@ -3909,8 +3920,6 @@ this here is just to copy the 'icons' css as needed */
 
 
 		
-
-
 
 
 		

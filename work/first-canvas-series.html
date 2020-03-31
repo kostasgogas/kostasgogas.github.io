@@ -3258,10 +3258,14 @@ this here is just to copy the 'icons' css as needed */
 		margin: auto;
 	}
 
+	.work__project__galleryTop::-webkit-scrollbar { height: 0 !important }
+	.work__project__galleryTop { overflow: -moz-scrollbars-none; }
+	.work__project__galleryTop { -ms-overflow-style: none; }
+
 	.work__project__galleryTop__figure {
 		display: inline-block;
 		width: 100%;
-		height: 70vh;
+		height: 75vh;
 	}
 
 	.work__project__galleryTop__figure__picture {
@@ -3279,6 +3283,13 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.work__project__galleryTop__figure__caption {
+		margin: 3vmin 0 0;
+
+		font-size: 2vmin;
+		font-family: 'Inter', Sans-serif;
+		line-height: 1.25;
+		text-align: center;
+		font-weight: 900;
 	}
 
 	.work__project__galleryNavName {
@@ -3290,15 +3301,19 @@ this here is just to copy the 'icons' css as needed */
 	}
 
 	.work__project__galleryNav {
-		width: 90vmin;
+		width: 90vw;
 		margin: 4vmin auto;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(10vmin, 1fr));
-		grid-gap: 0.3vmin;
+		white-space: nowrap;
+		overflow-x: scroll;
 	}
 
+	.work__project__galleryNav::-webkit-scrollbar { height: 0 !important }
+	.work__project__galleryNav { overflow: -moz-scrollbars-none; }
+	.work__project__galleryNav { -ms-overflow-style: none; }
+
 	.work__project__galleryNav__link {
-		width: 100%;
+		width: 10vmin;
+		display: inline-block;
 	}
 
 	.work__project__galleryNav__link__picture {
@@ -3903,7 +3918,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression">	
+				<span id="kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-800.jpg">
@@ -3917,7 +3933,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait">	
+				<span id="kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-800.jpg">
@@ -3931,7 +3948,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles">	
+				<span id="kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-800.jpg">
@@ -3945,7 +3963,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-800.jpg">
@@ -3959,7 +3978,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-800.jpg">
@@ -3973,7 +3993,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-800.jpg">
@@ -3987,7 +4008,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-800.jpg">
@@ -4001,7 +4023,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-800.jpg">
@@ -4015,7 +4038,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-800.jpg">
@@ -4029,7 +4053,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-800.jpg">
@@ -4043,7 +4068,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-800.jpg">
@@ -4057,7 +4083,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-800.jpg">
@@ -4071,7 +4098,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-800.jpg">
@@ -4085,7 +4113,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-800.jpg">
@@ -4099,7 +4128,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-800.jpg">
@@ -4113,7 +4143,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-800.jpg">
@@ -4127,7 +4158,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-800.jpg">
@@ -4141,7 +4173,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-800.jpg">
@@ -4155,7 +4188,8 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			<figure class="work__project__galleryTop__figure">
-				<picture class="work__project__galleryTop__figure__picture" id="art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand">	
+				<span id="art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-anchor"></span>
+				<picture class="work__project__galleryTop__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-800.jpg">
@@ -4171,7 +4205,7 @@ this here is just to copy the 'icons' css as needed */
 		<nav class="work__project__galleryNav">
 			
 			
-			<a href="#kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression" class="work__project__galleryNav__link">
+			<a href="#kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-460.jpg">
@@ -4182,7 +4216,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait" class="work__project__galleryNav__link">
+			<a href="#kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-460.jpg">
@@ -4193,7 +4227,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles" class="work__project__galleryNav__link">
+			<a href="#kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-460.jpg">
@@ -4204,7 +4238,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-460.jpg">
@@ -4215,7 +4249,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-460.jpg">
@@ -4226,7 +4260,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-460.jpg">
@@ -4237,7 +4271,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-460.jpg">
@@ -4248,7 +4282,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-460.jpg">
@@ -4259,7 +4293,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-460.jpg">
@@ -4270,7 +4304,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-460.jpg">
@@ -4281,7 +4315,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-460.jpg">
@@ -4292,7 +4326,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-460.jpg">
@@ -4303,7 +4337,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-460.jpg">
@@ -4314,7 +4348,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-460.jpg">
@@ -4325,7 +4359,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-460.jpg">
@@ -4336,7 +4370,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-460.jpg">
@@ -4347,7 +4381,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-460.jpg">
@@ -4358,7 +4392,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-460.jpg">
@@ -4369,7 +4403,7 @@ this here is just to copy the 'icons' css as needed */
 			
 			
 			
-			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand" class="work__project__galleryNav__link">
+			<a href="#art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-anchor" class="work__project__galleryNav__link">
 				<picture class="work__project__galleryNav__link__picture">	
 					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-320.jpg">
 					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-460.jpg">
@@ -4383,261 +4417,6 @@ this here is just to copy the 'icons' css as needed */
 		
 
 
-
-
-		
-		<!-- snippet for gallery images-->
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<figure class="work__project__galleryNav">
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2007-36-funny-man,the-depression.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-bold-self-portrait.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/kostas-gogas-greek-artist-expressionism-street-graffiti-characters-modern-contemporary-2008-the-incredibles.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-03-friends.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-04-character.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-07-c-08-blood-brothers.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-11-downtown-station.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-15-winter.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-16-the-man-who-was-praying-yesterday.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-21-speeding-socrates.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-22-soul-addict.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-26-red-buffalo.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-29-purple-instict.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-34-me-&-you.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-35-lucifer.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2007-the-evil-butcher-and-the-innocent-goose.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-52-colorful-one-line.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-castigation.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand.jpg" class="work__project__galleryNav__link" data-lightbox="First Canvas Series" data-title="">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 640px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-320.jpg">
-					<source media="(max-width: 920px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-460.jpg">
-					<source media="(max-width: 1600px)" data-srcset="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/first-canvas-series/art-painting-graffiti-street-art-canvas-greek-expressionism-2008-my-right-hand.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-		</figure>
 		
 
 	
