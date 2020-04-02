@@ -3421,7 +3421,7 @@ this here is just to copy the 'icons' css as needed */
 		width: 100%;
 		position: fixed;
 		display: grid;
-		grid-template-columns: 30vmin auto 10vmin;
+		grid-template-columns: 30vmin auto 10vmin 10vmin;
 
 		font-family: 'Inter', Sans-serif;
 		line-height: 10vmin;
@@ -3438,6 +3438,18 @@ this here is just to copy the 'icons' css as needed */
 		font-size: 2vmin; 
 		letter-spacing: 0.25vmin;
 		color: white;
+	}
+
+	.work__header__backToTop {
+		visibility: hidden;
+
+		background-color: transparent;
+		border: 0 solid transparent;
+		color: darkred;
+	}
+
+	.work__header__backToTop__Icon {
+
 	}
 
 
@@ -3511,6 +3523,9 @@ this here is just to copy the 'icons' css as needed */
 		<h3 class="work__header__homeLink__text">Milestones</h3>
 	</a>
 	<div></div>
+	<button onclick="backToTopFunction()" id="backToTopButton" title="Back to Top" class="work__header__backToTop">
+		<i class="fa fa-arrow-up work__header__backToTop__Icon" aria-hidden="true"></i>
+	</button>
 	<div class="work__header__menuContainer">
 		<input type="checkbox" id="work__header__menuContainer__checkbox" class="work__header__menuContainer__checkbox">
 		<label for="work__header__menuContainer__checkbox" class="work__header__menuContainer__label">
@@ -3690,6 +3705,30 @@ this here is just to copy the 'icons' css as needed */
 		} else {
 			workHeaderMenuContainerNav.style.display = "grid";
 	  }
+	}
+
+
+
+	// this is for back to top button
+
+	//Get the button
+	var backToTopButton = document.getElementById("backToTopButton");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+	    backToTopButton.style.visibility= "visible";
+	  } else {
+	    backToTopButton.style.visibility = "hidden";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function backToTopFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
 	}
 </script>
 

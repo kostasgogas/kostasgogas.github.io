@@ -3251,81 +3251,83 @@ this here is just to copy the 'icons' css as needed */
 		height: 100%;
 	}
 
-	.work__project__galleryTop {
-		white-space: nowrap;
-		overflow-x: scroll;
-		width: 100vw;
-		margin: auto;
-	}
-
-	.work__project__galleryTop::-webkit-scrollbar { height: 0 !important }
-	.work__project__galleryTop { overflow: -moz-scrollbars-none; }
-	.work__project__galleryTop { -ms-overflow-style: none; }
-
-	.work__project__galleryTop__figure {
-		display: inline-block;
+	.work__project__gallery {
+		height: 100vh;
 		width: 100%;
-		height: 75vh;
+		margin-bottom: 10vh;
 	}
 
-	.work__project__galleryTop__figure__picture {
-		max-width: 100%;
-		height: 70vh;
+	.work__project__gallery__title {
+		height: 10vh;
+		width: 100%;
 		display: block;
-		margin: auto;
+		padding: 0 10vmin;
+
+		font-size: 3vmin;
+		text-align: center;
+		line-height: 10vh;
+		font-weight: 700;
 	}
 
-	.work__project__galleryTop__figure__picture__img {
+	.work__project__gallery__figure {
+		height: 74vh;
+		width: 100%;
+		margin: auto;
+		display: block;
+	}
+
+	.work__project__gallery__figure__picture {
+		height: 69vh;
+		display: block;
+	}
+
+	.work__project__gallery__figure__picture__img {
 		max-height: 100%;
 		max-width: 100%;
 		margin: auto;
 		display: block;
 	}
 
-	.work__project__galleryTop__figure__caption {
-		margin: 3vmin 0 0;
+	.work__project__gallery__figure__caption {
+		height: 5vh;
+		width: 100%;
+		display: block;
 
-		font-size: 2vmin;
-		font-family: 'Inter', Sans-serif;
-		line-height: 1.25;
 		text-align: center;
-		font-weight: 900;
-	}
+		font-size: 1.6vmin;
+		line-height: 4.5vh;
 
-	.work__project__galleryNavName {
-		font-size: 4vmin;
-		text-align: center;
-		font-weight: 900;
-		line-height: 1.25;
-		margin: 4vmin auto;
 	}
 
 	.work__project__galleryNav {
-		width: 90vw;
-		margin: 4vmin auto;
+		height: 6vh;
+		width: fit-content;
+		display: block;
+		margin: auto;
+
+		background-color: white;
+
 		white-space: nowrap;
-		overflow-x: scroll;
 	}
 
-	.work__project__galleryNav::-webkit-scrollbar { height: 0 !important }
-	.work__project__galleryNav { overflow: -moz-scrollbars-none; }
-	.work__project__galleryNav { -ms-overflow-style: none; }
 
 	.work__project__galleryNav__link {
-		width: 10vmin;
 		display: inline-block;
+		width: fit-content;
+		height: fit-content;
 	}
 
 	.work__project__galleryNav__link__picture {
-		width: 100%;
-		display: flex;
+
 	}
 
 	.work__project__galleryNav__link__picture__img  {
-		height: 10vmin;
-		width: 100%;
+		width: 6vh;
+		height: 6vh;
 		object-fit: cover;
 	}
+
+	/* video */
 
 	.work__project__videoContainer {
 		width: 100%;
@@ -3350,7 +3352,7 @@ this here is just to copy the 'icons' css as needed */
 		width: 100%;
 		position: fixed;
 		display: grid;
-		grid-template-columns: 30vmin auto 10vmin;
+		grid-template-columns: 30vmin auto 10vmin 10vmin;
 
 		font-family: 'Inter', Sans-serif;
 		line-height: 10vmin;
@@ -3367,6 +3369,18 @@ this here is just to copy the 'icons' css as needed */
 		font-size: 2vmin; 
 		letter-spacing: 0.25vmin;
 		color: white;
+	}
+
+	.work__header__backToTop {
+		visibility: hidden;
+
+		background-color: transparent;
+		border: 0 solid transparent;
+		color: darkred;
+	}
+
+	.work__header__backToTop__Icon {
+
 	}
 
 
@@ -3440,6 +3454,9 @@ this here is just to copy the 'icons' css as needed */
 		<h3 class="work__header__homeLink__text">Milestones</h3>
 	</a>
 	<div></div>
+	<button onclick="backToTopFunction()" id="backToTopButton" title="Back to Top" class="work__header__backToTop">
+		<i class="fa fa-arrow-up work__header__backToTop__Icon" aria-hidden="true"></i>
+	</button>
 	<div class="work__header__menuContainer">
 		<input type="checkbox" id="work__header__menuContainer__checkbox" class="work__header__menuContainer__checkbox">
 		<label for="work__header__menuContainer__checkbox" class="work__header__menuContainer__label">
@@ -3619,6 +3636,30 @@ this here is just to copy the 'icons' css as needed */
 		} else {
 			workHeaderMenuContainerNav.style.display = "grid";
 	  }
+	}
+
+
+
+	// this is for back to top button
+
+	//Get the button
+	var backToTopButton = document.getElementById("backToTopButton");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+	    backToTopButton.style.visibility= "visible";
+	  } else {
+	    backToTopButton.style.visibility = "hidden";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function backToTopFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
 	}
 </script>
 
@@ -3875,324 +3916,174 @@ this here is just to copy the 'icons' css as needed */
 
 		
 		<!-- snippet for gallery images-->
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="work__project__galleryTop">
-			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
+		<div class="work__project__gallery">
 			
 			
 			
-			<figure class="work__project__galleryTop__figure">
-				<span id="kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+			
+			<figure class="work__project__gallery__figure">
+					<picture class="work__project__gallery__figure__picture">	
 					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-320.jpg">
 					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-460.jpg">
 					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
+					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014.jpg" alt="" title="" class="lazyload work__project__gallery__figure__picture__img">
 				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
+			<figcaption class="work__project__gallery__figure__caption">
+				
+			</figcaption>
 			</figure>
 			
 			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
-			
-			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
-			
-			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
-			
-			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
-			
-			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
-			
-			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
-			
-			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
-			
-			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
-			
-			
-			
-			<figure class="work__project__galleryTop__figure">
-				<span id="contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-anchor"></span>
-				<picture class="work__project__galleryTop__figure__picture">	
-					<source media="(max-width: 320px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-320.jpg">
-					<source media="(max-width: 460px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-460.jpg">
-					<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014.jpg" alt="" title="" class="lazyload work__project__galleryTop__figure__picture__img">
-				</picture>
-				<figcaption class="work__project__galleryTop__figure__caption">
-					
-				</figcaption>
-			</figure>
-			
-			
+
+			<nav class="work__project__galleryNav">
+				
+				
+				<a href="#kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+				
+				<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-anchor" class="work__project__galleryNav__link">
+					<picture class="work__project__galleryNav__link__picture">	
+						<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-320.jpg">
+						<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-460.jpg">
+						<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-800.jpg">
+						<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
+					</picture>
+				</a>
+				
+				
+			</nav>
 		</div>
-		<nav class="work__project__galleryNav">
-			
-			
-			<a href="#kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-01-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-02-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/kostas-gogas-artist-contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-03-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-04-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-05-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-06-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-07-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-08-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-09-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-10-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-			
-			<a href="#contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-anchor" class="work__project__galleryNav__link">
-				<picture class="work__project__galleryNav__link__picture">	
-					<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-320.jpg">
-					<source media="(max-width: 1400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-460.jpg">
-					<source media="(max-width: 2400px)" data-srcset="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014-800.jpg">
-					<img data-src="https://res.cloudinary.com/kostasgogas/abstract-material/contemporary-modern-greek-abstract-material-expressionism-art-mixed-media-12-2014.jpg" alt="" title="" class="lazyload work__project__galleryNav__link__picture__img">
-				</picture>
-			</a>
-			
-			
-		</nav>
-		
 
-
+ 		
 		
 
 	
