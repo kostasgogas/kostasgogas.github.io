@@ -429,11 +429,278 @@ make it one black line at the bottom
 	<a href="/cart/" class="sitewide__header__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 </header>
 
-	<p>Ooops, sorry but this isn’t here!</p>
-<h1 id="404">404</h1>
+	<style type="text/css">
 
-<p><a href="/shop/">try looking at some art instead.</a></p>
+	body {
+		margin-top: 0vmin;
+	}
+	.sitewide__header {
+		display: none;
+	}
 
+	/* Header */
+
+	.shop__product__inquire__nav {
+		width: 100%;
+
+		text-align: right;
+
+		background-color: #ededed;
+	}
+
+	.shop__product__inquire__nav__link {
+		display: inline-block;
+		padding: 2vmin 2vmin;
+
+		font-size: 2vmin;
+		text-decoration: underline;
+	}
+
+	.shop__product__inquire__header {
+		padding: 5vmin;
+		width: 100%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 20vw 70vw;
+		align-items: center;
+
+		background-color: #ededed;
+	}
+
+	.shop__product__inquire__header__heading {
+		margin-left: 5vmin;
+
+		font-weight: bold;
+		line-height: 1.25;
+	}
+
+	.shop__product__inquire__header__heading__interest {
+		display: block;
+
+		font-size: 2.5vmin;
+	}
+
+	.shop__product__inquire__header__heading__title {
+		display: block;
+		margin-top: 1vmin;
+
+		font-size: 3vmin;
+	}
+
+	.shop__product__inquire__header__picture {
+	}
+
+	.shop__product__inquire__header__picture__image {
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+		
+	}
+
+	/* Form */
+
+	.shop__product__inquire__formContainer {
+		width: 90vmin;
+		margin: auto;
+	}
+
+	.shop__product__inquire__formContainer__nameLabel {
+		display: block;
+		margin: 2.5vmin 0;
+
+		font-weight: bold;
+		font-size: 3vmin;
+		line-height: 1.25;
+
+		color: #888;
+	}
+
+	.shop__product__inquire__formContainer__nameLabel__field {
+		width: 100%;
+		height: 7vmin;
+		margin: 1vmin 0;
+		padding: 1.5vmin 3vmin;
+
+		font-style: italic;
+		font-weight: normal;
+		font-size: 3vmin;
+
+		border-radius: 3vmin;
+
+		background-color: #ededed;
+		border: 0 solid white;
+	}
+
+	.shop__product__inquire__formContainer__emailLabel {
+		display: block;
+		margin: 2.5vmin 0;
+
+		font-weight: bold;
+		font-size: 3vmin;
+		line-height: 1.25;
+
+		color: #888;
+
+	}
+
+	.shop__product__inquire__formContainer__emailLabel__field {
+		width: 100%;
+		height: 7vmin;
+		margin: 1vmin 0;
+		padding: 1.5vmin 3vmin;
+
+		font-style: italic;
+		font-weight: normal;
+		font-size: 3vmin;
+
+		border-radius: 3vmin;
+
+		background-color: #ededed;
+		border: 0 solid white;
+	}
+
+	.shop__product__inquire__formContainer__messageLabel {
+		display: block;
+		margin: 2.5vmin 0;
+
+		font-weight: bold;
+		font-size: 3vmin;
+		line-height: 1.25;
+
+		color: #888;
+	}
+
+	.shop__product__inquire__formContainer__messageLabel__field {
+		width: 100%;
+		height: 35vmin;
+		margin: 1vmin 0;
+		padding: 1.5vmin 3vmin;
+
+		font-style: italic;
+		font-weight: normal;
+		font-size: 3vmin;
+
+		border-radius: 3vmin;
+
+		background-color: #ededed;
+		border: 0 solid white;
+	}
+
+
+	.shop__product__inquire__formContainer__submitButton {
+		width: 30vmin;
+		height: 10vmin;
+		margin: 1vmin 0;
+
+		font-size: 3vmin;
+		line-height: 1.25;
+		font-weight: bold;
+		letter-spacing: 0.1vmin;
+
+		border-radius: 3vmin;
+
+		border: 0 solid transparent;
+		background-color: #005fff;
+		color: white;
+	}
+
+	/* Tips for Message */
+
+	.shop__product__inquire__messageTips {
+		width: 90vmin;
+		margin: auto;
+	}
+
+	.shop__product__inquire__messageTips__heading {
+		margin: 7.5vmin 0 2.5vmin;
+
+		font-size: 6vmin;
+		line-height: 1.25;
+		font-weight: bold;
+	}
+
+	.shop__product__inquire__messageTips__description {
+		margin: 2.5vmin 0 2.5vmin;
+
+		font-size: 3vmin;
+		line-height: 1.25;
+		font-style: italic;
+	}
+
+	.shop__product__inquire__messageTips__heading__list {
+		font-size: 3vmin;
+		
+		line-height: 1.25;
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+
+	.shop__product__inquire__messageTips__heading__list__item {
+		margin: 1.5vmin 0;
+	}
+</style>
+
+<!-- This should go to layouts if and when finished and produced for each artwork with page-gen -->
+
+
+<div class="shop__product__inquire">
+	<nav class="shop__product__inquire__nav">
+		<a href="/shop__product.html" class="shop__product__inquire__nav__link">Back to Product Page</a>
+	</nav>
+
+	<header class="shop__product__inquire__header">
+		<picture class="shop__product__inquire__header__picture">
+			<img src="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product.jpg" class="shop__product__inquire__header__picture__image">
+		</picture>
+		<h1 class="shop__product__inquire__header__heading">
+			<span class="shop__product__inquire__header__heading__interest">Αποκτήστε το έργο</span>
+			<span class="shop__product__inquire__header__heading__title">Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της</span>
+		</h1>
+	</header>
+
+	<section>
+		<h3>You can also find me on:</h3>
+		<a href="#">Messenger</a>
+		<a href="#">Instagram</a>
+		<p>
+			and ask me anything there.
+		</p>
+	</section>
+
+	<form class="shop__product__inquire__formContainer" method="post" action="https://forms.un-static.com/forms/f7edf75a640ca11b5f673095f73097bc45f54f30">
+		<label class="shop__product__inquire__formContainer__nameLabel">Ονοματεπώνυμο:
+			<input class="shop__product__inquire__formContainer__nameLabel__field" type="text" name="name" placeholder="Γιώργος Παυλίδης" required>
+		</label>
+		<label class="shop__product__inquire__formContainer__emailLabel">Διεύθυνση Email:
+			<input class="shop__product__inquire__formContainer__emailLabel__field" type="email" name="email" placeholder="johndoe@example.com" required>
+		</label>
+		<input type="hidden" name="subject" value="Ερώτηση για 'Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της'" required>
+		<label class="shop__product__inquire__formContainer__messageLabel">Μήνυμα:
+			<textarea class="shop__product__inquire__formContainer__messageLabel__field" name="message" placeholder="Το μήνυμά σας.."></textarea>
+		</label>
+		<button class="shop__product__inquire__formContainer__submitButton" type="submit">Αποστολή</button>
+	</form>
+
+
+	<section class="shop__product__inquire__messageTips">
+		<h3 class="shop__product__inquire__messageTips__heading">Τι μπορείτε να συμπεριλάβετε στο μήνυμα..</h3>
+		<p class="shop__product__inquire__messageTips__description">Οτιδήποτε, αλλά ορίστε μερικές ιδέες.</p>
+		<ul class="shop__product__inquire__messageTips__heading__list">
+			<li class="shop__product__inquire__messageTips__heading__list__item">Αντιπροσφορά</li>
+			<li class="shop__product__inquire__messageTips__heading__list__item">Ερωτήσεις για τον τρόπο πληρωμής</li>
+			<li class="shop__product__inquire__messageTips__heading__list__item">Ερωτήσεις για τον τρόπο αποστολής</li>
+		</ul>
+	</section>
+
+	<section class="shop__product__inquire__messageTips">
+		<h3 class="shop__product__inquire__messageTips__heading">Τι να περιμένετε αφού στέιλετε το μήνυμα..</h3>
+		<ul class="shop__product__inquire__messageTips__heading__list">
+			<li class="shop__product__inquire__messageTips__heading__list__item">Ο ίδιος ο καλλιτέχνης ή κάποιος συνεργάτης του θα σας απαντήσει σύντομα.</li>
+			<li class="shop__product__inquire__messageTips__heading__list__item">Αν δεν έχετε κάποια αντιπροσφορά, θα μπορέσετε να πληρώσετε μέσω PayPal ή με κατάθεση σε τραπεζικό λογαριασμό</li>
+		</ul>
+	</section>
+
+</div>
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">
