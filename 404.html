@@ -281,7 +281,7 @@ SITEWIDE
 	width: 100%;
 	z-index: 999;
 	display: grid;
-	grid-template-columns: 20vmin auto max-content max-content 10vmin;
+	grid-template-columns: 20vmin auto max-content max-content;
 
 	font-weight: 400;
 	font-size: 3vmin;
@@ -293,8 +293,8 @@ SITEWIDE
 }
 
 .sitewide__header__logoLink {
-	display: grid;
-	grid-template-rows: 7vmin 3vmin;
+	width: 100%;
+	height: 100%;
 }
 
 .sitewide__header__logoLink__image {
@@ -304,15 +304,22 @@ SITEWIDE
 	margin: auto;
 }
 
-.sitewide__header__logoLink_title {
-	display: block;
+.sitewide__header__titleWrapper {
+	display: table;
+	height: 100%;
+	padding: 1vmin;
+}
 
-	font-size: 1.75vmin;
-	text-align: center;
-	line-height: 3vmin;
+.sitewide__header__titleWrapper__title {
+	font-size: 2vmin;
 	text-transform: uppercase;
+	line-height: 1.25;
+	display: table-cell;
+	vertical-align: middle;
+}
 
-	color: black;
+.sitewide__header__titleWrapper__title__name {
+	font-weight: 800;
 }
 
 .sitewide__header__link {
@@ -421,12 +428,17 @@ make it one black line at the bottom
 	<header class="sitewide__header">
 	<a href="/" class="sitewide__header__logoLink">
 		<img src="/assets/temp/logo-signature-kostas-gogas-black.png" alt="Kostas Gogas Signature Logo" title="Go to Homepage" class="sitewide__header__logoLink__image">
-		<h3 class="sitewide__header__logoLink_title">Kostas Gogas</h3>
 	</a>
-	<div></div>
+	<div class="sitewide__header__titleWrapper">
+	<h3 class="sitewide__header__titleWrapper__title">
+		Official Website of Multidisciplinary Artist 
+		<span class="sitewide__header__titleWrapper__title__name">
+			Kostas Gogas
+		</span>
+	</h3>
+	</div>
 	<a href="/work/" class="sitewide__header__link">About</a>
 	<a href="/shop/all/" class="sitewide__header__link">Shop</a>
-	<a href="/cart/" class="sitewide__header__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 </header>
 
 	<p>Ooops, sorry but this isn’t here!</p>

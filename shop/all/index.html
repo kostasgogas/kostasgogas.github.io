@@ -281,7 +281,7 @@ SITEWIDE
 	width: 100%;
 	z-index: 999;
 	display: grid;
-	grid-template-columns: 20vmin auto max-content max-content 10vmin;
+	grid-template-columns: 20vmin auto max-content max-content;
 
 	font-weight: 400;
 	font-size: 3vmin;
@@ -293,8 +293,8 @@ SITEWIDE
 }
 
 .sitewide__header__logoLink {
-	display: grid;
-	grid-template-rows: 7vmin 3vmin;
+	width: 100%;
+	height: 100%;
 }
 
 .sitewide__header__logoLink__image {
@@ -304,15 +304,22 @@ SITEWIDE
 	margin: auto;
 }
 
-.sitewide__header__logoLink_title {
-	display: block;
+.sitewide__header__titleWrapper {
+	display: table;
+	height: 100%;
+	padding: 1vmin;
+}
 
-	font-size: 1.75vmin;
-	text-align: center;
-	line-height: 3vmin;
+.sitewide__header__titleWrapper__title {
+	font-size: 2vmin;
 	text-transform: uppercase;
+	line-height: 1.25;
+	display: table-cell;
+	vertical-align: middle;
+}
 
-	color: black;
+.sitewide__header__titleWrapper__title__name {
+	font-weight: 800;
 }
 
 .sitewide__header__link {
@@ -421,12 +428,17 @@ make it one black line at the bottom
 	<header class="sitewide__header">
 	<a href="/" class="sitewide__header__logoLink">
 		<img src="/assets/temp/logo-signature-kostas-gogas-black.png" alt="Kostas Gogas Signature Logo" title="Go to Homepage" class="sitewide__header__logoLink__image">
-		<h3 class="sitewide__header__logoLink_title">Kostas Gogas</h3>
 	</a>
-	<div></div>
+	<div class="sitewide__header__titleWrapper">
+	<h3 class="sitewide__header__titleWrapper__title">
+		Official Website of Multidisciplinary Artist 
+		<span class="sitewide__header__titleWrapper__title__name">
+			Kostas Gogas
+		</span>
+	</h3>
+	</div>
 	<a href="/work/" class="sitewide__header__link">About</a>
 	<a href="/shop/all/" class="sitewide__header__link">Shop</a>
-	<a href="/cart/" class="sitewide__header__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 </header>
 
 	<style type="text/css">
@@ -440,6 +452,26 @@ make it one black line at the bottom
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(35vmin, 1fr));
 		grid-gap: 10vmin 10vmin;
+	}
+
+	/* Header */
+
+	.shop__all__header {
+		width: 100%;
+		padding: 10vmin;
+	}
+
+	.shop__all__header__title {
+		margin: 1vh 0;
+
+		font-size: 3.25vmin;
+		font-weight: 800;
+		line-height: 1.25;
+	}
+
+	.shop__all__header__description {
+		font-size: 2.5vmin;
+		line-height: 1.25;
 	}
 
 	/* Individual Product */
@@ -461,6 +493,7 @@ make it one black line at the bottom
 		min-height: 20vmin;
 		width: 100%;
 		display: block;
+		background-color: #ededed;
 	}
 	
 
@@ -469,6 +502,7 @@ make it one black line at the bottom
 		height: 100%;
 		object-fit: cover;
 		display: block;
+
 	}
 
 	.shop__all__allProducts__productExcerpt__linkWrapper__header__title {
@@ -533,8 +567,8 @@ make it one black line at the bottom
 
 <div class="shop__all">
 	<header class="shop__all__header">
-		<h1 class="shop__all__header__titleWrapper">
-			<span class="shop__all__header__titleWrapper__subtitle">A cozy place to buy something from me when & if you feel up to.</span>
+		<h1 class="shop__all__header__title">
+		A cozy place to buy something from me when & if you feel up to.</span>
 		</h1>
 		<p class="shop__all__header__description">
 			We work from home, me, some close friends and close family.
@@ -552,11 +586,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πρόχειρα Σχέδια με Τρεις Χαρακτήρες</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Draft Sketches with Three Characters</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>22.5cm x 20.1cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2007</span>
 						</p>
@@ -575,11 +609,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής στο Χωριό</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">The Modernist in the Village</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>25.8cm x 18.1cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">late 2007</span>
 						</p>
@@ -598,11 +632,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ο Μοντερνιστής 007 έχει Μόνο Ένα Μάτι</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Modernist 007 has One Eye Only</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.1cm x 19.6cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">late 2007</span>
 						</p>
@@ -621,11 +655,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Γυναίκα Καταριέται για τον Άντρα της που Μικραίνει (τουλάχιστον όχι το πέος!)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Woman Curses for Her Man is Shrinking (at least leave the penis alone!)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.8cm x 28.7cm </span> 
-							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Pencil on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -644,11 +678,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Η Αγαπητή Ψιψίνα σου και η Μόνη Τρίχα της</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Your Lovely Pussycat and Her Single Hair</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.5cm x 20cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">late 2007</span>
 						</p>
@@ -667,11 +701,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Η Αντιγραφή Έλβις (με μουσικό μαλλί)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Elvis Copy (with Musical Hairstyle)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 28.7cm </span> 
-							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.
+							<br/>Pencil on White Beige Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -690,11 +724,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τέρας με Περιποιημένη Κόμη (ξανθιά), Κάθεται</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Monster with Well-Groomed Hair (blond), Sitting</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 28.6cm </span> 
-							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.
+							<br/>Pencil on White Beige Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -713,11 +747,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τέρας με Περιβαλλοντική Συνείδηση</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Environmentally Conscious Monster</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Pencil on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2012</span>
 						</p>
@@ -736,11 +770,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Φανταστικός Φίλος (Παιδί σε Δύσκολη Κατάσταση που Όμως Περνάει Καλά)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Imaginary Friend (Kid in Difficult Situation but Nevertheless Having Fun)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 26.4cm </span> 
-							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Pencil on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2012</span>
 						</p>
@@ -759,11 +793,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 1</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristotractic Long Portrait 1</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">Late 2007</span>
 						</p>
@@ -782,11 +816,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 2</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristotractic Long Portrait 2</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.6cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">Late 2007</span>
 						</p>
@@ -805,11 +839,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 3</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristotractic Long Portrait 3</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.5cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">Late 2007</span>
 						</p>
@@ -828,11 +862,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αριστοκρατικό Μακρόστενο Πορτραίτο 4</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristotractic Long Portrait 4</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">Early 2008</span>
 						</p>
@@ -851,11 +885,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Επαναστάτες σε Δύσκολο Δρόμο (με ράμφος)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Rebels on Difficult Path (with beaks)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
-							<br/>Μολύβι σε Λείο Χαρτί Σχεδίου 130γρ.
+							<br/>Pencil on Smooth Art Paper 130gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
 						</p>
@@ -874,11 +908,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Άνθρωπος που Σχηματίζεται (Ο Θεός είναι Υαλουργός)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Man Taking Form (God is a Glassblower)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.2cm x 26.4cm </span> 
-							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Pencil on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2014</span>
 						</p>
@@ -897,11 +931,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τα Πάνω Κάτω (ως αλλαγή τρόπου σκέψης), μα Λόγω Κούρασης τον Παίρνει και Λίγο ο Ύπνος</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Upside Down (in order to break the thinking pattern), but Because He is Tired He Sleeps from Time to Time</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Pencil on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2013</span>
 						</p>
@@ -920,11 +954,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Βλασφήμια</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Blasphemy</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Pencil on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2013</span>
 						</p>
@@ -943,11 +977,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Μεγάλος σε Ηλικία Σφίχτερ Συνθλίβει ένα Κουτάκι Σόδα</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Old Muscular Man Crushing a Soda Can</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.6cm x 21.1cm </span> 
-							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.
+							<br/>Pencil on White Beige Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2010</span>
 						</p>
@@ -966,11 +1000,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Μίμος (Άγαλμα σε Διαμέρισμα)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Mime (Statue in an Apartment)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2009</span>
 						</p>
@@ -989,11 +1023,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πορτραίτο Ταλαιπωρημένου Γυναικά (δεν είναι πια ωραίος)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Portrait of a Tired Ladies Man (he is not good-looking anymore)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
-							<br/>Μολύβι σε Λείο Χαρτί Σχεδίου 130γρ.
+							<br/>Pencil on Smooth Art Paper 130gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
 						</p>
@@ -1012,11 +1046,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Σιαμαία Στολή για τις Απόκριες</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Siamese Costume for the Carnival</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
-							<br/>Μολύβι σε Λείο Χαρτί Σχεδίου 130γρ.
+							<br/>Pencil on Smooth Art Paper 130gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
 						</p>
@@ -1035,11 +1069,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Για μια Βραδιά (Παίχτης Ταλεντ Σόου Ολόκληρης Σεζόν)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">One Night (Man Participating in a Talent Show's Full Run)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.
+							<br/>Pencil on White Beige Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2010</span>
 						</p>
@@ -1058,11 +1092,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Άσχημο Τέρας με Βυζιά (Καραφλομαλλιάς) και Μάτι Κόκκινο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ugly Monster with Tits (Bald with Long Hair) and Red Eyes</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 26.4cm </span> 
-							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.
+							<br/>Pencil on White Beige Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1081,11 +1115,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πονοκέφαλος (Σπουδή για Εισαγωγή του Κυβισμού στο Βίντεο)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Headache (Concept for Introducing Cubism in Video)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.8cm x 26.2cm </span> 
-							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.
+							<br/>Pencil on White Beige Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">early 2011</span>
 						</p>
@@ -1104,11 +1138,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Νυσταγμένος Μεσήλικας Προσπαθεί να Γελάσει άπό Ευγένεια - Πάγωσε και Έχει Διατηρηθεί Έτσι</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Sleepy Middle-Aged Man Trying to Laugh Out of Politeness - He Froze and Remained Like That</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Χαρτί Μπεζ Λευκό 80γρ.
+							<br/>Pencil on White Beige Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2010</span>
 						</p>
@@ -1127,11 +1161,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">To Γρονθοκόπημα (Μην ακουμπάς το έδαφος για να φαίνεσαι πιο αδύναμος)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">The Punching (Don't touch the ground, in order to appear weak)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.5cm x 16.9cm </span> 
-							<br/>Μολύβι σε Χαρτί 80γρ.
+							<br/>Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2007</span>
 						</p>
@@ -1154,7 +1188,7 @@ make it one black line at the bottom
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Pencil on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2013</span>
 						</p>
@@ -1177,7 +1211,7 @@ make it one black line at the bottom
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μολύβι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Pencil on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2013</span>
 						</p>
@@ -1196,11 +1230,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 1: Κόκκινο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Abstract Materials 1: Red</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
-							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.
+							<br/>Acrylics, Tempera, Watercolors & Ink on Paper (canvas) 300gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">October 2014</span>
 						</p>
@@ -1219,11 +1253,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 2: Καφέ</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Abstract Materials 2: Brown</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
-							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.
+							<br/>Acrylics, Tempera, Watercolors & Ink on Paper (canvas) 300gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">October 2014</span>
 						</p>
@@ -1242,11 +1276,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 3: Γαλάζιο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Abstract Materials 3: Light Blue</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
-							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.
+							<br/>Acrylics, Tempera, Watercolors & Ink on Paper (canvas) 300gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">October 2014</span>
 						</p>
@@ -1265,11 +1299,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 4: Γκρί</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Abstract Materials 4: Gray</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
-							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.
+							<br/>Acrylics, Tempera, Watercolors & Ink on Paper (canvas) 300gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">October 2014</span>
 						</p>
@@ -1288,11 +1322,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 5: Κίτρινο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Abstract Materials 5: Yellow</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
-							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.
+							<br/>Acrylics, Tempera, Watercolors & Ink on Paper (canvas) 300gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">October 2014</span>
 						</p>
@@ -1311,11 +1345,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αφηρημένα Υλικά 6: Πράσινο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Abstract Materials 6: Green</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>17.8cm x 25.5cm </span> 
-							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.
+							<br/>Acrylics, Tempera, Watercolors & Ink on Paper (canvas) 300gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">October 2014</span>
 						</p>
@@ -1334,11 +1368,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πράσινο Τερατάκι σε Αναστάτωση</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Green Creature in Distress</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>25.5cm x 17.5cm </span> 
-							<br/>Ακρυλικό, Τέμπερα, Νερομπογιά & Μελάνι σε Χαρτί (καμβάς) 300γρ.
+							<br/>Acrylics, Tempera, Watercolors & Ink on Paper (canvas) 300gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2012</span>
 						</p>
@@ -1357,11 +1391,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Κοράκι Ζωγραφισμένο από Παιδί (Πολύ Ώριμο για την Ηλικία του)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Crow Painted by a Kid (Very Mature for his Age)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Πιθανόν Τέμπερα΄(υπογραφή με στυλό υγρής μελάνης) σε Χαρτί 80γρ.
+							<br/>Maybe Tempera (signed with fine tip inking pen) on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1380,11 +1414,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Δαίμονας Ποζαρει με Φλεγόμενη Γλώσσα (κακοζωγραφισμένη για λόγους στυλ)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Demon Posing with a Fiery Tongue (badly designed for stylistic reasons)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μαρκαδόρος Uni-Posca & Μελάνι (υπογραφή με στυλό υγρής μελάνης) σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Uni-Posca Marker & Ink (signed with rollerball pen) on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2010</span>
 						</p>
@@ -1403,11 +1437,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Φιλήσυχο Παιδί Ντυμένο Βασιλιάς από την Επιτυχημένη Μάνα του</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Quiet Kid Dressed as a King by his Successful Mother</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μαρκαδόρος σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Marker on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1426,11 +1460,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αδιάφορη Γυναίκα στο Δρόμο προς το Μακιγιάζ (κάτι έχεις κάνει στα μαλλιά σου)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Unremarkable Woman On the Way to the Make-Up Room (you did something with your hair)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μαρκαδοράκι σε Χαρτί 80γρ.
+							<br/>Marker on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">Late 2008</span>
 						</p>
@@ -1449,11 +1483,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Σύγχρονος Δαίμονας</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Contemporary Demon</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 27.7cm </span> 
-							<br/>Μαρκαδοράκι σε Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1472,11 +1506,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Έφηβος με Προγούλι Εξαναγκάζεται να Σταθεί για μια Φωτογραφία</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Teenager with a Dewlap is Forced to Stand for a Photo</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29,7cm </span> 
-							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1495,11 +1529,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Φάγαμε τα Νιάτα Μας στις Δεξιώσεις (Τώρα Δεν Έχω Καν Δυνάμεις)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Spent Our Lives at Ceremonies (Now I Don't Even Have the Strength)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.3cm x 27.6cm </span> 
-							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1518,11 +1552,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ώριμος Δαίμονας (που ξέρει πλέον τι ζητάει απ' τη ζωή)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Mature Demon (that doesn't wonder what he wants from life anymore)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.4cm x 27.6cm </span> 
-							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1541,11 +1575,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Δαίμονας (Φωτογραφία Ανεβασμένη από τον Ίδιο στα Μέσα Κοινωνικής Δικτύωσης όπως αυτά Υπήρξαν στην Αρχή του 21ου Αιώνα)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Demon (Photo Uploaded by Himself on Social Media as they Existed at the Beginning of the 21st Century)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.8cm x 29.7cm </span> 
-							<br/>Μαρκαδοράκι σε Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1564,11 +1598,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αρχαίος Δαίμονας που Ξυπνάει από Λήθαργο στη Σύγχρονη Εποχή</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ancient Demon Waking Up from Hibernation in Contemporary Times</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.1cm x 23.8cm </span> 
-							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1587,11 +1621,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Διαστρεβλωμένο Περιβάλλον Γεννάει Προσωρινές Αμβιφολίες</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Distorted Environment Producing Temporary Doubts</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>cm x cm </span> 
-							<br/>Στυλό Υγρής Μελάνης σε Χαρτί 80γρ.
+							<br/>Rollerball Pen on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">first quarter of 2008</span>
 						</p>
@@ -1610,11 +1644,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Πατέρας Ποζάρει για Πορτραίτο Σαλονιού (Η Στρατιωτική Στολή δεν του Κάνει)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Father Posing for Living Room Portrait (The Military Uniform Doesn't Fit Him)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">late 2011 or early 2012</span>
 						</p>
@@ -1633,11 +1667,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Μασκαράς, Αρχές του 19ου Αιώνα, Γαλλία (φυλακίστηκε 3 ώρες μετά)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Masquerader, Beginning of 19th Century, France (inprisoned 3 hours later)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">late 2011 or early 2012</span>
 						</p>
@@ -1656,11 +1690,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Παδιά Ερευνούν, Παίζουν Ρόλους (θύμα, Ντεντέκτιβ, Αστυνόμος) - Ζωγραφισμένο απο Πραγματικό</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Kids Playing, Acting Roles (Victim, Detective, Cop) - Painted from Real Life</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>24.5cm x 18.7cm </span> 
-							<br/>Μαρκαδοράκι σε Κατάλευκο Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">August 2011</span>
 						</p>
@@ -1679,11 +1713,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ούτε πολύ Ψηλός, Ούτε πολύ Κοντός, Ακριβώς εκεί που Πρέπει</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Not Very Tall, Not Very Short, Exactly Where He Should Be</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μαρκαδόρος σε Χαρτί 80γρ.
+							<br/>Marker on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">Early 2008</span>
 						</p>
@@ -1702,11 +1736,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Αναποφάσιστος Πελάτης Ξέχασε τι Σκεφτοταν (αλλά συνεχίζει να το παριστάνει)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Indesicive Customer Forgot What He was Thinking About (But Keeps Pretending)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Ανεξήτιλος Μαρκαδόρος σε Χαρτί 80γρ.
+							<br/>Permanent Marker on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2012</span>
 						</p>
@@ -1725,11 +1759,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τυφλός Πολυλογάς (Η Εκστρατεία)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Blind Speaker (The Campaign)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Μαρκαδόρος σε Χαρτί 80γρ.
+							<br/>Marker on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">first quarter of 2008</span>
 						</p>
@@ -1748,11 +1782,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Κτήνος (Σεξουαλική Πράξη), Σπουδή για Πίνακα</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Beast (Sex Act), Study for Larger Work</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.4cm x 20.8cm </span> 
-							<br/>Μαρκαδόρος & Μαρκαδοράκι σε Ριζόχαρτο
+							<br/>Marker & Fine Tip Inking Pen on Ricepaper
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
 						</p>
@@ -1771,11 +1805,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Το Αστείο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">The Joke</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.4cm x 29.7cm </span> 
-							<br/>Μαρκαδοράκι, Στυλό & Μολύβι σε Χαρτί 80γρ.
+							<br/>Fine Tip Inking Pen, Pen & Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
 						</p>
@@ -1794,11 +1828,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Τρία Στοιχεία</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Three Elements</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.9cm x 12.6cm </span> 
-							<br/>Στυλό (Υπογεγραμένο στις 13 Δεκ. 2019 με στυλό υγρής μελάνης) σε Χαρτί 80γρ.
+							<br/>Pen (signed on December 13th 2019 with rollerbal pen) on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2003 or 2004</span>
 						</p>
@@ -1817,11 +1851,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Σφίγγα Σκέφτεται τον Ίδιο της τον Γρίφο</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Sphinx Thinking Her Own Riddle""</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.7cm x 21cm </span> 
-							<br/>Στυλό & Μολύβι σε Χαρτί 80γρ.
+							<br/>Pen & Pencil on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">unknown date, maybe between 2003-2005</span>
 						</p>
@@ -1840,11 +1874,11 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Το Μοντερνιστικό Ζευγάρι στο Χωριό (Η Μεγάλη Ερωτική Απογοήτευση)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">The Modernist Couple in the Village (The Grand Heartbreak)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 14.4cm </span> 
-							<br/>Στυλό & Μαρκαδόρος σε Χαρτί 80γρ.
+							<br/>Pen & Marker on Paper 80gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
 						</p>
