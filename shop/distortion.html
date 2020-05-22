@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kostas Gogas | </title>
+	<title>Kostas Gogas | Distorted Environment Producing Temporary Doubts</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- This is for supporting Greek Characters -->
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
+	
+	<!-- this is for any keywords -->
+	<meta name="keywords" content="">
 	
 
 
@@ -443,323 +446,330 @@ make it one black line at the bottom
 </header>
 
 	<style type="text/css">
-
-	body {
-		margin-top: 0vmin;
-	}
+	
 	.sitewide__header {
 		display: none;
 	}
 
-	/* Header */
+/* Product Header */
 
-	.shop__product__inquire__nav {
-		width: 100%;
+.product__headerOfProduct {
+	z-index: 99999;
+	width: 100%;
+	height: 10vmin;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: 10vmin auto max-content;
 
-		text-align: right;
+	background-color: white;
+	border-bottom: 0.1vmin solid black;
+}
 
-		background-color: #ededed;
-	}
+.product__headerOfProduct__close {
+	font-size: 3vmin;
+	line-height: 10vmin;
+	text-align: center;
 
-	.shop__product__inquire__nav__link {
-		display: inline-block;
-		padding: 2vmin 2vmin;
+	color: black;
 
-		font-size: 2vmin;
-		text-decoration: underline;
-	}
-
-	.shop__product__inquire__header {
-		padding: 5vmin;
-		width: 100%;
-		margin: auto;
-		display: grid;
-		grid-template-columns: 20vw 70vw;
-		align-items: center;
-
-		background-color: #ededed;
-	}
-
-	.shop__product__inquire__header__heading {
-		margin-left: 5vmin;
-
-		font-weight: bold;
-		line-height: 1.25;
-	}
-
-	.shop__product__inquire__header__heading__interest {
-		display: block;
-
-		font-size: 2.5vmin;
-	}
-
-	.shop__product__inquire__header__heading__title {
-		display: block;
-		margin-top: 1vmin;
-
-		font-size: 3vmin;
-	}
-
-	.shop__product__inquire__header__picture {
-	}
-
-	.shop__product__inquire__header__picture__image {
-		height: 100%;
-		width: 100%;
-		object-fit: contain;
-		
-	}
-
-	/* Form */
-
-	.shop__product__inquire__formContainer {
-		width: 90vmin;
-		margin: auto;
-	}
-
-	.shop__product__inquire__formContainer__nameLabel {
-		display: block;
-		margin: 2.5vmin 0;
-
-		font-weight: bold;
-		font-size: 3vmin;
-		line-height: 1.25;
-
-		color: #888;
-	}
-
-	.shop__product__inquire__formContainer__nameLabel__field {
-		width: 100%;
-		height: 7vmin;
-		margin: 1vmin 0;
-		padding: 1.5vmin 3vmin;
-
-		font-style: italic;
-		font-weight: normal;
-		font-size: 3vmin;
-		font-family: 'Inter', Sans-serif;
-
-		border-radius: 3vmin;
-
-		background-color: #ededed;
-		border: 0 solid white;
-	}
-
-	.shop__product__inquire__formContainer__emailLabel {
-		display: block;
-		margin: 2.5vmin 0;
-
-		font-weight: bold;
-		font-size: 3vmin;
-		line-height: 1.25;
-
-		color: #888;
-
-	}
-
-	.shop__product__inquire__formContainer__emailLabel__field {
-		width: 100%;
-		height: 7vmin;
-		margin: 1vmin 0;
-		padding: 1.5vmin 3vmin;
-
-		font-style: italic;
-		font-weight: normal;
-		font-size: 3vmin;
-		font-family: 'Inter', Sans-serif;
-
-		border-radius: 3vmin;
-
-		background-color: #ededed;
-		border: 0 solid white;
-	}
-
-	.shop__product__inquire__formContainer__messageLabel {
-		display: block;
-		margin: 2.5vmin 0;
-
-		font-weight: bold;
-		font-size: 3vmin;
-		line-height: 1.25;
-
-		color: #888;
-	}
-
-	.shop__product__inquire__formContainer__messageLabel__field {
-		width: 100%;
-		height: 35vmin;
-		margin: 1vmin 0;
-		padding: 1.5vmin 3vmin;
-
-		font-style: italic;
-		font-family: 'Inter', Sans-serif;
-		font-weight: normal;
-		font-size: 3vmin;
-
-		border-radius: 3vmin;
-
-		background-color: #ededed;
-		border: 0 solid white;
-	}
+	border-right: 0.1vmin solid black;
+}
 
 
-	.shop__product__inquire__formContainer__submitButton {
-		width: 30vmin;
-		height: 10vmin;
-		margin: 1vmin 0;
 
-		font-size: 3vmin;
-		line-height: 1.25;
-		font-weight: bold;
-		letter-spacing: 0.1vmin;
+.product__headerOfProduct__center {
+	padding: 0.75vmin 1vmin;
+	height: 100%;
+	display: table;
+}
 
-		border-radius: 3vmin;
+.product__headerOfProduct__center__wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
 
-		border: 0 solid transparent;
-		background-color: #005fff;
-		color: white;
-	}
+.product__headerOfProduct__center__heading {
+	font-size: 2.5vmin;
+	font-weight: 800;
+	line-height: 1.2;
+}
 
-	/* Other Messaging / Contact Option */
+.product__headerOfProduct__center__shortDescription {
+	margin-top: 0.5vmin;
 
-	.shop__product__inquire__contactOptions {
-		width: 90vmin;
-		margin: 4vh auto;
-		padding: 6vmin;
+	font-size: 2vmin;
+	font-style: italic;
+	line-height: 2.5vmin;
+}
 
-		color: #555;
-		background-color: #ddd;
-	}
+.product__headerOfProduct__rightSpot {
+	width: 30vmin;
+	display: grid;
+	grid-template-columns: 14vmin 16vmin;
 
-	.shop__product__inquire__contactOptions__title {
-		margin: 2.25vh 0;
+	border-left: 0.1vmin solid black;
+}
 
-		font-size: 3vmin;
-		font-weight: 800;
-		line-height: 4vmin;
-	}
+.product__headerOfProduct__rightSpot__price {
+	padding: 0 2vmin;
 
-	.shop__product__inquire__contactOptions__link {
-		display: inline-block;
-		padding: 2vmin;
+	font-size: 2.5vmin;
+	text-align: center;
+	line-height: 10vmin;
+	font-weight: 800;
+}
 
-		font-size: 2.25vmin;
-		font-weight: 400;
-		letter-spacing: 0.1vmin;
+.product__headerOfProduct__rightSpot__buy {
+	margin: 2vmin 0;
+	width: 95%;
+	height: 6vmin;
 
-		background-color: #555;
-		color: white;
-		border-radius: 1vmin;
-	}
+	font-size: 2.7vmin;
+	text-align: center;
+	font-weight: 800;
+	letter-spacing: 0.1vmin;
+	line-height: 6vmin;
 
-	.shop__product__inquire__contactOptions__text {
-		margin: 2.25vh 0;
+	background-color: #0580ec;
+	color: white;
 
-		font-size: 2.5vmin;
-	}
+	border-radius: 0.6vmin;
+}
 
-	/* Tips for Message */
 
-	.shop__product__inquire__messageTips {
-		width: 90vmin;
-		margin: auto;
-	}
 
-	.shop__product__inquire__messageTips__heading {
-		margin: 7.5vmin 0 2.5vmin;
 
-		font-size: 6vmin;
-		line-height: 1.25;
-		font-weight: bold;
-	}
+/* featured image */
 
-	.shop__product__inquire__messageTips__description {
-		margin: 2.5vmin 0 2.5vmin;
+.product__featuredImageFigure {
+	margin: 2vh 0;
+}
 
-		font-size: 3vmin;
-		line-height: 1.25;
-		font-style: italic;
-	}
+.product__featuredImageFigure__picture {
+	display: block;
+	max-height: 80vh;
+	max-width: 100%;
+}
 
-	.shop__product__inquire__messageTips__heading__list {
-		font-size: 3vmin;
-		
-		line-height: 1.25;
-		list-style-type: disc;
-		list-style-position: inside;
-	}
+.product__featuredImageFigure__picture__img {
+	margin: auto;
+	max-height: 80vh;
+	max-width: 100%;
+	display: block;
+}
 
-	.shop__product__inquire__messageTips__heading__list__item {
-		margin: 1.5vmin 0;
-	}
+.product__featuredImageFigure__figcaption {
+    font-size: 2.25vmin;
+    margin: 1vh;
+	text-align: center;
+	font-weight: 200;
+	font-style: italic;
+}
+
+/* Image Gallery */
+
+.product__imageGallery {
+	width: 80vmin;
+	display: block;
+	clear: both;
+	margin: 2vh auto;
+	z-index: 0;
+}
+
+.product__imageGallery__imageLink {
+	display: block;
+	position: relative;
+	width: 25%;
+	padding-bottom: 25%;
+	float: left;
+	border: 0.25vmax solid white;
+	box-sizing: border-box;
+}
+
+.product__imageGallery__imageLink__picture {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.product__imageGallery__imageLink__picture__image {
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+.product__imageGallery__figcaption {
+	clear: both;
+	font-size: 2vmin;
+	padding: 1vh 0;
+	text-align: center;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 2;
+}
+
+/* Details */
+
+.product__details__Box {
+	width: 80vmin;
+	margin: 2vh auto;
+	padding-top: 1vh;
+	border-top: 0.1vh solid black;
+}
+
+.product__details {
+}
+
+.product__details__heading {
+	margin: 4vmin 0 2vmin;
+
+	font-size: 3.5vmin;
+	line-height: 1.25;
+	font-weight: 800;
+}
+
+.fa.fa-info-circle {
+}
+
+.product__details__unorderedList {
+	margin: 3vmin 0;
+	font-size: 2.75vmin;
+	line-height: 1.25;
+}
+
+.product__details__unorderedList__listItem {
+	margin: 0.7vmin 0;
+}
+
+.product__details__unorderedList__listItem__strong {
+	font-weight: 800;
+}
+
 </style>
 
-<!-- This should go to layouts if and when finished and produced for each artwork with page-gen -->
+<div class="product">
 
-
-<div class="shop__product__inquire">
-	<nav class="shop__product__inquire__nav">
-		<a href="/shop__product.html" class="shop__product__inquire__nav__link">Back to Product Page</a>
-	</nav>
-
-	<header class="shop__product__inquire__header">
-		<picture class="shop__product__inquire__header__picture">
-			<img src="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product.jpg" class="shop__product__inquire__header__picture__image">
-		</picture>
-		<h1 class="shop__product__inquire__header__heading">
-			<span class="shop__product__inquire__header__heading__interest">Inquire about</span>
-			<span class="shop__product__inquire__header__heading__title">Your Lovely Pussycat and Her Single Hair</span>
-		</h1>
-	</header>
-
-	<form class="shop__product__inquire__formContainer" method="post" action="https://forms.un-static.com/forms/f7edf75a640ca11b5f673095f73097bc45f54f30">
-		<label class="shop__product__inquire__formContainer__nameLabel">Full Name:
-			<input class="shop__product__inquire__formContainer__nameLabel__field" type="text" name="name" placeholder="John Doe" required>
-		</label>
-		<label class="shop__product__inquire__formContainer__emailLabel">Email address:
-			<input class="shop__product__inquire__formContainer__emailLabel__field" type="email" name="email" placeholder="johndoe@example.com" required>
-		</label>
-		<input type="hidden" name="subject" value="Ερώτηση για 'Your Lovely Pussycat and Her Single Hair'" required>
-		<label class="shop__product__inquire__formContainer__messageLabel">Message:
-			<textarea class="shop__product__inquire__formContainer__messageLabel__field" name="message" placeholder="Your message.."></textarea>
-		</label>
-		<button class="shop__product__inquire__formContainer__submitButton" type="submit">Send</button>
-	</form>
-
-
-	<section class="shop__product__inquire__contactOptions">
-		<h3 class="shop__product__inquire__contactOptions__title">If you prefer, you can also find me on:</h3>
-		<a href="https://m.me/kostasgogasart" class="shop__product__inquire__contactOptions__link" target="_blank" rel="noopener">
-			<i class="fa fa-facebook-official" aria-hidden="true"></i>
-			Facebook Messenger
-			<i class="fa fa-external-link" aria-hidden="true"></i>
-		</a>
-		<a href="https://www.instagram.com/kostasgogasart/" class="shop__product__inquire__contactOptions__link" target="_blank" rel="noopener">
-			<i class="fa fa-instagram" aria-hidden="true"></i>
-			Instagram
-			<i class="fa fa-external-link" aria-hidden="true"></i>
-		</a>
-		<p class="shop__product__inquire__contactOptions__text">
-			..and ask me anything there.
+<header class="product__headerOfProduct">
+	<a href="/shop/all/" class="product__headerOfProduct__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+	<div class="product__headerOfProduct__center">
+		<div class="product__headerOfProduct__center__wrapper">
+			<h1 class="product__headerOfProduct__center__heading">
+				Distorted Environment Producing Temporary Doubts
+			</h1>
+			<p class="product__headerOfProduct__center__shortDescription">cm x cm | Rollerball Pen on Paper 80gsm</p>
+		</div>
+	</div>
+	<div class="product__headerOfProduct__rightSpot">
+		<p class="product__headerOfProduct__rightSpot__price">
+			€ 40
 		</p>
-	</section>
+		<a href="\shop\inquire\distortion.html" class="product__headerOfProduct__rightSpot__buy">Contact</a>
+	</div>
+</header>
 
-	<section class="shop__product__inquire__messageTips">
-		<h3 class="shop__product__inquire__messageTips__heading">What to include in the message</h3>
-		<p class="shop__product__inquire__messageTips__description">Whatever you feel like, but here is some suggestions.</p>
-		<ul class="shop__product__inquire__messageTips__heading__list">
-			<li class="shop__product__inquire__messageTips__heading__list__item">Questions about payment methods</li>
-			<li class="shop__product__inquire__messageTips__heading__list__item">Questions about shipping methods</li>
-			<li class="shop__product__inquire__messageTips__heading__list__item">Counter offer</li>
-		</ul>
-	</section>
+<figure class="product__featuredImageFigure">
+	<picture class="product__featuredImageFigure__picture">
+		<source media="(max-width: 40px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-320.jpg">
+		<source media="(max-width: 500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-460.jpg">
+		<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-800.jpg">
+		<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product.jpg" alt="''" title="featured-image-alt-en" class="product__featuredImageFigure__picture__img lazyload">
+	</picture>
+	<figcaption class="product__featuredImageFigure__figcaption">Colors may look different from screen to screen and in real life.</figcaption>
+</figure>
 
-	<section class="shop__product__inquire__messageTips">
-		<h3 class="shop__product__inquire__messageTips__heading">What to expect after sending your message</h3>
-		<ul class="shop__product__inquire__messageTips__heading__list">
-			<li class="shop__product__inquire__messageTips__heading__list__item">The artist himself or one of his partners will get back to you as soon as possible.</li>
+<figure class="product__imageGallery">
+	
+	<a href="#" class="product__imageGallery__imageLink">
+		<picture class="product__imageGallery__imageLink__picture">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-1/distortion-corner-edge-1-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-1/distortion-corner-edge-1-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-1/distortion-corner-edge-1-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-1/distortion-corner-edge-1-photo-of-artwork.jpg" alt="'Distorted Environment Producing Temporary Doubts', Photo Detail " title="Photo Detail of 'Distorted Environment Producing Temporary Doubts' by Kostas Gogas" class="product__imageGallery__imageLink__picture__image lazyload">
+		</picture>
+	</a>
+	
+	<a href="#" class="product__imageGallery__imageLink">
+		<picture class="product__imageGallery__imageLink__picture">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/distortion-corner-edge-2-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/distortion-corner-edge-2-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/distortion-corner-edge-2-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-2/distortion-corner-edge-2-photo-of-artwork.jpg" alt="'Distorted Environment Producing Temporary Doubts', Photo Detail " title="Photo Detail of 'Distorted Environment Producing Temporary Doubts' by Kostas Gogas" class="product__imageGallery__imageLink__picture__image lazyload">
+		</picture>
+	</a>
+	
+	<a href="#" class="product__imageGallery__imageLink">
+		<picture class="product__imageGallery__imageLink__picture">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/distortion-corner-edge-3-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/distortion-corner-edge-3-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/distortion-corner-edge-3-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-3/distortion-corner-edge-3-photo-of-artwork.jpg" alt="'Distorted Environment Producing Temporary Doubts', Photo Detail " title="Photo Detail of 'Distorted Environment Producing Temporary Doubts' by Kostas Gogas" class="product__imageGallery__imageLink__picture__image lazyload">
+		</picture>
+	</a>
+	
+	<a href="#" class="product__imageGallery__imageLink">
+		<picture class="product__imageGallery__imageLink__picture">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/distortion-corner-edge-4-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/distortion-corner-edge-4-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/distortion-corner-edge-4-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-edge-4/distortion-corner-edge-4-photo-of-artwork.jpg" alt="'Distorted Environment Producing Temporary Doubts', Photo Detail " title="Photo Detail of 'Distorted Environment Producing Temporary Doubts' by Kostas Gogas" class="product__imageGallery__imageLink__picture__image lazyload">
+		</picture>
+	</a>
+	
+	<a href="#" class="product__imageGallery__imageLink">
+		<picture class="product__imageGallery__imageLink__picture">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/distortion-back-photo-of-artwork-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/distortion-back-photo-of-artwork-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/photos-back/distortion-back-photo-of-artwork-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/photos-back/distortion-back-photo-of-artwork.jpg" alt="'Distorted Environment Producing Temporary Doubts', Photo Detail " title="Photo Detail of 'Distorted Environment Producing Temporary Doubts' by Kostas Gogas" class="product__imageGallery__imageLink__picture__image lazyload">
+		</picture>
+	</a>
+	
+	<figcaption class="product__imageGallery__figcaption">Click on an image for a closer look.</figcaption>
+</figure>
+
+<div class="product__details__Box">
+	<aside class="product__details">
+		<h2 class="product__details__heading"><i class="fa fa-info-circle"></i> Artwork Details</h2>
+		<ul class="product__details__unorderedList">	
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Artwork Title:</strong> Distorted Environment Producing Temporary Doubts
+			</li>
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Artist:</strong> Kostas Gogas
+			</li>
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Date of Creation:</strong> first quarter of 2008
+			</li>
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Signed:</strong> Yes</li>
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Medium:</strong> Rollerball Pen
+			</li>
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Surface:</strong> Paper 80gsm</li>
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Πλάτος:</strong> cm</li>
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Ύψος:</strong> cm
+			</li>
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Πάχος:</strong> 0.01cm
+			</li>
 		</ul>
-	</section>
+<!-- 		<ul class="product__details__unorderedList">
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">Βάρος:</strong> plchldr
+			</li>
+			<li class="product__details__unorderedList__listItem">
+				<strong class="product__details__unorderedList__listItem__strong">id:</strong> distortion
+			</li>
+		</ul> -->
+	</aside>
+</div>
 
 </div>
 
