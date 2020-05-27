@@ -14,6 +14,12 @@
 	
 
 
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="/assets/scripts/lazysizes.min.js" async=""></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
+
 
 	<style type="text/css">
 		/* http://meyerweb.com/eric/tools/css/reset/ 
@@ -332,14 +338,17 @@ SITEWIDE
 
 	font-weight: 800;
 
-	color: black;
+	color: #005fff;
 }
+
 
 /* Site Wide Footer */
 
 .siteWideFooter {
 	margin-top: 10vmin;
 	padding: 10vmin;
+	float: none;
+	clear: both;
 
 	background-color: black;
 }
@@ -378,12 +387,12 @@ SITEWIDE
 
 	color: white;
 }
+
+
+
+		/* for lightbox - jquery must load first - keep it below it*/
+		.lb-loader,.lightbox{text-align:center;line-height:0;position:absolute;left:0}body.lb-disable-scrolling{overflow:hidden}.lightboxOverlay{position:absolute;top:0;left:0;z-index:9999;background-color:#000;filter:alpha(Opacity=80);opacity:.8;display:none}.lightbox{width:100%;z-index:10000;font-weight:400;outline:0}.lightbox .lb-image{display:block;height:auto;max-width:inherit;max-height:none;border-radius:3px;border:4px solid #fff}.lightbox a img{border:none}.lb-outerContainer{position:relative;width:250px;height:250px;margin:0 auto;border-radius:4px;background-color:#fff}.lb-outerContainer:after{content:"";display:table;clear:both}.lb-loader{top:43%;height:25%;width:100%}.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(../assets/images/loading.gif) no-repeat}.lb-nav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10}.lb-container>.nav{left:0}.lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.lb-next,.lb-prev{height:100%;cursor:pointer;display:block}.lb-nav a.lb-prev{width:34%;left:0;float:left;background:url(../assets/images/prev.png) left 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-prev:hover{filter:alpha(Opacity=100);opacity:1}.lb-nav a.lb-next{width:64%;right:0;float:right;background:url(../assets/images/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-next:hover{filter:alpha(Opacity=100);opacity:1}.lb-dataContainer{margin:0 auto;padding-top:5px;width:100%;border-bottom-left-radius:4px;border-bottom-right-radius:4px}.lb-dataContainer:after{content:"";display:table;clear:both}.lb-data{padding:0 4px;color:#ccc}.lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}.lb-data .lb-caption{font-size:13px;font-weight:700;line-height:1em}.lb-data .lb-caption a{color:#4ae}.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(../assets/images/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}.lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}
 	</style>
-
-
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script src="/assets/scripts/lazysizes.min.js" async=""></script>
 </head>
 <body>
 	<!-- Add javascript cookie for returning users  -->
@@ -441,7 +450,7 @@ make it one black line at the bottom
 		</span>
 	</h3>
 	</div>
-	<a href="/work/" class="sitewide__header__link">About</a>
+	<a href="/about/" class="sitewide__header__link">About</a>
 	<a href="/shop/all/" class="sitewide__header__link">Shop</a>
 </header>
 
@@ -470,6 +479,8 @@ make it one black line at the bottom
 
 		font-size: 2vmin;
 		text-decoration: underline;
+
+		color: black;
 	}
 
 	.shop__product__inquire__header {
@@ -477,7 +488,7 @@ make it one black line at the bottom
 		width: 100%;
 		margin: auto;
 		display: grid;
-		grid-template-columns: 20vw 70vw;
+		grid-template-columns: 10vw 80vw;
 		align-items: center;
 
 		background-color: #ededed;
@@ -493,12 +504,12 @@ make it one black line at the bottom
 	.shop__product__inquire__header__heading__interest {
 		display: block;
 
-		font-size: 2.5vmin;
+		font-size: 3vmin;
+		font-weight: 400;
 	}
 
 	.shop__product__inquire__header__heading__title {
 		display: block;
-		margin-top: 1vmin;
 
 		font-size: 3vmin;
 	}
@@ -542,7 +553,7 @@ make it one black line at the bottom
 		font-size: 3vmin;
 		font-family: 'Inter', Sans-serif;
 
-		border-radius: 3vmin;
+		border-radius: 0.7vmin;
 
 		background-color: #ededed;
 		border: 0 solid white;
@@ -571,7 +582,7 @@ make it one black line at the bottom
 		font-size: 3vmin;
 		font-family: 'Inter', Sans-serif;
 
-		border-radius: 3vmin;
+		border-radius: 0.7vmin;
 
 		background-color: #ededed;
 		border: 0 solid white;
@@ -599,7 +610,7 @@ make it one black line at the bottom
 		font-weight: normal;
 		font-size: 3vmin;
 
-		border-radius: 3vmin;
+		border-radius: 0.7vmin;
 
 		background-color: #ededed;
 		border: 0 solid white;
@@ -616,7 +627,7 @@ make it one black line at the bottom
 		font-weight: bold;
 		letter-spacing: 0.1vmin;
 
-		border-radius: 3vmin;
+		border-radius: 0.7vmin;
 
 		border: 0 solid transparent;
 		background-color: #005fff;
@@ -630,7 +641,7 @@ make it one black line at the bottom
 		margin: 4vh auto;
 		padding: 6vmin;
 
-		color: #555;
+		color: black;
 		background-color: #ddd;
 	}
 
@@ -647,12 +658,13 @@ make it one black line at the bottom
 		padding: 2vmin;
 
 		font-size: 2.25vmin;
-		font-weight: 400;
+		font-weight: 800;
 		letter-spacing: 0.1vmin;
 
-		background-color: #555;
-		color: white;
-		border-radius: 1vmin;
+		background-color: white;
+		color: #005fff;
+		border-radius: 0.7vmin;
+		border: 0.2vmin solid #005fff;
 	}
 
 	.shop__product__inquire__contactOptions__text {
@@ -707,10 +719,13 @@ make it one black line at the bottom
 
 	<header class="shop__product__inquire__header">
 		<picture class="shop__product__inquire__header__picture">
-			<img src="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product.jpg" class="shop__product__inquire__header__picture__image">
+			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-320.jpg">
+			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-460.jpg">
+			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-800.jpg">
+			<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product.jpg" class="shop__product__inquire__header__picture__image lazyload">
 		</picture>
 		<h1 class="shop__product__inquire__header__heading">
-			<span class="shop__product__inquire__header__heading__interest">Inquire about</span>
+			<span class="shop__product__inquire__header__heading__interest">Express your interest for</span>
 			<span class="shop__product__inquire__header__heading__title">Blind Speaker (The Campaign)</span>
 		</h1>
 	</header>
@@ -751,6 +766,9 @@ make it one black line at the bottom
 		<h3 class="shop__product__inquire__messageTips__heading">What to include in the message</h3>
 		<p class="shop__product__inquire__messageTips__description">Whatever you feel like, but here is some suggestions.</p>
 		<ul class="shop__product__inquire__messageTips__heading__list">
+			<li class="shop__product__inquire__messageTips__heading__list__item">Questions about the artwork dimensions, medium, surface (make sure we don't already include those in the product page)</li>
+			<li class="shop__product__inquire__messageTips__heading__list__item">Ask for more photos</li>
+			<li class="shop__product__inquire__messageTips__heading__list__item">If we can meet up close</li>
 			<li class="shop__product__inquire__messageTips__heading__list__item">Questions about payment methods</li>
 			<li class="shop__product__inquire__messageTips__heading__list__item">Questions about shipping methods</li>
 			<li class="shop__product__inquire__messageTips__heading__list__item">Counter offer</li>
@@ -770,7 +788,7 @@ make it one black line at the bottom
 	<section class="siteWideFooter__section">
 		<h3 class="siteWideFooter__section__heading">#</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
-			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/work/" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
+			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/about/" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/shop/" class="siteWideFooter__section__heading__unorderedList__listItem__link">Shop</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/blog/" class="siteWideFooter__section__heading__unorderedList__listItem__link">Blog</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">Contact</a></li>

@@ -11,6 +11,12 @@
 	
 
 
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="/assets/scripts/lazysizes.min.js" async=""></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
+
 
 	<style type="text/css">
 		/* http://meyerweb.com/eric/tools/css/reset/ 
@@ -329,14 +335,17 @@ SITEWIDE
 
 	font-weight: 800;
 
-	color: black;
+	color: #005fff;
 }
+
 
 /* Site Wide Footer */
 
 .siteWideFooter {
 	margin-top: 10vmin;
 	padding: 10vmin;
+	float: none;
+	clear: both;
 
 	background-color: black;
 }
@@ -375,12 +384,12 @@ SITEWIDE
 
 	color: white;
 }
+
+
+
+		/* for lightbox - jquery must load first - keep it below it*/
+		.lb-loader,.lightbox{text-align:center;line-height:0;position:absolute;left:0}body.lb-disable-scrolling{overflow:hidden}.lightboxOverlay{position:absolute;top:0;left:0;z-index:9999;background-color:#000;filter:alpha(Opacity=80);opacity:.8;display:none}.lightbox{width:100%;z-index:10000;font-weight:400;outline:0}.lightbox .lb-image{display:block;height:auto;max-width:inherit;max-height:none;border-radius:3px;border:4px solid #fff}.lightbox a img{border:none}.lb-outerContainer{position:relative;width:250px;height:250px;margin:0 auto;border-radius:4px;background-color:#fff}.lb-outerContainer:after{content:"";display:table;clear:both}.lb-loader{top:43%;height:25%;width:100%}.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(../assets/images/loading.gif) no-repeat}.lb-nav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10}.lb-container>.nav{left:0}.lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.lb-next,.lb-prev{height:100%;cursor:pointer;display:block}.lb-nav a.lb-prev{width:34%;left:0;float:left;background:url(../assets/images/prev.png) left 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-prev:hover{filter:alpha(Opacity=100);opacity:1}.lb-nav a.lb-next{width:64%;right:0;float:right;background:url(../assets/images/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-next:hover{filter:alpha(Opacity=100);opacity:1}.lb-dataContainer{margin:0 auto;padding-top:5px;width:100%;border-bottom-left-radius:4px;border-bottom-right-radius:4px}.lb-dataContainer:after{content:"";display:table;clear:both}.lb-data{padding:0 4px;color:#ccc}.lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}.lb-data .lb-caption{font-size:13px;font-weight:700;line-height:1em}.lb-data .lb-caption a{color:#4ae}.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(../assets/images/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}.lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}
 	</style>
-
-
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script src="/assets/scripts/lazysizes.min.js" async=""></script>
 </head>
 <body>
 	<!-- Add javascript cookie for returning users  -->
@@ -438,47 +447,46 @@ make it one black line at the bottom
 		</span>
 	</h3>
 	</div>
-	<a href="/work/" class="sitewide__header__link">About</a>
+	<a href="/about/" class="sitewide__header__link">About</a>
 	<a href="/shop/all/" class="sitewide__header__link">Shop</a>
 </header>
 
 	<style type="text/css">
 	.index {
 		position: relative;
-		top: -10vmin;
-		height: 100vh;
+		height: 90vh;
 		width: 100%;
 
-		background-image: url("/assets/temp/the-hardcore-man-bg.jpg");
+		background-image: url("/assets/temp/the-hardcore-man-bg-highest-cropped-W1500px-7q.jpg");
 		background-position: center;
-		background-size: cover;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	.index__titleContainer {
 		display: none;
 	}
 
 	.index__linksContainer {
-		position: absolute;
-		height: 25vh;
-		width: 100%;
-		bottom: 0;
+		width: 90vmin;
 		margin: auto;
 
 		text-align: center;
 	}
 
 	.index__linksContainer__shop {
+		position: absolute;
+		bottom: 2vmin;
 		display: inline-block;
-		width: 30vmin;
-		margin: 0.5vmin;
+		width: 40vmin;
+		margin: auto;
 
 		text-align: center;
 		font-weight: 800;
-		line-height: 8.5vmin;
+		line-height: 7.5vmin;
 		font-size: 3.5vmin;
 
 		color: white;
-		background-color: black;
+		background-color: #005fff;
 		border: 0.2vmin solid black;
 		border-radius: 1vmin;
 	}
@@ -488,17 +496,19 @@ make it one black line at the bottom
 	}
 
 	.index__linksContainer__learnMore {
+		position: absolute;
+		bottom: 2vmin;
 		display: inline-block;
-		width: 30vmin;
-		margin: 0.5vmin;
+		width: 40vmin;
+		margin: auto;
 
 		text-align: center;
 		font-weight: 400;
-		line-height: 8.5vmin;
+		line-height: 7.5vmin;
 		font-size: 3.5vmin;
 
-		color: black;
-		background-color: white;
+		color: white;
+		background-color: black;
 		border: 0.2vmin solid black;
 		border-radius: 1vmin;
 	}
@@ -513,16 +523,6 @@ make it one black line at the bottom
 		<h1 class="index__titleContainer__title">RAW CREATIVE POWERHOUSE</h1>
 		<p class="index__titleContainer__subtitle">official website of Kostas Gogas</p>
 	</section>
-	<section class="index__linksContainer">
-		<a href="/shop/all/" class="index__linksContainer__shop">
-			Shop
-			<i class="fa fa-angle-right index__linksContainer__shop__icon" aria-hidden="true"></i>
-		</a>
-		<a href="/work/" class="index__linksContainer__learnMore">
-			Learn More
-			<i class="fa fa-angle-right index__linksContainer__learnMore__icon" aria-hidden="true"></i>
-		</a>
-	</section>
 </div>
 
 
@@ -530,7 +530,7 @@ make it one black line at the bottom
 	<section class="siteWideFooter__section">
 		<h3 class="siteWideFooter__section__heading">#</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
-			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/work/" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
+			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/about/" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/shop/" class="siteWideFooter__section__heading__unorderedList__listItem__link">Shop</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/blog/" class="siteWideFooter__section__heading__unorderedList__listItem__link">Blog</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="#" class="siteWideFooter__section__heading__unorderedList__listItem__link">Contact</a></li>
