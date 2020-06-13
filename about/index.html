@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kostas Gogas | About Me  A Multidisciplinary Daredevil Artist from Athens, Greece</title>
+	<title>Kostas Gogas | About Me  A Multidisciplinary Disruptor Artist from Athens, Greece</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,9 +12,6 @@
 
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script src="/assets/scripts/lazysizes.min.js" async=""></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
 
 
 
@@ -352,15 +349,21 @@ SITEWIDE
 
 .siteWideFooter__section {
 	display: inline-block;
-	width: 45%;
+	width: 30%;
 	vertical-align:top;
+}
+
+@media only screen and (max-width: 767px) {
+.siteWideFooter__section {
+	display: block;
+	width: 100%;
+  }
 }
 
 .siteWideFooter__section__heading {
 	margin-top: 6vh;
 	margin-bottom: 2vh;
 
-	text-transform: uppercase;
 	font-weight: 800;
 	font-size: 3vmin;
 
@@ -383,6 +386,37 @@ SITEWIDE
 	line-height: 1.25;
 
 	color: white;
+}
+
+.siteWideFooter__section__header {
+	margin-top: 6vh;
+	margin-bottom: 2vh;
+
+	font-size: 3vmin;
+
+	color: white;
+}
+
+.siteWideFooter__section__header__title {
+	font-weight: 800
+}
+
+.siteWideFooter__section__header__subtitle {
+	margin: 1vmin 0;
+
+	font-weight: 400;
+	font-size: 2.5vmin;
+	line-height: 1.25;
+}
+
+.siteWideFooter__section__content {
+	line-height: 1.25;
+}
+
+.siteWideFooter__section__content__paragraph {
+	margin: 1vmin 0;
+
+	color: #aaa;
 }
 
 
@@ -437,18 +471,18 @@ make it one black line at the bottom
 </script>
 	<header class="sitewide__header">
 	<a href="/" class="sitewide__header__logoLink">
-		<img src="/assets/temp/logo-signature-kostas-gogas-black.png" alt="Kostas Gogas Signature Logo" title="Go to Homepage" class="sitewide__header__logoLink__image">
+		<img src="https://res.cloudinary.com/kostasgogas/brand/logo-signature-kostas-gogas-black.png" alt="Kostas Gogas Signature Logo" title="Go to Homepage" class="sitewide__header__logoLink__image">
 	</a>
 	<div class="sitewide__header__titleWrapper">
-	<h3 class="sitewide__header__titleWrapper__title">
-		Official Website of Multidisciplinary Artist 
-		<span class="sitewide__header__titleWrapper__title__name">
-			Kostas Gogas
-		</span>
-	</h3>
+		<h3 class="sitewide__header__titleWrapper__title">
+			Official Website of Multidisciplinary Artist 
+			<span class="sitewide__header__titleWrapper__title__name">
+				Kostas Gogas
+			</span>
+		</h3>
 	</div>
 	<a href="/about/" class="sitewide__header__link">About</a>
-	<a href="/shop/all/" class="sitewide__header__link">Shop</a>
+	<a href="/shop/" class="sitewide__header__link">Shop</a>
 </header>
 
 	<style type="text/css">
@@ -456,7 +490,7 @@ make it one black line at the bottom
 	}
 
 	.about__portraitPhoto {
-		max-width: 80vmin;
+		max-width: 90vmin;
 		height: 50vh;
 		margin: 0 auto 3vmin;
 	}
@@ -475,7 +509,7 @@ make it one black line at the bottom
 	}
 
 	.about__paragraphSection {
-		width: 80vmin;
+		width: 90vmin;
 		margin: auto;
 	}
 
@@ -486,13 +520,13 @@ make it one black line at the bottom
 
 	.about__paragraphSection__header__title {
 		font-weight: 800;
-		font-size: 4vmin;
+		font-size: 5vmin;
 		line-height: 1.25;
 	}
 
 	.about__paragraphSection__header__subtitle {
 		font-weight: 400;
-		font-size: 3.5vmin;
+		font-size: 4vmin;
 		line-height: 1.25;
 	}
 
@@ -501,7 +535,7 @@ make it one black line at the bottom
 		display: block;
 
 		font-weight: 400;
-		font-size: 2vmin;
+		font-size: 3vmin;
 		line-height: 1.25;
 	}
 
@@ -509,15 +543,31 @@ make it one black line at the bottom
 		margin: 2vmin 0;
 
 		font-weight: 400;
-		font-size: 2.5vmin;
+		font-size: 3vmin;
 		line-height: 1.25;
+	}
+
+	.about__footerLink {
+		display: block;
+		width: max-content;
+		padding: 1.5vmin 3vmin;
+		margin: 10vmin auto 3vmin;
+
+		font-size: 2.5vmin;
+		font-weight: 800;
+		text-align: center;
+
+		background-color: #005fff;
+		color: white;
+
+		border-radius: 0.5vmin;
 	}
 </style>
 
 <div class="about">
 	<figure class="about__portraitPhoto">
 		<picture class="about__portraitPhoto__picture">
-			<img src="/assets/temp/portrait-of-multidisciplinary-artist-kostas-gogas-from-nea-filadelfeia-athens-greece.jpg" class="about__portraitPhoto__picture__img">
+			<img src="/wp-content/uploads/portrait-of-multidisciplinary-artist-kostas-gogas-from-nea-filadelfeia-athens-greece-3.jpg" class="about__portraitPhoto__picture__img">
 		</picture>		
 	</figure>
 <section class="about__paragraphSection">
@@ -543,13 +593,13 @@ make it one black line at the bottom
 	</p>
 </section>
 
-<a href="/work/">View my Work</a>
+<a href="/work/" class="about__footerLink">View my Work</a>
 	
 </div>
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">
-		<h3 class="siteWideFooter__section__heading">#</h3>
+		<h3 class="siteWideFooter__section__heading">Quick Links</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/about/" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/shop/" class="siteWideFooter__section__heading__unorderedList__listItem__link">Shop</a></li>
@@ -559,7 +609,7 @@ make it one black line at the bottom
 		</ul>
 	</section>
 	<section class="siteWideFooter__section">
-		<h3 class="siteWideFooter__section__heading">Social</h3>
+		<h3 class="siteWideFooter__section__heading">Connect on Social</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="http://eepurl.com/c5g1PH" class="siteWideFooter__section__heading__unorderedList__listItem__link">Mailing List</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://facebook.com/kostasgogasart" class="siteWideFooter__section__heading__unorderedList__listItem__link">Facebook</a></li>
@@ -568,6 +618,15 @@ make it one black line at the bottom
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://linkedin.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">LinkedIn</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://pinterest.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">Pinterest</a></li>
 		</ul>
+	</section>
+	<section class="siteWideFooter__section">
+		<header class="siteWideFooter__section__header">
+			<h3 class="siteWideFooter__section__header__title">Kostas Gogas</h3>
+			<p class="siteWideFooter__section__header__subtitle">Official Concept Store of Art Disruptor Kostas Gogas</p>			
+		</header>
+		<section class="siteWideFooter__section__content">
+			<p class="siteWideFooter__section__content__paragraph">Nea Filadelfeia 14342, Athens, Greece</p>
+		</section>
 	</section>
 </footer>
 

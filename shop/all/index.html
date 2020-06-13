@@ -13,9 +13,6 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<script src="/assets/scripts/lazysizes.min.js" async=""></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
-
 
 
 	<style type="text/css">
@@ -352,15 +349,21 @@ SITEWIDE
 
 .siteWideFooter__section {
 	display: inline-block;
-	width: 45%;
+	width: 30%;
 	vertical-align:top;
+}
+
+@media only screen and (max-width: 767px) {
+.siteWideFooter__section {
+	display: block;
+	width: 100%;
+  }
 }
 
 .siteWideFooter__section__heading {
 	margin-top: 6vh;
 	margin-bottom: 2vh;
 
-	text-transform: uppercase;
 	font-weight: 800;
 	font-size: 3vmin;
 
@@ -383,6 +386,37 @@ SITEWIDE
 	line-height: 1.25;
 
 	color: white;
+}
+
+.siteWideFooter__section__header {
+	margin-top: 6vh;
+	margin-bottom: 2vh;
+
+	font-size: 3vmin;
+
+	color: white;
+}
+
+.siteWideFooter__section__header__title {
+	font-weight: 800
+}
+
+.siteWideFooter__section__header__subtitle {
+	margin: 1vmin 0;
+
+	font-weight: 400;
+	font-size: 2.5vmin;
+	line-height: 1.25;
+}
+
+.siteWideFooter__section__content {
+	line-height: 1.25;
+}
+
+.siteWideFooter__section__content__paragraph {
+	margin: 1vmin 0;
+
+	color: #aaa;
 }
 
 
@@ -437,18 +471,18 @@ make it one black line at the bottom
 </script>
 	<header class="sitewide__header">
 	<a href="/" class="sitewide__header__logoLink">
-		<img src="/assets/temp/logo-signature-kostas-gogas-black.png" alt="Kostas Gogas Signature Logo" title="Go to Homepage" class="sitewide__header__logoLink__image">
+		<img src="https://res.cloudinary.com/kostasgogas/brand/logo-signature-kostas-gogas-black.png" alt="Kostas Gogas Signature Logo" title="Go to Homepage" class="sitewide__header__logoLink__image">
 	</a>
 	<div class="sitewide__header__titleWrapper">
-	<h3 class="sitewide__header__titleWrapper__title">
-		Official Website of Multidisciplinary Artist 
-		<span class="sitewide__header__titleWrapper__title__name">
-			Kostas Gogas
-		</span>
-	</h3>
+		<h3 class="sitewide__header__titleWrapper__title">
+			Official Website of Multidisciplinary Artist 
+			<span class="sitewide__header__titleWrapper__title__name">
+				Kostas Gogas
+			</span>
+		</h3>
 	</div>
 	<a href="/about/" class="sitewide__header__link">About</a>
-	<a href="/shop/all/" class="sitewide__header__link">Shop</a>
+	<a href="/shop/" class="sitewide__header__link">Shop</a>
 </header>
 
 	<style type="text/css">
@@ -587,100 +621,17 @@ make it one black line at the bottom
 
 	<section class="shop__all__allProducts">
 		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/draft-sketch-three-characters.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/draft-sketch-three-characters.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Draft Sketches with Three Characters</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>22.5cm x 20.1cm </span> 
-							<br/>Pencil on Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2007</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 50</p>
-					</footer>
-				</a>
-			</article>
+		
+		
+		
+		
+		
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/modernist-village.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-village-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">The Modernist in the Village</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>25.8cm x 18.1cm </span> 
-							<br/>Pencil on Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">late 2007</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/modernist-007.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/modernist-007-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Modernist 007 has One Eye Only</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.1cm x 19.6cm </span> 
-							<br/>Pencil on Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">late 2007</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/woman-cursing.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/woman-cursing-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Woman Curses for Her Man is Shrinking (at least leave the penis alone!)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.8cm x 28.7cm </span> 
-							<br/>Pencil on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/lovely-pussycat.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/your-lovely-pussycat-and-her-single-hair/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/lovely-pussycat-product-320.jpg">
@@ -701,9 +652,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/elvis.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/elvis-copy-with-musical-hairstyle/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/elvis-product-320.jpg">
@@ -724,9 +677,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/monster-blond-hair.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/monster-with-well-groomed-hair-blond-sitting/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-blond-hair-product-320.jpg">
@@ -747,55 +702,15 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/eco-friendly-monster.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/eco-friendly-monster-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Environmentally Conscious Monster</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Pencil on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2012</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/imaginary-friend.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/imaginary-friend-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Imaginary Friend (Kid in Difficult Situation but Nevertheless Having Fun)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 26.4cm </span> 
-							<br/>Pencil on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2012</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/aristocratic-portrait-1.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/aristocratic-long-portrait-1/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product-320.jpg">
@@ -803,7 +718,7 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-1-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristotractic Long Portrait 1</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristocratic Long Portrait 1</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
@@ -816,9 +731,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/aristocratic-portrait-2.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/aristocratic-long-portrait-2/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product-320.jpg">
@@ -826,7 +743,7 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-2-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristotractic Long Portrait 2</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristocratic Long Portrait 2</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.6cm </span> 
@@ -839,9 +756,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/aristocratic-portrait-3.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/aristocratic-long-portrait-3/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product-320.jpg">
@@ -849,7 +768,7 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-3-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristotractic Long Portrait 3</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristocratic Long Portrait 3</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.5cm </span> 
@@ -862,9 +781,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/aristocratic-portrait-4.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/aristocratic-long-portrait-4/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product-320.jpg">
@@ -872,7 +793,7 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/aristocratic-portrait-4-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristotractic Long Portrait 4</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Aristocratic Long Portrait 4</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
@@ -885,32 +806,13 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/rebels-path.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/rebels-path-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Rebels on Difficult Path (with beaks)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
-							<br/>Pencil on Smooth Art Paper 130gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/glassblower.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/man-taking-form-god-is-a-glassblower/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/glassblower-product-320.jpg">
@@ -931,9 +833,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/upside-down.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/upside-down-in-order-to-break-the-thinking-pattern-but-because-he-is-tired-he-sleeps-from-time-to-time/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/upside-down-product-320.jpg">
@@ -954,55 +858,15 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/blasphemy.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/blasphemy-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Blasphemy</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Pencil on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2013</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/old-muscular-man.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/old-muscular-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Old Muscular Man Crushing a Soda Can</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.6cm x 21.1cm </span> 
-							<br/>Pencil on White Beige Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2010</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 30</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/mime-statue.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/mime-statue-in-an-apartment/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mime-statue-product-320.jpg">
@@ -1023,55 +887,15 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/ladies-man.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/ladies-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Portrait of a Tired Ladies Man (he is not good-looking anymore)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
-							<br/>Pencil on Smooth Art Paper 130gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/siamese-costume.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/siamese-costume-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Siamese Costume for the Carnival</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.8cm x 21cm </span> 
-							<br/>Pencil on Smooth Art Paper 130gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/one-night.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/one-night-man-participating-in-a-talent-show-s-full-run/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/one-night-product-320.jpg">
@@ -1092,147 +916,23 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/monster-tits.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/monster-tits-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Ugly Monster with Tits (Bald with Long Hair) and Red Eyes</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 26.4cm </span> 
-							<br/>Pencil on White Beige Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/headache.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/headache-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Headache (Concept for Introducing Cubism in Video)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.8cm x 26.2cm </span> 
-							<br/>Pencil on White Beige Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">early 2011</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 90</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/sleepy-laugh.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/sleepy-laugh-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Sleepy Middle-Aged Man Trying to Laugh Out of Politeness - He Froze and Remained Like That</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Pencil on White Beige Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2010</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 80</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/punching.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/punching-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">The Punching (Don't touch the ground, in order to appear weak)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>14.5cm x 16.9cm </span> 
-							<br/>Pencil on Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2007</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/portrait-man.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Portrait Man 1</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Pencil on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2013</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 80</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/portrait-man-2.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/portrait-man-2-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Portrait Man 2</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Pencil on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2013</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 80</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/material-red.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/paintings/abstract-materials-1-red/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-red-product-320.jpg">
@@ -1253,9 +953,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/material-brown.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/paintings/abstract-materials-2-brown/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-brown-product-320.jpg">
@@ -1276,9 +978,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/material-light-blue.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/paintings/abstract-materials-3-light-blue/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-light-blue-product-320.jpg">
@@ -1299,9 +1003,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/material-gray.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/paintings/abstract-materials-4-gray/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-gray-product-320.jpg">
@@ -1322,9 +1028,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/material-yellow.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/paintings/abstract-materials-5-yellow/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-yellow-product-320.jpg">
@@ -1345,9 +1053,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/material-green.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/paintings/abstract-materials-6-green/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/material-green-product-320.jpg">
@@ -1368,9 +1078,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/green-creature.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/paintings/green-creature-in-distress/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/green-creature-product-320.jpg">
@@ -1391,9 +1103,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/crow-kid.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/paintings/crow-painted-by-a-kid-very-mature-for-his-age/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/crow-kid-product-320.jpg">
@@ -1414,32 +1128,13 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/demon-fiery-tongue.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/demon-fiery-tongue-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Demon Posing with a Fiery Tongue (badly designed for stylistic reasons)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Uni-Posca Marker & Ink (signed with rollerball pen) on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2010</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/quiet-kid.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/quiet-kid-dressed-as-a-king-by-his-successful-mother/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/quiet-kid-product-320.jpg">
@@ -1460,9 +1155,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/woman-makeup.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/unremarkable-woman-on-the-way-to-the-make-up-room-you-did-something-with-your-hair/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/woman-makeup-product-320.jpg">
@@ -1483,9 +1180,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/contemporary-demon.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/contemporary-demon/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/contemporary-demon-product-320.jpg">
@@ -1506,9 +1205,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/dewlap-teen.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/teenager-with-a-dewlap-is-forced-to-stand-for-a-photo/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dewlap-teen-product-320.jpg">
@@ -1529,9 +1230,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/spent-lives.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/spent-our-lives-at-ceremonies-now-i-don-t-even-have-the-strength/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/spent-lives-product-320.jpg">
@@ -1552,9 +1255,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/mature-demon.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/mature-demon-that-knows-what-he-wants-from-life-now/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product-320.jpg">
@@ -1562,7 +1267,7 @@ make it one black line at the bottom
 							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product-800.jpg">
 							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/mature-demon-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Mature Demon (that doesn't wonder what he wants from life anymore)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Mature Demon (that knows what he wants from life now)</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.4cm x 27.6cm </span> 
@@ -1575,9 +1280,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/demon-social.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/demon-photo-uploaded-by-himself-on-social-media-as-they-existed-at-the-beginning-of-the-21st-century/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-320.jpg">
@@ -1598,9 +1305,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/ancient-demon.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/ancient-demon-waking-up-from-hibernation-in-contemporary-times/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/ancient-demon-product-320.jpg">
@@ -1621,9 +1330,11 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/distortion.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/distorted-environment-producing-temporary-doubts/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/distortion-product-320.jpg">
@@ -1644,78 +1355,17 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
+		
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/father-portrait.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/father-portrait-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Father Posing for Living Room Portrait (The Military Uniform Doesn't Fit Him)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">late 2011 or early 2012</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/masquerader-19th-century.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/masquerader-19th-century-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Masquerader, Beginning of 19th Century, France (inprisoned 3 hours later)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">late 2011 or early 2012</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/kids-playing-roles.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/kids-playing-roles-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Kids Playing, Acting Roles (Victim, Detective, Cop) - Painted from Real Life</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>24.5cm x 18.7cm </span> 
-							<br/>Fine Tip Inking Pen on Extreme White Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">August 2011</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 30</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/exact-height.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/not-very-tall-not-very-short-exactly-where-he-should-be/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/exact-height-product-320.jpg">
@@ -1736,32 +1386,13 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/indesicive-customer.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/indesicive-customer-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Indesicive Customer Forgot What He was Thinking About (But Keeps Pretending)</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
-							<br/>Permanent Marker on Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2012</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/blind-speaker.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/blind-speaker-the-campaign/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/blind-speaker-product-320.jpg">
@@ -1782,32 +1413,13 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/beast-sex-act-ricepaper.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/beast-sex-act-ricepaper-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Beast (Sex Act), Study for Larger Work</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>29.4cm x 20.8cm </span> 
-							<br/>Marker & Fine Tip Inking Pen on Ricepaper
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2011</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 60</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/joke.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/the-joke/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/joke-product-320.jpg">
@@ -1828,32 +1440,13 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/three-elements.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
-					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
-						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/three-elements-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
-						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Three Elements</h3>			
-					</header>
-					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>16.9cm x 12.6cm </span> 
-							<br/>Pen (signed on December 13th 2019 with rollerbal pen) on Paper 80gsm
-							<!-- This has inline style - change when done -->
-							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2003 or 2004</span>
-						</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 40</p>
-					</footer>
-				</a>
-			</article>
-		
-			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/sphinx.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/sphinx-thinking-her-own-riddle/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
 							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/sphinx-product-320.jpg">
@@ -1874,29 +1467,209 @@ make it one black line at the bottom
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+		
 		
 			<article class="shop__all__allProducts__productExcerpt">
-				<a href="/shop/grand-heartbreak.html" class="shop__all__allProducts__productExcerpt__linkWrapper">
+				<a href="http://18.222.94.162/shop/art/drawings/an-intellectual-mistake-made-by-a-professor-is-impregnating-brain-cells-with-faulty-assumptions/" class="shop__all__allProducts__productExcerpt__linkWrapper">
 					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
 						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
-							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-320.jpg">
-							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-460.jpg">
-							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product-800.jpg">
-							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/grand-heartbreak-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/intellectual-mistake-product-320.jpg">
+							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/intellectual-mistake-product-460.jpg">
+							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/intellectual-mistake-product-800.jpg">
+							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/intellectual-mistake-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
 						</picture>
-						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">The Modernist Couple in the Village (The Grand Heartbreak)</h3>			
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">An Intellectual Mistake made by a Professor is Impregnating Brain Cells with Faulty Assumptions</h3>			
 					</header>
 					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>20.3cm x 14.4cm </span> 
-							<br/>Pen & Marker on Paper 80gsm
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Watercolors, Pen, Colored Pencils & Pencil on Paper 220gsm
 							<!-- This has inline style - change when done -->
 							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2008</span>
 						</p>
 						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
-						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 30</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 150</p>
 					</footer>
 				</a>
 			</article>
+			
+		
+		
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="http://18.222.94.162/shop/art/paintings/untitled-gold-shell/" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-gold-shell-product-320.jpg">
+							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-gold-shell-product-460.jpg">
+							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-gold-shell-product-800.jpg">
+							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-gold-shell-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+						</picture>
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Untitled (Gold Shell)</h3>			
+					</header>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>35cm x 50cm </span> 
+							<br/>Acrylics and Ink on 300gsm Bristol Paper
+							<!-- This has inline style - change when done -->
+							<span style="display: block;font-weight: 900;margin-top: 1vmin;">27 October 2017</span>
+						</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 360</p>
+					</footer>
+				</a>
+			</article>
+			
+		
+		
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="http://18.222.94.162/shop/art/paintings/untitled-gold-blue-abstract/" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-gold-blue-abstract-product-320.jpg">
+							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-gold-blue-abstract-product-460.jpg">
+							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-gold-blue-abstract-product-800.jpg">
+							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-gold-blue-abstract-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+						</picture>
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Untitled (Gold & Blue Abstract)</h3>			
+					</header>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>35cm x 50cm </span> 
+							<br/>Acrylics and Ink on 300gsm Bristol Paper
+							<!-- This has inline style - change when done -->
+							<span style="display: block;font-weight: 900;margin-top: 1vmin;">14 October 2017</span>
+						</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 280</p>
+					</footer>
+				</a>
+			</article>
+			
+		
+		
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="http://18.222.94.162/shop/art/paintings/untiled-black-rooster/" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untiled-black-rooster-product-320.jpg">
+							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untiled-black-rooster-product-460.jpg">
+							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untiled-black-rooster-product-800.jpg">
+							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/untiled-black-rooster-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+						</picture>
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Untiled (Black Rooster)</h3>			
+					</header>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>21cm x 29.7cm </span> 
+							<br/>Acrylics and Ink on 220gsm (a bit cream) Paper
+							<!-- This has inline style - change when done -->
+							<span style="display: block;font-weight: 900;margin-top: 1vmin;">7 October 2017</span>
+						</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 200</p>
+					</footer>
+				</a>
+			</article>
+			
+		
+		
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="http://18.222.94.162/shop/art/paintings/dragon-watercolor/" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dragon-watercolor-product-320.jpg">
+							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dragon-watercolor-product-460.jpg">
+							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dragon-watercolor-product-800.jpg">
+							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/dragon-watercolor-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+						</picture>
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Dragon</h3>			
+					</header>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.5cm x 21cm </span> 
+							<br/>Acrylics and Ink on 220gsm (a bit cream) Paper
+							<!-- This has inline style - change when done -->
+							<span style="display: block;font-weight: 900;margin-top: 1vmin;">June 2017</span>
+						</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 175</p>
+					</footer>
+				</a>
+			</article>
+			
+		
+		
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="http://18.222.94.162/shop/art/paintings/dragon-watercolor/" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dragon-watercolor-product-320.jpg">
+							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dragon-watercolor-product-460.jpg">
+							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/dragon-watercolor-product-800.jpg">
+							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/dragon-watercolor-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+						</picture>
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Dragon</h3>			
+					</header>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.5cm x 21cm </span> 
+							<br/>Acrylics and Ink on 220gsm (a bit cream) Paper
+							<!-- This has inline style - change when done -->
+							<span style="display: block;font-weight: 900;margin-top: 1vmin;">June 2017</span>
+						</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 175</p>
+					</footer>
+				</a>
+			</article>
+			
+		
+		
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="http://18.222.94.162/shop/art/paintings/untitled-monstrous-red/" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-monstrous-red-product-320.jpg">
+							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-monstrous-red-product-460.jpg">
+							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-monstrous-red-product-800.jpg">
+							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-monstrous-red-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+						</picture>
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Untitled (Monstrous Red)</h3>			
+					</header>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>19.6cm x 28.1cm </span> 
+							<br/>Uni-Posca Paint Markers and Rollerbal Pen on Paper 200gsm (approx.)
+							<!-- This has inline style - change when done -->
+							<span style="display: block;font-weight: 900;margin-top: 1vmin;">September 2017</span>
+						</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 210</p>
+					</footer>
+				</a>
+			</article>
+			
+		
+		
+			<article class="shop__all__allProducts__productExcerpt">
+				<a href="http://18.222.94.162/shop/art/paintings/untitled-dark-abstract/" class="shop__all__allProducts__productExcerpt__linkWrapper">
+					<header class="shop__all__allProducts__productExcerpt__linkWrapper__header">
+						<picture class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture">
+							<source media="(max-width: 800px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-dark-abstract-product-320.jpg">
+							<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-dark-abstract-product-460.jpg">
+							<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-dark-abstract-product-800.jpg">
+							<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/untitled-dark-abstract-product.jpg" alt="''" title="featured-image-alt-en" class="shop__all__allProducts__productExcerpt__linkWrapper__header__picture__img lazyload">
+						</picture>
+						<h3 class="shop__all__allProducts__productExcerpt__linkWrapper__header__title">Untitled (Dark Abstract)</h3>			
+					</header>
+					<footer class="shop__all__allProducts__productExcerpt__linkWrapper__footer">
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__description"><span>60cm x 70cm </span> 
+							<br/>Home Paint & Acrylics on Canvas
+							<!-- This has inline style - change when done -->
+							<span style="display: block;font-weight: 900;margin-top: 1vmin;">2012</span>
+						</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer_askingPrice">Asking Price</p>
+						<p class="shop__all__allProducts__productExcerpt__linkWrapper__footer__price">€ 210</p>
+					</footer>
+				</a>
+			</article>
+			
 		
 	</section>
 
@@ -1904,7 +1677,7 @@ make it one black line at the bottom
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">
-		<h3 class="siteWideFooter__section__heading">#</h3>
+		<h3 class="siteWideFooter__section__heading">Quick Links</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/about/" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/shop/" class="siteWideFooter__section__heading__unorderedList__listItem__link">Shop</a></li>
@@ -1914,7 +1687,7 @@ make it one black line at the bottom
 		</ul>
 	</section>
 	<section class="siteWideFooter__section">
-		<h3 class="siteWideFooter__section__heading">Social</h3>
+		<h3 class="siteWideFooter__section__heading">Connect on Social</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="http://eepurl.com/c5g1PH" class="siteWideFooter__section__heading__unorderedList__listItem__link">Mailing List</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://facebook.com/kostasgogasart" class="siteWideFooter__section__heading__unorderedList__listItem__link">Facebook</a></li>
@@ -1923,6 +1696,15 @@ make it one black line at the bottom
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://linkedin.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">LinkedIn</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://pinterest.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">Pinterest</a></li>
 		</ul>
+	</section>
+	<section class="siteWideFooter__section">
+		<header class="siteWideFooter__section__header">
+			<h3 class="siteWideFooter__section__header__title">Kostas Gogas</h3>
+			<p class="siteWideFooter__section__header__subtitle">Official Concept Store of Art Disruptor Kostas Gogas</p>			
+		</header>
+		<section class="siteWideFooter__section__content">
+			<p class="siteWideFooter__section__content__paragraph">Nea Filadelfeia 14342, Athens, Greece</p>
+		</section>
 	</section>
 </footer>
 

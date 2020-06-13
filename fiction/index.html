@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kostas Gogas | Demon (Photo Uploaded by Himself on Social Media as they Existed at the Beginning of the 21st Century)</title>
+	<title>Kostas Gogas | Existential Fiction & Short Stories</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,15 +9,9 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 	
-	<!-- this is for any keywords -->
-	<meta name="keywords" content="">
-	
 
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script src="/assets/scripts/lazysizes.min.js" async=""></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
 
 
 
@@ -355,15 +349,21 @@ SITEWIDE
 
 .siteWideFooter__section {
 	display: inline-block;
-	width: 45%;
+	width: 30%;
 	vertical-align:top;
+}
+
+@media only screen and (max-width: 767px) {
+.siteWideFooter__section {
+	display: block;
+	width: 100%;
+  }
 }
 
 .siteWideFooter__section__heading {
 	margin-top: 6vh;
 	margin-bottom: 2vh;
 
-	text-transform: uppercase;
 	font-weight: 800;
 	font-size: 3vmin;
 
@@ -386,6 +386,37 @@ SITEWIDE
 	line-height: 1.25;
 
 	color: white;
+}
+
+.siteWideFooter__section__header {
+	margin-top: 6vh;
+	margin-bottom: 2vh;
+
+	font-size: 3vmin;
+
+	color: white;
+}
+
+.siteWideFooter__section__header__title {
+	font-weight: 800
+}
+
+.siteWideFooter__section__header__subtitle {
+	margin: 1vmin 0;
+
+	font-weight: 400;
+	font-size: 2.5vmin;
+	line-height: 1.25;
+}
+
+.siteWideFooter__section__content {
+	line-height: 1.25;
+}
+
+.siteWideFooter__section__content__paragraph {
+	margin: 1vmin 0;
+
+	color: #aaa;
 }
 
 
@@ -440,353 +471,211 @@ make it one black line at the bottom
 </script>
 	<header class="sitewide__header">
 	<a href="/" class="sitewide__header__logoLink">
-		<img src="/assets/temp/logo-signature-kostas-gogas-black.png" alt="Kostas Gogas Signature Logo" title="Go to Homepage" class="sitewide__header__logoLink__image">
+		<img src="https://res.cloudinary.com/kostasgogas/brand/logo-signature-kostas-gogas-black.png" alt="Kostas Gogas Signature Logo" title="Go to Homepage" class="sitewide__header__logoLink__image">
 	</a>
 	<div class="sitewide__header__titleWrapper">
-	<h3 class="sitewide__header__titleWrapper__title">
-		Official Website of Multidisciplinary Artist 
-		<span class="sitewide__header__titleWrapper__title__name">
-			Kostas Gogas
-		</span>
-	</h3>
+		<h3 class="sitewide__header__titleWrapper__title">
+			Official Website of Multidisciplinary Artist 
+			<span class="sitewide__header__titleWrapper__title__name">
+				Kostas Gogas
+			</span>
+		</h3>
 	</div>
 	<a href="/about/" class="sitewide__header__link">About</a>
-	<a href="/shop/all/" class="sitewide__header__link">Shop</a>
+	<a href="/shop/" class="sitewide__header__link">Shop</a>
 </header>
 
 	<style type="text/css">
-
-	body {
-		margin-top: 0vmin;
-	}
-	.sitewide__header {
-		display: none;
-	}
-
-	/* Header */
-
-	.shop__product__inquire__nav {
+	.fictionPage {
+		height: 100vh;
 		width: 100%;
-
-		text-align: right;
-
-		background-color: #ededed;
 	}
 
-	.shop__product__inquire__nav__link {
-		display: inline-block;
-		padding: 2vmin 2vmin;
-
-		font-size: 2vmin;
-		text-decoration: underline;
-
-		color: black;
-	}
-
-	.shop__product__inquire__header {
-		padding: 5vmin;
-		width: 100%;
+	.fictionPage__header {
+		width: 90vmin;
 		margin: auto;
-		display: grid;
-		grid-template-columns: 10vw 80vw;
-		align-items: center;
+		padding: 10vmin 0;
 
-		background-color: #ededed;
-	}
-
-	.shop__product__inquire__header__heading {
-		margin-left: 5vmin;
-
-		font-weight: bold;
+		text-align: center;
 		line-height: 1.25;
 	}
 
-	.shop__product__inquire__header__heading__interest {
-		display: block;
+	.fictionPage__header__title {
+		font-size: 8vmin;
+		font-weight: 800;
 
-		font-size: 3vmin;
+	}
+
+	.fictionPage__header__subtitle {
+		font-size: 4.5vmin;
 		font-weight: 400;
+
 	}
 
-	.shop__product__inquire__header__heading__title {
-		display: block;
-
-		font-size: 3vmin;
-	}
-
-	.shop__product__inquire__header__picture {
-	}
-
-	.shop__product__inquire__header__picture__image {
-		height: 100%;
+	.fictionPage__subscribeContainer {
+		padding: 4vmin 0;
 		width: 100%;
-		object-fit: contain;
-		
+		text-align: center;
 	}
 
-	/* Form */
+	.fictionPage__subscribeContainer__title {
+		font-weight: 800;
+		font-size: 3.5vmin;
+		margin: 3vmin 0;
+	}
 
-	.shop__product__inquire__formContainer {
+	.fictionPage__subscribeContainer__mailchimpContainer {
 		width: 90vmin;
-		margin: auto;
+		margin: 0vmin auto;
 	}
 
-	.shop__product__inquire__formContainer__nameLabel {
-		display: block;
-		margin: 2.5vmin 0;
-
-		font-weight: bold;
-		font-size: 3vmin;
-		line-height: 1.25;
-
-		color: #888;
-	}
-
-	.shop__product__inquire__formContainer__nameLabel__field {
-		width: 100%;
-		height: 7vmin;
-		margin: 1vmin 0;
-		padding: 1.5vmin 3vmin;
-
-		font-style: italic;
-		font-weight: normal;
-		font-size: 3vmin;
-		font-family: 'Inter', Sans-serif;
-
-		border-radius: 0.7vmin;
-
-		background-color: #ededed;
-		border: 0 solid white;
-	}
-
-	.shop__product__inquire__formContainer__emailLabel {
-		display: block;
-		margin: 2.5vmin 0;
-
-		font-weight: bold;
-		font-size: 3vmin;
-		line-height: 1.25;
-
-		color: #888;
-
-	}
-
-	.shop__product__inquire__formContainer__emailLabel__field {
-		width: 100%;
-		height: 7vmin;
-		margin: 1vmin 0;
-		padding: 1.5vmin 3vmin;
-
-		font-style: italic;
-		font-weight: normal;
-		font-size: 3vmin;
-		font-family: 'Inter', Sans-serif;
-
-		border-radius: 0.7vmin;
-
-		background-color: #ededed;
-		border: 0 solid white;
-	}
-
-	.shop__product__inquire__formContainer__messageLabel {
-		display: block;
-		margin: 2.5vmin 0;
-
-		font-weight: bold;
-		font-size: 3vmin;
-		line-height: 1.25;
-
-		color: #888;
-	}
-
-	.shop__product__inquire__formContainer__messageLabel__field {
-		width: 100%;
-		height: 35vmin;
-		margin: 1vmin 0;
-		padding: 1.5vmin 3vmin;
-
-		font-style: italic;
-		font-family: 'Inter', Sans-serif;
-		font-weight: normal;
-		font-size: 3vmin;
-
-		border-radius: 0.7vmin;
-
-		background-color: #ededed;
-		border: 0 solid white;
-	}
-
-
-	.shop__product__inquire__formContainer__submitButton {
-		width: 30vmin;
+	.fictionPage__subscribeContainer__mailchimpContainer__emailContainer {
+		display: grid;
+/*		grid-template-columns: 32% 65%;
+		grid-column-gap: 3%;*/
 		height: 10vmin;
-		margin: 1vmin 0;
+	}
+
+	.fictionPage__subscribeContainer__mailchimpContainer__emailContainer__label {
+		display: none;
+
+	}
+
+	.fictionPage__subscribeContainer__mailchimpContainer__emailContainer__input {
+		padding: 2vmin; 
 
 		font-size: 3vmin;
-		line-height: 1.25;
-		font-weight: bold;
-		letter-spacing: 0.1vmin;
 
-		border-radius: 0.7vmin;
-
+		background-color: #ededed;
+		border-radius: 1vmin;
 		border: 0 solid transparent;
-		background-color: #005fff;
-		color: white;
+
 	}
 
-	/* Other Messaging / Contact Option */
-
-	.shop__product__inquire__contactOptions {
-		width: 90vmin;
-		margin: 4vh auto;
-		padding: 6vmin;
-
-		color: black;
-		background-color: #ddd;
+	.fictionPage__subscribeContainer__mailchimpContainer__emailContainer__input::placeholder {
+		color: #aaa;
+		font-style: italic;
 	}
 
-	.shop__product__inquire__contactOptions__title {
-		margin: 2.25vh 0;
+	.fictionPage__subscribeContainer__mailchimpContainer__groupsContainer {
+		margin: 2vmin 0;
+		line-height: 1.25;
+	}
 
-		font-size: 3vmin;
+	.fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__title {
 		font-weight: 800;
-		line-height: 4vmin;
-	}
-
-	.shop__product__inquire__contactOptions__link {
-		display: inline-block;
-		padding: 2vmin;
-
-		font-size: 2.25vmin;
-		font-weight: 800;
-		letter-spacing: 0.1vmin;
-
-		background-color: white;
-		color: #005fff;
-		border-radius: 0.7vmin;
-		border: 0.2vmin solid #005fff;
-	}
-
-	.shop__product__inquire__contactOptions__text {
-		margin: 2.25vh 0;
-
+		font-style: italic;
 		font-size: 2.5vmin;
 	}
 
-	/* Tips for Message */
-
-	.shop__product__inquire__messageTips {
-		width: 90vmin;
-		margin: auto;
+	.fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-column-gap: 5%;
 	}
 
-	.shop__product__inquire__messageTips__heading {
-		margin: 7.5vmin 0 2.5vmin;
-
-		font-size: 6vmin;
-		line-height: 1.25;
-		font-weight: bold;
+	.fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li {
+		margin: 1vmin;
 	}
 
-	.shop__product__inquire__messageTips__description {
-		margin: 2.5vmin 0 2.5vmin;
 
-		font-size: 3vmin;
-		line-height: 1.25;
-		font-style: italic;
+	.fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li__input {
+		width: 4vmin;
+		height: 4vmin;
+		margin: 2vmin auto;
 	}
 
-	.shop__product__inquire__messageTips__heading__list {
-		font-size: 3vmin;
-		
-		line-height: 1.25;
-		list-style-type: disc;
-		list-style-position: inside;
+	.fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li__label {
+		display: inline-block;
+		margin: 2vmin 0;
+		font-size: 2vmin;
+		line-height: 4vmin;
+		height: 6vmin;
+		vertical-align: middle;
 	}
 
-	.shop__product__inquire__messageTips__heading__list__item {
-		margin: 1.5vmin 0;
+	.fictionPage__subscribeContainer__mailchimpContainer__button {
+	padding: 0 2vmin;
+	display: block;
+	margin: 3vmin auto;
+
+	line-height: 3;
+	font-weight: 800;
+	font-size: 3vmin;
+
+	color: white;
+	background-color: #005fff;
+	border: 0 solid transparent;
+	border-radius: 1vmin;
 	}
 </style>
 
-<!-- This should go to layouts if and when finished and produced for each artwork with page-gen -->
+<div class="fictionPage">
 
-
-<div class="shop__product__inquire">
-	<nav class="shop__product__inquire__nav">
-		<a href="/shop/demon-social.html" class="shop__product__inquire__nav__link">Back to Product Page</a>
-	</nav>
-
-	<header class="shop__product__inquire__header">
-		<picture class="shop__product__inquire__header__picture">
-			<source media="(max-width: 1000px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-320.jpg">
-			<source media="(max-width: 1500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-460.jpg">
-			<source media="(max-width: 2500px)" data-srcset="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product-800.jpg">
-			<img data-src="https://res.cloudinary.com/kostasgogas/shop/featured/demon-social-product.jpg" class="shop__product__inquire__header__picture__image lazyload">
-		</picture>
-		<h1 class="shop__product__inquire__header__heading">
-			<span class="shop__product__inquire__header__heading__interest">Express your interest for</span>
-			<span class="shop__product__inquire__header__heading__title">Demon (Photo Uploaded by Himself on Social Media as they Existed at the Beginning of the 21st Century)</span>
-		</h1>
+	<header class="fictionPage__header">
+		<h1 class="fictionPage__header__title">Fiction</h1>
+		<p class="fictionPage__header__subtitle">Kostas Gogas writes short stories.</p>
 	</header>
 
-	<form class="shop__product__inquire__formContainer" method="post" action="https://forms.un-static.com/forms/f7edf75a640ca11b5f673095f73097bc45f54f30">
-		<label class="shop__product__inquire__formContainer__nameLabel">Full Name:
-			<input class="shop__product__inquire__formContainer__nameLabel__field" type="text" name="name" placeholder="John Doe" required>
-		</label>
-		<label class="shop__product__inquire__formContainer__emailLabel">Email address:
-			<input class="shop__product__inquire__formContainer__emailLabel__field" type="email" name="email" placeholder="johndoe@example.com" required>
-		</label>
-		<input type="hidden" name="subject" value="Ερώτηση για 'Demon (Photo Uploaded by Himself on Social Media as they Existed at the Beginning of the 21st Century)'" required>
-		<label class="shop__product__inquire__formContainer__messageLabel">Message:
-			<textarea class="shop__product__inquire__formContainer__messageLabel__field" name="message" placeholder="Your message.."></textarea>
-		</label>
-		<button class="shop__product__inquire__formContainer__submitButton" type="submit">Send</button>
-	</form>
-
-
-	<section class="shop__product__inquire__contactOptions">
-		<h3 class="shop__product__inquire__contactOptions__title">If you prefer, you can also find me on:</h3>
-		<a href="https://m.me/kostasgogasart" class="shop__product__inquire__contactOptions__link" target="_blank" rel="noopener">
-			<i class="fa fa-facebook-official" aria-hidden="true"></i>
-			Facebook Messenger
-			<i class="fa fa-external-link" aria-hidden="true"></i>
-		</a>
-		<a href="https://www.instagram.com/kostasgogasart/" class="shop__product__inquire__contactOptions__link" target="_blank" rel="noopener">
-			<i class="fa fa-instagram" aria-hidden="true"></i>
-			Instagram
-			<i class="fa fa-external-link" aria-hidden="true"></i>
-		</a>
-		<p class="shop__product__inquire__contactOptions__text">
-			..and ask me anything there.
-		</p>
-	</section>
-
-	<section class="shop__product__inquire__messageTips">
-		<h3 class="shop__product__inquire__messageTips__heading">What to include in the message</h3>
-		<p class="shop__product__inquire__messageTips__description">Whatever you feel like, but here is some suggestions.</p>
-		<ul class="shop__product__inquire__messageTips__heading__list">
-			<li class="shop__product__inquire__messageTips__heading__list__item">Questions about the artwork dimensions, medium, surface (make sure we don't already include those in the product page)</li>
-			<li class="shop__product__inquire__messageTips__heading__list__item">Ask for more photos</li>
-			<li class="shop__product__inquire__messageTips__heading__list__item">If we can meet up close</li>
-			<li class="shop__product__inquire__messageTips__heading__list__item">Questions about payment methods</li>
-			<li class="shop__product__inquire__messageTips__heading__list__item">Questions about shipping methods</li>
-			<li class="shop__product__inquire__messageTips__heading__list__item">Counter offer</li>
-		</ul>
-	</section>
-
-	<section class="shop__product__inquire__messageTips">
-		<h3 class="shop__product__inquire__messageTips__heading">What to expect after sending your message</h3>
-		<ul class="shop__product__inquire__messageTips__heading__list">
-			<li class="shop__product__inquire__messageTips__heading__list__item">The artist himself or one of his partners will get back to you as soon as possible.</li>
-		</ul>
-	</section>
-
-</div>
+	<div class="fictionPage__subscribeContainer">
+		<h3 class="fictionPage__subscribeContainer__title">
+			Get notified about new literary releases
+		</h3>
+		<!-- Begin Mailchimp Signup Form -->
+		<div id="mc_embed_signup" class="fictionPage__subscribeContainer__mailchimpContainer">
+			<form action="https://kostasgogas.us16.list-manage.com/subscribe/post?u=8e3de9811e9e1045229d17e6f&amp;id=22d7f504a3&SIGNUP=kostasgogas.com/fiction/" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			    <div id="mc_embed_signup_scroll">
+			<div class="mc-field-group fictionPage__subscribeContainer__mailchimpContainer__emailContainer">
+				<label for="mce-EMAIL" class="fictionPage__subscribeContainer__mailchimpContainer__emailContainer__label">
+					Email Address<!--   <span class="asterisk">*</span> -->
+				</label>
+				<input type="email" value="" name="EMAIL" class="required email fictionPage__subscribeContainer__mailchimpContainer__emailContainer__input" id="mce-EMAIL" placeholder="email@address.com">
+			</div>
+			<div class="mc-field-group input-group fictionPage__subscribeContainer__mailchimpContainer__groupsContainer">
+			    <strong class="fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__title">
+			    	What language do you read in?
+			    </strong>
+			    <ul class=" fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul">
+			    	<li class=" fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li">
+			    		<input type="radio" value="4" name="group[6790]" id="mce-group[6790]-6790-0" class="fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li__input">
+			    		<label for="mce-group[6790]-6790-0"  class="fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li__label">
+			    			Both English &amp; Greek
+			    		</label>
+			    	</li>
+					<li class=" fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li">
+						<input type="radio" value="8" name="group[6790]" id="mce-group[6790]-6790-1" class="fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li__input">
+						<label for="mce-group[6790]-6790-1"  class="fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li__label">
+							English Only
+						</label>
+					</li>
+					<li class=" fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li">
+						<input type="radio" value="16" name="group[6790]" id="mce-group[6790]-6790-2" class="fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li__input">
+						<label for="mce-group[6790]-6790-2"  class="fictionPage__subscribeContainer__mailchimpContainer__groupsContainer__ul__li__label">
+							Μόνο Ελληνικά
+						</label>
+					</li>
+				</ul>
+			</div>
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+			    	<input type="text" name="b_8e3de9811e9e1045229d17e6f_22d7f504a3" tabindex="-1" value="">
+			    </div>
+			    <div class="clear">
+			    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button fictionPage__subscribeContainer__mailchimpContainer__button">
+			    </div>
+			    </div>
+			</form>
+		</div><!--End mc_embed_signup-->
+	</div><!-- fictionPage__subscribeContainer -->
+	
+</div><!-- fictionPage -->
 
 	<footer class="siteWideFooter">
 	<section class="siteWideFooter__section">
-		<h3 class="siteWideFooter__section__heading">#</h3>
+		<h3 class="siteWideFooter__section__heading">Quick Links</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/about/" class="siteWideFooter__section__heading__unorderedList__listItem__link">About</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="/shop/" class="siteWideFooter__section__heading__unorderedList__listItem__link">Shop</a></li>
@@ -796,7 +685,7 @@ make it one black line at the bottom
 		</ul>
 	</section>
 	<section class="siteWideFooter__section">
-		<h3 class="siteWideFooter__section__heading">Social</h3>
+		<h3 class="siteWideFooter__section__heading">Connect on Social</h3>
 		<ul class="siteWideFooter__section__heading__unorderedList">
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="http://eepurl.com/c5g1PH" class="siteWideFooter__section__heading__unorderedList__listItem__link">Mailing List</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://facebook.com/kostasgogasart" class="siteWideFooter__section__heading__unorderedList__listItem__link">Facebook</a></li>
@@ -805,6 +694,15 @@ make it one black line at the bottom
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://linkedin.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">LinkedIn</a></li>
 			<li class="siteWideFooter__section__heading__unorderedList__listItem"><a href="https://pinterest.com/kostasgogas" class="siteWideFooter__section__heading__unorderedList__listItem__link">Pinterest</a></li>
 		</ul>
+	</section>
+	<section class="siteWideFooter__section">
+		<header class="siteWideFooter__section__header">
+			<h3 class="siteWideFooter__section__header__title">Kostas Gogas</h3>
+			<p class="siteWideFooter__section__header__subtitle">Official Concept Store of Art Disruptor Kostas Gogas</p>			
+		</header>
+		<section class="siteWideFooter__section__content">
+			<p class="siteWideFooter__section__content__paragraph">Nea Filadelfeia 14342, Athens, Greece</p>
+		</section>
 	</section>
 </footer>
 
